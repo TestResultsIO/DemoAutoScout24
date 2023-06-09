@@ -9,6 +9,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TC001_RefineSearch", "TC001
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TC001_Rev1", "TC001_Rev1\TC001_Rev1.csproj", "{1C0AFAC8-6F5F-4911-8002-A5A1818F6F72}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TC002_SellMyTractor", "TC002_SellMyTractor", "{C08B90D1-D893-47CB-978B-3A5C3E6A857F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TC002_Rev1", "TC002_Rev1\TC002_Rev1.csproj", "{71A70470-956E-4FC2-9F93-CC7BFF3C77A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,12 +27,17 @@ Global
 		{1C0AFAC8-6F5F-4911-8002-A5A1818F6F72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C0AFAC8-6F5F-4911-8002-A5A1818F6F72}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C0AFAC8-6F5F-4911-8002-A5A1818F6F72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71A70470-956E-4FC2-9F93-CC7BFF3C77A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71A70470-956E-4FC2-9F93-CC7BFF3C77A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71A70470-956E-4FC2-9F93-CC7BFF3C77A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71A70470-956E-4FC2-9F93-CC7BFF3C77A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{1C0AFAC8-6F5F-4911-8002-A5A1818F6F72} = {63DD1351-D90E-4C91-875B-5850292AF53D}
+		{71A70470-956E-4FC2-9F93-CC7BFF3C77A7} = {C08B90D1-D893-47CB-978B-3A5C3E6A857F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {693F65AC-295B-42CC-A7EF-9E6C5E6842DD}
