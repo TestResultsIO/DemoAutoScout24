@@ -2,7 +2,26 @@
   "CustomerId": "00000000-0000-0000-0000-000000000090",
   "ProjectId": "4253b5b3-5444-4d17-a44d-326479f7ffba",
   "ServerUri": "https://demo.testresults.io/",
-  "Environments": [],
+  "Environments": [
+    {
+      "$type": "Progile.Trio.Designer.DomainObjects.EnvironmentImage, Progile.Trio.Designer",
+      "ImagePathStaticEnvironment": null,
+      "RaiseImagePathPopupBeforeExecution": false,
+      "Id": "00000000-0000-0000-0000-000000000000",
+      "Name": "Simulation"
+    },
+    {
+      "$type": "Progile.Trio.Designer.DomainObjects.EnvironmentVNC, Progile.Trio.Designer",
+      "Ip": "TrioSandbox",
+      "Username": null,
+      "Password": "TrioSandbox",
+      "RemoteDirectory": null,
+      "ScreenDimensions": null,
+      "Protocol": "VNC",
+      "Id": "9e1c6af8-f946-4651-81ec-7eb7b81a001f",
+      "Name": "Hyper V Virtual Machine"
+    }
+  ],
   "SolutionVersion": "6.1",
   "SolutionType": null,
   "ElementsFilter": [],
