@@ -1,5 +1,169 @@
 [
   {
+    "TypeName": "AutoScout24_Model.CustomScreenElements.DropdownWithSearchbox",
+    "Interactions": [
+      {
+        "Parameters": [
+          {
+            "Name": "textboxValue",
+            "DisplayName": "Textbox search Value",
+            "Type": "string"
+          },
+          {
+            "Name": "dropdownValue",
+            "DisplayName": "Select Value in Dropdown",
+            "Type": "string"
+          }
+        ],
+        "MethodName": "SelectValueWithSearch",
+        "DisplayName": "SelectValueWithSearch",
+        "IsVerification": false,
+        "PassedMessage": null,
+        "FailedMessage": null
+      },
+      {
+        "Parameters": [
+          {
+            "Name": "value",
+            "DisplayName": "Value",
+            "Type": "string"
+          }
+        ],
+        "MethodName": "SelectValueWithSearch",
+        "DisplayName": "SelectValueWithSearch",
+        "IsVerification": false,
+        "PassedMessage": null,
+        "FailedMessage": null
+      },
+      {
+        "Parameters": [
+          {
+            "Name": "value",
+            "DisplayName": "Value",
+            "Type": "string"
+          }
+        ],
+        "MethodName": "SelectValue",
+        "DisplayName": "Select value",
+        "IsVerification": false,
+        "PassedMessage": null,
+        "FailedMessage": null
+      },
+      {
+        "Parameters": [
+          {
+            "Name": "value",
+            "DisplayName": "Expected value",
+            "Type": "string"
+          },
+          {
+            "Name": "actualValue",
+            "DisplayName": "actualValue",
+            "Type": "out_string"
+          }
+        ],
+        "MethodName": "VerifySelectedValue",
+        "DisplayName": "Verify the selected value",
+        "IsVerification": true,
+        "PassedMessage": "The expected value {value} was shown correctly as the selected value on {this}.",
+        "FailedMessage": "The selected value on {this} was {actualValue} instead of the expected value {value}."
+      },
+      {
+        "Parameters": [
+          {
+            "Name": "value",
+            "DisplayName": "Expected value",
+            "Type": "string"
+          }
+        ],
+        "MethodName": "VerifyValueInList",
+        "DisplayName": "Verify a value in the list",
+        "IsVerification": true,
+        "PassedMessage": "The expected value {value} was shown in the dropdown list {this}.",
+        "FailedMessage": "The expected value {value} was not shown in the dropdown list {this}."
+      },
+      {
+        "Parameters": [],
+        "MethodName": "WaitForAppear",
+        "DisplayName": "Verify element appears",
+        "IsVerification": true,
+        "PassedMessage": "The element {this} was displayed on the screen.",
+        "FailedMessage": "The element {this} was not found on the screen."
+      },
+      {
+        "Parameters": [],
+        "MethodName": "WaitForDisappear",
+        "DisplayName": "Verify element disappears",
+        "IsVerification": true,
+        "PassedMessage": "The element {this} disappeared from the screen.",
+        "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+      }
+    ]
+  },
+  {
+    "TypeName": "AutoScout24_Model.Screens.DetailSearch",
+    "Interactions": [
+      {
+        "Parameters": [],
+        "MethodName": "WaitForAppear",
+        "DisplayName": "Verify element appears",
+        "IsVerification": true,
+        "PassedMessage": "The element {this} was displayed on the screen.",
+        "FailedMessage": "The element {this} was not found on the screen."
+      },
+      {
+        "Parameters": [],
+        "MethodName": "WaitForDisappear",
+        "DisplayName": "Verify element disappears",
+        "IsVerification": true,
+        "PassedMessage": "The element {this} disappeared from the screen.",
+        "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+      }
+    ]
+  },
+  {
+    "TypeName": "AutoScout24_Model.Screens.MainPage",
+    "Interactions": [
+      {
+        "Parameters": [],
+        "MethodName": "WaitForAppear",
+        "DisplayName": "Verify element appears",
+        "IsVerification": true,
+        "PassedMessage": "The element {this} was displayed on the screen.",
+        "FailedMessage": "The element {this} was not found on the screen."
+      },
+      {
+        "Parameters": [],
+        "MethodName": "WaitForDisappear",
+        "DisplayName": "Verify element disappears",
+        "IsVerification": true,
+        "PassedMessage": "The element {this} disappeared from the screen.",
+        "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+      }
+    ]
+  },
+  {
+    "TypeName": "AutoScout24_Model.Screens.SearchResults",
+    "Interactions": [
+      {
+        "Parameters": [],
+        "MethodName": "WaitForAppear",
+        "DisplayName": "Verify element appears",
+        "IsVerification": true,
+        "PassedMessage": "The element {this} was displayed on the screen.",
+        "FailedMessage": "The element {this} was not found on the screen."
+      },
+      {
+        "Parameters": [],
+        "MethodName": "WaitForDisappear",
+        "DisplayName": "Verify element disappears",
+        "IsVerification": true,
+        "PassedMessage": "The element {this} disappeared from the screen.",
+        "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+      }
+    ]
+  },
+  {
     "TypeName": "Progile.TRIO.BaseModel.BaseScreen",
     "Interactions": [
       {
