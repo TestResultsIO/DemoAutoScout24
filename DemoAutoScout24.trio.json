@@ -1,0 +1,14 @@
+{
+  "CustomerId": "00000000-0000-0000-0000-000000000090",
+  "ProjectId": "4253b5b3-5444-4d17-a44d-326479f7ffba",
+  "ServerUri": "https://demo.testresults.io/",
+  "Environments": [],
+  "SolutionVersion": "6.1",
+  "SolutionType": null,
+  "ElementsFilter": [],
+  "GetLabelTextSettings": {
+    "OcrPadding": 5,
+    "MaxDetectedCharacters": 40,
+    "MaxDetectedWords": 5
+  }
+}
