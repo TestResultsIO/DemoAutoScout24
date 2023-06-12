@@ -10,6 +10,7 @@
 
 using Progile.TRIO.BaseModel;
 using AutoScout24_Model.Screens;
+using AutoScout24_Model.Screens.TruckScout24;
 
 namespace AutoScout24_Model
 {
@@ -20,6 +21,8 @@ namespace AutoScout24_Model
             MainPage = new MainPage(this);
             DetailSearch = new DetailSearch(this);
             SearchResults = new SearchResults(this);
+            MainMenu = new MainMenu(this);
+            TruckscoutMainPage = new TruckscoutMainPage(this);
         }
 
 
@@ -28,6 +31,10 @@ namespace AutoScout24_Model
         public DetailSearch DetailSearch { get; set; }
         
         public SearchResults SearchResults { get; set; }
+        
+        public MainMenu MainMenu { get; set; }
+        
+        public TruckscoutMainPage TruckscoutMainPage { get; set; }
         
     }
 }

@@ -122,6 +122,27 @@
     ]
   },
   {
+    "TypeName": "AutoScout24_Model.Screens.MainMenu",
+    "Interactions": [
+      {
+        "Parameters": [],
+        "MethodName": "WaitForAppear",
+        "DisplayName": "Verify element appears",
+        "IsVerification": true,
+        "PassedMessage": "The element {this} was displayed on the screen.",
+        "FailedMessage": "The element {this} was not found on the screen."
+      },
+      {
+        "Parameters": [],
+        "MethodName": "WaitForDisappear",
+        "DisplayName": "Verify element disappears",
+        "IsVerification": true,
+        "PassedMessage": "The element {this} disappeared from the screen.",
+        "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+      }
+    ]
+  },
+  {
     "TypeName": "AutoScout24_Model.Screens.MainPage",
     "Interactions": [
       {
@@ -144,6 +165,27 @@
   },
   {
     "TypeName": "AutoScout24_Model.Screens.SearchResults",
+    "Interactions": [
+      {
+        "Parameters": [],
+        "MethodName": "WaitForAppear",
+        "DisplayName": "Verify element appears",
+        "IsVerification": true,
+        "PassedMessage": "The element {this} was displayed on the screen.",
+        "FailedMessage": "The element {this} was not found on the screen."
+      },
+      {
+        "Parameters": [],
+        "MethodName": "WaitForDisappear",
+        "DisplayName": "Verify element disappears",
+        "IsVerification": true,
+        "PassedMessage": "The element {this} disappeared from the screen.",
+        "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+      }
+    ]
+  },
+  {
+    "TypeName": "AutoScout24_Model.Screens.TruckScout24.TruckscoutMainPage",
     "Interactions": [
       {
         "Parameters": [],

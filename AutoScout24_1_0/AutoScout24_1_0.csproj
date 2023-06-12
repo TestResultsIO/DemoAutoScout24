@@ -62,6 +62,10 @@
     <Compile Include="Screens\DetailSearch.g.cs">
       <DependentUpon>DetailSearch.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screens\MainMenu.cs" />
+    <Compile Include="Screens\MainMenu.g.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\MainPage.cs" />
     <Compile Include="Screens\MainPage.g.cs">
       <DependentUpon>MainPage.cs</DependentUpon>
@@ -69,6 +73,10 @@
     <Compile Include="Screens\SearchResults.cs" />
     <Compile Include="Screens\SearchResults.g.cs">
       <DependentUpon>SearchResults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\TruckScout24\TruckscoutMainPage.cs" />
+    <Compile Include="Screens\TruckScout24\TruckscoutMainPage.g.cs">
+      <DependentUpon>TruckscoutMainPage.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -157,6 +165,41 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="Images\DetailSearch\Used Checkbox\LabelImage\LabelImage.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\MainMenu\Menu Button\active\active.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\MainMenu\Menu Button\inactive\inactive.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\MainMenu\Motorbikes\active\active.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\MainMenu\Screen_Image\Screen_Image.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\MainMenu\Screen_Loaded\Screen_Loaded.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\MainMenu\Screen_Loaded\Screen_Loaded1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\MainMenu\Trucks\active\active.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\MainMenu\Used and New Cars\active\active.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Images\TruckScout24\TruckscoutMainPage\Screen_Image\Screen_Image.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\TruckScout24\TruckscoutMainPage\Screen_Loaded\Screen_Loaded.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
