@@ -58,34 +58,58 @@
     <Compile Include="CustomScreenElements\DropdownWithSearchbox.cs" />
     <Compile Include="Helpers\OcrParams.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Screens\DetailSearch.cs" />
-    <Compile Include="Screens\DetailSearch.g.cs">
+    <Compile Include="Screens\AutoScout24 Screens\DetailSearch.cs" />
+    <Compile Include="Screens\AutoScout24 Screens\DetailSearch.g.cs">
       <DependentUpon>DetailSearch.cs</DependentUpon>
     </Compile>
-    <Compile Include="Screens\MainMenu.cs" />
-    <Compile Include="Screens\MainMenu.g.cs">
+    <Compile Include="Screens\AutoScout24 Screens\MainMenu.cs" />
+    <Compile Include="Screens\AutoScout24 Screens\MainMenu.g.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Screens\MainPage.cs" />
-    <Compile Include="Screens\MainPage.g.cs">
+    <Compile Include="Screens\AutoScout24 Screens\MainPage.cs" />
+    <Compile Include="Screens\AutoScout24 Screens\MainPage.g.cs">
       <DependentUpon>MainPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Screens\SearchResults.cs" />
-    <Compile Include="Screens\SearchResults.g.cs">
+    <Compile Include="Screens\AutoScout24 Screens\SearchResults.cs" />
+    <Compile Include="Screens\AutoScout24 Screens\SearchResults.g.cs">
       <DependentUpon>SearchResults.cs</DependentUpon>
     </Compile>
-    <Compile Include="Screens\TruckScout24\TruckscoutMainPage.cs" />
-    <Compile Include="Screens\TruckScout24\TruckscoutMainPage.g.cs">
+    <Compile Include="Screens\TruckScout24 Screens\Sell Workflow\Description.cs" />
+    <Compile Include="Screens\TruckScout24 Screens\Sell Workflow\Description.g.cs">
+      <DependentUpon>Description.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\TruckScout24 Screens\Sell Workflow\VehicleType.cs" />
+    <Compile Include="Screens\TruckScout24 Screens\Sell Workflow\VehicleType.g.cs">
+      <DependentUpon>VehicleType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\TruckScout24 Screens\TruckscoutMainPage.cs" />
+    <Compile Include="Screens\TruckScout24 Screens\TruckscoutMainPage.g.cs">
       <DependentUpon>TruckscoutMainPage.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\MainPage\Refine search Link\active\active.png">
+    <None Include="App.config" />
+    <None Include="Images\TruckScout24 Screens\Sell Workflow\Description\Description Textbox\Description Textbox.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
+    <None Include="Images\TruckScout24 Screens\Sell Workflow\Description\Make Dropdown\DropdownTextBox\DropdownTextBox.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\TruckScout24 Screens\Sell Workflow\Description\Model Textbox\Model Textbox.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\TruckScout24 Screens\Sell Workflow\Description\Price Label\Price Label.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\TruckScout24 Screens\Sell Workflow\Description\Screen_Image\Screen_Image.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\TruckScout24 Screens\Sell Workflow\Description\Substructure Dropdown\DropdownTextBox\DropdownTextBox.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\TruckScout24 Screens\Sell Workflow\Description\Vehicle Type\Vehicle Type.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="ModelCapabilities.json" />
     <None Include="SoftwareModel.json" />
   </ItemGroup>
@@ -96,49 +120,6 @@
     <PackageReference Include="Progile.TRIO.EnvironmentModel.Windows">
       <Version>5.2.0</Version>
     </PackageReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\MainPage\Screen_Image\Screen_Image.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\MainPage\Screen_Loaded\Screen_Loaded.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\DetailSearch\Screen_Image\Screen_Image.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\DetailSearch\Screen_Loaded\Screen_Loaded.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\DetailSearch\Make Dropdown\DropdownTextBox\DropdownTextBox.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\DetailSearch\Model Dropdown\DropdownTextBox\DropdownTextBox.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\DetailSearch\Variant Textbox\Variant Textbox.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\DetailSearch\Results Button\active\active.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\SearchResults\Offers found\Label search image.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\SearchResults\Screen_Image\Screen_Image.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\SearchResults\Screen_Loaded\Screen_Loaded.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\Common\Checkbox\Unchecked\unchecked.png">
@@ -161,45 +142,130 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\DetailSearch\Seat Heating Checkbox\LabelImage\LabelImage.png">
+    <None Include="Images\AutoScout24 Screens\MainMenu\Menu Button\active\active.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Images\DetailSearch\Used Checkbox\LabelImage\LabelImage.png">
+    <None Include="Images\AutoScout24 Screens\MainMenu\Menu Button\inactive\inactive.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\AutoScout24 Screens\MainMenu\Motorbikes\active\active.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\AutoScout24 Screens\MainMenu\Screen_Image\Screen_Image.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\AutoScout24 Screens\MainMenu\Screen_Loaded\Screen_Loaded.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\AutoScout24 Screens\MainMenu\Screen_Loaded\Screen_Loaded1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\AutoScout24 Screens\MainMenu\Trucks\active\active.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\AutoScout24 Screens\MainMenu\Used and New Cars\active\active.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\MainMenu\Menu Button\active\active.png">
+    <None Include="Images\AutoScout24 Screens\DetailSearch\Make Dropdown\DropdownTextBox\DropdownTextBox.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Images\MainMenu\Menu Button\inactive\inactive.png">
+    <None Include="Images\AutoScout24 Screens\DetailSearch\Model Dropdown\DropdownTextBox\DropdownTextBox.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Images\MainMenu\Motorbikes\active\active.png">
+    <None Include="Images\AutoScout24 Screens\DetailSearch\Results Button\active\active.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Images\MainMenu\Screen_Image\Screen_Image.png">
+    <None Include="Images\AutoScout24 Screens\DetailSearch\Screen_Image\Screen_Image.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Images\MainMenu\Screen_Loaded\Screen_Loaded.png">
+    <None Include="Images\AutoScout24 Screens\DetailSearch\Screen_Loaded\Screen_Loaded.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Images\MainMenu\Screen_Loaded\Screen_Loaded1.png">
+    <None Include="Images\AutoScout24 Screens\DetailSearch\Seat Heating Checkbox\LabelImage\LabelImage.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Images\MainMenu\Trucks\active\active.png">
+    <None Include="Images\AutoScout24 Screens\DetailSearch\Used Checkbox\LabelImage\LabelImage.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Images\MainMenu\Used and New Cars\active\active.png">
+    <None Include="Images\AutoScout24 Screens\DetailSearch\Variant Textbox\Variant Textbox.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <None Include="Images\TruckScout24\TruckscoutMainPage\Screen_Image\Screen_Image.png">
+    <None Include="Images\AutoScout24 Screens\MainPage\Refine search Link\active\active.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Images\TruckScout24\TruckscoutMainPage\Screen_Loaded\Screen_Loaded.png">
+    <None Include="Images\AutoScout24 Screens\MainPage\Screen_Image\Screen_Image.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\AutoScout24 Screens\MainPage\Screen_Loaded\Screen_Loaded.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\AutoScout24 Screens\SearchResults\Offers found\Label search image.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\AutoScout24 Screens\SearchResults\Screen_Image\Screen_Image.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\AutoScout24 Screens\SearchResults\Screen_Loaded\Screen_Loaded.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\TruckScout24 Screens\Sell Workflow\VehicleType\Agricultural machines\active\active mouseover.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\TruckScout24 Screens\Sell Workflow\VehicleType\Agricultural machines\active\active.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\TruckScout24 Screens\Sell Workflow\VehicleType\Screen_Image\Screen_Image.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\TruckScout24 Screens\Sell Workflow\VehicleType\Screen_Loaded\Screen_Loaded.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\TruckScout24 Screens\TruckscoutMainPage\Screen_Image\Screen_Image.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\TruckScout24 Screens\TruckscoutMainPage\Screen_Loaded\Screen_Loaded.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\TruckScout24 Screens\TruckscoutMainPage\Sell Now Button\active\active.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\TruckScout24 Screens\Sell Workflow\Description\Already Registered Yes\Button\active\Button_active.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\TruckScout24 Screens\Sell Workflow\Description\Already Registered Yes\Button\inactive\Button_inactive.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\TruckScout24 Screens\Sell Workflow\Description\Already Registered Yes\LabelImage\LabelImage.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\TruckScout24 Screens\Sell Workflow\Description\Continue Button\active\active.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\TruckScout24 Screens\Sell Workflow\Description\Screen_Loaded\Images.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\TruckScout24 Screens\Sell Workflow\Description\Screen_Loaded\Options.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\TruckScout24 Screens\Sell Workflow\Description\Screen_Loaded\Price.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\TruckScout24 Screens\Sell Workflow\Description\Screen_Loaded\Titel.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\TruckScout24 Screens\Sell Workflow\Description\Upload Image Button\active\active.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

@@ -11,14 +11,14 @@
 using Progile.TRIO.BaseModel;
 using static TestImages.AutoScout24;
 
-namespace AutoScout24_Model.Screens
+namespace AutoScout24_Model.Screens.AutoScout24Screens
 {
     [Screen]
     public partial class SearchResults : Progile.TRIO.BaseModel.BaseScreen
     {
-        public SearchResults(IAppBasics appBasics) : base(appBasics, @"Search Results", Images.SearchResults.Screen_Loaded)
+        public SearchResults(IAppBasics appBasics) : base(appBasics, @"Search Results", Images.AutoScout24Screens.SearchResults.Screen_Loaded)
         {
-            OffersFound = new Progile.TRIO.BaseModel.LabelWithValue(tester: t, displayName: "Offers found", valuePosition: RelativePosition.Left, imageReferenceForLabel: Images.SearchResults.OffersFound, gridWidth: 125, filters: ScreenSelect) { ParentElement = this };
+            OffersFound = new Progile.TRIO.BaseModel.LabelWithValue(tester: t, displayName: "Offers found", valuePosition: RelativePosition.Left, imageReferenceForLabel: Images.AutoScout24Screens.SearchResults.OffersFound, gridWidth: 125, filters: ScreenSelect) { ParentElement = this };
 
             ConfigureElementProperties();
         }

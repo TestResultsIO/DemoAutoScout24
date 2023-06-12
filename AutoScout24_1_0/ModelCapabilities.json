@@ -16,7 +16,7 @@
           }
         ],
         "MethodName": "SelectValueWithSearch",
-        "DisplayName": "SelectValueWithSearch",
+        "DisplayName": "Select Value With different Search",
         "IsVerification": false,
         "PassedMessage": null,
         "FailedMessage": null
@@ -30,7 +30,7 @@
           }
         ],
         "MethodName": "SelectValueWithSearch",
-        "DisplayName": "SelectValueWithSearch",
+        "DisplayName": "Select Value With Search",
         "IsVerification": false,
         "PassedMessage": null,
         "FailedMessage": null
@@ -101,7 +101,7 @@
     ]
   },
   {
-    "TypeName": "AutoScout24_Model.Screens.DetailSearch",
+    "TypeName": "AutoScout24_Model.Screens.AutoScout24Screens.DetailSearch",
     "Interactions": [
       {
         "Parameters": [],
@@ -122,7 +122,44 @@
     ]
   },
   {
-    "TypeName": "AutoScout24_Model.Screens.MainMenu",
+    "TypeName": "AutoScout24_Model.Screens.AutoScout24Screens.MainMenu",
+    "Interactions": [
+      {
+        "Parameters": [],
+        "MethodName": "GoToTrucks",
+        "DisplayName": "Go To Trucks",
+        "IsVerification": false,
+        "PassedMessage": null,
+        "FailedMessage": null
+      },
+      {
+        "Parameters": [],
+        "MethodName": "OpenMenu",
+        "DisplayName": "Open Menu",
+        "IsVerification": false,
+        "PassedMessage": null,
+        "FailedMessage": null
+      },
+      {
+        "Parameters": [],
+        "MethodName": "WaitForAppear",
+        "DisplayName": "Verify element appears",
+        "IsVerification": true,
+        "PassedMessage": "The element {this} was displayed on the screen.",
+        "FailedMessage": "The element {this} was not found on the screen."
+      },
+      {
+        "Parameters": [],
+        "MethodName": "WaitForDisappear",
+        "DisplayName": "Verify element disappears",
+        "IsVerification": true,
+        "PassedMessage": "The element {this} disappeared from the screen.",
+        "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+      }
+    ]
+  },
+  {
+    "TypeName": "AutoScout24_Model.Screens.AutoScout24Screens.MainPage",
     "Interactions": [
       {
         "Parameters": [],
@@ -143,7 +180,7 @@
     ]
   },
   {
-    "TypeName": "AutoScout24_Model.Screens.MainPage",
+    "TypeName": "AutoScout24_Model.Screens.AutoScout24Screens.SearchResults",
     "Interactions": [
       {
         "Parameters": [],
@@ -164,7 +201,7 @@
     ]
   },
   {
-    "TypeName": "AutoScout24_Model.Screens.SearchResults",
+    "TypeName": "AutoScout24_Model.Screens.TruckScout24Screens.SellWorkflow.Description",
     "Interactions": [
       {
         "Parameters": [],
@@ -185,7 +222,28 @@
     ]
   },
   {
-    "TypeName": "AutoScout24_Model.Screens.TruckScout24.TruckscoutMainPage",
+    "TypeName": "AutoScout24_Model.Screens.TruckScout24Screens.SellWorkflow.VehicleType",
+    "Interactions": [
+      {
+        "Parameters": [],
+        "MethodName": "WaitForAppear",
+        "DisplayName": "Verify element appears",
+        "IsVerification": true,
+        "PassedMessage": "The element {this} was displayed on the screen.",
+        "FailedMessage": "The element {this} was not found on the screen."
+      },
+      {
+        "Parameters": [],
+        "MethodName": "WaitForDisappear",
+        "DisplayName": "Verify element disappears",
+        "IsVerification": true,
+        "PassedMessage": "The element {this} disappeared from the screen.",
+        "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+      }
+    ]
+  },
+  {
+    "TypeName": "AutoScout24_Model.Screens.TruckScout24Screens.TruckscoutMainPage",
     "Interactions": [
       {
         "Parameters": [],

@@ -8,6 +8,10 @@ using System.Threading.Tasks;
 
 namespace AutoScout24_Model.CustomScreenElements
 {
+    /*
+     Use the ScreenElements Attribute to define your own ScreenElement
+     Make sure these match with the params of the Constructor
+    */
     [ScreenElements(
         "appBasics:AppBasics",
         "displayName:string:Name",
@@ -29,19 +33,15 @@ namespace AutoScout24_Model.CustomScreenElements
             base(appBasics, displayName, imageReference, useVisualSense, filters)
         {
             TextBox.TextBoxType = TextBoxType.OCR;
-            TextBox.ClickOutAfterType = false; //because value is lost
-            TextBox.ClickOutBeforeOCR = false;
+            TextBox.ClickOutAfterType = false; //because value would be lost
+            TextBox.ClickOutBeforeOCR = false; //because value would be lost
         }
 
         /// <summary>
         /// Opens the dropdownlist, enters the textbox Value into the searchBox to filter the dropdown
         /// Selects the dropdown Value in the Dropdown
         /// </summary>
-        /// <param name="values">The values that shall be selected in the dropdown list.</param>
-        /// <exception cref="ElementNotFoundException">When the dropdown could not be found on the screen.</exception>
-        /// <exception cref="InteractionFailedException">When the dropdown could not be opened after the configured amount of retries.</exception>
-        /// <exception cref="TestStepAbortedException">When the text value cannot be found in the dropdown list.</exception>
-        [ModelCapability("SelectValueWithSearch")]
+        [ModelCapability("Select Value With different Search")]
         public void SelectValueWithSearch(
             [DisplayName("Textbox search Value")] string textboxValue, 
             [DisplayName("Select Value in Dropdown")] string dropdownValue
@@ -54,7 +54,11 @@ namespace AutoScout24_Model.CustomScreenElements
             row.SelectRow(row.WaitForDisappear);
         }
 
-        [ModelCapability("SelectValueWithSearch")]
+        /// <summary>
+        /// Opens the dropdownlist, enters the given value into the searchBox to filter the dropdown
+        /// Selects the value in the Dropdown
+        /// </summary>
+        [ModelCapability("Select Value With Search")]
         public void SelectValueWithSearch([DisplayName("Value")] string value)
         {
             SelectValueWithSearch(value, value);

@@ -11,17 +11,20 @@
 using Progile.TRIO.BaseModel;
 using static TestImages.AutoScout24;
 
-namespace AutoScout24_Model.Screens.TruckScout24
+namespace AutoScout24_Model.Screens.AutoScout24Screens
 {
     [Screen]
-    public partial class TruckscoutMainPage : Progile.TRIO.BaseModel.BaseScreen
+    public partial class MainPage : Progile.TRIO.BaseModel.BaseScreen
     {
-        public TruckscoutMainPage(IAppBasics appBasics) : base(appBasics, @"Truckscout Main Page", Images.TruckScout24.TruckscoutMainPage.Screen_Loaded)
+        public MainPage(IAppBasics appBasics) : base(appBasics, @"Main Page", Images.AutoScout24Screens.MainPage.Screen_Loaded)
         {
+            RefineSearchLink = new Progile.TRIO.BaseModel.Button(tester: t, displayName: "Refine search Link", activeImageReference: Images.AutoScout24Screens.MainPage.RefineSearchLink.active, useVisualSense: false, filters: ScreenSelect) { ParentElement = this };
 
             ConfigureElementProperties();
         }
 
+
+        public Progile.TRIO.BaseModel.Button RefineSearchLink { get; private set; }
 
         partial void ConfigureElementProperties();
     }
