@@ -15,7 +15,7 @@
       "Ip": "TrioSandbox",
       "Username": null,
       "Password": "TrioSandbox",
-      "RemoteDirectory": null,
+      "RemoteDirectory": "\\\\TRIOSANDBOX\\RemoteDirectory",
       "ScreenDimensions": null,
       "Protocol": "VNC",
       "Id": "9e1c6af8-f946-4651-81ec-7eb7b81a001f",

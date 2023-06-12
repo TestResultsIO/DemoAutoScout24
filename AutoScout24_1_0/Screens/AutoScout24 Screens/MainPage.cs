@@ -12,13 +12,9 @@ using Progile.TRIO.EnvironmentModel;
 using static TestImages.AutoScout24;
 
 
-namespace AutoScout24_Model.Screens
+namespace AutoScout24_Model.Screens.AutoScout24Screens
 {
-	public partial class DetailSearch
-	{
-        partial void ConfigureElementProperties()
-        {
-            CanScrollToFindElement = true;
-        }
+    public partial class MainPage
+    {
     }
 }

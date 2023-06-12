@@ -9,8 +9,9 @@
 //------------------------------------------------------------------------------
 
 using Progile.TRIO.BaseModel;
-using AutoScout24_Model.Screens;
-using AutoScout24_Model.Screens.TruckScout24;
+using AutoScout24_Model.Screens.AutoScout24Screens;
+using AutoScout24_Model.Screens.TruckScout24Screens;
+using AutoScout24_Model.Screens.TruckScout24Screens.SellWorkflow;
 
 namespace AutoScout24_Model
 {
@@ -23,6 +24,8 @@ namespace AutoScout24_Model
             SearchResults = new SearchResults(this);
             MainMenu = new MainMenu(this);
             TruckscoutMainPage = new TruckscoutMainPage(this);
+            VehicleType = new VehicleType(this);
+            Description = new Description(this);
         }
 
 
@@ -35,6 +38,10 @@ namespace AutoScout24_Model
         public MainMenu MainMenu { get; set; }
         
         public TruckscoutMainPage TruckscoutMainPage { get; set; }
+        
+        public VehicleType VehicleType { get; set; }
+        
+        public Description Description { get; set; }
         
     }
 }

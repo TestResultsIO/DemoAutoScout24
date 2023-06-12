@@ -12,9 +12,9 @@ using Progile.TRIO.EnvironmentModel;
 using static TestImages.AutoScout24;
 
 
-namespace AutoScout24_Model.Screens
+namespace AutoScout24_Model.Screens.TruckScout24Screens.SellWorkflow
 {
-	public partial class MainPage
-	{
-	}
+    public partial class VehicleType
+    {
+    }
 }
