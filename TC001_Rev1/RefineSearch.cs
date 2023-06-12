@@ -10,7 +10,7 @@ public class RefineSearch : TestCase
          * automatically with the https://www.autoscout24.com/ as it is defined in the Webpage SoftwareModel
          * 
          * if you run this testcase in Visual Studio make sure to connect 
-         * to your test environmentand open https://www.autoscout24.com/ there in Microsoft Edge
+         * to your test environment and open https://www.autoscout24.com/ there in Microsoft Edge
         */
         t.Report.PassFailStep(App.MainPage.WaitForAppear(), $@"The element {/*element*/ App.MainPage} was displayed on the screen.", $@"The element {/*element*/ App.MainPage} was not found on the screen.");
     }
