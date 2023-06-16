@@ -269,6 +269,16 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\AutoScout24 Screens\MainPage\ResultsButton\active\active.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\AutoScout24 Screens\MainPage\PriceUpToDropdown\DropdownTextBox\DropdownTextBox.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <CoreCompileDependsOn>$(CoreCompileDependsOn);GeneratedImageClasses</CoreCompileDependsOn>
