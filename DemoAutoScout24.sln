@@ -13,6 +13,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TC002_SellMyTractor", "TC00
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TC002_Rev1", "TC002_Rev1\TC002_Rev1.csproj", "{71A70470-956E-4FC2-9F93-CC7BFF3C77A7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TC003_ScreenElementExampleInteractions", "TC003_ScreenElementExampleInteractions", "{81A4A7B0-7119-47D5-BDC8-51144E458BA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TC003_Rev1", "TC003_Rev1\TC003_Rev1.csproj", "{C6D8B5F2-9B7D-491C-B041-ABD2CCD8B20E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +35,10 @@ Global
 		{71A70470-956E-4FC2-9F93-CC7BFF3C77A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71A70470-956E-4FC2-9F93-CC7BFF3C77A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71A70470-956E-4FC2-9F93-CC7BFF3C77A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6D8B5F2-9B7D-491C-B041-ABD2CCD8B20E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6D8B5F2-9B7D-491C-B041-ABD2CCD8B20E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6D8B5F2-9B7D-491C-B041-ABD2CCD8B20E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6D8B5F2-9B7D-491C-B041-ABD2CCD8B20E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,6 +46,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{1C0AFAC8-6F5F-4911-8002-A5A1818F6F72} = {63DD1351-D90E-4C91-875B-5850292AF53D}
 		{71A70470-956E-4FC2-9F93-CC7BFF3C77A7} = {C08B90D1-D893-47CB-978B-3A5C3E6A857F}
+		{C6D8B5F2-9B7D-491C-B041-ABD2CCD8B20E} = {81A4A7B0-7119-47D5-BDC8-51144E458BA6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {693F65AC-295B-42CC-A7EF-9E6C5E6842DD}

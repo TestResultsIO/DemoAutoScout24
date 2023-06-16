@@ -59,6 +59,82 @@
             }
           ],
           "ClassFiles": []
+        },
+        {
+          "Id": "3633f8bc-1582-4083-a670-1c262d11ac0b",
+          "Position": {
+            "X": 1124,
+            "Y": 286,
+            "Width": 64,
+            "Height": 26
+          },
+          "Name": "ResultsButton",
+          "Type": "Progile.TRIO.BaseModel.Button",
+          "Parameters": [
+            {
+              "Name": "tester",
+              "Value": "t"
+            },
+            {
+              "Name": "displayName",
+              "Value": "ResultsButton"
+            },
+            {
+              "Name": "searchType",
+              "Value": "Image"
+            },
+            {
+              "Name": "activeImageReference",
+              "Value": "Images\\AutoScout24 Screens\\MainPage\\ResultsButton\\active"
+            },
+            {
+              "Name": "useVisualSense",
+              "Value": "false"
+            },
+            {
+              "Name": "filters",
+              "Value": "ScreenSelect"
+            }
+          ],
+          "ClassFiles": []
+        },
+        {
+          "Id": "a036a00e-893d-44d8-a2a7-33f1af151215",
+          "Position": {
+            "X": 982,
+            "Y": 231,
+            "Width": 109,
+            "Height": 27
+          },
+          "Name": "PriceUpToDropdown",
+          "Type": "Progile.TRIO.BaseModel.Dropdown",
+          "Parameters": [
+            {
+              "Name": "appBasics",
+              "Value": "AppBasics"
+            },
+            {
+              "Name": "displayName",
+              "Value": "PriceUpToDropdown"
+            },
+            {
+              "Name": "searchType",
+              "Value": "Image"
+            },
+            {
+              "Name": "imageReference",
+              "Value": "Images\\AutoScout24 Screens\\MainPage\\PriceUpToDropdown\\DropdownTextBox"
+            },
+            {
+              "Name": "useVisualSense",
+              "Value": "true"
+            },
+            {
+              "Name": "filters",
+              "Value": "ScreenSelect"
+            }
+          ],
+          "ClassFiles": []
         }
       ]
     },
