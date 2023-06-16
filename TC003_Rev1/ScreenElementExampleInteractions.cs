@@ -21,6 +21,7 @@ public class ScreenElementExampleInteractions : TestCase
         App.MainPage.ResultsButton.Click(App.MainPage.WaitForDisappear);
 
         //if there is really nothing that appears or disappears you can check that at least the screen updates
+        //or write your own customized verification
         App.MainPage.ResultsButton.ClickWithUpdateCheck(ImgDiffTolerance.Medium);
 
         //if you have a Button with different Active and Inactive states and recorded their Images
@@ -43,4 +44,41 @@ public class ScreenElementExampleInteractions : TestCase
             "The Results Button was not active after selecting a price range."
         );
     }
+
+    // Checkbox & LabelWithCheckbox Interactions Examples
+    [TestStep(2, TestInput = "Checkbox Interactions")]
+    public void Step2(ITester t)
+    {
+        //the Check and Uncheck functions have an included verification
+        //based on the "checked" and "unchecked" images you recorded
+        App.DetailSearch.BodyColorVioletCheckbox.Check();
+        App.DetailSearch.BodyColorVioletCheckbox.Uncheck();
+
+        //and you can also check for the current state
+        if (App.DetailSearch.BodyColorVioletCheckbox.IsChecked())
+        {
+
+        }
+
+        if (App.DetailSearch.BodyColorVioletCheckbox.IsUnchecked())
+        {
+
+        }
+
+        //the same functions exist for LabelWithCheckbox,
+        //the difference is just how the Checkbox is searched on the screen
+        App.DetailSearch.SeatHeatingCheckbox.Check();
+        App.DetailSearch.SeatHeatingCheckbox.Uncheck();
+
+        if (App.DetailSearch.SeatHeatingCheckbox.IsChecked())
+        {
+
+        }
+
+        if (App.DetailSearch.SeatHeatingCheckbox.IsUnchecked())
+        {
+
+        }
+    }
+
 }

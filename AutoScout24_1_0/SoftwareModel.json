@@ -387,6 +387,44 @@
             }
           ],
           "ClassFiles": []
+        },
+        {
+          "Id": "651ca0e6-85ad-4252-884f-f5cd0d888b56",
+          "Position": {
+            "X": 970,
+            "Y": 423,
+            "Width": 42,
+            "Height": 42
+          },
+          "Name": "BodyColorVioletCheckbox",
+          "Type": "Progile.TRIO.BaseModel.Checkbox",
+          "Parameters": [
+            {
+              "Name": "tester",
+              "Value": "t"
+            },
+            {
+              "Name": "displayName",
+              "Value": "Body Color Violet Checkbox"
+            },
+            {
+              "Name": "checkedImageReference",
+              "Value": "Images\\AutoScout24 Screens\\DetailSearch\\Body Color Violet Checkbox\\checked"
+            },
+            {
+              "Name": "uncheckedImageReference",
+              "Value": "Images\\AutoScout24 Screens\\DetailSearch\\Body Color Violet Checkbox\\unchecked"
+            },
+            {
+              "Name": "useVisualSense",
+              "Value": "false"
+            },
+            {
+              "Name": "filters",
+              "Value": "ScreenSelect"
+            }
+          ],
+          "ClassFiles": []
         }
       ]
     },

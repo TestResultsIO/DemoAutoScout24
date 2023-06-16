@@ -24,6 +24,7 @@ namespace AutoScout24_Model.Screens.AutoScout24Screens
             ResultsButton = new Progile.TRIO.BaseModel.Button(tester: t, displayName: "Results Button", activeImageReference: Images.AutoScout24Screens.DetailSearch.ResultsButton.active, useVisualSense: true, filters: ScreenSelect) { ParentElement = this };
             UsedCheckbox = new Progile.TRIO.BaseModel.LabelWithCheckbox(tester: t, displayName: "Used Checkbox", checkboxPosition: RelativePosition.Left, imageReferenceForLabel: Images.AutoScout24Screens.DetailSearch.UsedCheckbox.LabelImage, checkedImageReference: Images.Common.Checkbox.Checked, uncheckedImageReference: Images.Common.Checkbox.Unchecked, gridWidth: 160, filters: ScreenSelect) { ParentElement = this };
             SeatHeatingCheckbox = new Progile.TRIO.BaseModel.LabelWithCheckbox(tester: t, displayName: "Seat Heating Checkbox", checkboxPosition: RelativePosition.Left, imageReferenceForLabel: Images.AutoScout24Screens.DetailSearch.SeatHeatingCheckbox.LabelImage, checkedImageReference: Images.Common.Checkbox.Checked, uncheckedImageReference: Images.Common.Checkbox.Unchecked, gridWidth: 150, filters: ScreenSelect) { ParentElement = this };
+            BodyColorVioletCheckbox = new Progile.TRIO.BaseModel.Checkbox(tester: t, displayName: "Body Color Violet Checkbox", checkedImageReference: Images.AutoScout24Screens.DetailSearch.BodyColorVioletCheckbox._checked, uncheckedImageReference: Images.AutoScout24Screens.DetailSearch.BodyColorVioletCheckbox._unchecked, useVisualSense: false, filters: ScreenSelect) { ParentElement = this };
 
             ConfigureElementProperties();
         }
@@ -40,6 +41,8 @@ namespace AutoScout24_Model.Screens.AutoScout24Screens
         public Progile.TRIO.BaseModel.LabelWithCheckbox UsedCheckbox { get; private set; }
 
         public Progile.TRIO.BaseModel.LabelWithCheckbox SeatHeatingCheckbox { get; private set; }
+
+        public Progile.TRIO.BaseModel.Checkbox BodyColorVioletCheckbox { get; private set; }
 
         partial void ConfigureElementProperties();
     }
