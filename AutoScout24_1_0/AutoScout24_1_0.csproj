@@ -279,6 +279,20 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\AutoScout24 Screens\DetailSearch\Body Color Violet Checkbox\checked\checked.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\AutoScout24 Screens\DetailSearch\Body Color Violet Checkbox\checked\checked_focused.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\AutoScout24 Screens\DetailSearch\Body Color Violet Checkbox\unchecked\unchecked.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\AutoScout24 Screens\DetailSearch\Body Color Violet Checkbox\unchecked\unchecked_focused.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <CoreCompileDependsOn>$(CoreCompileDependsOn);GeneratedImageClasses</CoreCompileDependsOn>
