@@ -21,6 +21,7 @@ namespace AutoScout24_Model.Screens.AutoScout24Screens
             RefineSearchLink = new Progile.TRIO.BaseModel.Button(tester: t, displayName: "Refine search Link", activeImageReference: Images.AutoScout24Screens.MainPage.RefineSearchLink.active, useVisualSense: false, filters: ScreenSelect) { ParentElement = this };
             ResultsButton = new Progile.TRIO.BaseModel.Button(tester: t, displayName: "ResultsButton", activeImageReference: Images.AutoScout24Screens.MainPage.ResultsButton.active, useVisualSense: false, filters: ScreenSelect) { ParentElement = this };
             PriceUpToDropdown = new Progile.TRIO.BaseModel.Dropdown(appBasics: AppBasics, displayName: "PriceUpToDropdown", imageReference: Images.AutoScout24Screens.MainPage.PriceUpToDropdown.DropdownTextBox, useVisualSense: true, filters: ScreenSelect) { ParentElement = this };
+            NumberOfResultsLabelWithValue = new Progile.TRIO.BaseModel.LabelWithValue(tester: t, displayName: "NumberOfResults LabelWithValue", valuePosition: RelativePosition.Left, imageReferenceForLabel: Images.AutoScout24Screens.MainPage.NumberOfResultsLabelWithValue, gridWidth: 200, filters: ScreenSelect) { ParentElement = this };
 
             ConfigureElementProperties();
         }
@@ -31,6 +32,8 @@ namespace AutoScout24_Model.Screens.AutoScout24Screens
         public Progile.TRIO.BaseModel.Button ResultsButton { get; private set; }
 
         public Progile.TRIO.BaseModel.Dropdown PriceUpToDropdown { get; private set; }
+
+        public Progile.TRIO.BaseModel.LabelWithValue NumberOfResultsLabelWithValue { get; private set; }
 
         partial void ConfigureElementProperties();
     }
