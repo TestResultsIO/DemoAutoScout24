@@ -12,6 +12,8 @@ using Progile.TRIO.BaseModel;
 using AutoScout24_Model.Screens.AutoScout24Screens;
 using AutoScout24_Model.Screens.TruckScout24Screens;
 using AutoScout24_Model.Screens.TruckScout24Screens.SellWorkflow;
+using AutoScout24_Model.Screens.WindowsOS;
+using AutoScout24_Model.Screens.AutoScout24_deScreens;
 
 namespace AutoScout24_Model
 {
@@ -26,6 +28,10 @@ namespace AutoScout24_Model
             TruckscoutMainPage = new TruckscoutMainPage(this);
             VehicleType = new VehicleType(this);
             Description = new Description(this);
+            FileExplorer = new FileExplorer(this);
+            FileProperties = new FileProperties(this);
+            MainPageGerman = new MainPageGerman(this);
+            Autohändler = new Autohändler(this);
         }
 
 
@@ -42,6 +48,14 @@ namespace AutoScout24_Model
         public VehicleType VehicleType { get; set; }
         
         public Description Description { get; set; }
+        
+        public FileExplorer FileExplorer { get; set; }
+        
+        public FileProperties FileProperties { get; set; }
+        
+        public MainPageGerman MainPageGerman { get; set; }
+        
+        public Autohändler Autohändler { get; set; }
         
     }
 }

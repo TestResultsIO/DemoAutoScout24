@@ -12,13 +12,9 @@ using Progile.TRIO.EnvironmentModel;
 using static TestImages.AutoScout24;
 
 
-namespace AutoScout24_Model.Screens.AutoScout24Screens
+namespace AutoScout24_Model.Screens.AutoScout24_deScreens
 {
-    public partial class MainPage
-    {
-        partial void ConfigureElementProperties()
-        {
-            PriceUpToDropdown.UseCachedPosition = true; //there is no label, only the selected value
-        }
-    }
+	public partial class Autohändler
+	{
+	}
 }

@@ -1,4 +1,6 @@
-﻿[TestCase(1)]
+﻿using System.Security.Principal;
+
+[TestCase(1)]
 public class ScreenElementExampleInteractions : TestCase
 {
     /// <summary>
@@ -6,13 +8,14 @@ public class ScreenElementExampleInteractions : TestCase
     /// just to show some possible interactions with each Screen Element
     /// </summary>
 
-    // Button Interactions Examples
+    // Button &LabelWithButton Interactions Examples
     [TestStep(1, TestInput ="Button Interactions")]
     public void Step1(ITester t)
     {
         //Each click on a Button requires a Verification
         //if the verification is not fulfilled after 20sec, a retry of the click is automatically performed
         //by default there are 3 tries, but you can configure it with the property "RetryCount" on the Button
+        //these examples are from the Main Page of https://www.autoscout24.com/
 
         //in most cases this verification is that a new Screen (or element) appears
         App.MainPage.ResultsButton.Click(App.SearchResults.WaitForAppear);
@@ -43,12 +46,23 @@ public class ScreenElementExampleInteractions : TestCase
             "The Results Button became active after selecting a price range.",
             "The Results Button was not active after selecting a price range."
         );
+
+        //LabelWithButton:
+        //use a LabelWithButton if the Button Icon/Image/Text is not unique on the screen, and there is a Label next to it to make it unique
+        //the same interactions can be used as with a Button
     }
 
     // Checkbox & LabelWithCheckbox Interactions Examples
     [TestStep(2, TestInput = "Checkbox Interactions")]
     public void Step2(ITester t)
     {
+        //what is the difference between the two elements?
+        //Checkbox: if the Checkbox itself is unique on the Screen (the only one, special form or color etc.)
+        //LabelWithCheckbox: if a label next to it is required to identify the Checkbox
+
+        //these examples are on the Details Search screen at https://www.autoscout24.com/refinesearch
+
+        //these are examples for a Checkbox:
         //the Check and Uncheck functions have an included verification
         //based on the "checked" and "unchecked" images you recorded
         App.DetailSearch.BodyColorVioletCheckbox.Check();
@@ -65,7 +79,7 @@ public class ScreenElementExampleInteractions : TestCase
 
         }
 
-        //the same functions exist for LabelWithCheckbox,
+        //the same functions exist for LabelWithCheckbox:
         //the difference is just how the Checkbox is searched on the screen
         App.DetailSearch.SeatHeatingCheckbox.Check();
         App.DetailSearch.SeatHeatingCheckbox.Uncheck();
@@ -79,6 +93,114 @@ public class ScreenElementExampleInteractions : TestCase
         {
 
         }
+    }
+
+    // ContextMenu Interactions Examples
+    [TestStep(3, TestInput = "ContextMenu Interactions")]
+    public void Step3(ITester t)
+    {
+        //we use the file explorer as an example with a context menu (the menu that opens on a rightclick)
+        App.SystemHelpers.RunProcess("explorer.exe");
+        App.FileExplorer.WaitFor();
+        var position = App.FileExplorer.DesktopLabel.WaitFor(); //the position is where we want to right click to open the menu
+        App.FileExplorer.FileContextMenu.SelectValue(position, "Properties"); //opens the context menu with a rightclick on position and inside the menu selects the "Properties"
+        App.FileProperties.WaitFor(); //After selecting "Properties" in the context menu, the File Properties open
+    }
+
+    //Dropdown & DropdownMenu 
+    [TestStep(4, TestInput = "Dropdown & DropdownMenu Interactions")]
+    public void Step4(ITester t)
+    {
+        //what is the difference between the two elements?
+        //a Dropdown usually consists of a Label and a textbox. With a click into the Textbox the dropdown opens where the possible values can be selected
+        //a DropdownMenu does not have this textbox. in practise mostly used for Menus and not for value selections
+
+        //these examples are from the Main Page of https://www.autoscout24.com/
+        //Dropdown:
+        App.MainPage.PriceUpToDropdown.SelectValue("2,500");
+
+        //the dropdown has no label, but only displayes the current value
+        //so in the MainPage class file we set "PriceUpToDropdown.UseCachedPosition = true;"
+        //so the dropdown can still be used even if "Price up to" is no longer visible
+        App.MainPage.PriceUpToDropdown.SelectValue("15,000");
+
+        //the german version of the page has Dropdown Menus at the top https://www.autoscout24.de/
+        //DropdownMenu:
+        App.MainPageGerman.KaufenDropdownMenu.SelectValue("finden");
+        App.Autohändler.WaitFor();
+    }
+
+    //Scroller
+    [TestStep(5, TestInput = "Scroller Interactions")]
+    public void Step5(ITester t)
+    {
+        //the easierst way to enable the scroller is to set "CanScrollToFindElement = true;" on a screen
+        //see the DetailsSearch.cs class for an example
+        //so if an element is not found immediatly on a screen the scroller is used to find it
+        //https://www.autoscout24.com/refinesearch
+        App.DetailSearch.BodyColorVioletCheckbox.Check();
+
+        //but you can also scroll manually to an element, using the scroller of the screen
+        App.DetailSearch.BodyColorVioletCheckbox.ScrollAndFindElement(App.DetailSearch.Scroller);
+        App.DetailSearch.BodyColorVioletCheckbox.Uncheck();
+
+        //Scroll to Top or Bottom of a Page
+        App.DetailSearch.Scroller.ScrollToStart();
+        App.DetailSearch.Scroller.ScrollToEnd();
+
+        //Scroll up or down
+        App.DetailSearch.Scroller.Scroll(
+            direction: IScroller.Direction.Forward,       //forward is down, Backward is up
+            incrementKind: IScroller.IncrementKind.Large, //small by clicking the arrows,  
+            numberOfIncrements: 3
+        );
+    }
+
+    //Label
+    [TestStep(6, TestInput = "Label Interactions")]
+    public void Step6(ITester t)
+    {
+        //a Label is a simple text or image on the screen without interactions
+
+        //https://www.truckscout24.com/members/publish/vehicledata?vt=9
+        //You can use it for verifications, if it is on the screen right now
+        t.Report.PassFailStep(
+            criteria: App.Description.PriceLabel.IsOnScreen(), //checks if the Label is currently on the Screen
+            passed: "The Price Label was visible",
+            failed: "The Price Label was not visible"
+        );
+
+        //Or WaitForIt to appear after some other interaction
+        t.Report.PassFailStep(
+            criteria: App.Description.PriceLabel.WaitForAppear(), //by default we wait 20sec, change it with PriceLabel.WaitTimeInSeconds
+            passed: "The Price Label was visible",
+            failed: "The Price Label was not visible"
+        );
+    }
+
+    //LabelWithValue
+    [TestStep(7, TestInput = "Label Interactions")]
+    public void Step7(ITester t)
+    {
+        //The LabelWithValue is used to read some value from the screen
+        //the value is hereby identified by some Label on the Screen, the relative position of the value from the label, and a grid width and height
+        //in this example we read the value on the left of the "results" button, on how many results are available
+        //https://www.autoscout24.com/
+        string numberOfResults = App.MainPage.NumberOfResultsLabelWithValue.ReadValue();
+        bool fourResultsFound = App.MainPage.NumberOfResultsLabelWithValue.VerifyValue("4");
+        App.MainPage.NumberOfResultsLabelWithValue.WaitForValue("4",TimeSpan.FromSeconds(30),out string actualValue);
+    }
+
+    //Textbox & PwTextbox
+    [TestStep(8, TestInput = "Textbox & PwTextbox Interactions")]
+    public void Step8(ITester t)
+    {
+    }
+
+    //Table
+    [TestStep(9, TestInput = "Table Interactions")]
+    public void Step9(ITester t)
+    {
     }
 
 }

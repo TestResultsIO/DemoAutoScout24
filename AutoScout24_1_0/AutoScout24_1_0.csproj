@@ -74,6 +74,14 @@
     <Compile Include="Screens\AutoScout24 Screens\SearchResults.g.cs">
       <DependentUpon>SearchResults.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screens\AutoScout24.de Screens\Autohändler.cs" />
+    <Compile Include="Screens\AutoScout24.de Screens\Autohändler.g.cs">
+      <DependentUpon>Autohändler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\AutoScout24.de Screens\MainPageGerman.cs" />
+    <Compile Include="Screens\AutoScout24.de Screens\MainPageGerman.g.cs">
+      <DependentUpon>MainPageGerman.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\TruckScout24 Screens\Sell Workflow\Description.cs" />
     <Compile Include="Screens\TruckScout24 Screens\Sell Workflow\Description.g.cs">
       <DependentUpon>Description.cs</DependentUpon>
@@ -85,6 +93,14 @@
     <Compile Include="Screens\TruckScout24 Screens\TruckscoutMainPage.cs" />
     <Compile Include="Screens\TruckScout24 Screens\TruckscoutMainPage.g.cs">
       <DependentUpon>TruckscoutMainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\WindowsOS\FileExplorer.cs" />
+    <Compile Include="Screens\WindowsOS\FileExplorer.g.cs">
+      <DependentUpon>FileExplorer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\WindowsOS\FileProperties.cs" />
+    <Compile Include="Screens\WindowsOS\FileProperties.g.cs">
+      <DependentUpon>FileProperties.cs</DependentUpon>
     </Compile>
     <Compile Include="TestData\Car.cs" />
   </ItemGroup>
@@ -297,6 +313,52 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="Images\AutoScout24 Screens\DetailSearch\Body Color Violet Checkbox\unchecked\unchecked_focused.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\WindowsOS\FileExplorer\Desktop Label\Desktop Label.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\WindowsOS\FileExplorer\File Context Menu\File Context Menu.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\WindowsOS\FileExplorer\Screen_Image\Screen_Image.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\WindowsOS\FileExplorer\Screen_Loaded\Screen_Loaded.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\WindowsOS\FileProperties\Screen_Image\Screen_Image.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\WindowsOS\FileProperties\Screen_Loaded\Screen_Loaded.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\AutoScout24_de Screens\Autohändler\Screen_Image\Screen_Image.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\AutoScout24_de Screens\Autohändler\Screen_Loaded\Screen_Loaded.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\AutoScout24_de Screens\MainPageGerman\Kaufen Dropdown Menu\MenuLabel\MenuLabel.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\AutoScout24_de Screens\MainPageGerman\Screen_Image\Screen_Image.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\AutoScout24_de Screens\MainPageGerman\Screen_Loaded\Screen_Loaded.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\AutoScout24 Screens\MainPage\NumberOfResults LabelWithValue\NumberOfResults LabelWithValue.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
