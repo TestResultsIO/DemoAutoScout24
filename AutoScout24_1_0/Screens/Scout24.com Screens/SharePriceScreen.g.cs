@@ -19,12 +19,15 @@ namespace AutoScout24_Model.Screens.Scout24_comScreens
         public SharePriceScreen(IAppBasics appBasics) : base(appBasics, @"Share Price Screen", Images.Scout24_comScreens.SharePriceScreen.Screen_Loaded)
         {
             YearlyPerformanceTab = new Progile.TRIO.BaseModel.Button(tester: t, displayName: "Yearly Performance Tab", activeImageReference: Images.Scout24_comScreens.SharePriceScreen.YearlyPerformanceTab.active, inactiveImageReference: Images.Scout24_comScreens.SharePriceScreen.YearlyPerformanceTab.inactive, useVisualSense: false, filters: ScreenSelect) { ParentElement = this };
+            YearlyPerformanceTable = new YearlyPerformanceTable(appBasics) { ParentElement = this };
 
             ConfigureElementProperties();
         }
 
 
         public Progile.TRIO.BaseModel.Button YearlyPerformanceTab { get; private set; }
+
+        public YearlyPerformanceTable YearlyPerformanceTable { get; private set; }
 
         partial void ConfigureElementProperties();
     }
