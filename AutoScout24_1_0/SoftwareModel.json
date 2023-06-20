@@ -1507,6 +1507,62 @@
             }
           ],
           "ClassFiles": []
+        },
+        {
+          "Id": "592fd679-e1f1-4738-96b1-e73a954c0b4a",
+          "Position": {
+            "X": 761,
+            "Y": 639,
+            "Width": 150,
+            "Height": 31
+          },
+          "Name": "YearlyPerformanceTable",
+          "Type": "Custom.Table",
+          "Parameters": [
+            {
+              "Name": "appBasics",
+              "Value": "AppBasics"
+            },
+            {
+              "Name": "displayName",
+              "Value": "Yearly Performance Table"
+            },
+            {
+              "Name": "tableLoadedImage",
+              "Value": "Images\\Scout24_com Screens\\SharePriceScreen\\Yearly Performance Table\\TableLoadedImage"
+            },
+            {
+              "Name": "SeqBasedDetection",
+              "Value": "true"
+            },
+            {
+              "Name": "ColumnHeader",
+              "Value": "Images\\Scout24_com Screens\\SharePriceScreen\\Yearly Performance Table\\Scout24"
+            },
+            {
+              "Name": "ColumnHeader",
+              "Value": "Images\\Scout24_com Screens\\SharePriceScreen\\Yearly Performance Table\\Column2019"
+            },
+            {
+              "Name": "ColumnHeader",
+              "Value": "Images\\Scout24_com Screens\\SharePriceScreen\\Yearly Performance Table\\Column2020"
+            },
+            {
+              "Name": "ColumnHeader",
+              "Value": "Images\\Scout24_com Screens\\SharePriceScreen\\Yearly Performance Table\\Column2021"
+            },
+            {
+              "Name": "ColumnHeader",
+              "Value": "Images\\Scout24_com Screens\\SharePriceScreen\\Yearly Performance Table\\Column2022"
+            },
+            {
+              "Name": "ColumnHeader",
+              "Value": "Images\\Scout24_com Screens\\SharePriceScreen\\Yearly Performance Table\\Column2023"
+            }
+          ],
+          "ClassFiles": [
+            "Screens\\Scout24.com Screens\\YearlyPerformanceTable"
+          ]
         }
       ]
     }

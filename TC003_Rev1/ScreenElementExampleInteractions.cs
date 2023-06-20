@@ -228,8 +228,25 @@ public class ScreenElementExampleInteractions : TestCase
         if (!App.SharePriceScreen.YearlyPerformanceTab.IsActive())
             App.SharePriceScreen.YearlyPerformanceTab.Click(App.SharePriceScreen.YearlyPerformanceTab.WaitForActive);
 
+        //get the row with the value "Yearly Low" in the first Column "Scout24" 
+        Row rowYearlyLow = App.SharePriceScreen.YearlyPerformanceTable.GetRow(searchColumn: App.SharePriceScreen.YearlyPerformanceTable.Scout24, "Yearly Low");
+        //verify that in this row in column 2020 the value is "45.50"
+        bool res1 = App.SharePriceScreen.YearlyPerformanceTable.VerifyCellContent(targetColumn: App.SharePriceScreen.YearlyPerformanceTable.Column2020, rowYearlyLow, "45.50");
 
-        
+        //or both functions in one: verify that the "Yearly Low" of 2020 is "45.50"
+        bool res = App.SharePriceScreen.YearlyPerformanceTable.Verify(
+            selection: App.SharePriceScreen.YearlyPerformanceTable.Scout24, //column where the "selectionValue" is searched to get the row we are interested in
+            selectionValue: "Yearly Low",
+            verification: App.SharePriceScreen.YearlyPerformanceTable.Column2020,
+            expectedValue: "45.50",
+            actualValue: out string actualValue
+        );
+
+        //read the value of a cell
+        string value = App.SharePriceScreen.YearlyPerformanceTable.GetCellContent(
+            targetColumn: App.SharePriceScreen.YearlyPerformanceTable.Column2020, 
+            targetRow: rowYearlyLow
+        );
     }
 
 }
