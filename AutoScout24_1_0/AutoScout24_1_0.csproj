@@ -82,6 +82,10 @@
     <Compile Include="Screens\AutoScout24.de Screens\MainPageGerman.g.cs">
       <DependentUpon>MainPageGerman.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screens\Scout24.com Screens\SharePriceScreen.cs" />
+    <Compile Include="Screens\Scout24.com Screens\SharePriceScreen.g.cs">
+      <DependentUpon>SharePriceScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\TruckScout24 Screens\MembersLoginPage.cs" />
     <Compile Include="Screens\TruckScout24 Screens\MembersLoginPage.g.cs">
       <DependentUpon>MembersLoginPage.cs</DependentUpon>
@@ -387,7 +391,22 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Images\Scout24_com Screens\SharePriceScreen\Yearly Performance Tab\active\active.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\Scout24_com Screens\SharePriceScreen\Yearly Performance Tab\inactive\inactive.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Scout24_com Screens\SharePriceScreen\Screen_Image\Screen_Image.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\Scout24_com Screens\SharePriceScreen\Screen_Loaded\Screen_Loaded.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <CoreCompileDependsOn>$(CoreCompileDependsOn);GeneratedImageClasses</CoreCompileDependsOn>

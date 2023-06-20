@@ -14,6 +14,7 @@ using AutoScout24_Model.Screens.TruckScout24Screens;
 using AutoScout24_Model.Screens.TruckScout24Screens.SellWorkflow;
 using AutoScout24_Model.Screens.WindowsOS;
 using AutoScout24_Model.Screens.AutoScout24_deScreens;
+using AutoScout24_Model.Screens.Scout24_comScreens;
 
 namespace AutoScout24_Model
 {
@@ -33,6 +34,7 @@ namespace AutoScout24_Model
             MainPageGerman = new MainPageGerman(this);
             Autohändler = new Autohändler(this);
             MembersLoginPage = new MembersLoginPage(this);
+            SharePriceScreen = new SharePriceScreen(this);
         }
 
 
@@ -59,6 +61,8 @@ namespace AutoScout24_Model
         public Autohändler Autohändler { get; set; }
         
         public MembersLoginPage MembersLoginPage { get; set; }
+        
+        public SharePriceScreen SharePriceScreen { get; set; }
         
     }
 }
