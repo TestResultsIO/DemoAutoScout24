@@ -32,6 +32,7 @@ namespace AutoScout24_Model
             FileProperties = new FileProperties(this);
             MainPageGerman = new MainPageGerman(this);
             Autohändler = new Autohändler(this);
+            MembersLoginPage = new MembersLoginPage(this);
         }
 
 
@@ -56,6 +57,8 @@ namespace AutoScout24_Model
         public MainPageGerman MainPageGerman { get; set; }
         
         public Autohändler Autohändler { get; set; }
+        
+        public MembersLoginPage MembersLoginPage { get; set; }
         
     }
 }

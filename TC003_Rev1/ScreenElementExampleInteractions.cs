@@ -195,12 +195,41 @@ public class ScreenElementExampleInteractions : TestCase
     [TestStep(8, TestInput = "Textbox & PwTextbox Interactions")]
     public void Step8(ITester t)
     {
+        //https://www.truckscout24.com/members/login
+
+        //any text already in the Textbox will be deleted
+        //the text will be entered and verified with the clipboard (CTRL+C)
+        App.MembersLoginPage.UsernameTextbox.Enter("demo");
+
+        //use GetText & VerifyText to get or check the entered Value
+        string usernameText = App.MembersLoginPage.UsernameTextbox.GetText();
+        bool usernameIsDemo = App.MembersLoginPage.UsernameTextbox.VerifyText("demo");
+
+        //in case the clipboard does not work (for example the textbox is read only) use Optical character recognition (OCR)
+        App.MembersLoginPage.UsernameTextbox.TextBoxType = TextBoxType.OCR; //usually set this in ConfigureElementProperties on the Screen class
+        string usernameTextByOcr = App.MembersLoginPage.UsernameTextbox.GetText();
+
+        //if there is no way to verify what has been entered use EnterWithoutVerification
+        App.MembersLoginPage.UsernameTextbox.EnterWithoutVerification("demoNotVerified");
+
+        //the same works for a Password Textbox (capture it as type "PwTextBox")
+        //the entered value will be verified by counting the number of Blind Characters found
+        App.MembersLoginPage.PasswordTextbox.Enter("demo123");
     }
 
     //Table
     [TestStep(9, TestInput = "Table Interactions")]
     public void Step9(ITester t)
     {
+        //https://www.scout24.com/en/investor-relations/share/share-price
+
+        /*
+        //to see the Table scroll down and activate the Yearly Performance Tab 
+        if (!App.SharePriceScreen.YearlyPerformanceTab.IsActive())
+            App.SharePriceScreen.YearlyPerformanceTab.Click(App.SharePriceScreen.YearlyPerformanceTab.WaitForActive);
+
+
+        */
     }
 
 }

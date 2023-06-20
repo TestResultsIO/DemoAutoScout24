@@ -82,6 +82,10 @@
     <Compile Include="Screens\AutoScout24.de Screens\MainPageGerman.g.cs">
       <DependentUpon>MainPageGerman.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screens\TruckScout24 Screens\MembersLoginPage.cs" />
+    <Compile Include="Screens\TruckScout24 Screens\MembersLoginPage.g.cs">
+      <DependentUpon>MembersLoginPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\TruckScout24 Screens\Sell Workflow\Description.cs" />
     <Compile Include="Screens\TruckScout24 Screens\Sell Workflow\Description.g.cs">
       <DependentUpon>Description.cs</DependentUpon>
@@ -362,6 +366,28 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\TruckScout24 Screens\MembersLoginPage\Screen_Image\Screen_Image.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\TruckScout24 Screens\MembersLoginPage\Screen_Loaded\Screen_Loaded.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\TruckScout24 Screens\MembersLoginPage\Username Textbox\Image.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Common\BlindCharImage\BlindCharImage.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\TruckScout24 Screens\MembersLoginPage\Password Textbox\Password Textbox.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <CoreCompileDependsOn>$(CoreCompileDependsOn);GeneratedImageClasses</CoreCompileDependsOn>

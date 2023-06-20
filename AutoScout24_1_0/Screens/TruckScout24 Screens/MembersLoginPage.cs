@@ -12,13 +12,9 @@ using Progile.TRIO.EnvironmentModel;
 using static TestImages.AutoScout24;
 
 
-namespace AutoScout24_Model.Screens.WindowsOS
+namespace AutoScout24_Model.Screens.TruckScout24Screens
 {
-	public partial class FileExplorer
+	public partial class MembersLoginPage
 	{
-        partial void ConfigureElementProperties()
-        {
-            
-        }
-    }
+	}
 }
