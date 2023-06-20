@@ -223,13 +223,13 @@ public class ScreenElementExampleInteractions : TestCase
     {
         //https://www.scout24.com/en/investor-relations/share/share-price
 
-        /*
+        
         //to see the Table scroll down and activate the Yearly Performance Tab 
         if (!App.SharePriceScreen.YearlyPerformanceTab.IsActive())
             App.SharePriceScreen.YearlyPerformanceTab.Click(App.SharePriceScreen.YearlyPerformanceTab.WaitForActive);
 
 
-        */
+        
     }
 
 }
