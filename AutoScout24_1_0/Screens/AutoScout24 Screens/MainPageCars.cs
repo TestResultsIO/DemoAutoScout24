@@ -14,11 +14,21 @@ using static TestImages.AutoScout24;
 
 namespace AutoScout24_Model.Screens.AutoScout24Screens
 {
-    public partial class MainPage
+    public partial class MainPageCars
     {
         partial void ConfigureElementProperties()
         {
             PriceUpToDropdown.UseCachedPosition = true; //there is no label, only the selected value
+        }
+
+        [ModelCapability("Search a car")]
+        public void SearchCar([DisplayName("Make")] string make, [DisplayName("Model")] string model, [DisplayName("First Registration [Year]")] int firstRegistrationYear)
+        {
+            Make.SelectValue(make);
+            Model.SelectValue(model);
+            FirstRegistration.SelectValue(firstRegistrationYear.ToString());
+
+            ResultsButton.Click(ResultsButton.WaitForDisappear);
         }
     }
 }

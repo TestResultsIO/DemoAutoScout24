@@ -143,8 +143,53 @@
     ]
   },
   {
+    "TypeName": "AutoScout24_Model.Screens.AutoScout24Screens.CarPreview",
+    "Interactions": [
+      {
+        "Parameters": [],
+        "MethodName": "WaitForAppear",
+        "DisplayName": "Verify element appears",
+        "IsVerification": true,
+        "PassedMessage": "The element {this} was displayed on the screen.",
+        "FailedMessage": "The element {this} was not found on the screen."
+      },
+      {
+        "Parameters": [],
+        "MethodName": "WaitForDisappear",
+        "DisplayName": "Verify element disappears",
+        "IsVerification": true,
+        "PassedMessage": "The element {this} disappeared from the screen.",
+        "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+      }
+    ]
+  },
+  {
     "TypeName": "AutoScout24_Model.Screens.AutoScout24Screens.DetailSearch",
     "Interactions": [
+      {
+        "Parameters": [
+          {
+            "Name": "make",
+            "DisplayName": "Make",
+            "Type": "string"
+          },
+          {
+            "Name": "model",
+            "DisplayName": "Model",
+            "Type": "string"
+          },
+          {
+            "Name": "variant",
+            "DisplayName": "Variant",
+            "Type": "string"
+          }
+        ],
+        "MethodName": "SearchCar",
+        "DisplayName": "Search a car",
+        "IsVerification": false,
+        "PassedMessage": null,
+        "FailedMessage": null
+      },
       {
         "Parameters": [],
         "MethodName": "WaitForAppear",
@@ -201,8 +246,32 @@
     ]
   },
   {
-    "TypeName": "AutoScout24_Model.Screens.AutoScout24Screens.MainPage",
+    "TypeName": "AutoScout24_Model.Screens.AutoScout24Screens.MainPageCars",
     "Interactions": [
+      {
+        "Parameters": [
+          {
+            "Name": "make",
+            "DisplayName": "Make",
+            "Type": "string"
+          },
+          {
+            "Name": "model",
+            "DisplayName": "Model",
+            "Type": "string"
+          },
+          {
+            "Name": "firstRegistrationYear",
+            "DisplayName": "First Registration [Year]",
+            "Type": "int"
+          }
+        ],
+        "MethodName": "SearchCar",
+        "DisplayName": "Search a car",
+        "IsVerification": false,
+        "PassedMessage": null,
+        "FailedMessage": null
+      },
       {
         "Parameters": [],
         "MethodName": "WaitForAppear",

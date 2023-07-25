@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 
 using Progile.ATE.Common;
@@ -19,6 +20,15 @@ namespace AutoScout24_Model.Screens.AutoScout24Screens
         partial void ConfigureElementProperties()
         {
             CanScrollToFindElement = true;
+            UseScreenMonitoringAfterInteraction = true;
+        }
+
+        [ModelCapability("Search a car")]
+        public void SearchCar([DisplayName("Make")] string make, [DisplayName("Model")] string model, [DisplayName("Variant")] string variant)
+        {
+            MakeDropdownWithSearchbox.SelectValueWithSearch(make);
+            ModelDropdownWithSearchbox.SelectValueWithSearch(model);
+            VariantTextbox.Enter(variant);
         }
     }
 }

@@ -1,6 +1,4 @@
-﻿using System.Security.Principal;
-
-[TestCase(1)]
+﻿[TestCase(1)]
 public class ScreenElementExampleInteractions : TestCase
 {
     /// <summary>
@@ -18,31 +16,31 @@ public class ScreenElementExampleInteractions : TestCase
         //these examples are from the Main Page of https://www.autoscout24.com/
 
         //in most cases this verification is that a new Screen (or element) appears
-        App.MainPage.ResultsButton.Click(App.SearchResults.WaitForAppear);
+        App.MainPageCars.ResultsButton.Click(App.SearchResults.WaitForAppear);
 
         //or you can also check if an element disappears
-        App.MainPage.ResultsButton.Click(App.MainPage.WaitForDisappear);
+        App.MainPageCars.ResultsButton.Click(App.MainPageCars.WaitForDisappear);
 
         //if there is really nothing that appears or disappears you can check that at least the screen updates
         //or write your own customized verification
-        App.MainPage.ResultsButton.ClickWithUpdateCheck(ImgDiffTolerance.Medium);
+        App.MainPageCars.ResultsButton.ClickWithUpdateCheck(ImgDiffTolerance.Medium);
 
         //if you have a Button with different Active and Inactive states and recorded their Images
         //you can check the current state and depending on it continue on a different path
-        if (App.MainPage.ResultsButton.IsActive())
+        if (App.MainPageCars.ResultsButton.IsActive())
         {
-            App.MainPage.ResultsButton.Click(App.SearchResults.WaitForAppear);
+            App.MainPageCars.ResultsButton.Click(App.SearchResults.WaitForAppear);
         }
         else
         {
-            App.MainPage.RefineSearchLink.Click(App.DetailSearch.WaitForAppear);
+            App.MainPageCars.RefineSearchLink.Click(App.DetailSearch.WaitForAppear);
         }
 
         //IsActive is the current state, in case you want to verify that it changes the state use WaitForActive / WaitForInactive
         //for example after we selected something in a dropdown, we expect the Button to become active
-        App.MainPage.PriceUpToDropdown.SelectValue("5,000");
+        App.MainPageCars.PriceUpToDropdown.SelectValue("5,000");
         t.Report.PassFailStep(
-            App.MainPage.ResultsButton.WaitForActive(),
+            App.MainPageCars.ResultsButton.WaitForActive(),
             "The Results Button became active after selecting a price range.",
             "The Results Button was not active after selecting a price range."
         );
@@ -117,12 +115,12 @@ public class ScreenElementExampleInteractions : TestCase
 
         //these examples are from the Main Page of https://www.autoscout24.com/
         //Dropdown:
-        App.MainPage.PriceUpToDropdown.SelectValue("2,500");
+        App.MainPageCars.PriceUpToDropdown.SelectValue("2,500");
 
         //the dropdown has no label, but only displayes the current value
         //so in the MainPage class file we set "PriceUpToDropdown.UseCachedPosition = true;"
         //so the dropdown can still be used even if "Price up to" is no longer visible
-        App.MainPage.PriceUpToDropdown.SelectValue("15,000");
+        App.MainPageCars.PriceUpToDropdown.SelectValue("15,000");
 
         //the german version of the page has Dropdown Menus at the top https://www.autoscout24.de/
         //DropdownMenu:
@@ -186,9 +184,9 @@ public class ScreenElementExampleInteractions : TestCase
         //the value is hereby identified by some Label on the Screen, the relative position of the value from the label, and a grid width and height
         //in this example we read the value on the left of the "results" button, on how many results are available
         //https://www.autoscout24.com/
-        string numberOfResults = App.MainPage.NumberOfResultsLabelWithValue.ReadValue();
-        bool fourResultsFound = App.MainPage.NumberOfResultsLabelWithValue.VerifyValue("4");
-        App.MainPage.NumberOfResultsLabelWithValue.WaitForValue("4",TimeSpan.FromSeconds(30),out string actualValue);
+        string numberOfResults = App.MainPageCars.NumberOfResultsLabelWithValue.ReadValue();
+        bool fourResultsFound = App.MainPageCars.NumberOfResultsLabelWithValue.VerifyValue("4");
+        App.MainPageCars.NumberOfResultsLabelWithValue.WaitForValue("4",TimeSpan.FromSeconds(30),out string actualValue);
     }
 
     //Textbox & PwTextbox

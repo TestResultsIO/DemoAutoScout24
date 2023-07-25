@@ -13,11 +13,14 @@ namespace AutoScout24_Model
             return true;
         }
 
-        //[PreconditionStep(
-        //    TestInput = "",
-        //    ExpectedResults = "")]
-        //public virtual void PreconditionStep(ITester t)
-        //{ }
+        [PreconditionStep(
+            TestInput = "Load AutoScout24 and accept cookies.",
+            ExpectedResults = "AutoScout24 main page is displayed")]
+        public virtual void PreconditionStep(ITester t)
+        {
+            if (App.MainMenu.AcceptAllCookies.WaitForAppear())
+                App.MainMenu.AcceptAllCookies.Click(App.MainMenu.AcceptAllCookies.WaitForDisappear);
+        }
 
         //[CleanupStep(
         //    TestInput = "",

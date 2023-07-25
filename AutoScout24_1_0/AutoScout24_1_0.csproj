@@ -58,6 +58,10 @@
     <Compile Include="CustomScreenElements\DropdownWithSearchbox.cs" />
     <Compile Include="Helpers\OcrParams.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Screens\AutoScout24 Screens\CarPreview.cs" />
+    <Compile Include="Screens\AutoScout24 Screens\CarPreview.g.cs">
+      <DependentUpon>CarPreview.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\AutoScout24 Screens\DetailSearch.cs" />
     <Compile Include="Screens\AutoScout24 Screens\DetailSearch.g.cs">
       <DependentUpon>DetailSearch.cs</DependentUpon>
@@ -66,9 +70,9 @@
     <Compile Include="Screens\AutoScout24 Screens\MainMenu.g.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Screens\AutoScout24 Screens\MainPage.cs" />
-    <Compile Include="Screens\AutoScout24 Screens\MainPage.g.cs">
-      <DependentUpon>MainPage.cs</DependentUpon>
+    <Compile Include="Screens\AutoScout24 Screens\MainPageCars.cs" />
+    <Compile Include="Screens\AutoScout24 Screens\MainPageCars.g.cs">
+      <DependentUpon>MainPageCars.cs</DependentUpon>
     </Compile>
     <Compile Include="Screens\AutoScout24 Screens\SearchResults.cs" />
     <Compile Include="Screens\AutoScout24 Screens\SearchResults.g.cs">
@@ -114,7 +118,6 @@
     <Compile Include="Screens\WindowsOS\FileProperties.g.cs">
       <DependentUpon>FileProperties.cs</DependentUpon>
     </Compile>
-    <Compile Include="TestData\Car.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -141,16 +144,13 @@
     </None>
     <None Include="ModelCapabilities.json" />
     <None Include="SoftwareModel.json" />
-    <None Include="TestData\TestData_Cars.xlsx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Progile.ATE.Extensions.Excel">
-      <Version>1.1.0</Version>
+      <Version>1.1.1</Version>
     </PackageReference>
     <PackageReference Include="Progile.TRIO.BaseModel">
-      <Version>5.2.0</Version>
+      <Version>5.2.1</Version>
     </PackageReference>
     <PackageReference Include="Progile.TRIO.EnvironmentModel.Windows">
       <Version>5.2.0</Version>
@@ -189,12 +189,6 @@
     <None Include="Images\AutoScout24 Screens\MainMenu\Screen_Image\Screen_Image.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Images\AutoScout24 Screens\MainMenu\Screen_Loaded\Screen_Loaded.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\AutoScout24 Screens\MainMenu\Screen_Loaded\Screen_Loaded1.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Include="Images\AutoScout24 Screens\MainMenu\Trucks\active\active.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -229,13 +223,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\AutoScout24 Screens\MainPage\Refine search Link\active\active.png">
+    <None Include="Images\AutoScout24 Screens\MainPageCars\Refine search Link\active\active.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Images\AutoScout24 Screens\MainPage\Screen_Image\Screen_Image.png">
+    <None Include="Images\AutoScout24 Screens\MainPageCars\Screen_Image\Screen_Image.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Images\AutoScout24 Screens\MainPage\Screen_Loaded\Screen_Loaded.png">
+    <None Include="Images\AutoScout24 Screens\MainPageCars\Screen_Loaded\Screen_Loaded.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
@@ -305,12 +299,12 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\AutoScout24 Screens\MainPage\ResultsButton\active\active.png">
+    <None Include="Images\AutoScout24 Screens\MainPageCars\ResultsButton\active\active.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\AutoScout24 Screens\MainPage\PriceUpToDropdown\DropdownTextBox\DropdownTextBox.png">
+    <None Include="Images\AutoScout24 Screens\MainPageCars\PriceUpToDropdown\DropdownTextBox\DropdownTextBox.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
@@ -404,6 +398,12 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Images\AutoScout24 Screens\MainMenu\Menu Button\active\active_dark.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\AutoScout24 Screens\MainMenu\Menu Button\inactive\inactive_dark.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <Content Include="Images\Scout24_com Screens\SharePriceScreen\Yearly Performance Table\Column2019\Column2019.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -431,6 +431,55 @@
     <Content Include="Images\Scout24_com Screens\SharePriceScreen\Yearly Performance Tab\inactive\inactive.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\AutoScout24 Screens\MainPageCars\First registration\DropdownTextBox\DropdownTextBox.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\AutoScout24 Screens\MainPageCars\Make\DropdownTextBox\DropdownTextBox.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\AutoScout24 Screens\MainPageCars\Model\DropdownTextBox\DropdownTextBox.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\AutoScout24 Screens\CarPreview\First Registration\Label search image.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\AutoScout24 Screens\CarPreview\Fuel Type\Label search image.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\AutoScout24 Screens\CarPreview\Gearbox\Label search image.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\AutoScout24 Screens\CarPreview\Mileage\Mileage.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\AutoScout24 Screens\CarPreview\Power\Label search image.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\AutoScout24 Screens\CarPreview\Screen_Image\Screen_Image.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\AutoScout24 Screens\CarPreview\Screen_Loaded\Screen_Loaded.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\AutoScout24 Screens\MainMenu\Accept All Cookies\active\active.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\AutoScout24 Screens\MainMenu\Screen_Loaded\Screen_Loaded.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\AutoScout24 Screens\MainMenu\Screen_Loaded\Screen_Loaded_dark.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
