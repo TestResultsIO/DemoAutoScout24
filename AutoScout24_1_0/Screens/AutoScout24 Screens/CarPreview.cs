@@ -14,7 +14,11 @@ using static TestImages.AutoScout24;
 
 namespace AutoScout24_Model.Screens.AutoScout24Screens
 {
-    public partial class MainPage
-    {
-    }
+	public partial class CarPreview
+	{
+		public void InitializeScreenSelect(Select select)
+		{
+			ScreenSelect = select;
+        }
+	}
 }

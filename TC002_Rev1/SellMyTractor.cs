@@ -6,7 +6,7 @@ public class SellMyTractor : TestCase
     [PreconditionStep(
         TestInput = @"Browser is open with https://www.autoscout24.com/",
         ExpectedResults = @"AutoScout24 Main Page was found")]
-    public void PreconditionStep(ITester t)
+    public override void  PreconditionStep(ITester t)
     {
         /*
          * if the test is executed on the portal the browser will be opened
@@ -15,7 +15,8 @@ public class SellMyTractor : TestCase
          * if you run this testcase in Visual Studio make sure to connect 
          * to your test environment and open https://www.autoscout24.com/ there in Microsoft Edge
         */
-        t.Report.PassFailStep(App.MainPage.WaitForAppear(), $@"The element {/*element*/ App.MainPage} was displayed on the screen.", $@"The element {/*element*/ App.MainPage} was not found on the screen.");
+        base.PreconditionStep(t);
+        t.Report.PassFailStep(App.MainPageCars.WaitForAppear(), $@"The element {/*element*/ App.MainPageCars} was displayed on the screen.", $@"The element {/*element*/ App.MainPageCars} was not found on the screen.");
     }
 
     [TestStep(1, 

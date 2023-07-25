@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C6D8B5F2-9B7D-491C-B041-ABD2CCD8B20E}</ProjectGuid>
+    <ProjectGuid>{4B9D9BAA-688B-487B-B4A0-FDEC78395899}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TC003_Rev1</RootNamespace>
-    <AssemblyName>TC003_Rev1</AssemblyName>
+    <RootNamespace>TC004_Rev1</RootNamespace>
+    <AssemblyName>TC004_Rev1</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
@@ -51,7 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ScreenElementExampleInteractions.cs" />
+    <Compile Include="TestdataFromExcel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -61,6 +61,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Progile.ATE.Extensions.Excel">
+      <Version>1.1.1</Version>
+    </PackageReference>
     <PackageReference Include="Progile.TRIO.BaseModel">
       <Version>5.2.1</Version>
     </PackageReference>
