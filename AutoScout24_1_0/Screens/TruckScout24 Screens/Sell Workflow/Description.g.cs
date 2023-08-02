@@ -28,6 +28,8 @@ namespace AutoScout24_Model.Screens.TruckScout24Screens.SellWorkflow
             UploadImageButton = new Progile.TRIO.BaseModel.Button(tester: t, displayName: "Upload Image Button", activeImageReference: Images.TruckScout24Screens.SellWorkflow.Description.UploadImageButton.active, useVisualSense: true, filters: ScreenSelect) { ParentElement = this };
             AlreadyRegisteredYes = new Progile.TRIO.BaseModel.LabelWithButton(tester: t, displayName: "Already Registered Yes", buttonPosition: RelativePosition.Below, imageReferenceForLabel: Images.TruckScout24Screens.SellWorkflow.Description.AlreadyRegisteredYes.LabelImage, buttonActiveimageReference: Images.TruckScout24Screens.SellWorkflow.Description.AlreadyRegisteredYes.Button.active, buttonInactiveImageReference: Images.TruckScout24Screens.SellWorkflow.Description.AlreadyRegisteredYes.Button.inactive, filters: ScreenSelect) { ParentElement = this };
             ContinueButton = new Progile.TRIO.BaseModel.Button(tester: t, displayName: "Continue Button", activeImageReference: Images.TruckScout24Screens.SellWorkflow.Description.ContinueButton.active, useVisualSense: true, filters: ScreenSelect) { ParentElement = this };
+            CanScrollToFindElement = true;
+            VehicleTypeTextbox.TextBoxType = Progile.TRIO.BaseModel.TextBoxType.OCR;
 
             ConfigureElementProperties();
         }

@@ -18,9 +18,6 @@ namespace AutoScout24_Model.Screens.TruckScout24Screens.SellWorkflow
     {
         partial void ConfigureElementProperties()
         {
-            CanScrollToFindElement = true;
-
-            VehicleTypeTextbox.TextBoxType = TextBoxType.OCR;
             VehicleTypeTextbox.ClickOutBeforeOCR = false;
 
             SubstructureDropdown.DropdownListOcrParas.SearchLevel = SearchLevel.Words;

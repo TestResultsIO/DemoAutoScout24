@@ -20,6 +20,7 @@ namespace AutoScout24_Model.Screens.AutoScout24Screens
         {
             App = app;
             OffersFound = new Progile.TRIO.BaseModel.LabelWithValue(tester: t, displayName: "Offers found", valuePosition: RelativePosition.Left, imageReferenceForLabel: Images.AutoScout24Screens.SearchResults.OffersFound, gridWidth: 125, filters: ScreenSelect) { ParentElement = this };
+            CanScrollToFindElement = true;
 
             ConfigureElementProperties();
         }

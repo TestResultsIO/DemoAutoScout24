@@ -19,7 +19,6 @@ namespace AutoScout24_Model.Screens.AutoScout24Screens
 
         partial void ConfigureElementProperties()
         {
-            AcceptAllCookies.WaitTimeInSeconds = 2;
         }
 
         [ModelCapability("Go To Trucks")]

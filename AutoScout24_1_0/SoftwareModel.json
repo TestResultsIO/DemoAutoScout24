@@ -309,6 +309,16 @@
         "Width": 1024,
         "Height": 768
       },
+      "ScreenEditorPropertySavedValues": [
+        {
+          "PropertyName": "CanScrollToFindElement",
+          "Value": true
+        },
+        {
+          "PropertyName": "UseScreenMonitoringAfterInteraction",
+          "Value": true
+        }
+      ],
       "Elements": [
         {
           "Id": "ec8c01fa-28fa-4e3a-8d66-01e45bce4e91",
@@ -599,6 +609,12 @@
         "Width": 1024,
         "Height": 768
       },
+      "ScreenEditorPropertySavedValues": [
+        {
+          "PropertyName": "CanScrollToFindElement",
+          "Value": true
+        }
+      ],
       "Elements": [
         {
           "Id": "5a564821-d521-4af6-8120-b578312edaf3",
@@ -852,6 +868,12 @@
               "Value": "ScreenSelect"
             }
           ],
+          "ScreenEditorPropertySavedValues": [
+            {
+              "PropertyName": "WaitTimeInSeconds",
+              "Value": 2
+            }
+          ],
           "ClassFiles": []
         }
       ]
@@ -871,6 +893,12 @@
         "Width": 1024,
         "Height": 768
       },
+      "ScreenEditorPropertySavedValues": [
+        {
+          "PropertyName": "CanScrollToFindElement",
+          "Value": true
+        }
+      ],
       "Elements": [
         {
           "Id": "c8371173-8336-4efd-be00-94dff0023e4c",
@@ -983,6 +1011,12 @@
         "Width": 1024,
         "Height": 768
       },
+      "ScreenEditorPropertySavedValues": [
+        {
+          "PropertyName": "CanScrollToFindElement",
+          "Value": true
+        }
+      ],
       "Elements": [
         {
           "Id": "f36337d2-1e8a-4899-adef-dadd42549d3e",
@@ -1132,6 +1166,12 @@
             {
               "Name": "filters",
               "Value": "ScreenSelect"
+            }
+          ],
+          "ScreenEditorPropertySavedValues": [
+            {
+              "PropertyName": "TextBoxType",
+              "Value": "OCR"
             }
           ],
           "ClassFiles": []

@@ -20,6 +20,7 @@ namespace AutoScout24_Model.Screens.TruckScout24Screens
         {
             App = app;
             SellNowButton = new Progile.TRIO.BaseModel.Button(tester: t, displayName: "Sell Now Button", activeImageReference: Images.TruckScout24Screens.TruckscoutMainPage.SellNowButton.active, useVisualSense: true, filters: ScreenSelect) { ParentElement = this };
+            CanScrollToFindElement = true;
 
             ConfigureElementProperties();
         }

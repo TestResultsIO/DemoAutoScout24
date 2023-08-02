@@ -24,6 +24,7 @@ namespace AutoScout24_Model.Screens.AutoScout24Screens
             Motorbikes = new Progile.TRIO.BaseModel.Button(tester: t, displayName: "Motorbikes", activeImageReference: Images.AutoScout24Screens.MainMenu.Motorbikes.active, useVisualSense: false, filters: ScreenSelect) { ParentElement = this };
             Trucks = new Progile.TRIO.BaseModel.Button(tester: t, displayName: "Trucks", activeImageReference: Images.AutoScout24Screens.MainMenu.Trucks.active, useVisualSense: false, filters: ScreenSelect) { ParentElement = this };
             AcceptAllCookies = new Progile.TRIO.BaseModel.Button(tester: t, displayName: "Accept All Cookies", activeImageReference: Images.AutoScout24Screens.MainMenu.AcceptAllCookies.active, useVisualSense: false, filters: ScreenSelect) { ParentElement = this };
+            AcceptAllCookies.WaitTimeInSeconds = 2;
 
             ConfigureElementProperties();
         }

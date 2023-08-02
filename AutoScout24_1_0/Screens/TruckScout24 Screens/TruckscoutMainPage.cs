@@ -18,7 +18,6 @@ namespace AutoScout24_Model.Screens.TruckScout24Screens
     {
         partial void ConfigureElementProperties()
         {
-            CanScrollToFindElement = true;
         }
     }
 }

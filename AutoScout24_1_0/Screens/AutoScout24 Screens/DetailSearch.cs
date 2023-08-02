@@ -19,8 +19,6 @@ namespace AutoScout24_Model.Screens.AutoScout24Screens
     {
         partial void ConfigureElementProperties()
         {
-            CanScrollToFindElement = true;
-            UseScreenMonitoringAfterInteraction = true;
         }
 
         [ModelCapability("Search a car")]

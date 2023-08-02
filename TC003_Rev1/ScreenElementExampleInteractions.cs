@@ -204,7 +204,7 @@ public class ScreenElementExampleInteractions : TestCase
         bool usernameIsDemo = App.MembersLoginPage.UsernameTextbox.VerifyText("demo");
 
         //in case the clipboard does not work (for example the textbox is read only) use Optical character recognition (OCR)
-        App.MembersLoginPage.UsernameTextbox.TextBoxType = TextBoxType.OCR; //usually set this in ConfigureElementProperties on the Screen class
+        App.MembersLoginPage.UsernameTextbox.TextBoxType = TextBoxType.OCR; //usually set this in Advanced Settings when creating/editing the Textbox
         string usernameTextByOcr = App.MembersLoginPage.UsernameTextbox.GetText();
 
         //if there is no way to verify what has been entered use EnterWithoutVerification
