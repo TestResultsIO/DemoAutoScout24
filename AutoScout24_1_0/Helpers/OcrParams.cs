@@ -17,5 +17,14 @@ namespace AutoScout24_Model.Helpers
             Accuracy = 0.4,
             Preprocessing = new OcrPreprocessingParameters { Upscale = true }
         };
+
+        //Setting with enabled anchors
+        //for example "Farmyard Tractor" is no longer a match if we look for "Tractor"
+        public static OcrEngineParameters WithAnchors => new OcrEngineParameters
+        {
+            SearchLevel = SearchLevel.Words,
+            EnableStartStringAnchor = true,
+            EnableEndStringAnchor = true
+        };
     }
 }
