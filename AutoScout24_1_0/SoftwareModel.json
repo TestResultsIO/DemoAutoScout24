@@ -21,7 +21,6 @@
         "Width": 1024,
         "Height": 768
       },
-      "ScreenEditorProperties": {},
       "Elements": [
         {
           "Id": "10b2f61f-3fc7-4b5c-9845-99f9eb0579a3",
@@ -59,7 +58,6 @@
               "Value": "ScreenSelect"
             }
           ],
-          "ScreenEditorProperties": {},
           "ClassFiles": []
         },
         {
@@ -98,7 +96,6 @@
               "Value": "ScreenSelect"
             }
           ],
-          "ScreenEditorProperties": {},
           "ClassFiles": []
         },
         {
@@ -137,7 +134,6 @@
               "Value": "ScreenSelect"
             }
           ],
-          "ScreenEditorProperties": {},
           "ClassFiles": []
         },
         {
@@ -176,7 +172,6 @@
               "Value": "ScreenSelect"
             }
           ],
-          "ScreenEditorProperties": {},
           "ClassFiles": []
         },
         {
@@ -215,7 +210,6 @@
               "Value": "ScreenSelect"
             }
           ],
-          "ScreenEditorProperties": {},
           "ClassFiles": []
         },
         {
@@ -254,7 +248,6 @@
               "Value": "ScreenSelect"
             }
           ],
-          "ScreenEditorProperties": {},
           "ClassFiles": []
         },
         {
@@ -297,7 +290,6 @@
               "Value": "ScreenSelect"
             }
           ],
-          "ScreenEditorProperties": {},
           "ClassFiles": []
         }
       ]
@@ -317,7 +309,6 @@
         "Width": 1024,
         "Height": 768
       },
-      "ScreenEditorProperties": null,
       "Elements": [
         {
           "Id": "ec8c01fa-28fa-4e3a-8d66-01e45bce4e91",
@@ -346,7 +337,6 @@
               "Value": "ScreenSelect"
             }
           ],
-          "ScreenEditorProperties": null,
           "ClassFiles": []
         },
         {
@@ -376,7 +366,6 @@
               "Value": "ScreenSelect"
             }
           ],
-          "ScreenEditorProperties": null,
           "ClassFiles": []
         },
         {
@@ -415,7 +404,6 @@
               "Value": "ScreenSelect"
             }
           ],
-          "ScreenEditorProperties": null,
           "ClassFiles": []
         },
         {
@@ -454,7 +442,6 @@
               "Value": "ScreenSelect"
             }
           ],
-          "ScreenEditorProperties": null,
           "ClassFiles": []
         },
         {
@@ -505,7 +492,6 @@
               "Value": "ScreenSelect"
             }
           ],
-          "ScreenEditorProperties": null,
           "ClassFiles": []
         },
         {
@@ -556,7 +542,6 @@
               "Value": "ScreenSelect"
             }
           ],
-          "ScreenEditorProperties": null,
           "ClassFiles": []
         },
         {
@@ -595,7 +580,6 @@
               "Value": "ScreenSelect"
             }
           ],
-          "ScreenEditorProperties": null,
           "ClassFiles": []
         }
       ]
@@ -615,7 +599,6 @@
         "Width": 1024,
         "Height": 768
       },
-      "ScreenEditorProperties": null,
       "Elements": [
         {
           "Id": "5a564821-d521-4af6-8120-b578312edaf3",
@@ -657,7 +640,6 @@
               "Value": "ScreenSelect"
             }
           ],
-          "ScreenEditorProperties": null,
           "ClassFiles": []
         }
       ]
@@ -677,7 +659,6 @@
         "Width": 1024,
         "Height": 768
       },
-      "ScreenEditorProperties": {},
       "Elements": [
         {
           "Id": "4693d9e8-a77b-4718-9636-cceb6e24d06f",
@@ -719,7 +700,6 @@
               "Value": "ScreenSelect"
             }
           ],
-          "ScreenEditorProperties": {},
           "ClassFiles": []
         },
         {
@@ -758,7 +738,6 @@
               "Value": "ScreenSelect"
             }
           ],
-          "ScreenEditorProperties": {},
           "ClassFiles": []
         },
         {
@@ -797,7 +776,6 @@
               "Value": "ScreenSelect"
             }
           ],
-          "ScreenEditorProperties": {},
           "ClassFiles": []
         },
         {
@@ -836,7 +814,6 @@
               "Value": "ScreenSelect"
             }
           ],
-          "ScreenEditorProperties": {},
           "ClassFiles": []
         },
         {
@@ -875,7 +852,6 @@
               "Value": "ScreenSelect"
             }
           ],
-          "ScreenEditorProperties": {},
           "ClassFiles": []
         }
       ]
@@ -895,7 +871,6 @@
         "Width": 1024,
         "Height": 768
       },
-      "ScreenEditorProperties": null,
       "Elements": [
         {
           "Id": "c8371173-8336-4efd-be00-94dff0023e4c",
@@ -933,7 +908,6 @@
               "Value": "ScreenSelect"
             }
           ],
-          "ScreenEditorProperties": null,
           "ClassFiles": []
         }
       ]
@@ -953,7 +927,6 @@
         "Width": 1024,
         "Height": 768
       },
-      "ScreenEditorProperties": null,
       "Elements": [
         {
           "Id": "803145f6-3ac2-4c9c-8b73-c1fe16468ac4",
@@ -991,7 +964,6 @@
               "Value": "ScreenSelect"
             }
           ],
-          "ScreenEditorProperties": null,
           "ClassFiles": []
         }
       ]
@@ -1011,7 +983,6 @@
         "Width": 1024,
         "Height": 768
       },
-      "ScreenEditorProperties": null,
       "Elements": [
         {
           "Id": "f36337d2-1e8a-4899-adef-dadd42549d3e",
@@ -1049,7 +1020,6 @@
               "Value": "ScreenSelect"
             }
           ],
-          "ScreenEditorProperties": null,
           "ClassFiles": []
         },
         {
@@ -1088,7 +1058,6 @@
               "Value": "ScreenSelect"
             }
           ],
-          "ScreenEditorProperties": null,
           "ClassFiles": []
         },
         {
@@ -1127,7 +1096,6 @@
               "Value": "ScreenSelect"
             }
           ],
-          "ScreenEditorProperties": null,
           "ClassFiles": []
         },
         {
@@ -1166,7 +1134,6 @@
               "Value": "ScreenSelect"
             }
           ],
-          "ScreenEditorProperties": null,
           "ClassFiles": []
         },
         {
@@ -1205,7 +1172,6 @@
               "Value": "ScreenSelect"
             }
           ],
-          "ScreenEditorProperties": null,
           "ClassFiles": []
         },
         {
@@ -1240,7 +1206,6 @@
               "Value": "ScreenSelect"
             }
           ],
-          "ScreenEditorProperties": null,
           "ClassFiles": []
         },
         {
@@ -1279,7 +1244,6 @@
               "Value": "ScreenSelect"
             }
           ],
-          "ScreenEditorProperties": null,
           "ClassFiles": []
         },
         {
@@ -1326,7 +1290,6 @@
               "Value": "ScreenSelect"
             }
           ],
-          "ScreenEditorProperties": null,
           "ClassFiles": []
         },
         {
@@ -1365,7 +1328,6 @@
               "Value": "ScreenSelect"
             }
           ],
-          "ScreenEditorProperties": null,
           "ClassFiles": []
         }
       ]
@@ -1385,7 +1347,6 @@
         "Width": 816,
         "Height": 361
       },
-      "ScreenEditorProperties": null,
       "Elements": [
         {
           "Id": "73fd495f-02f0-4a45-8ae0-08cd85995c57",
@@ -1427,7 +1388,6 @@
               "Value": "ScreenSelect"
             }
           ],
-          "ScreenEditorProperties": null,
           "ClassFiles": []
         },
         {
@@ -1470,7 +1430,6 @@
               "Value": "ScreenSelect"
             }
           ],
-          "ScreenEditorProperties": null,
           "ClassFiles": []
         },
         {
@@ -1513,7 +1472,6 @@
               "Value": "ScreenSelect"
             }
           ],
-          "ScreenEditorProperties": null,
           "ClassFiles": []
         },
         {
@@ -1556,7 +1514,6 @@
               "Value": "ScreenSelect"
             }
           ],
-          "ScreenEditorProperties": null,
           "ClassFiles": []
         },
         {
@@ -1599,7 +1556,6 @@
               "Value": "ScreenSelect"
             }
           ],
-          "ScreenEditorProperties": null,
           "ClassFiles": []
         }
       ]
@@ -1619,7 +1575,6 @@
         "Width": 1600,
         "Height": 1200
       },
-      "ScreenEditorProperties": null,
       "Elements": [
         {
           "Id": "d3e17318-3e98-4784-b818-3ec280d75edf",
@@ -1653,7 +1608,6 @@
               "Value": "ScreenSelect"
             }
           ],
-          "ScreenEditorProperties": null,
           "ClassFiles": []
         },
         {
@@ -1680,7 +1634,6 @@
               "Value": "Images\\WindowsOS\\FileExplorer\\File Context Menu"
             }
           ],
-          "ScreenEditorProperties": null,
           "ClassFiles": []
         }
       ]
@@ -1700,7 +1653,6 @@
         "Width": 1600,
         "Height": 1200
       },
-      "ScreenEditorProperties": null,
       "Elements": []
     },
     {
@@ -1718,7 +1670,6 @@
         "Width": 1600,
         "Height": 1200
       },
-      "ScreenEditorProperties": null,
       "Elements": [
         {
           "Id": "4a8f712d-788b-49ae-bd70-072064b0846c",
@@ -1760,7 +1711,6 @@
               "Value": "ScreenSelect"
             }
           ],
-          "ScreenEditorProperties": null,
           "ClassFiles": []
         }
       ]
@@ -1780,7 +1730,6 @@
         "Width": 1600,
         "Height": 1200
       },
-      "ScreenEditorProperties": null,
       "Elements": []
     },
     {
@@ -1798,7 +1747,6 @@
         "Width": 1600,
         "Height": 1200
       },
-      "ScreenEditorProperties": null,
       "Elements": [
         {
           "Id": "0e27fb0e-ef9d-4e81-a90c-f0d127dc289e",
@@ -1836,7 +1784,6 @@
               "Value": "ScreenSelect"
             }
           ],
-          "ScreenEditorProperties": null,
           "ClassFiles": []
         },
         {
@@ -1879,7 +1826,6 @@
               "Value": "ScreenSelect"
             }
           ],
-          "ScreenEditorProperties": null,
           "ClassFiles": []
         }
       ]
@@ -1899,7 +1845,6 @@
         "Width": 1600,
         "Height": 1200
       },
-      "ScreenEditorProperties": null,
       "Elements": [
         {
           "Id": "0ec49233-3620-4a2c-9081-c1e85fe5e2e7",
@@ -1941,7 +1886,6 @@
               "Value": "ScreenSelect"
             }
           ],
-          "ScreenEditorProperties": null,
           "ClassFiles": []
         },
         {
@@ -1996,7 +1940,6 @@
               "Value": "Images\\Scout24_com Screens\\SharePriceScreen\\Yearly Performance Table\\Column2023"
             }
           ],
-          "ScreenEditorProperties": null,
           "ClassFiles": [
             "Screens\\Scout24.com Screens\\YearlyPerformanceTable"
           ]

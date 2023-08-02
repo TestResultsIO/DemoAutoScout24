@@ -401,33 +401,33 @@
     <None Include="Images\AutoScout24 Screens\MainMenu\Menu Button\inactive\inactive_dark.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <Content Include="Images\Scout24_com Screens\SharePriceScreen\Yearly Performance Table\Column2019\Column2019.png">
+    <None Include="Images\Scout24_com Screens\SharePriceScreen\Yearly Performance Table\Column2019\Column2019.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\Scout24_com Screens\SharePriceScreen\Yearly Performance Table\Column2020\Column2020.png">
+    </None>
+    <None Include="Images\Scout24_com Screens\SharePriceScreen\Yearly Performance Table\Column2020\Column2020.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\Scout24_com Screens\SharePriceScreen\Yearly Performance Table\Column2021\Column2021.png">
+    </None>
+    <None Include="Images\Scout24_com Screens\SharePriceScreen\Yearly Performance Table\Column2021\Column2021.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\Scout24_com Screens\SharePriceScreen\Yearly Performance Table\Column2022\Column2022.png">
+    </None>
+    <None Include="Images\Scout24_com Screens\SharePriceScreen\Yearly Performance Table\Column2022\Column2022.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\Scout24_com Screens\SharePriceScreen\Yearly Performance Table\Column2023\Column2023.png">
+    </None>
+    <None Include="Images\Scout24_com Screens\SharePriceScreen\Yearly Performance Table\Column2023\Column2023.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\Scout24_com Screens\SharePriceScreen\Yearly Performance Table\Scout24\Scout24.png">
+    </None>
+    <None Include="Images\Scout24_com Screens\SharePriceScreen\Yearly Performance Table\Scout24\Scout24.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    </None>
     <None Include="Images\Scout24_com Screens\SharePriceScreen\Yearly Performance Table\TableLoadedImage\TableLoadedImage.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <Content Include="Images\Scout24_com Screens\SharePriceScreen\Yearly Performance Tab\active\active.png">
+    <None Include="Images\Scout24_com Screens\SharePriceScreen\Yearly Performance Tab\active\active.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Images\Scout24_com Screens\SharePriceScreen\Yearly Performance Tab\inactive\inactive.png">
+    </None>
+    <None Include="Images\Scout24_com Screens\SharePriceScreen\Yearly Performance Tab\inactive\inactive.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\AutoScout24 Screens\MainPageCars\First registration\DropdownTextBox\DropdownTextBox.png">
