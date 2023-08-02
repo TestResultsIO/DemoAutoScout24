@@ -1152,6 +1152,20 @@
         "FailedMessage": "Verify the password (only length) on {this} failed"
       },
       {
+        "Parameters": [
+          {
+            "Name": "textToEnter",
+            "DisplayName": "Text to enter",
+            "Type": "string"
+          }
+        ],
+        "MethodName": "EnterWithoutVerification",
+        "DisplayName": "Enter without verification",
+        "IsVerification": false,
+        "PassedMessage": null,
+        "FailedMessage": null
+      },
+      {
         "Parameters": [],
         "MethodName": "PasteText",
         "DisplayName": "Paste from clipboard",
@@ -1217,6 +1231,20 @@
         ],
         "MethodName": "Enter",
         "DisplayName": "Enter",
+        "IsVerification": false,
+        "PassedMessage": null,
+        "FailedMessage": null
+      },
+      {
+        "Parameters": [
+          {
+            "Name": "textToEnter",
+            "DisplayName": "Text to enter",
+            "Type": "string"
+          }
+        ],
+        "MethodName": "EnterWithoutVerification",
+        "DisplayName": "Enter without verification",
         "IsVerification": false,
         "PassedMessage": null,
         "FailedMessage": null
