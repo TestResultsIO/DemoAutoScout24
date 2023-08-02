@@ -16,11 +16,9 @@ namespace AutoScout24_Model.Screens.AutoScout24Screens
 {
     public partial class MainMenu
     {
-        private AutoScout24App _app;
 
         partial void ConfigureElementProperties()
         {
-            _app = (AutoScout24App)AppBasics;
             AcceptAllCookies.WaitTimeInSeconds = 2;
         }
 
@@ -28,7 +26,7 @@ namespace AutoScout24_Model.Screens.AutoScout24Screens
         public void GoToTrucks()
         {
             OpenMenu();
-            Trucks.Click(_app.TruckscoutMainPage.WaitForAppear); //NOTE: to make this verification work, the _app Propertie on Line 19 and the ConfigureElementProperties method are required
+            Trucks.Click(App.TruckscoutMainPage.WaitForAppear); //NOTE: to make this verification work, the _app Propertie on Line 19 and the ConfigureElementProperties method are required
         }
 
         [ModelCapability("Open Menu")]

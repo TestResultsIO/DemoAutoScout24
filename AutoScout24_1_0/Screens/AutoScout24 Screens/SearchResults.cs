@@ -16,7 +16,6 @@ namespace AutoScout24_Model.Screens.AutoScout24Screens
 {
     public partial class SearchResults
     {
-        CarPreview CarPreview => ((AutoScout24App)AppBasics).CarPreview;
 
         partial void ConfigureElementProperties()
         {
@@ -24,7 +23,7 @@ namespace AutoScout24_Model.Screens.AutoScout24Screens
             CanScrollToFindElement = true;
         }
 
-        public CarPreview FindSpecificCarInResults(string name)
+        public void FindSpecificCarInResults(string name)
         {
             var carLabel = new Label(t, name, name);
             ScrollToElement(carLabel);
@@ -38,8 +37,7 @@ namespace AutoScout24_Model.Screens.AutoScout24Screens
                 select = t.SelectFromColorAtPoint(carLabel.Position);
             }
 
-            CarPreview.InitializeScreenSelect(select);
-            return CarPreview;
+            App.CarPreview.InitializeScreenSelect(select);
         }
     }
 }
