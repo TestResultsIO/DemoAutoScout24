@@ -333,6 +333,87 @@
     ]
   },
   {
+    "TypeName": "AutoScout24_Model.Screens.Scout24_comScreens.YearlyPerformanceTable",
+    "Interactions": [
+      {
+        "Parameters": [
+          {
+            "Name": "selection",
+            "DisplayName": "selection",
+            "Type": "Column"
+          },
+          {
+            "Name": "selectionValue",
+            "DisplayName": "selectionValue",
+            "Type": "string"
+          },
+          {
+            "Name": "verification",
+            "DisplayName": "verification",
+            "Type": "Column"
+          },
+          {
+            "Name": "expectedValue",
+            "DisplayName": "expectedValue",
+            "Type": "string"
+          },
+          {
+            "Name": "actualValue",
+            "DisplayName": "actualValue",
+            "Type": "out_string"
+          }
+        ],
+        "MethodName": "Verify",
+        "DisplayName": "Verify Cell Content",
+        "IsVerification": true,
+        "PassedMessage": "The expected value {expectedValue} was shown correctly in the row {selectionValue}.",
+        "FailedMessage": "The value was {actualValue} instead of the expected value {expectedValue}."
+      },
+      {
+        "Parameters": [],
+        "MethodName": "WaitForAppear",
+        "DisplayName": "Verify element appears",
+        "IsVerification": true,
+        "PassedMessage": "The element {this} was displayed on the screen.",
+        "FailedMessage": "The element {this} was not found on the screen."
+      },
+      {
+        "Parameters": [],
+        "MethodName": "WaitForDisappear",
+        "DisplayName": "Verify element disappears",
+        "IsVerification": true,
+        "PassedMessage": "The element {this} disappeared from the screen.",
+        "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+      }
+    ],
+    "Properties": [
+      {
+        "PropertyName": "Scout24",
+        "PropertyType": "Progile.TRIO.BaseModel.Column"
+      },
+      {
+        "PropertyName": "Column2019",
+        "PropertyType": "Progile.TRIO.BaseModel.Column"
+      },
+      {
+        "PropertyName": "Column2020",
+        "PropertyType": "Progile.TRIO.BaseModel.Column"
+      },
+      {
+        "PropertyName": "Column2021",
+        "PropertyType": "Progile.TRIO.BaseModel.Column"
+      },
+      {
+        "PropertyName": "Column2022",
+        "PropertyType": "Progile.TRIO.BaseModel.Column"
+      },
+      {
+        "PropertyName": "Column2023",
+        "PropertyType": "Progile.TRIO.BaseModel.Column"
+      }
+    ]
+  },
+  {
     "TypeName": "AutoScout24_Model.Screens.TruckScout24Screens.MembersLoginPage",
     "Interactions": [
       {
