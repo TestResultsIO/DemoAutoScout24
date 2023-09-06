@@ -7,17 +7,17 @@
           {
             "Name": "textboxValue",
             "DisplayName": "Textbox search Value",
-            "Type": "System.String"
+            "Type": "string"
           },
           {
             "Name": "dropdownValue",
             "DisplayName": "Select Value in Dropdown",
-            "Type": "System.String"
+            "Type": "string"
           }
         ],
         "MethodName": "SelectValueWithSearch",
         "DisplayName": "Select Value With different Search",
-        "ReturnType": "System.Void",
+        "IsVerification": false,
         "PassedMessage": null,
         "FailedMessage": null
       },
@@ -26,12 +26,12 @@
           {
             "Name": "value",
             "DisplayName": "Value",
-            "Type": "System.String"
+            "Type": "string"
           }
         ],
         "MethodName": "SelectValueWithSearch",
         "DisplayName": "Select Value With Search",
-        "ReturnType": "System.Void",
+        "IsVerification": false,
         "PassedMessage": null,
         "FailedMessage": null
       },
@@ -40,12 +40,12 @@
           {
             "Name": "value",
             "DisplayName": "Value",
-            "Type": "System.String"
+            "Type": "string"
           }
         ],
         "MethodName": "SelectValue",
         "DisplayName": "Select value",
-        "ReturnType": "System.Void",
+        "IsVerification": false,
         "PassedMessage": null,
         "FailedMessage": null
       },
@@ -54,7 +54,7 @@
           {
             "Name": "value",
             "DisplayName": "Expected value",
-            "Type": "System.String"
+            "Type": "string"
           },
           {
             "Name": "actualValue",
@@ -64,7 +64,7 @@
         ],
         "MethodName": "VerifySelectedValue",
         "DisplayName": "Verify the selected value",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The expected value {value} was shown correctly as the selected value on {this}.",
         "FailedMessage": "The selected value on {this} was {actualValue} instead of the expected value {value}."
       },
@@ -73,12 +73,12 @@
           {
             "Name": "value",
             "DisplayName": "Expected value",
-            "Type": "System.String"
+            "Type": "string"
           }
         ],
         "MethodName": "VerifyValueInList",
         "DisplayName": "Verify a value in the list",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The expected value {value} was shown in the dropdown list {this}.",
         "FailedMessage": "The expected value {value} was not shown in the dropdown list {this}."
       },
@@ -86,7 +86,7 @@
         "Parameters": [],
         "MethodName": "WaitForAppear",
         "DisplayName": "Verify element appears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} was displayed on the screen.",
         "FailedMessage": "The element {this} was not found on the screen."
       },
@@ -94,7 +94,7 @@
         "Parameters": [],
         "MethodName": "WaitForDisappear",
         "DisplayName": "Verify element disappears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} disappeared from the screen.",
         "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
       }
@@ -107,7 +107,7 @@
         "Parameters": [],
         "MethodName": "WaitForAppear",
         "DisplayName": "Verify element appears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} was displayed on the screen.",
         "FailedMessage": "The element {this} was not found on the screen."
       },
@@ -115,7 +115,7 @@
         "Parameters": [],
         "MethodName": "WaitForDisappear",
         "DisplayName": "Verify element disappears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} disappeared from the screen.",
         "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
       }
@@ -128,7 +128,7 @@
         "Parameters": [],
         "MethodName": "WaitForAppear",
         "DisplayName": "Verify element appears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} was displayed on the screen.",
         "FailedMessage": "The element {this} was not found on the screen."
       },
@@ -136,7 +136,7 @@
         "Parameters": [],
         "MethodName": "WaitForDisappear",
         "DisplayName": "Verify element disappears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} disappeared from the screen.",
         "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
       }
@@ -149,7 +149,7 @@
         "Parameters": [],
         "MethodName": "WaitForAppear",
         "DisplayName": "Verify element appears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} was displayed on the screen.",
         "FailedMessage": "The element {this} was not found on the screen."
       },
@@ -157,7 +157,7 @@
         "Parameters": [],
         "MethodName": "WaitForDisappear",
         "DisplayName": "Verify element disappears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} disappeared from the screen.",
         "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
       }
@@ -171,22 +171,22 @@
           {
             "Name": "make",
             "DisplayName": "Make",
-            "Type": "System.String"
+            "Type": "string"
           },
           {
             "Name": "model",
             "DisplayName": "Model",
-            "Type": "System.String"
+            "Type": "string"
           },
           {
             "Name": "variant",
             "DisplayName": "Variant",
-            "Type": "System.String"
+            "Type": "string"
           }
         ],
         "MethodName": "SearchCar",
         "DisplayName": "Search a car",
-        "ReturnType": "System.Void",
+        "IsVerification": false,
         "PassedMessage": null,
         "FailedMessage": null
       },
@@ -194,7 +194,7 @@
         "Parameters": [],
         "MethodName": "WaitForAppear",
         "DisplayName": "Verify element appears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} was displayed on the screen.",
         "FailedMessage": "The element {this} was not found on the screen."
       },
@@ -202,7 +202,7 @@
         "Parameters": [],
         "MethodName": "WaitForDisappear",
         "DisplayName": "Verify element disappears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} disappeared from the screen.",
         "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
       }
@@ -215,7 +215,7 @@
         "Parameters": [],
         "MethodName": "GoToTrucks",
         "DisplayName": "Go To Trucks",
-        "ReturnType": "System.Void",
+        "IsVerification": false,
         "PassedMessage": null,
         "FailedMessage": null
       },
@@ -223,7 +223,7 @@
         "Parameters": [],
         "MethodName": "OpenMenu",
         "DisplayName": "Open Menu",
-        "ReturnType": "System.Void",
+        "IsVerification": false,
         "PassedMessage": null,
         "FailedMessage": null
       },
@@ -231,7 +231,7 @@
         "Parameters": [],
         "MethodName": "WaitForAppear",
         "DisplayName": "Verify element appears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} was displayed on the screen.",
         "FailedMessage": "The element {this} was not found on the screen."
       },
@@ -239,7 +239,7 @@
         "Parameters": [],
         "MethodName": "WaitForDisappear",
         "DisplayName": "Verify element disappears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} disappeared from the screen.",
         "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
       }
@@ -253,22 +253,22 @@
           {
             "Name": "make",
             "DisplayName": "Make",
-            "Type": "System.String"
+            "Type": "string"
           },
           {
             "Name": "model",
             "DisplayName": "Model",
-            "Type": "System.String"
+            "Type": "string"
           },
           {
             "Name": "firstRegistrationYear",
             "DisplayName": "First Registration [Year]",
-            "Type": "System.Int32"
+            "Type": "int"
           }
         ],
         "MethodName": "SearchCar",
         "DisplayName": "Search a car",
-        "ReturnType": "System.Void",
+        "IsVerification": false,
         "PassedMessage": null,
         "FailedMessage": null
       },
@@ -276,7 +276,7 @@
         "Parameters": [],
         "MethodName": "WaitForAppear",
         "DisplayName": "Verify element appears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} was displayed on the screen.",
         "FailedMessage": "The element {this} was not found on the screen."
       },
@@ -284,7 +284,7 @@
         "Parameters": [],
         "MethodName": "WaitForDisappear",
         "DisplayName": "Verify element disappears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} disappeared from the screen.",
         "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
       }
@@ -297,7 +297,7 @@
         "Parameters": [],
         "MethodName": "WaitForAppear",
         "DisplayName": "Verify element appears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} was displayed on the screen.",
         "FailedMessage": "The element {this} was not found on the screen."
       },
@@ -305,7 +305,7 @@
         "Parameters": [],
         "MethodName": "WaitForDisappear",
         "DisplayName": "Verify element disappears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} disappeared from the screen.",
         "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
       }
@@ -318,7 +318,7 @@
         "Parameters": [],
         "MethodName": "WaitForAppear",
         "DisplayName": "Verify element appears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} was displayed on the screen.",
         "FailedMessage": "The element {this} was not found on the screen."
       },
@@ -326,7 +326,7 @@
         "Parameters": [],
         "MethodName": "WaitForDisappear",
         "DisplayName": "Verify element disappears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} disappeared from the screen.",
         "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
       }
@@ -340,22 +340,22 @@
           {
             "Name": "selection",
             "DisplayName": "selection",
-            "Type": "Progile.TRIO.BaseModel.Column"
+            "Type": "Column"
           },
           {
             "Name": "selectionValue",
             "DisplayName": "selectionValue",
-            "Type": "System.String"
+            "Type": "string"
           },
           {
             "Name": "verification",
             "DisplayName": "verification",
-            "Type": "Progile.TRIO.BaseModel.Column"
+            "Type": "Column"
           },
           {
             "Name": "expectedValue",
             "DisplayName": "expectedValue",
-            "Type": "System.String"
+            "Type": "string"
           },
           {
             "Name": "actualValue",
@@ -365,7 +365,7 @@
         ],
         "MethodName": "Verify",
         "DisplayName": "Verify Cell Content",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The expected value {expectedValue} was shown correctly in the row {selectionValue}.",
         "FailedMessage": "The value was {actualValue} instead of the expected value {expectedValue}."
       },
@@ -373,7 +373,7 @@
         "Parameters": [],
         "MethodName": "WaitForAppear",
         "DisplayName": "Verify element appears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} was displayed on the screen.",
         "FailedMessage": "The element {this} was not found on the screen."
       },
@@ -381,7 +381,7 @@
         "Parameters": [],
         "MethodName": "WaitForDisappear",
         "DisplayName": "Verify element disappears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} disappeared from the screen.",
         "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
       }
@@ -420,7 +420,7 @@
         "Parameters": [],
         "MethodName": "WaitForAppear",
         "DisplayName": "Verify element appears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} was displayed on the screen.",
         "FailedMessage": "The element {this} was not found on the screen."
       },
@@ -428,7 +428,7 @@
         "Parameters": [],
         "MethodName": "WaitForDisappear",
         "DisplayName": "Verify element disappears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} disappeared from the screen.",
         "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
       }
@@ -441,7 +441,7 @@
         "Parameters": [],
         "MethodName": "WaitForAppear",
         "DisplayName": "Verify element appears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} was displayed on the screen.",
         "FailedMessage": "The element {this} was not found on the screen."
       },
@@ -449,7 +449,7 @@
         "Parameters": [],
         "MethodName": "WaitForDisappear",
         "DisplayName": "Verify element disappears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} disappeared from the screen.",
         "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
       }
@@ -462,7 +462,7 @@
         "Parameters": [],
         "MethodName": "WaitForAppear",
         "DisplayName": "Verify element appears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} was displayed on the screen.",
         "FailedMessage": "The element {this} was not found on the screen."
       },
@@ -470,7 +470,7 @@
         "Parameters": [],
         "MethodName": "WaitForDisappear",
         "DisplayName": "Verify element disappears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} disappeared from the screen.",
         "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
       }
@@ -483,7 +483,7 @@
         "Parameters": [],
         "MethodName": "WaitForAppear",
         "DisplayName": "Verify element appears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} was displayed on the screen.",
         "FailedMessage": "The element {this} was not found on the screen."
       },
@@ -491,7 +491,7 @@
         "Parameters": [],
         "MethodName": "WaitForDisappear",
         "DisplayName": "Verify element disappears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} disappeared from the screen.",
         "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
       }
@@ -504,7 +504,7 @@
         "Parameters": [],
         "MethodName": "WaitForAppear",
         "DisplayName": "Verify element appears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} was displayed on the screen.",
         "FailedMessage": "The element {this} was not found on the screen."
       },
@@ -512,7 +512,7 @@
         "Parameters": [],
         "MethodName": "WaitForDisappear",
         "DisplayName": "Verify element disappears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} disappeared from the screen.",
         "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
       }
@@ -525,7 +525,7 @@
         "Parameters": [],
         "MethodName": "WaitForAppear",
         "DisplayName": "Verify element appears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} was displayed on the screen.",
         "FailedMessage": "The element {this} was not found on the screen."
       },
@@ -533,7 +533,7 @@
         "Parameters": [],
         "MethodName": "WaitForDisappear",
         "DisplayName": "Verify element disappears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} disappeared from the screen.",
         "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
       }
@@ -546,7 +546,7 @@
         "Parameters": [],
         "MethodName": "WaitForAppear",
         "DisplayName": "Verify element appears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} was displayed on the screen.",
         "FailedMessage": "The element {this} was not found on the screen."
       },
@@ -554,7 +554,7 @@
         "Parameters": [],
         "MethodName": "WaitForDisappear",
         "DisplayName": "Verify element disappears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} disappeared from the screen.",
         "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
       }
@@ -573,7 +573,7 @@
         ],
         "MethodName": "Click",
         "DisplayName": "Click",
-        "ReturnType": "System.Void",
+        "IsVerification": false,
         "PassedMessage": null,
         "FailedMessage": null
       },
@@ -587,7 +587,7 @@
         ],
         "MethodName": "DoubleClick",
         "DisplayName": "Double-click",
-        "ReturnType": "System.Void",
+        "IsVerification": false,
         "PassedMessage": null,
         "FailedMessage": null
       },
@@ -601,7 +601,7 @@
         ],
         "MethodName": "Hover",
         "DisplayName": "Hover",
-        "ReturnType": "System.Void",
+        "IsVerification": false,
         "PassedMessage": null,
         "FailedMessage": null
       },
@@ -609,7 +609,7 @@
         "Parameters": [],
         "MethodName": "WaitForActive",
         "DisplayName": "Verify button becomes active",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The button {this} was active.",
         "FailedMessage": "The button {this} was not active."
       },
@@ -617,7 +617,7 @@
         "Parameters": [],
         "MethodName": "WaitForInactive",
         "DisplayName": "Verify button becomes inactive",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The button {this} was inactive.",
         "FailedMessage": "The button {this} was not inactive."
       },
@@ -625,7 +625,7 @@
         "Parameters": [],
         "MethodName": "WaitForAppear",
         "DisplayName": "Verify element appears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} was displayed on the screen.",
         "FailedMessage": "The element {this} was not found on the screen."
       },
@@ -633,7 +633,7 @@
         "Parameters": [],
         "MethodName": "WaitForDisappear",
         "DisplayName": "Verify element disappears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} disappeared from the screen.",
         "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
       }
@@ -646,7 +646,7 @@
         "Parameters": [],
         "MethodName": "IsChecked",
         "DisplayName": "Verify checkbox is checked",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The checkbox {this} was checked.",
         "FailedMessage": "The checkbox {this} was not checked."
       },
@@ -654,7 +654,7 @@
         "Parameters": [],
         "MethodName": "IsUnchecked",
         "DisplayName": "Verify checkbox is unchecked",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The checkbox {this} was unchecked.",
         "FailedMessage": "The checkbox {this} was unexpectedly checked."
       },
@@ -662,7 +662,7 @@
         "Parameters": [],
         "MethodName": "Check",
         "DisplayName": "Check",
-        "ReturnType": "System.Void",
+        "IsVerification": false,
         "PassedMessage": null,
         "FailedMessage": null
       },
@@ -670,7 +670,7 @@
         "Parameters": [],
         "MethodName": "Uncheck",
         "DisplayName": "Uncheck",
-        "ReturnType": "System.Void",
+        "IsVerification": false,
         "PassedMessage": null,
         "FailedMessage": null
       },
@@ -678,7 +678,7 @@
         "Parameters": [],
         "MethodName": "WaitForAppear",
         "DisplayName": "Verify element appears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} was displayed on the screen.",
         "FailedMessage": "The element {this} was not found on the screen."
       },
@@ -686,7 +686,7 @@
         "Parameters": [],
         "MethodName": "WaitForDisappear",
         "DisplayName": "Verify element disappears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} disappeared from the screen.",
         "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
       }
@@ -699,7 +699,7 @@
         "Parameters": [],
         "MethodName": "WaitForAppear",
         "DisplayName": "Verify element appears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} was displayed on the screen.",
         "FailedMessage": "The element {this} was not found on the screen."
       },
@@ -707,7 +707,7 @@
         "Parameters": [],
         "MethodName": "WaitForDisappear",
         "DisplayName": "Verify element disappears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} disappeared from the screen.",
         "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
       }
@@ -721,12 +721,12 @@
           {
             "Name": "value",
             "DisplayName": "Value",
-            "Type": "System.String"
+            "Type": "string"
           }
         ],
         "MethodName": "SelectValue",
         "DisplayName": "Select value",
-        "ReturnType": "System.Void",
+        "IsVerification": false,
         "PassedMessage": null,
         "FailedMessage": null
       },
@@ -735,7 +735,7 @@
           {
             "Name": "value",
             "DisplayName": "Expected value",
-            "Type": "System.String"
+            "Type": "string"
           },
           {
             "Name": "actualValue",
@@ -745,7 +745,7 @@
         ],
         "MethodName": "VerifySelectedValue",
         "DisplayName": "Verify the selected value",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The expected value {value} was shown correctly as the selected value on {this}.",
         "FailedMessage": "The selected value on {this} was {actualValue} instead of the expected value {value}."
       },
@@ -754,12 +754,12 @@
           {
             "Name": "value",
             "DisplayName": "Expected value",
-            "Type": "System.String"
+            "Type": "string"
           }
         ],
         "MethodName": "VerifyValueInList",
         "DisplayName": "Verify a value in the list",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The expected value {value} was shown in the dropdown list {this}.",
         "FailedMessage": "The expected value {value} was not shown in the dropdown list {this}."
       },
@@ -767,7 +767,7 @@
         "Parameters": [],
         "MethodName": "WaitForAppear",
         "DisplayName": "Verify element appears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} was displayed on the screen.",
         "FailedMessage": "The element {this} was not found on the screen."
       },
@@ -775,7 +775,7 @@
         "Parameters": [],
         "MethodName": "WaitForDisappear",
         "DisplayName": "Verify element disappears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} disappeared from the screen.",
         "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
       }
@@ -789,12 +789,12 @@
           {
             "Name": "selections",
             "DisplayName": "Submenus and value",
-            "Type": "System.String[]"
+            "Type": "string[]"
           }
         ],
         "MethodName": "SelectValueFromSubmenu",
         "DisplayName": "Select a value from a submenu",
-        "ReturnType": "System.Void",
+        "IsVerification": false,
         "PassedMessage": null,
         "FailedMessage": null
       },
@@ -803,12 +803,12 @@
           {
             "Name": "value",
             "DisplayName": "Value",
-            "Type": "System.String"
+            "Type": "string"
           }
         ],
         "MethodName": "SelectValue",
         "DisplayName": "Select value",
-        "ReturnType": "System.Void",
+        "IsVerification": false,
         "PassedMessage": null,
         "FailedMessage": null
       },
@@ -817,7 +817,7 @@
           {
             "Name": "value",
             "DisplayName": "Expected value",
-            "Type": "System.String"
+            "Type": "string"
           },
           {
             "Name": "actualValue",
@@ -827,7 +827,7 @@
         ],
         "MethodName": "VerifySelectedValue",
         "DisplayName": "Verify the selected value",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The expected value {value} was shown correctly as the selected value on {this}.",
         "FailedMessage": "The selected value on {this} was {actualValue} instead of the expected value {value}."
       },
@@ -836,12 +836,12 @@
           {
             "Name": "value",
             "DisplayName": "Expected value",
-            "Type": "System.String"
+            "Type": "string"
           }
         ],
         "MethodName": "VerifyValueInList",
         "DisplayName": "Verify a value in the list",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The expected value {value} was shown in the dropdown list {this}.",
         "FailedMessage": "The expected value {value} was not shown in the dropdown list {this}."
       },
@@ -849,7 +849,7 @@
         "Parameters": [],
         "MethodName": "WaitForAppear",
         "DisplayName": "Verify element appears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} was displayed on the screen.",
         "FailedMessage": "The element {this} was not found on the screen."
       },
@@ -857,7 +857,7 @@
         "Parameters": [],
         "MethodName": "WaitForDisappear",
         "DisplayName": "Verify element disappears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} disappeared from the screen.",
         "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
       }
@@ -870,7 +870,7 @@
         "Parameters": [],
         "MethodName": "WaitForAppear",
         "DisplayName": "Verify element appears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} was displayed on the screen.",
         "FailedMessage": "The element {this} was not found on the screen."
       },
@@ -878,7 +878,7 @@
         "Parameters": [],
         "MethodName": "WaitForDisappear",
         "DisplayName": "Verify element disappears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} disappeared from the screen.",
         "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
       }
@@ -891,7 +891,7 @@
         "Parameters": [],
         "MethodName": "WaitForAppear",
         "DisplayName": "Verify element appears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} was displayed on the screen.",
         "FailedMessage": "The element {this} was not found on the screen."
       },
@@ -899,7 +899,7 @@
         "Parameters": [],
         "MethodName": "WaitForDisappear",
         "DisplayName": "Verify element disappears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} disappeared from the screen.",
         "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
       }
@@ -918,7 +918,7 @@
         ],
         "MethodName": "Click",
         "DisplayName": "Click",
-        "ReturnType": "System.Void",
+        "IsVerification": false,
         "PassedMessage": null,
         "FailedMessage": null
       },
@@ -932,7 +932,7 @@
         ],
         "MethodName": "DoubleClick",
         "DisplayName": "Double-click",
-        "ReturnType": "System.Void",
+        "IsVerification": false,
         "PassedMessage": null,
         "FailedMessage": null
       },
@@ -946,7 +946,7 @@
         ],
         "MethodName": "Hover",
         "DisplayName": "Hover",
-        "ReturnType": "System.Void",
+        "IsVerification": false,
         "PassedMessage": null,
         "FailedMessage": null
       },
@@ -954,7 +954,7 @@
         "Parameters": [],
         "MethodName": "WaitForActive",
         "DisplayName": "Verify button becomes active",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The button {this} was active.",
         "FailedMessage": "The button {this} was not active."
       },
@@ -962,7 +962,7 @@
         "Parameters": [],
         "MethodName": "WaitForInactive",
         "DisplayName": "Verify button becomes inactive",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The button {this} was inactive.",
         "FailedMessage": "The button {this} was not inactive."
       },
@@ -970,7 +970,7 @@
         "Parameters": [],
         "MethodName": "WaitForAppear",
         "DisplayName": "Verify element appears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} was displayed on the screen.",
         "FailedMessage": "The element {this} was not found on the screen."
       },
@@ -978,7 +978,7 @@
         "Parameters": [],
         "MethodName": "WaitForDisappear",
         "DisplayName": "Verify element disappears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} disappeared from the screen.",
         "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
       }
@@ -991,7 +991,7 @@
         "Parameters": [],
         "MethodName": "WaitForAppear",
         "DisplayName": "Verify element appears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} was displayed on the screen.",
         "FailedMessage": "The element {this} was not found on the screen."
       },
@@ -999,7 +999,7 @@
         "Parameters": [],
         "MethodName": "WaitForDisappear",
         "DisplayName": "Verify element disappears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} disappeared from the screen.",
         "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
       }
@@ -1018,7 +1018,7 @@
         ],
         "MethodName": "Click",
         "DisplayName": "Click",
-        "ReturnType": "System.Void",
+        "IsVerification": false,
         "PassedMessage": null,
         "FailedMessage": null
       },
@@ -1032,7 +1032,7 @@
         ],
         "MethodName": "DoubleClick",
         "DisplayName": "Double-click",
-        "ReturnType": "System.Void",
+        "IsVerification": false,
         "PassedMessage": null,
         "FailedMessage": null
       },
@@ -1046,7 +1046,7 @@
         ],
         "MethodName": "Hover",
         "DisplayName": "Hover",
-        "ReturnType": "System.Void",
+        "IsVerification": false,
         "PassedMessage": null,
         "FailedMessage": null
       },
@@ -1054,7 +1054,7 @@
         "Parameters": [],
         "MethodName": "WaitForActive",
         "DisplayName": "Verify button becomes active",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The button {this} was active.",
         "FailedMessage": "The button {this} was not active."
       },
@@ -1062,7 +1062,7 @@
         "Parameters": [],
         "MethodName": "WaitForInactive",
         "DisplayName": "Verify button becomes inactive",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The button {this} was inactive.",
         "FailedMessage": "The button {this} was not inactive."
       },
@@ -1070,7 +1070,7 @@
         "Parameters": [],
         "MethodName": "WaitForAppear",
         "DisplayName": "Verify element appears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} was displayed on the screen.",
         "FailedMessage": "The element {this} was not found on the screen."
       },
@@ -1078,7 +1078,7 @@
         "Parameters": [],
         "MethodName": "WaitForDisappear",
         "DisplayName": "Verify element disappears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} disappeared from the screen.",
         "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
       }
@@ -1091,7 +1091,7 @@
         "Parameters": [],
         "MethodName": "IsChecked",
         "DisplayName": "Verify checkbox is checked",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The checkbox {this} was checked.",
         "FailedMessage": "The checkbox {this} was not checked."
       },
@@ -1099,7 +1099,7 @@
         "Parameters": [],
         "MethodName": "IsUnchecked",
         "DisplayName": "Verify checkbox is unchecked",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The checkbox {this} was unchecked.",
         "FailedMessage": "The checkbox {this} was unexpectedly checked."
       },
@@ -1107,7 +1107,7 @@
         "Parameters": [],
         "MethodName": "Check",
         "DisplayName": "Check",
-        "ReturnType": "System.Void",
+        "IsVerification": false,
         "PassedMessage": null,
         "FailedMessage": null
       },
@@ -1115,7 +1115,7 @@
         "Parameters": [],
         "MethodName": "Uncheck",
         "DisplayName": "Uncheck",
-        "ReturnType": "System.Void",
+        "IsVerification": false,
         "PassedMessage": null,
         "FailedMessage": null
       },
@@ -1123,7 +1123,7 @@
         "Parameters": [],
         "MethodName": "WaitForAppear",
         "DisplayName": "Verify element appears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} was displayed on the screen.",
         "FailedMessage": "The element {this} was not found on the screen."
       },
@@ -1131,7 +1131,7 @@
         "Parameters": [],
         "MethodName": "WaitForDisappear",
         "DisplayName": "Verify element disappears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} disappeared from the screen.",
         "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
       }
@@ -1145,7 +1145,7 @@
           {
             "Name": "value",
             "DisplayName": "Expected value",
-            "Type": "System.String"
+            "Type": "string"
           },
           {
             "Name": "actualValue",
@@ -1155,7 +1155,7 @@
         ],
         "MethodName": "VerifyValue",
         "DisplayName": "Verify the value",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The expected value {value} was shown correctly for {this}.",
         "FailedMessage": "The value for {this} was {actualValue} instead of the expected value {value}."
       },
@@ -1164,12 +1164,12 @@
           {
             "Name": "value",
             "DisplayName": "Expected value",
-            "Type": "System.String"
+            "Type": "string"
           },
           {
             "Name": "waitTime",
             "DisplayName": "Wait time",
-            "Type": "System.TimeSpan"
+            "Type": "TimeSpan"
           },
           {
             "Name": "actualValue",
@@ -1179,7 +1179,7 @@
         ],
         "MethodName": "WaitForValue",
         "DisplayName": "Wait for the value",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The expected value {value} was shown correctly for {this}.",
         "FailedMessage": "The value for {this} was {actualValue} after the timeout instead of the expected value {value}."
       },
@@ -1187,7 +1187,7 @@
         "Parameters": [],
         "MethodName": "WaitForAppear",
         "DisplayName": "Verify element appears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} was displayed on the screen.",
         "FailedMessage": "The element {this} was not found on the screen."
       },
@@ -1195,7 +1195,7 @@
         "Parameters": [],
         "MethodName": "WaitForDisappear",
         "DisplayName": "Verify element disappears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} disappeared from the screen.",
         "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
       }
@@ -1209,12 +1209,12 @@
           {
             "Name": "pw",
             "DisplayName": "Password",
-            "Type": "System.String"
+            "Type": "string"
           }
         ],
         "MethodName": "Enter",
         "DisplayName": "Enter",
-        "ReturnType": "System.Void",
+        "IsVerification": false,
         "PassedMessage": null,
         "FailedMessage": null
       },
@@ -1223,12 +1223,12 @@
           {
             "Name": "expectedText",
             "DisplayName": "expectedText",
-            "Type": "System.String"
+            "Type": "string"
           }
         ],
         "MethodName": "VerifyText",
         "DisplayName": "Verify the password (only length)",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "Verify the password (only length) on {this} passed",
         "FailedMessage": "Verify the password (only length) on {this} failed"
       },
@@ -1237,12 +1237,12 @@
           {
             "Name": "textToEnter",
             "DisplayName": "Text to enter",
-            "Type": "System.String"
+            "Type": "string"
           }
         ],
         "MethodName": "EnterWithoutVerification",
         "DisplayName": "Enter without verification",
-        "ReturnType": "System.Void",
+        "IsVerification": false,
         "PassedMessage": null,
         "FailedMessage": null
       },
@@ -1250,7 +1250,7 @@
         "Parameters": [],
         "MethodName": "PasteText",
         "DisplayName": "Paste from clipboard",
-        "ReturnType": "System.Void",
+        "IsVerification": false,
         "PassedMessage": null,
         "FailedMessage": null
       },
@@ -1259,7 +1259,7 @@
           {
             "Name": "expectedText",
             "DisplayName": "Expected text",
-            "Type": "System.String"
+            "Type": "string"
           },
           {
             "Name": "actualText",
@@ -1269,7 +1269,7 @@
         ],
         "MethodName": "VerifyText",
         "DisplayName": "Verify the text",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The expected text {expectedText} was shown correctly in {this}.",
         "FailedMessage": "The text in {this} was {actualText} instead of the expected text {expectedText}."
       },
@@ -1277,7 +1277,7 @@
         "Parameters": [],
         "MethodName": "ClickOutOfBox",
         "DisplayName": "Click out of the text box",
-        "ReturnType": "System.Void",
+        "IsVerification": false,
         "PassedMessage": null,
         "FailedMessage": null
       },
@@ -1285,7 +1285,7 @@
         "Parameters": [],
         "MethodName": "WaitForAppear",
         "DisplayName": "Verify element appears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} was displayed on the screen.",
         "FailedMessage": "The element {this} was not found on the screen."
       },
@@ -1293,7 +1293,7 @@
         "Parameters": [],
         "MethodName": "WaitForDisappear",
         "DisplayName": "Verify element disappears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} disappeared from the screen.",
         "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
       }
@@ -1307,12 +1307,12 @@
           {
             "Name": "textToEnter",
             "DisplayName": "Text to enter",
-            "Type": "System.String"
+            "Type": "string"
           }
         ],
         "MethodName": "Enter",
         "DisplayName": "Enter",
-        "ReturnType": "System.Void",
+        "IsVerification": false,
         "PassedMessage": null,
         "FailedMessage": null
       },
@@ -1321,12 +1321,12 @@
           {
             "Name": "textToEnter",
             "DisplayName": "Text to enter",
-            "Type": "System.String"
+            "Type": "string"
           }
         ],
         "MethodName": "EnterWithoutVerification",
         "DisplayName": "Enter without verification",
-        "ReturnType": "System.Void",
+        "IsVerification": false,
         "PassedMessage": null,
         "FailedMessage": null
       },
@@ -1334,7 +1334,7 @@
         "Parameters": [],
         "MethodName": "PasteText",
         "DisplayName": "Paste from clipboard",
-        "ReturnType": "System.Void",
+        "IsVerification": false,
         "PassedMessage": null,
         "FailedMessage": null
       },
@@ -1343,7 +1343,7 @@
           {
             "Name": "expectedText",
             "DisplayName": "Expected text",
-            "Type": "System.String"
+            "Type": "string"
           },
           {
             "Name": "actualText",
@@ -1353,7 +1353,7 @@
         ],
         "MethodName": "VerifyText",
         "DisplayName": "Verify the text",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The expected text {expectedText} was shown correctly in {this}.",
         "FailedMessage": "The text in {this} was {actualText} instead of the expected text {expectedText}."
       },
@@ -1361,7 +1361,7 @@
         "Parameters": [],
         "MethodName": "ClickOutOfBox",
         "DisplayName": "Click out of the text box",
-        "ReturnType": "System.Void",
+        "IsVerification": false,
         "PassedMessage": null,
         "FailedMessage": null
       },
@@ -1369,7 +1369,7 @@
         "Parameters": [],
         "MethodName": "WaitForAppear",
         "DisplayName": "Verify element appears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} was displayed on the screen.",
         "FailedMessage": "The element {this} was not found on the screen."
       },
@@ -1377,7 +1377,7 @@
         "Parameters": [],
         "MethodName": "WaitForDisappear",
         "DisplayName": "Verify element disappears",
-        "ReturnType": "System.Boolean",
+        "IsVerification": true,
         "PassedMessage": "The element {this} disappeared from the screen.",
         "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
       }
