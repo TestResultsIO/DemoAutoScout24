@@ -19,7 +19,6 @@ namespace AutoScout24_Model.Screens.TruckScout24Screens.SellWorkflow
         partial void ConfigureElementProperties()
         {
             VehicleTypeTextbox.ClickOutBeforeOCR = false;
-            SubstructureDropdown.DropdownListOcrParas = Helpers.OcrParams.WithAnchors;
         }
     }
 }

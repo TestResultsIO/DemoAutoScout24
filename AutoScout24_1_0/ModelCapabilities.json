@@ -1739,6 +1739,9 @@
     },
     {
       "FullName": "Progile.TRIO.BaseModel.OcrParams.ExactMatch"
+    },
+    {
+      "FullName": "AutoScout24_Model.Helpers.OcrParams.TextAlternative"
     }
   ]
 }

@@ -656,6 +656,12 @@
               "Value": "ScreenSelect"
             }
           ],
+          "ScreenEditorPropertySavedValues": [
+            {
+              "PropertyName": "ValueOcrParas",
+              "Value": "AutoScout24_Model.Helpers.OcrParams.TextAlternative"
+            }
+          ],
           "ClassFiles": []
         }
       ]
@@ -1052,6 +1058,12 @@
             {
               "Name": "filters",
               "Value": "ScreenSelect"
+            }
+          ],
+          "ScreenEditorPropertySavedValues": [
+            {
+              "PropertyName": "DropdownListOcrParas",
+              "Value": "Progile.TRIO.BaseModel.OcrParams.ExactMatch"
             }
           ],
           "ClassFiles": []
