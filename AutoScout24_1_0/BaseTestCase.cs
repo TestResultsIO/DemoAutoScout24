@@ -1,4 +1,5 @@
 ﻿using Progile.ATE.TestFramework;
+using Windows_Model;
 
 namespace AutoScout24_Model
 {
@@ -6,9 +7,12 @@ namespace AutoScout24_Model
     {
         protected AutoScout24App App { get; set; }
 
-        [SetupTest]
+        protected WindowsApp WindowsApp { get; set; }
+
+	    [SetupTest]
         public virtual bool Setup(ITester t)
         {
+            WindowsApp = new WindowsApp(t);
             App = new AutoScout24App(t);
             return true;
         }

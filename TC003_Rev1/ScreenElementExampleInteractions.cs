@@ -99,13 +99,13 @@ public class ScreenElementExampleInteractions : TestCase
     {
         //we use the file explorer as an example with a context menu (the menu that opens on a rightclick)
         App.SystemHelpers.RunProcess("explorer.exe");
-        App.FileExplorer.WaitFor();
-        var position = App.FileExplorer.DesktopLabel.WaitFor(); //the position is where we want to right click to open the menu
-        App.FileExplorer.FileContextMenu.SelectValue(position, "Properties"); //opens the context menu with a rightclick on position and inside the menu selects the "Properties"
-        App.FileProperties.WaitFor(); //After selecting "Properties" in the context menu, the File Properties open
+        WindowsApp.FileExplorer.WaitFor();
+        var position = WindowsApp.FileExplorer.DesktopLabel.WaitFor(); //the position is where we want to right click to open the menu
+        WindowsApp.FileExplorer.FileContextMenu.SelectValue(position, "Properties"); //opens the context menu with a rightclick on position and inside the menu selects the "Properties"
+        WindowsApp.FileProperties.WaitFor(); //After selecting "Properties" in the context menu, the File Properties open
     }
 
-    //Dropdown & DropdownMenu 
+    //Dropdown & DropdownMenu
     [TestStep(4, TestInput = "Dropdown & DropdownMenu Interactions")]
     public void Step4(ITester t)
     {
@@ -221,7 +221,7 @@ public class ScreenElementExampleInteractions : TestCase
     {
         //https://www.scout24.com/en/investor-relations/share/share-price
 
-        
+
         //to see the Table scroll down and activate the Yearly Performance Tab 
         if (!App.SharePriceScreen.YearlyPerformanceTab.IsActive())
             App.SharePriceScreen.YearlyPerformanceTab.Click(App.SharePriceScreen.YearlyPerformanceTab.WaitForActive);
@@ -242,7 +242,7 @@ public class ScreenElementExampleInteractions : TestCase
 
         //read the value of a cell
         string value = App.SharePriceScreen.YearlyPerformanceTable.GetCellContent(
-            targetColumn: App.SharePriceScreen.YearlyPerformanceTable.Column2020, 
+            targetColumn: App.SharePriceScreen.YearlyPerformanceTable.Column2020,
             targetRow: rowYearlyLow
         );
     }

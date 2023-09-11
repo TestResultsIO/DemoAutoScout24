@@ -110,14 +110,6 @@
     <Compile Include="Screens\TruckScout24 Screens\TruckscoutMainPage.g.cs">
       <DependentUpon>TruckscoutMainPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Screens\WindowsOS\FileExplorer.cs" />
-    <Compile Include="Screens\WindowsOS\FileExplorer.g.cs">
-      <DependentUpon>FileExplorer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Screens\WindowsOS\FileProperties.cs" />
-    <Compile Include="Screens\WindowsOS\FileProperties.g.cs">
-      <DependentUpon>FileProperties.cs</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -320,28 +312,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\WindowsOS\FileExplorer\Desktop Label\Desktop Label.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\WindowsOS\FileExplorer\File Context Menu\File Context Menu.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\WindowsOS\FileExplorer\Screen_Image\Screen_Image.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\WindowsOS\FileExplorer\Screen_Loaded\Screen_Loaded.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\WindowsOS\FileProperties\Screen_Image\Screen_Image.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\WindowsOS\FileProperties\Screen_Loaded\Screen_Loaded.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Images\AutoScout24_de Screens\Autohändler\Screen_Image\Screen_Image.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -477,6 +447,15 @@
     <None Include="Images\AutoScout24 Screens\MainMenu\Screen_Loaded\Screen_Loaded_dark.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\WindowsOS\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Windows_Win\Windows_Win.csproj">
+      <Project>{B843D182-D210-4DAA-BC38-D5FD67DA8960}</Project>
+      <Name>Windows_Win</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
