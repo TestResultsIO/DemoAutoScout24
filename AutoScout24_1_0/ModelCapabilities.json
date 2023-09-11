@@ -1,1386 +1,1504 @@
-[
-  {
-    "TypeName": "AutoScout24_Model.CustomScreenElements.DropdownWithSearchbox",
-    "Interactions": [
-      {
-        "Parameters": [
-          {
-            "Name": "textboxValue",
-            "DisplayName": "Textbox search Value",
-            "Type": "string"
-          },
-          {
-            "Name": "dropdownValue",
-            "DisplayName": "Select Value in Dropdown",
-            "Type": "string"
-          }
-        ],
-        "MethodName": "SelectValueWithSearch",
-        "DisplayName": "Select Value With different Search",
-        "IsVerification": false,
-        "PassedMessage": null,
-        "FailedMessage": null
-      },
-      {
-        "Parameters": [
-          {
-            "Name": "value",
-            "DisplayName": "Value",
-            "Type": "string"
-          }
-        ],
-        "MethodName": "SelectValueWithSearch",
-        "DisplayName": "Select Value With Search",
-        "IsVerification": false,
-        "PassedMessage": null,
-        "FailedMessage": null
-      },
-      {
-        "Parameters": [
-          {
-            "Name": "value",
-            "DisplayName": "Value",
-            "Type": "string"
-          }
-        ],
-        "MethodName": "SelectValue",
-        "DisplayName": "Select value",
-        "IsVerification": false,
-        "PassedMessage": null,
-        "FailedMessage": null
-      },
-      {
-        "Parameters": [
-          {
-            "Name": "value",
-            "DisplayName": "Expected value",
-            "Type": "string"
-          },
-          {
-            "Name": "actualValue",
-            "DisplayName": "actualValue",
-            "Type": "out_string"
-          }
-        ],
-        "MethodName": "VerifySelectedValue",
-        "DisplayName": "Verify the selected value",
-        "IsVerification": true,
-        "PassedMessage": "The expected value {value} was shown correctly as the selected value on {this}.",
-        "FailedMessage": "The selected value on {this} was {actualValue} instead of the expected value {value}."
-      },
-      {
-        "Parameters": [
-          {
-            "Name": "value",
-            "DisplayName": "Expected value",
-            "Type": "string"
-          }
-        ],
-        "MethodName": "VerifyValueInList",
-        "DisplayName": "Verify a value in the list",
-        "IsVerification": true,
-        "PassedMessage": "The expected value {value} was shown in the dropdown list {this}.",
-        "FailedMessage": "The expected value {value} was not shown in the dropdown list {this}."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForAppear",
-        "DisplayName": "Verify element appears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} was displayed on the screen.",
-        "FailedMessage": "The element {this} was not found on the screen."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForDisappear",
-        "DisplayName": "Verify element disappears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} disappeared from the screen.",
-        "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
-      }
-    ]
-  },
-  {
-    "TypeName": "AutoScout24_Model.Screens.AutoScout24_deScreens.Autohändler",
-    "Interactions": [
-      {
-        "Parameters": [],
-        "MethodName": "WaitForAppear",
-        "DisplayName": "Verify element appears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} was displayed on the screen.",
-        "FailedMessage": "The element {this} was not found on the screen."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForDisappear",
-        "DisplayName": "Verify element disappears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} disappeared from the screen.",
-        "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
-      }
-    ]
-  },
-  {
-    "TypeName": "AutoScout24_Model.Screens.AutoScout24_deScreens.MainPageGerman",
-    "Interactions": [
-      {
-        "Parameters": [],
-        "MethodName": "WaitForAppear",
-        "DisplayName": "Verify element appears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} was displayed on the screen.",
-        "FailedMessage": "The element {this} was not found on the screen."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForDisappear",
-        "DisplayName": "Verify element disappears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} disappeared from the screen.",
-        "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
-      }
-    ]
-  },
-  {
-    "TypeName": "AutoScout24_Model.Screens.AutoScout24Screens.CarPreview",
-    "Interactions": [
-      {
-        "Parameters": [],
-        "MethodName": "WaitForAppear",
-        "DisplayName": "Verify element appears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} was displayed on the screen.",
-        "FailedMessage": "The element {this} was not found on the screen."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForDisappear",
-        "DisplayName": "Verify element disappears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} disappeared from the screen.",
-        "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
-      }
-    ]
-  },
-  {
-    "TypeName": "AutoScout24_Model.Screens.AutoScout24Screens.DetailSearch",
-    "Interactions": [
-      {
-        "Parameters": [
-          {
-            "Name": "make",
-            "DisplayName": "Make",
-            "Type": "string"
-          },
-          {
-            "Name": "model",
-            "DisplayName": "Model",
-            "Type": "string"
-          },
-          {
-            "Name": "variant",
-            "DisplayName": "Variant",
-            "Type": "string"
-          }
-        ],
-        "MethodName": "SearchCar",
-        "DisplayName": "Search a car",
-        "IsVerification": false,
-        "PassedMessage": null,
-        "FailedMessage": null
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForAppear",
-        "DisplayName": "Verify element appears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} was displayed on the screen.",
-        "FailedMessage": "The element {this} was not found on the screen."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForDisappear",
-        "DisplayName": "Verify element disappears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} disappeared from the screen.",
-        "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
-      }
-    ]
-  },
-  {
-    "TypeName": "AutoScout24_Model.Screens.AutoScout24Screens.MainMenu",
-    "Interactions": [
-      {
-        "Parameters": [],
-        "MethodName": "GoToTrucks",
-        "DisplayName": "Go To Trucks",
-        "IsVerification": false,
-        "PassedMessage": null,
-        "FailedMessage": null
-      },
-      {
-        "Parameters": [],
-        "MethodName": "OpenMenu",
-        "DisplayName": "Open Menu",
-        "IsVerification": false,
-        "PassedMessage": null,
-        "FailedMessage": null
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForAppear",
-        "DisplayName": "Verify element appears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} was displayed on the screen.",
-        "FailedMessage": "The element {this} was not found on the screen."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForDisappear",
-        "DisplayName": "Verify element disappears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} disappeared from the screen.",
-        "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
-      }
-    ]
-  },
-  {
-    "TypeName": "AutoScout24_Model.Screens.AutoScout24Screens.MainPageCars",
-    "Interactions": [
-      {
-        "Parameters": [
-          {
-            "Name": "make",
-            "DisplayName": "Make",
-            "Type": "string"
-          },
-          {
-            "Name": "model",
-            "DisplayName": "Model",
-            "Type": "string"
-          },
-          {
-            "Name": "firstRegistrationYear",
-            "DisplayName": "First Registration [Year]",
-            "Type": "int"
-          }
-        ],
-        "MethodName": "SearchCar",
-        "DisplayName": "Search a car",
-        "IsVerification": false,
-        "PassedMessage": null,
-        "FailedMessage": null
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForAppear",
-        "DisplayName": "Verify element appears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} was displayed on the screen.",
-        "FailedMessage": "The element {this} was not found on the screen."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForDisappear",
-        "DisplayName": "Verify element disappears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} disappeared from the screen.",
-        "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
-      }
-    ]
-  },
-  {
-    "TypeName": "AutoScout24_Model.Screens.AutoScout24Screens.SearchResults",
-    "Interactions": [
-      {
-        "Parameters": [],
-        "MethodName": "WaitForAppear",
-        "DisplayName": "Verify element appears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} was displayed on the screen.",
-        "FailedMessage": "The element {this} was not found on the screen."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForDisappear",
-        "DisplayName": "Verify element disappears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} disappeared from the screen.",
-        "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
-      }
-    ]
-  },
-  {
-    "TypeName": "AutoScout24_Model.Screens.Scout24_comScreens.SharePriceScreen",
-    "Interactions": [
-      {
-        "Parameters": [],
-        "MethodName": "WaitForAppear",
-        "DisplayName": "Verify element appears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} was displayed on the screen.",
-        "FailedMessage": "The element {this} was not found on the screen."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForDisappear",
-        "DisplayName": "Verify element disappears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} disappeared from the screen.",
-        "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
-      }
-    ]
-  },
-  {
-    "TypeName": "AutoScout24_Model.Screens.Scout24_comScreens.YearlyPerformanceTable",
-    "Interactions": [
-      {
-        "Parameters": [
-          {
-            "Name": "selection",
-            "DisplayName": "selection",
-            "Type": "Column"
-          },
-          {
-            "Name": "selectionValue",
-            "DisplayName": "selectionValue",
-            "Type": "string"
-          },
-          {
-            "Name": "verification",
-            "DisplayName": "verification",
-            "Type": "Column"
-          },
-          {
-            "Name": "expectedValue",
-            "DisplayName": "expectedValue",
-            "Type": "string"
-          },
-          {
-            "Name": "actualValue",
-            "DisplayName": "actualValue",
-            "Type": "out_string"
-          }
-        ],
-        "MethodName": "Verify",
-        "DisplayName": "Verify Cell Content",
-        "IsVerification": true,
-        "PassedMessage": "The expected value {expectedValue} was shown correctly in the row {selectionValue}.",
-        "FailedMessage": "The value was {actualValue} instead of the expected value {expectedValue}."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForAppear",
-        "DisplayName": "Verify element appears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} was displayed on the screen.",
-        "FailedMessage": "The element {this} was not found on the screen."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForDisappear",
-        "DisplayName": "Verify element disappears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} disappeared from the screen.",
-        "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
-      }
-    ],
-    "Properties": [
-      {
-        "PropertyName": "Scout24",
-        "PropertyType": "Progile.TRIO.BaseModel.Column"
-      },
-      {
-        "PropertyName": "Column2019",
-        "PropertyType": "Progile.TRIO.BaseModel.Column"
-      },
-      {
-        "PropertyName": "Column2020",
-        "PropertyType": "Progile.TRIO.BaseModel.Column"
-      },
-      {
-        "PropertyName": "Column2021",
-        "PropertyType": "Progile.TRIO.BaseModel.Column"
-      },
-      {
-        "PropertyName": "Column2022",
-        "PropertyType": "Progile.TRIO.BaseModel.Column"
-      },
-      {
-        "PropertyName": "Column2023",
-        "PropertyType": "Progile.TRIO.BaseModel.Column"
-      }
-    ]
-  },
-  {
-    "TypeName": "AutoScout24_Model.Screens.TruckScout24Screens.MembersLoginPage",
-    "Interactions": [
-      {
-        "Parameters": [],
-        "MethodName": "WaitForAppear",
-        "DisplayName": "Verify element appears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} was displayed on the screen.",
-        "FailedMessage": "The element {this} was not found on the screen."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForDisappear",
-        "DisplayName": "Verify element disappears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} disappeared from the screen.",
-        "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
-      }
-    ]
-  },
-  {
-    "TypeName": "AutoScout24_Model.Screens.TruckScout24Screens.SellWorkflow.Description",
-    "Interactions": [
-      {
-        "Parameters": [],
-        "MethodName": "WaitForAppear",
-        "DisplayName": "Verify element appears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} was displayed on the screen.",
-        "FailedMessage": "The element {this} was not found on the screen."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForDisappear",
-        "DisplayName": "Verify element disappears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} disappeared from the screen.",
-        "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
-      }
-    ]
-  },
-  {
-    "TypeName": "AutoScout24_Model.Screens.TruckScout24Screens.SellWorkflow.VehicleType",
-    "Interactions": [
-      {
-        "Parameters": [],
-        "MethodName": "WaitForAppear",
-        "DisplayName": "Verify element appears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} was displayed on the screen.",
-        "FailedMessage": "The element {this} was not found on the screen."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForDisappear",
-        "DisplayName": "Verify element disappears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} disappeared from the screen.",
-        "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
-      }
-    ]
-  },
-  {
-    "TypeName": "AutoScout24_Model.Screens.TruckScout24Screens.TruckscoutMainPage",
-    "Interactions": [
-      {
-        "Parameters": [],
-        "MethodName": "WaitForAppear",
-        "DisplayName": "Verify element appears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} was displayed on the screen.",
-        "FailedMessage": "The element {this} was not found on the screen."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForDisappear",
-        "DisplayName": "Verify element disappears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} disappeared from the screen.",
-        "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
-      }
-    ]
-  },
-  {
-    "TypeName": "AutoScout24_Model.Screens.WindowsOS.FileExplorer",
-    "Interactions": [
-      {
-        "Parameters": [],
-        "MethodName": "WaitForAppear",
-        "DisplayName": "Verify element appears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} was displayed on the screen.",
-        "FailedMessage": "The element {this} was not found on the screen."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForDisappear",
-        "DisplayName": "Verify element disappears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} disappeared from the screen.",
-        "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
-      }
-    ]
-  },
-  {
-    "TypeName": "AutoScout24_Model.Screens.WindowsOS.FileProperties",
-    "Interactions": [
-      {
-        "Parameters": [],
-        "MethodName": "WaitForAppear",
-        "DisplayName": "Verify element appears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} was displayed on the screen.",
-        "FailedMessage": "The element {this} was not found on the screen."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForDisappear",
-        "DisplayName": "Verify element disappears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} disappeared from the screen.",
-        "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
-      }
-    ]
-  },
-  {
-    "TypeName": "Progile.TRIO.BaseModel.BaseScreen",
-    "Interactions": [
-      {
-        "Parameters": [],
-        "MethodName": "WaitForAppear",
-        "DisplayName": "Verify element appears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} was displayed on the screen.",
-        "FailedMessage": "The element {this} was not found on the screen."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForDisappear",
-        "DisplayName": "Verify element disappears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} disappeared from the screen.",
-        "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
-      }
-    ]
-  },
-  {
-    "TypeName": "Progile.TRIO.BaseModel.Button",
-    "Interactions": [
-      {
-        "Parameters": [
-          {
-            "Name": "verification",
-            "DisplayName": "verification",
-            "Type": "interaction"
-          }
-        ],
-        "MethodName": "Click",
-        "DisplayName": "Click",
-        "IsVerification": false,
-        "PassedMessage": null,
-        "FailedMessage": null
-      },
-      {
-        "Parameters": [
-          {
-            "Name": "verification",
-            "DisplayName": "verification",
-            "Type": "interaction"
-          }
-        ],
-        "MethodName": "DoubleClick",
-        "DisplayName": "Double-click",
-        "IsVerification": false,
-        "PassedMessage": null,
-        "FailedMessage": null
-      },
-      {
-        "Parameters": [
-          {
-            "Name": "verification",
-            "DisplayName": "verification",
-            "Type": "interaction"
-          }
-        ],
-        "MethodName": "Hover",
-        "DisplayName": "Hover",
-        "IsVerification": false,
-        "PassedMessage": null,
-        "FailedMessage": null
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForActive",
-        "DisplayName": "Verify button becomes active",
-        "IsVerification": true,
-        "PassedMessage": "The button {this} was active.",
-        "FailedMessage": "The button {this} was not active."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForInactive",
-        "DisplayName": "Verify button becomes inactive",
-        "IsVerification": true,
-        "PassedMessage": "The button {this} was inactive.",
-        "FailedMessage": "The button {this} was not inactive."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForAppear",
-        "DisplayName": "Verify element appears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} was displayed on the screen.",
-        "FailedMessage": "The element {this} was not found on the screen."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForDisappear",
-        "DisplayName": "Verify element disappears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} disappeared from the screen.",
-        "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
-      }
-    ]
-  },
-  {
-    "TypeName": "Progile.TRIO.BaseModel.Checkbox",
-    "Interactions": [
-      {
-        "Parameters": [],
-        "MethodName": "IsChecked",
-        "DisplayName": "Verify checkbox is checked",
-        "IsVerification": true,
-        "PassedMessage": "The checkbox {this} was checked.",
-        "FailedMessage": "The checkbox {this} was not checked."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "IsUnchecked",
-        "DisplayName": "Verify checkbox is unchecked",
-        "IsVerification": true,
-        "PassedMessage": "The checkbox {this} was unchecked.",
-        "FailedMessage": "The checkbox {this} was unexpectedly checked."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "Check",
-        "DisplayName": "Check",
-        "IsVerification": false,
-        "PassedMessage": null,
-        "FailedMessage": null
-      },
-      {
-        "Parameters": [],
-        "MethodName": "Uncheck",
-        "DisplayName": "Uncheck",
-        "IsVerification": false,
-        "PassedMessage": null,
-        "FailedMessage": null
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForAppear",
-        "DisplayName": "Verify element appears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} was displayed on the screen.",
-        "FailedMessage": "The element {this} was not found on the screen."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForDisappear",
-        "DisplayName": "Verify element disappears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} disappeared from the screen.",
-        "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
-      }
-    ]
-  },
-  {
-    "TypeName": "Progile.TRIO.BaseModel.ContextMenu",
-    "Interactions": [
-      {
-        "Parameters": [],
-        "MethodName": "WaitForAppear",
-        "DisplayName": "Verify element appears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} was displayed on the screen.",
-        "FailedMessage": "The element {this} was not found on the screen."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForDisappear",
-        "DisplayName": "Verify element disappears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} disappeared from the screen.",
-        "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
-      }
-    ]
-  },
-  {
-    "TypeName": "Progile.TRIO.BaseModel.Dropdown",
-    "Interactions": [
-      {
-        "Parameters": [
-          {
-            "Name": "value",
-            "DisplayName": "Value",
-            "Type": "string"
-          }
-        ],
-        "MethodName": "SelectValue",
-        "DisplayName": "Select value",
-        "IsVerification": false,
-        "PassedMessage": null,
-        "FailedMessage": null
-      },
-      {
-        "Parameters": [
-          {
-            "Name": "value",
-            "DisplayName": "Expected value",
-            "Type": "string"
-          },
-          {
-            "Name": "actualValue",
-            "DisplayName": "actualValue",
-            "Type": "out_string"
-          }
-        ],
-        "MethodName": "VerifySelectedValue",
-        "DisplayName": "Verify the selected value",
-        "IsVerification": true,
-        "PassedMessage": "The expected value {value} was shown correctly as the selected value on {this}.",
-        "FailedMessage": "The selected value on {this} was {actualValue} instead of the expected value {value}."
-      },
-      {
-        "Parameters": [
-          {
-            "Name": "value",
-            "DisplayName": "Expected value",
-            "Type": "string"
-          }
-        ],
-        "MethodName": "VerifyValueInList",
-        "DisplayName": "Verify a value in the list",
-        "IsVerification": true,
-        "PassedMessage": "The expected value {value} was shown in the dropdown list {this}.",
-        "FailedMessage": "The expected value {value} was not shown in the dropdown list {this}."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForAppear",
-        "DisplayName": "Verify element appears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} was displayed on the screen.",
-        "FailedMessage": "The element {this} was not found on the screen."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForDisappear",
-        "DisplayName": "Verify element disappears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} disappeared from the screen.",
-        "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
-      }
-    ]
-  },
-  {
-    "TypeName": "Progile.TRIO.BaseModel.DropdownMenu",
-    "Interactions": [
-      {
-        "Parameters": [
-          {
-            "Name": "selections",
-            "DisplayName": "Submenus and value",
-            "Type": "string[]"
-          }
-        ],
-        "MethodName": "SelectValueFromSubmenu",
-        "DisplayName": "Select a value from a submenu",
-        "IsVerification": false,
-        "PassedMessage": null,
-        "FailedMessage": null
-      },
-      {
-        "Parameters": [
-          {
-            "Name": "value",
-            "DisplayName": "Value",
-            "Type": "string"
-          }
-        ],
-        "MethodName": "SelectValue",
-        "DisplayName": "Select value",
-        "IsVerification": false,
-        "PassedMessage": null,
-        "FailedMessage": null
-      },
-      {
-        "Parameters": [
-          {
-            "Name": "value",
-            "DisplayName": "Expected value",
-            "Type": "string"
-          },
-          {
-            "Name": "actualValue",
-            "DisplayName": "actualValue",
-            "Type": "out_string"
-          }
-        ],
-        "MethodName": "VerifySelectedValue",
-        "DisplayName": "Verify the selected value",
-        "IsVerification": true,
-        "PassedMessage": "The expected value {value} was shown correctly as the selected value on {this}.",
-        "FailedMessage": "The selected value on {this} was {actualValue} instead of the expected value {value}."
-      },
-      {
-        "Parameters": [
-          {
-            "Name": "value",
-            "DisplayName": "Expected value",
-            "Type": "string"
-          }
-        ],
-        "MethodName": "VerifyValueInList",
-        "DisplayName": "Verify a value in the list",
-        "IsVerification": true,
-        "PassedMessage": "The expected value {value} was shown in the dropdown list {this}.",
-        "FailedMessage": "The expected value {value} was not shown in the dropdown list {this}."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForAppear",
-        "DisplayName": "Verify element appears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} was displayed on the screen.",
-        "FailedMessage": "The element {this} was not found on the screen."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForDisappear",
-        "DisplayName": "Verify element disappears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} disappeared from the screen.",
-        "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
-      }
-    ]
-  },
-  {
-    "TypeName": "Progile.TRIO.BaseModel.GenericScroller",
-    "Interactions": [
-      {
-        "Parameters": [],
-        "MethodName": "WaitForAppear",
-        "DisplayName": "Verify element appears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} was displayed on the screen.",
-        "FailedMessage": "The element {this} was not found on the screen."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForDisappear",
-        "DisplayName": "Verify element disappears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} disappeared from the screen.",
-        "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
-      }
-    ]
-  },
-  {
-    "TypeName": "Progile.TRIO.BaseModel.HorizontalScroller",
-    "Interactions": [
-      {
-        "Parameters": [],
-        "MethodName": "WaitForAppear",
-        "DisplayName": "Verify element appears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} was displayed on the screen.",
-        "FailedMessage": "The element {this} was not found on the screen."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForDisappear",
-        "DisplayName": "Verify element disappears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} disappeared from the screen.",
-        "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
-      }
-    ]
-  },
-  {
-    "TypeName": "Progile.TRIO.BaseModel.IconButton",
-    "Interactions": [
-      {
-        "Parameters": [
-          {
-            "Name": "verification",
-            "DisplayName": "verification",
-            "Type": "interaction"
-          }
-        ],
-        "MethodName": "Click",
-        "DisplayName": "Click",
-        "IsVerification": false,
-        "PassedMessage": null,
-        "FailedMessage": null
-      },
-      {
-        "Parameters": [
-          {
-            "Name": "verification",
-            "DisplayName": "verification",
-            "Type": "interaction"
-          }
-        ],
-        "MethodName": "DoubleClick",
-        "DisplayName": "Double-click",
-        "IsVerification": false,
-        "PassedMessage": null,
-        "FailedMessage": null
-      },
-      {
-        "Parameters": [
-          {
-            "Name": "verification",
-            "DisplayName": "verification",
-            "Type": "interaction"
-          }
-        ],
-        "MethodName": "Hover",
-        "DisplayName": "Hover",
-        "IsVerification": false,
-        "PassedMessage": null,
-        "FailedMessage": null
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForActive",
-        "DisplayName": "Verify button becomes active",
-        "IsVerification": true,
-        "PassedMessage": "The button {this} was active.",
-        "FailedMessage": "The button {this} was not active."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForInactive",
-        "DisplayName": "Verify button becomes inactive",
-        "IsVerification": true,
-        "PassedMessage": "The button {this} was inactive.",
-        "FailedMessage": "The button {this} was not inactive."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForAppear",
-        "DisplayName": "Verify element appears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} was displayed on the screen.",
-        "FailedMessage": "The element {this} was not found on the screen."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForDisappear",
-        "DisplayName": "Verify element disappears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} disappeared from the screen.",
-        "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
-      }
-    ]
-  },
-  {
-    "TypeName": "Progile.TRIO.BaseModel.Label",
-    "Interactions": [
-      {
-        "Parameters": [],
-        "MethodName": "WaitForAppear",
-        "DisplayName": "Verify element appears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} was displayed on the screen.",
-        "FailedMessage": "The element {this} was not found on the screen."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForDisappear",
-        "DisplayName": "Verify element disappears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} disappeared from the screen.",
-        "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
-      }
-    ]
-  },
-  {
-    "TypeName": "Progile.TRIO.BaseModel.LabelWithButton",
-    "Interactions": [
-      {
-        "Parameters": [
-          {
-            "Name": "verification",
-            "DisplayName": "verification",
-            "Type": "interaction"
-          }
-        ],
-        "MethodName": "Click",
-        "DisplayName": "Click",
-        "IsVerification": false,
-        "PassedMessage": null,
-        "FailedMessage": null
-      },
-      {
-        "Parameters": [
-          {
-            "Name": "verification",
-            "DisplayName": "verification",
-            "Type": "interaction"
-          }
-        ],
-        "MethodName": "DoubleClick",
-        "DisplayName": "Double-click",
-        "IsVerification": false,
-        "PassedMessage": null,
-        "FailedMessage": null
-      },
-      {
-        "Parameters": [
-          {
-            "Name": "verification",
-            "DisplayName": "verification",
-            "Type": "interaction"
-          }
-        ],
-        "MethodName": "Hover",
-        "DisplayName": "Hover",
-        "IsVerification": false,
-        "PassedMessage": null,
-        "FailedMessage": null
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForActive",
-        "DisplayName": "Verify button becomes active",
-        "IsVerification": true,
-        "PassedMessage": "The button {this} was active.",
-        "FailedMessage": "The button {this} was not active."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForInactive",
-        "DisplayName": "Verify button becomes inactive",
-        "IsVerification": true,
-        "PassedMessage": "The button {this} was inactive.",
-        "FailedMessage": "The button {this} was not inactive."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForAppear",
-        "DisplayName": "Verify element appears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} was displayed on the screen.",
-        "FailedMessage": "The element {this} was not found on the screen."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForDisappear",
-        "DisplayName": "Verify element disappears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} disappeared from the screen.",
-        "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
-      }
-    ]
-  },
-  {
-    "TypeName": "Progile.TRIO.BaseModel.LabelWithCheckbox",
-    "Interactions": [
-      {
-        "Parameters": [],
-        "MethodName": "IsChecked",
-        "DisplayName": "Verify checkbox is checked",
-        "IsVerification": true,
-        "PassedMessage": "The checkbox {this} was checked.",
-        "FailedMessage": "The checkbox {this} was not checked."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "IsUnchecked",
-        "DisplayName": "Verify checkbox is unchecked",
-        "IsVerification": true,
-        "PassedMessage": "The checkbox {this} was unchecked.",
-        "FailedMessage": "The checkbox {this} was unexpectedly checked."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "Check",
-        "DisplayName": "Check",
-        "IsVerification": false,
-        "PassedMessage": null,
-        "FailedMessage": null
-      },
-      {
-        "Parameters": [],
-        "MethodName": "Uncheck",
-        "DisplayName": "Uncheck",
-        "IsVerification": false,
-        "PassedMessage": null,
-        "FailedMessage": null
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForAppear",
-        "DisplayName": "Verify element appears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} was displayed on the screen.",
-        "FailedMessage": "The element {this} was not found on the screen."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForDisappear",
-        "DisplayName": "Verify element disappears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} disappeared from the screen.",
-        "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
-      }
-    ]
-  },
-  {
-    "TypeName": "Progile.TRIO.BaseModel.LabelWithValue",
-    "Interactions": [
-      {
-        "Parameters": [
-          {
-            "Name": "value",
-            "DisplayName": "Expected value",
-            "Type": "string"
-          },
-          {
-            "Name": "actualValue",
-            "DisplayName": "actualValue",
-            "Type": "out_string"
-          }
-        ],
-        "MethodName": "VerifyValue",
-        "DisplayName": "Verify the value",
-        "IsVerification": true,
-        "PassedMessage": "The expected value {value} was shown correctly for {this}.",
-        "FailedMessage": "The value for {this} was {actualValue} instead of the expected value {value}."
-      },
-      {
-        "Parameters": [
-          {
-            "Name": "value",
-            "DisplayName": "Expected value",
-            "Type": "string"
-          },
-          {
-            "Name": "waitTime",
-            "DisplayName": "Wait time",
-            "Type": "TimeSpan"
-          },
-          {
-            "Name": "actualValue",
-            "DisplayName": "actualValue",
-            "Type": "out_string"
-          }
-        ],
-        "MethodName": "WaitForValue",
-        "DisplayName": "Wait for the value",
-        "IsVerification": true,
-        "PassedMessage": "The expected value {value} was shown correctly for {this}.",
-        "FailedMessage": "The value for {this} was {actualValue} after the timeout instead of the expected value {value}."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForAppear",
-        "DisplayName": "Verify element appears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} was displayed on the screen.",
-        "FailedMessage": "The element {this} was not found on the screen."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForDisappear",
-        "DisplayName": "Verify element disappears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} disappeared from the screen.",
-        "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
-      }
-    ]
-  },
-  {
-    "TypeName": "Progile.TRIO.BaseModel.PwTextBox",
-    "Interactions": [
-      {
-        "Parameters": [
-          {
-            "Name": "pw",
-            "DisplayName": "Password",
-            "Type": "string"
-          }
-        ],
-        "MethodName": "Enter",
-        "DisplayName": "Enter",
-        "IsVerification": false,
-        "PassedMessage": null,
-        "FailedMessage": null
-      },
-      {
-        "Parameters": [
-          {
-            "Name": "expectedText",
-            "DisplayName": "expectedText",
-            "Type": "string"
-          }
-        ],
-        "MethodName": "VerifyText",
-        "DisplayName": "Verify the password (only length)",
-        "IsVerification": true,
-        "PassedMessage": "Verify the password (only length) on {this} passed",
-        "FailedMessage": "Verify the password (only length) on {this} failed"
-      },
-      {
-        "Parameters": [
-          {
-            "Name": "textToEnter",
-            "DisplayName": "Text to enter",
-            "Type": "string"
-          }
-        ],
-        "MethodName": "EnterWithoutVerification",
-        "DisplayName": "Enter without verification",
-        "IsVerification": false,
-        "PassedMessage": null,
-        "FailedMessage": null
-      },
-      {
-        "Parameters": [],
-        "MethodName": "PasteText",
-        "DisplayName": "Paste from clipboard",
-        "IsVerification": false,
-        "PassedMessage": null,
-        "FailedMessage": null
-      },
-      {
-        "Parameters": [
-          {
-            "Name": "expectedText",
-            "DisplayName": "Expected text",
-            "Type": "string"
-          },
-          {
-            "Name": "actualText",
-            "DisplayName": "actualText",
-            "Type": "out_string"
-          }
-        ],
-        "MethodName": "VerifyText",
-        "DisplayName": "Verify the text",
-        "IsVerification": true,
-        "PassedMessage": "The expected text {expectedText} was shown correctly in {this}.",
-        "FailedMessage": "The text in {this} was {actualText} instead of the expected text {expectedText}."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "ClickOutOfBox",
-        "DisplayName": "Click out of the text box",
-        "IsVerification": false,
-        "PassedMessage": null,
-        "FailedMessage": null
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForAppear",
-        "DisplayName": "Verify element appears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} was displayed on the screen.",
-        "FailedMessage": "The element {this} was not found on the screen."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForDisappear",
-        "DisplayName": "Verify element disappears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} disappeared from the screen.",
-        "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
-      }
-    ]
-  },
-  {
-    "TypeName": "Progile.TRIO.BaseModel.TextBox",
-    "Interactions": [
-      {
-        "Parameters": [
-          {
-            "Name": "textToEnter",
-            "DisplayName": "Text to enter",
-            "Type": "string"
-          }
-        ],
-        "MethodName": "Enter",
-        "DisplayName": "Enter",
-        "IsVerification": false,
-        "PassedMessage": null,
-        "FailedMessage": null
-      },
-      {
-        "Parameters": [
-          {
-            "Name": "textToEnter",
-            "DisplayName": "Text to enter",
-            "Type": "string"
-          }
-        ],
-        "MethodName": "EnterWithoutVerification",
-        "DisplayName": "Enter without verification",
-        "IsVerification": false,
-        "PassedMessage": null,
-        "FailedMessage": null
-      },
-      {
-        "Parameters": [],
-        "MethodName": "PasteText",
-        "DisplayName": "Paste from clipboard",
-        "IsVerification": false,
-        "PassedMessage": null,
-        "FailedMessage": null
-      },
-      {
-        "Parameters": [
-          {
-            "Name": "expectedText",
-            "DisplayName": "Expected text",
-            "Type": "string"
-          },
-          {
-            "Name": "actualText",
-            "DisplayName": "actualText",
-            "Type": "out_string"
-          }
-        ],
-        "MethodName": "VerifyText",
-        "DisplayName": "Verify the text",
-        "IsVerification": true,
-        "PassedMessage": "The expected text {expectedText} was shown correctly in {this}.",
-        "FailedMessage": "The text in {this} was {actualText} instead of the expected text {expectedText}."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "ClickOutOfBox",
-        "DisplayName": "Click out of the text box",
-        "IsVerification": false,
-        "PassedMessage": null,
-        "FailedMessage": null
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForAppear",
-        "DisplayName": "Verify element appears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} was displayed on the screen.",
-        "FailedMessage": "The element {this} was not found on the screen."
-      },
-      {
-        "Parameters": [],
-        "MethodName": "WaitForDisappear",
-        "DisplayName": "Verify element disappears",
-        "IsVerification": true,
-        "PassedMessage": "The element {this} disappeared from the screen.",
-        "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
-      }
-    ]
-  }
-]
+{
+  "ModelTypeList": [
+    {
+      "TypeName": "AutoScout24_Model.CustomScreenElements.DropdownWithSearchbox",
+      "Interactions": [
+        {
+          "Parameters": [
+            {
+              "Name": "textboxValue",
+              "DisplayName": "Textbox search Value",
+              "Type": "System.String"
+            },
+            {
+              "Name": "dropdownValue",
+              "DisplayName": "Select Value in Dropdown",
+              "Type": "System.String"
+            }
+          ],
+          "MethodName": "SelectValueWithSearch",
+          "DisplayName": "Select Value With different Search",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "value",
+              "DisplayName": "Value",
+              "Type": "System.String"
+            }
+          ],
+          "MethodName": "SelectValueWithSearch",
+          "DisplayName": "Select Value With Search",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "value",
+              "DisplayName": "Value",
+              "Type": "System.String"
+            }
+          ],
+          "MethodName": "SelectValue",
+          "DisplayName": "Select value",
+          "ReturnType": "System.Void",
+          "IsInherited": true,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "value",
+              "DisplayName": "Expected value",
+              "Type": "System.String"
+            },
+            {
+              "Name": "actualValue",
+              "DisplayName": "actualValue",
+              "Type": "out_string"
+            }
+          ],
+          "MethodName": "VerifySelectedValue",
+          "DisplayName": "Verify the selected value",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The expected value {value} was shown correctly as the selected value on {this}.",
+          "FailedMessage": "The selected value on {this} was {actualValue} instead of the expected value {value}."
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "value",
+              "DisplayName": "Expected value",
+              "Type": "System.String"
+            }
+          ],
+          "MethodName": "VerifyValueInList",
+          "DisplayName": "Verify a value in the list",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The expected value {value} was shown in the dropdown list {this}.",
+          "FailedMessage": "The expected value {value} was not shown in the dropdown list {this}."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForAppear",
+          "DisplayName": "Verify element appears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} was displayed on the screen.",
+          "FailedMessage": "The element {this} was not found on the screen."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForDisappear",
+          "DisplayName": "Verify element disappears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} disappeared from the screen.",
+          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+        }
+      ]
+    },
+    {
+      "TypeName": "AutoScout24_Model.Screens.AutoScout24_deScreens.Autohändler",
+      "Interactions": [
+        {
+          "Parameters": [],
+          "MethodName": "WaitForAppear",
+          "DisplayName": "Verify element appears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} was displayed on the screen.",
+          "FailedMessage": "The element {this} was not found on the screen."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForDisappear",
+          "DisplayName": "Verify element disappears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} disappeared from the screen.",
+          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+        }
+      ]
+    },
+    {
+      "TypeName": "AutoScout24_Model.Screens.AutoScout24_deScreens.MainPageGerman",
+      "Interactions": [
+        {
+          "Parameters": [],
+          "MethodName": "WaitForAppear",
+          "DisplayName": "Verify element appears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} was displayed on the screen.",
+          "FailedMessage": "The element {this} was not found on the screen."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForDisappear",
+          "DisplayName": "Verify element disappears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} disappeared from the screen.",
+          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+        }
+      ]
+    },
+    {
+      "TypeName": "AutoScout24_Model.Screens.AutoScout24Screens.CarPreview",
+      "Interactions": [
+        {
+          "Parameters": [],
+          "MethodName": "WaitForAppear",
+          "DisplayName": "Verify element appears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} was displayed on the screen.",
+          "FailedMessage": "The element {this} was not found on the screen."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForDisappear",
+          "DisplayName": "Verify element disappears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} disappeared from the screen.",
+          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+        }
+      ]
+    },
+    {
+      "TypeName": "AutoScout24_Model.Screens.AutoScout24Screens.DetailSearch",
+      "Interactions": [
+        {
+          "Parameters": [
+            {
+              "Name": "make",
+              "DisplayName": "Make",
+              "Type": "System.String"
+            },
+            {
+              "Name": "model",
+              "DisplayName": "Model",
+              "Type": "System.String"
+            },
+            {
+              "Name": "variant",
+              "DisplayName": "Variant",
+              "Type": "System.String"
+            }
+          ],
+          "MethodName": "SearchCar",
+          "DisplayName": "Search a car",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForAppear",
+          "DisplayName": "Verify element appears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} was displayed on the screen.",
+          "FailedMessage": "The element {this} was not found on the screen."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForDisappear",
+          "DisplayName": "Verify element disappears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} disappeared from the screen.",
+          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+        }
+      ]
+    },
+    {
+      "TypeName": "AutoScout24_Model.Screens.AutoScout24Screens.MainMenu",
+      "Interactions": [
+        {
+          "Parameters": [],
+          "MethodName": "GoToTrucks",
+          "DisplayName": "Go To Trucks",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [],
+          "MethodName": "OpenMenu",
+          "DisplayName": "Open Menu",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForAppear",
+          "DisplayName": "Verify element appears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} was displayed on the screen.",
+          "FailedMessage": "The element {this} was not found on the screen."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForDisappear",
+          "DisplayName": "Verify element disappears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} disappeared from the screen.",
+          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+        }
+      ]
+    },
+    {
+      "TypeName": "AutoScout24_Model.Screens.AutoScout24Screens.MainPageCars",
+      "Interactions": [
+        {
+          "Parameters": [
+            {
+              "Name": "make",
+              "DisplayName": "Make",
+              "Type": "System.String"
+            },
+            {
+              "Name": "model",
+              "DisplayName": "Model",
+              "Type": "System.String"
+            },
+            {
+              "Name": "firstRegistrationYear",
+              "DisplayName": "First Registration [Year]",
+              "Type": "System.Int32"
+            }
+          ],
+          "MethodName": "SearchCar",
+          "DisplayName": "Search a car",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForAppear",
+          "DisplayName": "Verify element appears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} was displayed on the screen.",
+          "FailedMessage": "The element {this} was not found on the screen."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForDisappear",
+          "DisplayName": "Verify element disappears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} disappeared from the screen.",
+          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+        }
+      ]
+    },
+    {
+      "TypeName": "AutoScout24_Model.Screens.AutoScout24Screens.SearchResults",
+      "Interactions": [
+        {
+          "Parameters": [],
+          "MethodName": "WaitForAppear",
+          "DisplayName": "Verify element appears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} was displayed on the screen.",
+          "FailedMessage": "The element {this} was not found on the screen."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForDisappear",
+          "DisplayName": "Verify element disappears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} disappeared from the screen.",
+          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+        }
+      ]
+    },
+    {
+      "TypeName": "AutoScout24_Model.Screens.Scout24_comScreens.SharePriceScreen",
+      "Interactions": [
+        {
+          "Parameters": [],
+          "MethodName": "WaitForAppear",
+          "DisplayName": "Verify element appears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} was displayed on the screen.",
+          "FailedMessage": "The element {this} was not found on the screen."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForDisappear",
+          "DisplayName": "Verify element disappears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} disappeared from the screen.",
+          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+        }
+      ]
+    },
+    {
+      "TypeName": "AutoScout24_Model.Screens.Scout24_comScreens.YearlyPerformanceTable",
+      "Interactions": [
+        {
+          "Parameters": [
+            {
+              "Name": "selection",
+              "DisplayName": "selection",
+              "Type": "Progile.TRIO.BaseModel.Column"
+            },
+            {
+              "Name": "selectionValue",
+              "DisplayName": "selectionValue",
+              "Type": "System.String"
+            },
+            {
+              "Name": "verification",
+              "DisplayName": "verification",
+              "Type": "Progile.TRIO.BaseModel.Column"
+            },
+            {
+              "Name": "expectedValue",
+              "DisplayName": "expectedValue",
+              "Type": "System.String"
+            },
+            {
+              "Name": "actualValue",
+              "DisplayName": "actualValue",
+              "Type": "out_string"
+            }
+          ],
+          "MethodName": "Verify",
+          "DisplayName": "Verify Cell Content",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The expected value {expectedValue} was shown correctly in the row {selectionValue}.",
+          "FailedMessage": "The value was {actualValue} instead of the expected value {expectedValue}."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForAppear",
+          "DisplayName": "Verify element appears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} was displayed on the screen.",
+          "FailedMessage": "The element {this} was not found on the screen."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForDisappear",
+          "DisplayName": "Verify element disappears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} disappeared from the screen.",
+          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyName": "Scout24",
+          "PropertyType": "Progile.TRIO.BaseModel.Column"
+        },
+        {
+          "PropertyName": "Column2019",
+          "PropertyType": "Progile.TRIO.BaseModel.Column"
+        },
+        {
+          "PropertyName": "Column2020",
+          "PropertyType": "Progile.TRIO.BaseModel.Column"
+        },
+        {
+          "PropertyName": "Column2021",
+          "PropertyType": "Progile.TRIO.BaseModel.Column"
+        },
+        {
+          "PropertyName": "Column2022",
+          "PropertyType": "Progile.TRIO.BaseModel.Column"
+        },
+        {
+          "PropertyName": "Column2023",
+          "PropertyType": "Progile.TRIO.BaseModel.Column"
+        }
+      ]
+    },
+    {
+      "TypeName": "AutoScout24_Model.Screens.TruckScout24Screens.MembersLoginPage",
+      "Interactions": [
+        {
+          "Parameters": [],
+          "MethodName": "WaitForAppear",
+          "DisplayName": "Verify element appears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} was displayed on the screen.",
+          "FailedMessage": "The element {this} was not found on the screen."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForDisappear",
+          "DisplayName": "Verify element disappears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} disappeared from the screen.",
+          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+        }
+      ]
+    },
+    {
+      "TypeName": "AutoScout24_Model.Screens.TruckScout24Screens.SellWorkflow.Description",
+      "Interactions": [
+        {
+          "Parameters": [],
+          "MethodName": "WaitForAppear",
+          "DisplayName": "Verify element appears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} was displayed on the screen.",
+          "FailedMessage": "The element {this} was not found on the screen."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForDisappear",
+          "DisplayName": "Verify element disappears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} disappeared from the screen.",
+          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+        }
+      ]
+    },
+    {
+      "TypeName": "AutoScout24_Model.Screens.TruckScout24Screens.SellWorkflow.VehicleType",
+      "Interactions": [
+        {
+          "Parameters": [],
+          "MethodName": "WaitForAppear",
+          "DisplayName": "Verify element appears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} was displayed on the screen.",
+          "FailedMessage": "The element {this} was not found on the screen."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForDisappear",
+          "DisplayName": "Verify element disappears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} disappeared from the screen.",
+          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+        }
+      ]
+    },
+    {
+      "TypeName": "AutoScout24_Model.Screens.TruckScout24Screens.TruckscoutMainPage",
+      "Interactions": [
+        {
+          "Parameters": [],
+          "MethodName": "WaitForAppear",
+          "DisplayName": "Verify element appears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} was displayed on the screen.",
+          "FailedMessage": "The element {this} was not found on the screen."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForDisappear",
+          "DisplayName": "Verify element disappears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} disappeared from the screen.",
+          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+        }
+      ]
+    },
+    {
+      "TypeName": "AutoScout24_Model.Screens.WindowsOS.FileExplorer",
+      "Interactions": [
+        {
+          "Parameters": [],
+          "MethodName": "WaitForAppear",
+          "DisplayName": "Verify element appears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} was displayed on the screen.",
+          "FailedMessage": "The element {this} was not found on the screen."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForDisappear",
+          "DisplayName": "Verify element disappears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} disappeared from the screen.",
+          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+        }
+      ]
+    },
+    {
+      "TypeName": "AutoScout24_Model.Screens.WindowsOS.FileProperties",
+      "Interactions": [
+        {
+          "Parameters": [],
+          "MethodName": "WaitForAppear",
+          "DisplayName": "Verify element appears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} was displayed on the screen.",
+          "FailedMessage": "The element {this} was not found on the screen."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForDisappear",
+          "DisplayName": "Verify element disappears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} disappeared from the screen.",
+          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+        }
+      ]
+    },
+    {
+      "TypeName": "Progile.TRIO.BaseModel.BaseScreen",
+      "Interactions": [
+        {
+          "Parameters": [],
+          "MethodName": "WaitForAppear",
+          "DisplayName": "Verify element appears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} was displayed on the screen.",
+          "FailedMessage": "The element {this} was not found on the screen."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForDisappear",
+          "DisplayName": "Verify element disappears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} disappeared from the screen.",
+          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+        }
+      ]
+    },
+    {
+      "TypeName": "Progile.TRIO.BaseModel.Button",
+      "Interactions": [
+        {
+          "Parameters": [
+            {
+              "Name": "verification",
+              "DisplayName": "verification",
+              "Type": "interaction"
+            }
+          ],
+          "MethodName": "Click",
+          "DisplayName": "Click",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "verification",
+              "DisplayName": "verification",
+              "Type": "interaction"
+            }
+          ],
+          "MethodName": "DoubleClick",
+          "DisplayName": "Double-click",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "verification",
+              "DisplayName": "verification",
+              "Type": "interaction"
+            }
+          ],
+          "MethodName": "Hover",
+          "DisplayName": "Hover",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForActive",
+          "DisplayName": "Verify button becomes active",
+          "ReturnType": "System.Boolean",
+          "IsInherited": false,
+          "PassedMessage": "The button {this} was active.",
+          "FailedMessage": "The button {this} was not active."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForInactive",
+          "DisplayName": "Verify button becomes inactive",
+          "ReturnType": "System.Boolean",
+          "IsInherited": false,
+          "PassedMessage": "The button {this} was inactive.",
+          "FailedMessage": "The button {this} was not inactive."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForAppear",
+          "DisplayName": "Verify element appears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} was displayed on the screen.",
+          "FailedMessage": "The element {this} was not found on the screen."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForDisappear",
+          "DisplayName": "Verify element disappears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} disappeared from the screen.",
+          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+        }
+      ]
+    },
+    {
+      "TypeName": "Progile.TRIO.BaseModel.Checkbox",
+      "Interactions": [
+        {
+          "Parameters": [],
+          "MethodName": "IsChecked",
+          "DisplayName": "Verify checkbox is checked",
+          "ReturnType": "System.Boolean",
+          "IsInherited": false,
+          "PassedMessage": "The checkbox {this} was checked.",
+          "FailedMessage": "The checkbox {this} was not checked."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "IsUnchecked",
+          "DisplayName": "Verify checkbox is unchecked",
+          "ReturnType": "System.Boolean",
+          "IsInherited": false,
+          "PassedMessage": "The checkbox {this} was unchecked.",
+          "FailedMessage": "The checkbox {this} was unexpectedly checked."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "Check",
+          "DisplayName": "Check",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [],
+          "MethodName": "Uncheck",
+          "DisplayName": "Uncheck",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForAppear",
+          "DisplayName": "Verify element appears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} was displayed on the screen.",
+          "FailedMessage": "The element {this} was not found on the screen."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForDisappear",
+          "DisplayName": "Verify element disappears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} disappeared from the screen.",
+          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+        }
+      ]
+    },
+    {
+      "TypeName": "Progile.TRIO.BaseModel.ContextMenu",
+      "Interactions": [
+        {
+          "Parameters": [],
+          "MethodName": "WaitForAppear",
+          "DisplayName": "Verify element appears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} was displayed on the screen.",
+          "FailedMessage": "The element {this} was not found on the screen."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForDisappear",
+          "DisplayName": "Verify element disappears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} disappeared from the screen.",
+          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+        }
+      ]
+    },
+    {
+      "TypeName": "Progile.TRIO.BaseModel.Dropdown",
+      "Interactions": [
+        {
+          "Parameters": [
+            {
+              "Name": "value",
+              "DisplayName": "Value",
+              "Type": "System.String"
+            }
+          ],
+          "MethodName": "SelectValue",
+          "DisplayName": "Select value",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "value",
+              "DisplayName": "Expected value",
+              "Type": "System.String"
+            },
+            {
+              "Name": "actualValue",
+              "DisplayName": "actualValue",
+              "Type": "out_string"
+            }
+          ],
+          "MethodName": "VerifySelectedValue",
+          "DisplayName": "Verify the selected value",
+          "ReturnType": "System.Boolean",
+          "IsInherited": false,
+          "PassedMessage": "The expected value {value} was shown correctly as the selected value on {this}.",
+          "FailedMessage": "The selected value on {this} was {actualValue} instead of the expected value {value}."
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "value",
+              "DisplayName": "Expected value",
+              "Type": "System.String"
+            }
+          ],
+          "MethodName": "VerifyValueInList",
+          "DisplayName": "Verify a value in the list",
+          "ReturnType": "System.Boolean",
+          "IsInherited": false,
+          "PassedMessage": "The expected value {value} was shown in the dropdown list {this}.",
+          "FailedMessage": "The expected value {value} was not shown in the dropdown list {this}."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForAppear",
+          "DisplayName": "Verify element appears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} was displayed on the screen.",
+          "FailedMessage": "The element {this} was not found on the screen."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForDisappear",
+          "DisplayName": "Verify element disappears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} disappeared from the screen.",
+          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+        }
+      ]
+    },
+    {
+      "TypeName": "Progile.TRIO.BaseModel.DropdownMenu",
+      "Interactions": [
+        {
+          "Parameters": [
+            {
+              "Name": "selections",
+              "DisplayName": "Submenus and value",
+              "Type": "System.String[]"
+            }
+          ],
+          "MethodName": "SelectValueFromSubmenu",
+          "DisplayName": "Select a value from a submenu",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "value",
+              "DisplayName": "Value",
+              "Type": "System.String"
+            }
+          ],
+          "MethodName": "SelectValue",
+          "DisplayName": "Select value",
+          "ReturnType": "System.Void",
+          "IsInherited": true,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "value",
+              "DisplayName": "Expected value",
+              "Type": "System.String"
+            },
+            {
+              "Name": "actualValue",
+              "DisplayName": "actualValue",
+              "Type": "out_string"
+            }
+          ],
+          "MethodName": "VerifySelectedValue",
+          "DisplayName": "Verify the selected value",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The expected value {value} was shown correctly as the selected value on {this}.",
+          "FailedMessage": "The selected value on {this} was {actualValue} instead of the expected value {value}."
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "value",
+              "DisplayName": "Expected value",
+              "Type": "System.String"
+            }
+          ],
+          "MethodName": "VerifyValueInList",
+          "DisplayName": "Verify a value in the list",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The expected value {value} was shown in the dropdown list {this}.",
+          "FailedMessage": "The expected value {value} was not shown in the dropdown list {this}."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForAppear",
+          "DisplayName": "Verify element appears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} was displayed on the screen.",
+          "FailedMessage": "The element {this} was not found on the screen."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForDisappear",
+          "DisplayName": "Verify element disappears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} disappeared from the screen.",
+          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+        }
+      ]
+    },
+    {
+      "TypeName": "Progile.TRIO.BaseModel.GenericScroller",
+      "Interactions": [
+        {
+          "Parameters": [],
+          "MethodName": "WaitForAppear",
+          "DisplayName": "Verify element appears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} was displayed on the screen.",
+          "FailedMessage": "The element {this} was not found on the screen."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForDisappear",
+          "DisplayName": "Verify element disappears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} disappeared from the screen.",
+          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+        }
+      ]
+    },
+    {
+      "TypeName": "Progile.TRIO.BaseModel.HorizontalScroller",
+      "Interactions": [
+        {
+          "Parameters": [],
+          "MethodName": "WaitForAppear",
+          "DisplayName": "Verify element appears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} was displayed on the screen.",
+          "FailedMessage": "The element {this} was not found on the screen."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForDisappear",
+          "DisplayName": "Verify element disappears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} disappeared from the screen.",
+          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+        }
+      ]
+    },
+    {
+      "TypeName": "Progile.TRIO.BaseModel.IconButton",
+      "Interactions": [
+        {
+          "Parameters": [
+            {
+              "Name": "verification",
+              "DisplayName": "verification",
+              "Type": "interaction"
+            }
+          ],
+          "MethodName": "Click",
+          "DisplayName": "Click",
+          "ReturnType": "System.Void",
+          "IsInherited": true,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "verification",
+              "DisplayName": "verification",
+              "Type": "interaction"
+            }
+          ],
+          "MethodName": "DoubleClick",
+          "DisplayName": "Double-click",
+          "ReturnType": "System.Void",
+          "IsInherited": true,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "verification",
+              "DisplayName": "verification",
+              "Type": "interaction"
+            }
+          ],
+          "MethodName": "Hover",
+          "DisplayName": "Hover",
+          "ReturnType": "System.Void",
+          "IsInherited": true,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForActive",
+          "DisplayName": "Verify button becomes active",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The button {this} was active.",
+          "FailedMessage": "The button {this} was not active."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForInactive",
+          "DisplayName": "Verify button becomes inactive",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The button {this} was inactive.",
+          "FailedMessage": "The button {this} was not inactive."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForAppear",
+          "DisplayName": "Verify element appears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} was displayed on the screen.",
+          "FailedMessage": "The element {this} was not found on the screen."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForDisappear",
+          "DisplayName": "Verify element disappears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} disappeared from the screen.",
+          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+        }
+      ]
+    },
+    {
+      "TypeName": "Progile.TRIO.BaseModel.Label",
+      "Interactions": [
+        {
+          "Parameters": [],
+          "MethodName": "WaitForAppear",
+          "DisplayName": "Verify element appears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} was displayed on the screen.",
+          "FailedMessage": "The element {this} was not found on the screen."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForDisappear",
+          "DisplayName": "Verify element disappears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} disappeared from the screen.",
+          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+        }
+      ]
+    },
+    {
+      "TypeName": "Progile.TRIO.BaseModel.LabelWithButton",
+      "Interactions": [
+        {
+          "Parameters": [
+            {
+              "Name": "verification",
+              "DisplayName": "verification",
+              "Type": "interaction"
+            }
+          ],
+          "MethodName": "Click",
+          "DisplayName": "Click",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "verification",
+              "DisplayName": "verification",
+              "Type": "interaction"
+            }
+          ],
+          "MethodName": "DoubleClick",
+          "DisplayName": "Double-click",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "verification",
+              "DisplayName": "verification",
+              "Type": "interaction"
+            }
+          ],
+          "MethodName": "Hover",
+          "DisplayName": "Hover",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForActive",
+          "DisplayName": "Verify button becomes active",
+          "ReturnType": "System.Boolean",
+          "IsInherited": false,
+          "PassedMessage": "The button {this} was active.",
+          "FailedMessage": "The button {this} was not active."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForInactive",
+          "DisplayName": "Verify button becomes inactive",
+          "ReturnType": "System.Boolean",
+          "IsInherited": false,
+          "PassedMessage": "The button {this} was inactive.",
+          "FailedMessage": "The button {this} was not inactive."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForAppear",
+          "DisplayName": "Verify element appears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} was displayed on the screen.",
+          "FailedMessage": "The element {this} was not found on the screen."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForDisappear",
+          "DisplayName": "Verify element disappears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} disappeared from the screen.",
+          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+        }
+      ]
+    },
+    {
+      "TypeName": "Progile.TRIO.BaseModel.LabelWithCheckbox",
+      "Interactions": [
+        {
+          "Parameters": [],
+          "MethodName": "IsChecked",
+          "DisplayName": "Verify checkbox is checked",
+          "ReturnType": "System.Boolean",
+          "IsInherited": false,
+          "PassedMessage": "The checkbox {this} was checked.",
+          "FailedMessage": "The checkbox {this} was not checked."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "IsUnchecked",
+          "DisplayName": "Verify checkbox is unchecked",
+          "ReturnType": "System.Boolean",
+          "IsInherited": false,
+          "PassedMessage": "The checkbox {this} was unchecked.",
+          "FailedMessage": "The checkbox {this} was unexpectedly checked."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "Check",
+          "DisplayName": "Check",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [],
+          "MethodName": "Uncheck",
+          "DisplayName": "Uncheck",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForAppear",
+          "DisplayName": "Verify element appears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} was displayed on the screen.",
+          "FailedMessage": "The element {this} was not found on the screen."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForDisappear",
+          "DisplayName": "Verify element disappears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} disappeared from the screen.",
+          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+        }
+      ]
+    },
+    {
+      "TypeName": "Progile.TRIO.BaseModel.LabelWithValue",
+      "Interactions": [
+        {
+          "Parameters": [
+            {
+              "Name": "value",
+              "DisplayName": "Expected value",
+              "Type": "System.String"
+            },
+            {
+              "Name": "actualValue",
+              "DisplayName": "actualValue",
+              "Type": "out_string"
+            }
+          ],
+          "MethodName": "VerifyValue",
+          "DisplayName": "Verify the value",
+          "ReturnType": "System.Boolean",
+          "IsInherited": false,
+          "PassedMessage": "The expected value {value} was shown correctly for {this}.",
+          "FailedMessage": "The value for {this} was {actualValue} instead of the expected value {value}."
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "value",
+              "DisplayName": "Expected value",
+              "Type": "System.String"
+            },
+            {
+              "Name": "waitTime",
+              "DisplayName": "Wait time",
+              "Type": "System.TimeSpan"
+            },
+            {
+              "Name": "actualValue",
+              "DisplayName": "actualValue",
+              "Type": "out_string"
+            }
+          ],
+          "MethodName": "WaitForValue",
+          "DisplayName": "Wait for the value",
+          "ReturnType": "System.Boolean",
+          "IsInherited": false,
+          "PassedMessage": "The expected value {value} was shown correctly for {this}.",
+          "FailedMessage": "The value for {this} was {actualValue} after the timeout instead of the expected value {value}."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForAppear",
+          "DisplayName": "Verify element appears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} was displayed on the screen.",
+          "FailedMessage": "The element {this} was not found on the screen."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForDisappear",
+          "DisplayName": "Verify element disappears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} disappeared from the screen.",
+          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+        }
+      ]
+    },
+    {
+      "TypeName": "Progile.TRIO.BaseModel.PwTextBox",
+      "Interactions": [
+        {
+          "Parameters": [
+            {
+              "Name": "pw",
+              "DisplayName": "Password",
+              "Type": "System.String"
+            }
+          ],
+          "MethodName": "Enter",
+          "DisplayName": "Enter",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "expectedText",
+              "DisplayName": "expectedText",
+              "Type": "System.String"
+            }
+          ],
+          "MethodName": "VerifyText",
+          "DisplayName": "Verify the password (only length)",
+          "ReturnType": "System.Boolean",
+          "IsInherited": false,
+          "PassedMessage": "Verify the password (only length) on {this} passed",
+          "FailedMessage": "Verify the password (only length) on {this} failed"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "textToEnter",
+              "DisplayName": "Text to enter",
+              "Type": "System.String"
+            }
+          ],
+          "MethodName": "EnterWithoutVerification",
+          "DisplayName": "Enter without verification",
+          "ReturnType": "System.Void",
+          "IsInherited": true,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [],
+          "MethodName": "PasteText",
+          "DisplayName": "Paste from clipboard",
+          "ReturnType": "System.Void",
+          "IsInherited": true,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "expectedText",
+              "DisplayName": "Expected text",
+              "Type": "System.String"
+            },
+            {
+              "Name": "actualText",
+              "DisplayName": "actualText",
+              "Type": "out_string"
+            }
+          ],
+          "MethodName": "VerifyText",
+          "DisplayName": "Verify the text",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The expected text {expectedText} was shown correctly in {this}.",
+          "FailedMessage": "The text in {this} was {actualText} instead of the expected text {expectedText}."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "ClickOutOfBox",
+          "DisplayName": "Click out of the text box",
+          "ReturnType": "System.Void",
+          "IsInherited": true,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForAppear",
+          "DisplayName": "Verify element appears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} was displayed on the screen.",
+          "FailedMessage": "The element {this} was not found on the screen."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForDisappear",
+          "DisplayName": "Verify element disappears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} disappeared from the screen.",
+          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+        }
+      ]
+    },
+    {
+      "TypeName": "Progile.TRIO.BaseModel.TextBox",
+      "Interactions": [
+        {
+          "Parameters": [
+            {
+              "Name": "textToEnter",
+              "DisplayName": "Text to enter",
+              "Type": "System.String"
+            }
+          ],
+          "MethodName": "Enter",
+          "DisplayName": "Enter",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "textToEnter",
+              "DisplayName": "Text to enter",
+              "Type": "System.String"
+            }
+          ],
+          "MethodName": "EnterWithoutVerification",
+          "DisplayName": "Enter without verification",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [],
+          "MethodName": "PasteText",
+          "DisplayName": "Paste from clipboard",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "expectedText",
+              "DisplayName": "Expected text",
+              "Type": "System.String"
+            },
+            {
+              "Name": "actualText",
+              "DisplayName": "actualText",
+              "Type": "out_string"
+            }
+          ],
+          "MethodName": "VerifyText",
+          "DisplayName": "Verify the text",
+          "ReturnType": "System.Boolean",
+          "IsInherited": false,
+          "PassedMessage": "The expected text {expectedText} was shown correctly in {this}.",
+          "FailedMessage": "The text in {this} was {actualText} instead of the expected text {expectedText}."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "ClickOutOfBox",
+          "DisplayName": "Click out of the text box",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForAppear",
+          "DisplayName": "Verify element appears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} was displayed on the screen.",
+          "FailedMessage": "The element {this} was not found on the screen."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForDisappear",
+          "DisplayName": "Verify element disappears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} disappeared from the screen.",
+          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+        }
+      ]
+    }
+  ],
+  "ModelOcrParamList": []
+}
