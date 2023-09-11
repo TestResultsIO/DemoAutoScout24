@@ -366,6 +366,114 @@
         {
           "Parameters": [
             {
+              "Name": "searchColumn",
+              "DisplayName": "searchColumn",
+              "Type": "Progile.TRIO.BaseModel.Column"
+            },
+            {
+              "Name": "searchText",
+              "DisplayName": "searchText",
+              "Type": "System.String"
+            }
+          ],
+          "MethodName": "GetRow",
+          "DisplayName": "Get row",
+          "ReturnType": "Progile.TRIO.BaseModel.Row",
+          "IsInherited": true,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "column1",
+              "DisplayName": "column1",
+              "Type": "Progile.TRIO.BaseModel.Column"
+            },
+            {
+              "Name": "searchText1",
+              "DisplayName": "searchText1",
+              "Type": "System.String"
+            },
+            {
+              "Name": "column2",
+              "DisplayName": "column2",
+              "Type": "Progile.TRIO.BaseModel.Column"
+            },
+            {
+              "Name": "searchText2",
+              "DisplayName": "searchText2",
+              "Type": "System.String"
+            }
+          ],
+          "MethodName": "GetRow",
+          "DisplayName": "Get row from 2 values",
+          "ReturnType": "Progile.TRIO.BaseModel.Row",
+          "IsInherited": true,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "column1",
+              "DisplayName": "column1",
+              "Type": "Progile.TRIO.BaseModel.Column"
+            },
+            {
+              "Name": "searchText1",
+              "DisplayName": "searchText1",
+              "Type": "System.String"
+            },
+            {
+              "Name": "column2",
+              "DisplayName": "column2",
+              "Type": "Progile.TRIO.BaseModel.Column"
+            },
+            {
+              "Name": "searchText2",
+              "DisplayName": "searchText2",
+              "Type": "System.String"
+            },
+            {
+              "Name": "column3",
+              "DisplayName": "column3",
+              "Type": "Progile.TRIO.BaseModel.Column"
+            },
+            {
+              "Name": "searchText3",
+              "DisplayName": "searchText3",
+              "Type": "System.String"
+            }
+          ],
+          "MethodName": "GetRow",
+          "DisplayName": "Get row from 3 values",
+          "ReturnType": "Progile.TRIO.BaseModel.Row",
+          "IsInherited": true,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [],
+          "MethodName": "GetFirstRow",
+          "DisplayName": "Get first row",
+          "ReturnType": "Progile.TRIO.BaseModel.Row",
+          "IsInherited": true,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [],
+          "MethodName": "GetLastRow",
+          "DisplayName": "Get last row",
+          "ReturnType": "Progile.TRIO.BaseModel.Row",
+          "IsInherited": true,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [
+            {
               "Name": "selection",
               "DisplayName": "selection",
               "Type": "Progile.TRIO.BaseModel.Column"
@@ -639,6 +747,15 @@
           "FailedMessage": null
         },
         {
+          "Parameters": [],
+          "MethodName": "ClickWithUpdateCheck",
+          "DisplayName": "Click with update check",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
           "Parameters": [
             {
               "Name": "verification",
@@ -647,7 +764,7 @@
             }
           ],
           "MethodName": "Hover",
-          "DisplayName": "Hover",
+          "DisplayName": "Hover over",
           "ReturnType": "System.Void",
           "IsInherited": false,
           "PassedMessage": null,
@@ -1014,6 +1131,15 @@
           "FailedMessage": null
         },
         {
+          "Parameters": [],
+          "MethodName": "ClickWithUpdateCheck",
+          "DisplayName": "Click with update check",
+          "ReturnType": "System.Void",
+          "IsInherited": true,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
           "Parameters": [
             {
               "Name": "verification",
@@ -1022,7 +1148,7 @@
             }
           ],
           "MethodName": "Hover",
-          "DisplayName": "Hover",
+          "DisplayName": "Hover over",
           "ReturnType": "System.Void",
           "IsInherited": true,
           "PassedMessage": null,
@@ -1131,7 +1257,7 @@
             }
           ],
           "MethodName": "Hover",
-          "DisplayName": "Hover",
+          "DisplayName": "Hover over",
           "ReturnType": "System.Void",
           "IsInherited": false,
           "PassedMessage": null,
@@ -1409,6 +1535,113 @@
       ]
     },
     {
+      "TypeName": "Progile.TRIO.BaseModel.Row",
+      "Interactions": [
+        {
+          "Parameters": [
+            {
+              "Name": "verification",
+              "DisplayName": "verification",
+              "Type": "interaction"
+            }
+          ],
+          "MethodName": "HoverOver",
+          "DisplayName": "Hover over",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "verification",
+              "DisplayName": "verification",
+              "Type": "interaction"
+            }
+          ],
+          "MethodName": "SelectRow",
+          "DisplayName": "Click",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "verification",
+              "DisplayName": "verification",
+              "Type": "interaction"
+            }
+          ],
+          "MethodName": "SelectRowWithDoubleClick",
+          "DisplayName": "Double-click",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [],
+          "MethodName": "SelectRowWithUpdateCheck",
+          "DisplayName": "Click with update check",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "button",
+              "DisplayName": "button",
+              "Type": "Progile.TRIO.BaseModel.Button"
+            }
+          ],
+          "MethodName": "GetButtonInRow",
+          "DisplayName": "Get Button in row",
+          "ReturnType": "Progile.TRIO.BaseModel.Button",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "checkbox",
+              "DisplayName": "checkbox",
+              "Type": "Progile.TRIO.BaseModel.Checkbox"
+            }
+          ],
+          "MethodName": "GetCheckboxInRow",
+          "DisplayName": "Get Checkbox in row",
+          "ReturnType": "Progile.TRIO.BaseModel.Checkbox",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForAppear",
+          "DisplayName": "Verify element appears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} was displayed on the screen.",
+          "FailedMessage": "The element {this} was not found on the screen."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForDisappear",
+          "DisplayName": "Verify element disappears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} disappeared from the screen.",
+          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+        }
+      ]
+    },
+    {
       "TypeName": "Progile.TRIO.BaseModel.TextBox",
       "Interactions": [
         {
@@ -1500,5 +1733,12 @@
       ]
     }
   ],
-  "ModelOcrParamList": []
+  "ModelOcrParamList": [
+    {
+      "FullName": "Progile.TRIO.BaseModel.OcrParams.AlternativeEngine"
+    },
+    {
+      "FullName": "Progile.TRIO.BaseModel.OcrParams.ExactMatch"
+    }
+  ]
 }

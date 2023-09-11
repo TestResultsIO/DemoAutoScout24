@@ -19,7 +19,7 @@ namespace AutoScout24_Model.Screens.AutoScout24Screens
 
         partial void ConfigureElementProperties()
         {
-            OffersFound.ValueOcrParas = OcrParams.TextAlternative;
+            OffersFound.ValueOcrParas = Helpers.OcrParams.TextAlternative;
         }
 
         public void FindSpecificCarInResults(string name)
