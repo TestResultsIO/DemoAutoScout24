@@ -1,4 +1,4 @@
-﻿using EmailHelper;
+﻿using Progile.TRIO.EmailHelper;
 
 using System;
 using System.Collections.Generic;
@@ -57,9 +57,6 @@ public static class ReceiveEmails
     {         
         // ignore emails, received more than a minute ago.
         var earliestReceiveTime = timeStamp != default ? timeStamp : DateTime.Now - TimeSpan.FromMinutes(1);
-
-        var matchingMsgs = new List<string>();
-
         string receiverAddress;
         if (string.IsNullOrEmpty(emailTag))
             receiverAddress = $"{EmailUserName}@{EmailProvider}";
@@ -69,15 +66,10 @@ public static class ReceiveEmails
         var mailHandler = new Pop3MailHandler(receiverAddress, Password);
 
         t.Log("Start getting emails.");
+        // if more data than just the Body is required use "ReceiveEmail"
         // leave sender and subject null or empty if you don't want to filter for it.
-        var filteredEmails = mailHandler.ReceiveEmail(earliestReceiveTime, SenderAddress, subject, timeOutInMins: 10);
+        var filteredEmails = mailHandler.ReceiveEmailAsDecodedHtmlBody(earliestReceiveTime, SenderAddress, subject, timeOutInMins: 10);
         t.Log("Finish getting emails.");
-
-        foreach (var mail in filteredEmails)
-        {
-            matchingMsgs.Add(mail.BodyText);
-        }
-
-        return matchingMsgs;
+        return filteredEmails;
     }
 }
