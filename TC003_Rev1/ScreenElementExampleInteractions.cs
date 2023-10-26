@@ -1,4 +1,6 @@
-﻿[TestCase(1)]
+﻿using Progile.TRIO.BaseModel;
+
+[TestCase(1)]
 public class ScreenElementExampleInteractions : TestCase
 {
     /// <summary>
@@ -221,10 +223,11 @@ public class ScreenElementExampleInteractions : TestCase
     {
         //https://www.scout24.com/en/investor-relations/share/share-price
 
-
         //to see the Table scroll down and activate the Yearly Performance Tab 
         if (!App.SharePriceScreen.YearlyPerformanceTab.IsActive())
             App.SharePriceScreen.YearlyPerformanceTab.Click(App.SharePriceScreen.YearlyPerformanceTab.WaitForActive);
+
+        App.SharePriceScreen.LabelDataProvided.WaitFor(); //scroll down to see the end of the table
 
         //get the row with the value "Yearly Low" in the first Column "Scout24" 
         Row rowYearlyLow = App.SharePriceScreen.YearlyPerformanceTable.GetRow(searchColumn: App.SharePriceScreen.YearlyPerformanceTable.Scout24, "Yearly Low");
@@ -245,6 +248,21 @@ public class ScreenElementExampleInteractions : TestCase
             targetColumn: App.SharePriceScreen.YearlyPerformanceTable.Column2020,
             targetRow: rowYearlyLow
         );
+
+        //Verify the Last row of the Table is "Yearly Close"
+        //Make sure the TableRect is correctly set in Initialise of YearlyPerformanceTable.cs 
+        Row lastRow = App.SharePriceScreen.YearlyPerformanceTable.GetLastRow();
+        bool correctLastRow = App.SharePriceScreen.YearlyPerformanceTable.VerifyCellContent(App.SharePriceScreen.YearlyPerformanceTable.Scout24, lastRow, "Yearly Close");
+        t.Report.PassFailStep(correctLastRow, "Last Row is 'Yearly Close' as expected", "Last Row was not 'Yearly Close'");
+
+        //To count the table rows also make sure the TableRect is correctly
+        int rowCount = App.SharePriceScreen.YearlyPerformanceTable.CountVisibleRows();
+        t.Report.PassFailStep(rowCount == 4, "Found 4 Rows as expected", $"Expected 4 Rows but found {rowCount} rows.");
+
+        //Add and Delete rows of a Table:
+        //Example: https://demos.telerik.com/kendo-ui/grid/editing
+        App.EditableTableScreen.ExampleTable.AddNewEntry("my new Product");
+        App.EditableTableScreen.ExampleTable.DeleteEntry("my new Product");
     }
 
 }

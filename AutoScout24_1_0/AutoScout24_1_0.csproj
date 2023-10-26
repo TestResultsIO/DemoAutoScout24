@@ -86,6 +86,14 @@
     <Compile Include="Screens\AutoScout24.de Screens\MainPageGerman.g.cs">
       <DependentUpon>MainPageGerman.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screens\Demos Telerik\EditableTableScreen.cs" />
+    <Compile Include="Screens\Demos Telerik\EditableTableScreen.g.cs">
+      <DependentUpon>EditableTableScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Demos Telerik\ExampleTable.cs" />
+    <Compile Include="Screens\Demos Telerik\ExampleTable.g.cs">
+      <DependentUpon>ExampleTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\Scout24.com Screens\SharePriceScreen.cs" />
     <Compile Include="Screens\Scout24.com Screens\SharePriceScreen.g.cs">
       <DependentUpon>SharePriceScreen.cs</DependentUpon>
@@ -456,6 +464,53 @@
       <Project>{B843D182-D210-4DAA-BC38-D5FD67DA8960}</Project>
       <Name>Windows_Win</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Scout24_com Screens\SharePriceScreen\LabelDataProvided\LabelDataProvided.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Demos Telerik\EditableTableScreen\AddNewRecordButton\active\active.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\Demos Telerik\EditableTableScreen\DeleteRowButton\active\active.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\Demos Telerik\EditableTableScreen\ExampleTable\ColumnDiscontinued\ColumnDiscontinued.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\Demos Telerik\EditableTableScreen\ExampleTable\ColumnProductName\ColumnProductName.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\Demos Telerik\EditableTableScreen\ExampleTable\ColumnUnitPrice\ColumnUnitPrice.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\Demos Telerik\EditableTableScreen\ExampleTable\ColumnUnitsInStock\ColumnUnitsInStock.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\Demos Telerik\EditableTableScreen\ExampleTable\TableLoadedImage\TableLoadedImage.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\Demos Telerik\EditableTableScreen\Screen_Image\Screen_Image.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\Demos Telerik\EditableTableScreen\Screen_Loaded\Screen_Loaded.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Demos Telerik\EditableTableScreen\NewProductNameTextbox\newProduct.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Demos Telerik\EditableTableScreen\DeleteRecordConfirmation\Button\active\Button_active.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\Demos Telerik\EditableTableScreen\DeleteRecordConfirmation\LabelImage\LabelImage.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

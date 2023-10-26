@@ -338,6 +338,213 @@
       ]
     },
     {
+      "TypeName": "AutoScout24_Model.Screens.DemosTelerik.EditableTableScreen",
+      "Interactions": [
+        {
+          "Parameters": [],
+          "MethodName": "WaitForAppear",
+          "DisplayName": "Verify element appears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} was displayed on the screen.",
+          "FailedMessage": "The element {this} was not found on the screen."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForDisappear",
+          "DisplayName": "Verify element disappears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} disappeared from the screen.",
+          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+        }
+      ]
+    },
+    {
+      "TypeName": "AutoScout24_Model.Screens.DemosTelerik.ExampleTable",
+      "Interactions": [
+        {
+          "Parameters": [
+            {
+              "Name": "searchColumn",
+              "DisplayName": "searchColumn",
+              "Type": "Progile.TRIO.BaseModel.Column"
+            },
+            {
+              "Name": "searchText",
+              "DisplayName": "searchText",
+              "Type": "System.String"
+            }
+          ],
+          "MethodName": "GetRow",
+          "DisplayName": "Get row",
+          "ReturnType": "Progile.TRIO.BaseModel.Row",
+          "IsInherited": true,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "column1",
+              "DisplayName": "column1",
+              "Type": "Progile.TRIO.BaseModel.Column"
+            },
+            {
+              "Name": "searchText1",
+              "DisplayName": "searchText1",
+              "Type": "System.String"
+            },
+            {
+              "Name": "column2",
+              "DisplayName": "column2",
+              "Type": "Progile.TRIO.BaseModel.Column"
+            },
+            {
+              "Name": "searchText2",
+              "DisplayName": "searchText2",
+              "Type": "System.String"
+            }
+          ],
+          "MethodName": "GetRow",
+          "DisplayName": "Get row from 2 values",
+          "ReturnType": "Progile.TRIO.BaseModel.Row",
+          "IsInherited": true,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "column1",
+              "DisplayName": "column1",
+              "Type": "Progile.TRIO.BaseModel.Column"
+            },
+            {
+              "Name": "searchText1",
+              "DisplayName": "searchText1",
+              "Type": "System.String"
+            },
+            {
+              "Name": "column2",
+              "DisplayName": "column2",
+              "Type": "Progile.TRIO.BaseModel.Column"
+            },
+            {
+              "Name": "searchText2",
+              "DisplayName": "searchText2",
+              "Type": "System.String"
+            },
+            {
+              "Name": "column3",
+              "DisplayName": "column3",
+              "Type": "Progile.TRIO.BaseModel.Column"
+            },
+            {
+              "Name": "searchText3",
+              "DisplayName": "searchText3",
+              "Type": "System.String"
+            }
+          ],
+          "MethodName": "GetRow",
+          "DisplayName": "Get row from 3 values",
+          "ReturnType": "Progile.TRIO.BaseModel.Row",
+          "IsInherited": true,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [],
+          "MethodName": "GetFirstRow",
+          "DisplayName": "Get first row",
+          "ReturnType": "Progile.TRIO.BaseModel.Row",
+          "IsInherited": true,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [],
+          "MethodName": "GetLastRow",
+          "DisplayName": "Get last row",
+          "ReturnType": "Progile.TRIO.BaseModel.Row",
+          "IsInherited": true,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "selection",
+              "DisplayName": "selection",
+              "Type": "Progile.TRIO.BaseModel.Column"
+            },
+            {
+              "Name": "selectionValue",
+              "DisplayName": "selectionValue",
+              "Type": "System.String"
+            },
+            {
+              "Name": "verification",
+              "DisplayName": "verification",
+              "Type": "Progile.TRIO.BaseModel.Column"
+            },
+            {
+              "Name": "expectedValue",
+              "DisplayName": "expectedValue",
+              "Type": "System.String"
+            },
+            {
+              "Name": "actualValue",
+              "DisplayName": "actualValue",
+              "Type": "out_string"
+            }
+          ],
+          "MethodName": "Verify",
+          "DisplayName": "Verify Cell Content",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The expected value {expectedValue} was shown correctly in the row {selectionValue}.",
+          "FailedMessage": "The value was {actualValue} instead of the expected value {expectedValue}."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForAppear",
+          "DisplayName": "Verify element appears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} was displayed on the screen.",
+          "FailedMessage": "The element {this} was not found on the screen."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForDisappear",
+          "DisplayName": "Verify element disappears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} disappeared from the screen.",
+          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+        }
+      ],
+      "Properties": [
+        {
+          "PropertyName": "ColumnProductName",
+          "PropertyType": "Progile.TRIO.BaseModel.Column"
+        },
+        {
+          "PropertyName": "ColumnUnitPrice",
+          "PropertyType": "Progile.TRIO.BaseModel.Column"
+        },
+        {
+          "PropertyName": "ColumnUnitsInStock",
+          "PropertyType": "Progile.TRIO.BaseModel.Column"
+        },
+        {
+          "PropertyName": "ColumnDiscontinued",
+          "PropertyType": "Progile.TRIO.BaseModel.Column"
+        }
+      ]
+    },
+    {
       "TypeName": "AutoScout24_Model.Screens.Scout24_comScreens.SharePriceScreen",
       "Interactions": [
         {
