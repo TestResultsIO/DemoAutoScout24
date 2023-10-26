@@ -79,7 +79,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Progile.TRIO.BaseModel">
-      <Version>*</Version>
+      <Version>5.2.5</Version>
     </PackageReference>
     <PackageReference Include="Progile.TRIO.EnvironmentModel.Windows">
       <Version>*</Version>

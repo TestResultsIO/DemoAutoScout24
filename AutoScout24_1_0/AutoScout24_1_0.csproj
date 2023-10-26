@@ -139,10 +139,10 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Progile.TRIO.BaseModel">
-      <Version>5.2.4</Version>
+      <Version>5.2.5</Version>
     </PackageReference>
     <PackageReference Include="Progile.TRIO.EnvironmentModel.Windows">
-      <Version>5.2.4</Version>
+      <Version>5.2.5.1</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>

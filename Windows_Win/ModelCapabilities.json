@@ -1043,6 +1043,329 @@
       ]
     },
     {
+      "TypeName": "Progile.TRIO.EnvironmentModel.SystemHelpers",
+      "Interactions": [
+        {
+          "Parameters": [],
+          "MethodName": "EnvironmentReady",
+          "DisplayName": "Wait for environment ready",
+          "ReturnType": "System.Boolean",
+          "IsInherited": false,
+          "PassedMessage": "Wait for environment ready on {this} passed",
+          "FailedMessage": "Wait for environment ready on {this} failed"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "password",
+              "DisplayName": "password",
+              "Type": "System.String"
+            }
+          ],
+          "MethodName": "LoginRecentUser",
+          "DisplayName": "Login recent user to Windows",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "processName",
+              "DisplayName": "Process name",
+              "Type": "System.String"
+            }
+          ],
+          "MethodName": "RunProcess",
+          "DisplayName": "Run process",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "processName",
+              "DisplayName": "Process name",
+              "Type": "System.String"
+            }
+          ],
+          "MethodName": "KillProcess",
+          "DisplayName": "Kill process",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [],
+          "MethodName": "SetUpRemoteDirectory",
+          "DisplayName": "Setup remote directory",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "source",
+              "DisplayName": "source",
+              "Type": "System.String"
+            },
+            {
+              "Name": "destination",
+              "DisplayName": "destination",
+              "Type": "System.String"
+            }
+          ],
+          "MethodName": "CopyFiles",
+          "DisplayName": "Copy files",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "source",
+              "DisplayName": "source",
+              "Type": "System.String"
+            },
+            {
+              "Name": "destination",
+              "DisplayName": "destination",
+              "Type": "System.String"
+            }
+          ],
+          "MethodName": "CopyFolder",
+          "DisplayName": "Copy folder",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "itemPath",
+              "DisplayName": "itemPath",
+              "Type": "System.String"
+            },
+            {
+              "Name": "newName",
+              "DisplayName": "newName",
+              "Type": "System.String"
+            }
+          ],
+          "MethodName": "RenameItem",
+          "DisplayName": "Rename file",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "paths",
+              "DisplayName": "paths",
+              "Type": "System.String[]"
+            }
+          ],
+          "MethodName": "CreateFolderPath",
+          "DisplayName": "Create folder paths",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "fileWithPath",
+              "DisplayName": "fileWithPath",
+              "Type": "System.String"
+            }
+          ],
+          "MethodName": "CheckFileExists",
+          "DisplayName": "Verify file exists",
+          "ReturnType": "System.Boolean",
+          "IsInherited": false,
+          "PassedMessage": "Verify file exists on {this} passed",
+          "FailedMessage": "Verify file exists on {this} failed"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "fileWithPath",
+              "DisplayName": "fileWithPath",
+              "Type": "System.String"
+            }
+          ],
+          "MethodName": "DeleteFile",
+          "DisplayName": "Delete file",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "pathToZipFile",
+              "DisplayName": "pathToZipFile",
+              "Type": "System.String"
+            },
+            {
+              "Name": "destinationPath",
+              "DisplayName": "destinationPath",
+              "Type": "System.String"
+            }
+          ],
+          "MethodName": "UnzipFile",
+          "DisplayName": "Unzip file",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "url",
+              "DisplayName": "url",
+              "Type": "System.String"
+            }
+          ],
+          "MethodName": "OpenWebUrl",
+          "DisplayName": "Open web URL",
+          "ReturnType": "Progile.TRIO.BaseModel.IBrowser",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "url",
+              "DisplayName": "url",
+              "Type": "System.String"
+            }
+          ],
+          "MethodName": "OpenWebUrl",
+          "DisplayName": "Open web URL",
+          "ReturnType": "Progile.TRIO.BaseModel.IBrowser",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        }
+      ]
+    },
+    {
+      "TypeName": "Progile.TRIO.EnvironmentModel.WebBrowser.Browser",
+      "Interactions": [
+        {
+          "Parameters": [],
+          "MethodName": "GoBack",
+          "DisplayName": "Navigate back",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [],
+          "MethodName": "GoForward",
+          "DisplayName": "Navigate forward",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [],
+          "MethodName": "Refresh",
+          "DisplayName": "Refresh",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "username",
+              "DisplayName": "username",
+              "Type": "System.String"
+            },
+            {
+              "Name": "password",
+              "DisplayName": "password",
+              "Type": "System.String"
+            }
+          ],
+          "MethodName": "Authenticate",
+          "DisplayName": "Authenticate",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "path",
+              "DisplayName": "path",
+              "Type": "System.String"
+            }
+          ],
+          "MethodName": "DownloadAndSaveFileAs",
+          "DisplayName": "Download and Save File",
+          "ReturnType": "System.Boolean",
+          "IsInherited": false,
+          "PassedMessage": "Download and Save File on {this} passed",
+          "FailedMessage": "Download and Save File on {this} failed"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "url",
+              "DisplayName": "url",
+              "Type": "System.String"
+            }
+          ],
+          "MethodName": "GoToURL",
+          "DisplayName": "Go to URL",
+          "ReturnType": "System.Void",
+          "IsInherited": false,
+          "PassedMessage": null,
+          "FailedMessage": null
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForAppear",
+          "DisplayName": "Verify element appears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} was displayed on the screen.",
+          "FailedMessage": "The element {this} was not found on the screen."
+        },
+        {
+          "Parameters": [],
+          "MethodName": "WaitForDisappear",
+          "DisplayName": "Verify element disappears",
+          "ReturnType": "System.Boolean",
+          "IsInherited": true,
+          "PassedMessage": "The element {this} disappeared from the screen.",
+          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+        }
+      ]
+    },
+    {
       "TypeName": "Windows_Model.Screens.FileExplorer",
       "Interactions": [
         {
