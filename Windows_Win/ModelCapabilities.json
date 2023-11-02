@@ -2,22 +2,23 @@
   "ModelTypeList": [
     {
       "TypeName": "Progile.TRIO.BaseModel.BaseScreen",
+      "BaseTypeName": "Progile.TRIO.BaseModel.OnScreenElement"
+    },
+    {
+      "TypeName": "Progile.TRIO.BaseModel.OnScreenElement",
+      "BaseTypeName": "System.Object",
       "Interactions": [
         {
-          "Parameters": [],
           "MethodName": "WaitForAppear",
           "DisplayName": "Verify element appears",
           "ReturnType": "System.Boolean",
-          "IsInherited": true,
           "PassedMessage": "The element {this} was displayed on the screen.",
           "FailedMessage": "The element {this} was not found on the screen."
         },
         {
-          "Parameters": [],
           "MethodName": "WaitForDisappear",
           "DisplayName": "Verify element disappears",
           "ReturnType": "System.Boolean",
-          "IsInherited": true,
           "PassedMessage": "The element {this} disappeared from the screen.",
           "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
         }
@@ -25,6 +26,7 @@
     },
     {
       "TypeName": "Progile.TRIO.BaseModel.Button",
+      "BaseTypeName": "Progile.TRIO.BaseModel.OnScreenElement",
       "Interactions": [
         {
           "Parameters": [
@@ -36,10 +38,7 @@
           ],
           "MethodName": "Click",
           "DisplayName": "Click",
-          "ReturnType": "System.Void",
-          "IsInherited": false,
-          "PassedMessage": null,
-          "FailedMessage": null
+          "ReturnType": "System.Void"
         },
         {
           "Parameters": [
@@ -51,19 +50,12 @@
           ],
           "MethodName": "DoubleClick",
           "DisplayName": "Double-click",
-          "ReturnType": "System.Void",
-          "IsInherited": false,
-          "PassedMessage": null,
-          "FailedMessage": null
+          "ReturnType": "System.Void"
         },
         {
-          "Parameters": [],
           "MethodName": "ClickWithUpdateCheck",
           "DisplayName": "Click with update check",
-          "ReturnType": "System.Void",
-          "IsInherited": false,
-          "PassedMessage": null,
-          "FailedMessage": null
+          "ReturnType": "System.Void"
         },
         {
           "Parameters": [
@@ -75,206 +67,61 @@
           ],
           "MethodName": "Hover",
           "DisplayName": "Hover over",
-          "ReturnType": "System.Void",
-          "IsInherited": false,
-          "PassedMessage": null,
-          "FailedMessage": null
+          "ReturnType": "System.Void"
         },
         {
-          "Parameters": [],
           "MethodName": "WaitForActive",
           "DisplayName": "Verify button becomes active",
           "ReturnType": "System.Boolean",
-          "IsInherited": false,
           "PassedMessage": "The button {this} was active.",
           "FailedMessage": "The button {this} was not active."
         },
         {
-          "Parameters": [],
           "MethodName": "WaitForInactive",
           "DisplayName": "Verify button becomes inactive",
           "ReturnType": "System.Boolean",
-          "IsInherited": false,
           "PassedMessage": "The button {this} was inactive.",
           "FailedMessage": "The button {this} was not inactive."
-        },
-        {
-          "Parameters": [],
-          "MethodName": "WaitForAppear",
-          "DisplayName": "Verify element appears",
-          "ReturnType": "System.Boolean",
-          "IsInherited": true,
-          "PassedMessage": "The element {this} was displayed on the screen.",
-          "FailedMessage": "The element {this} was not found on the screen."
-        },
-        {
-          "Parameters": [],
-          "MethodName": "WaitForDisappear",
-          "DisplayName": "Verify element disappears",
-          "ReturnType": "System.Boolean",
-          "IsInherited": true,
-          "PassedMessage": "The element {this} disappeared from the screen.",
-          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
         }
       ]
     },
     {
       "TypeName": "Progile.TRIO.BaseModel.Checkbox",
+      "BaseTypeName": "Progile.TRIO.BaseModel.OnScreenElement",
       "Interactions": [
         {
-          "Parameters": [],
           "MethodName": "IsChecked",
           "DisplayName": "Verify checkbox is checked",
           "ReturnType": "System.Boolean",
-          "IsInherited": false,
           "PassedMessage": "The checkbox {this} was checked.",
           "FailedMessage": "The checkbox {this} was not checked."
         },
         {
-          "Parameters": [],
           "MethodName": "IsUnchecked",
           "DisplayName": "Verify checkbox is unchecked",
           "ReturnType": "System.Boolean",
-          "IsInherited": false,
           "PassedMessage": "The checkbox {this} was unchecked.",
           "FailedMessage": "The checkbox {this} was unexpectedly checked."
         },
         {
-          "Parameters": [],
           "MethodName": "Check",
           "DisplayName": "Check",
-          "ReturnType": "System.Void",
-          "IsInherited": false,
-          "PassedMessage": null,
-          "FailedMessage": null
+          "ReturnType": "System.Void"
         },
         {
-          "Parameters": [],
           "MethodName": "Uncheck",
           "DisplayName": "Uncheck",
-          "ReturnType": "System.Void",
-          "IsInherited": false,
-          "PassedMessage": null,
-          "FailedMessage": null
-        },
-        {
-          "Parameters": [],
-          "MethodName": "WaitForAppear",
-          "DisplayName": "Verify element appears",
-          "ReturnType": "System.Boolean",
-          "IsInherited": true,
-          "PassedMessage": "The element {this} was displayed on the screen.",
-          "FailedMessage": "The element {this} was not found on the screen."
-        },
-        {
-          "Parameters": [],
-          "MethodName": "WaitForDisappear",
-          "DisplayName": "Verify element disappears",
-          "ReturnType": "System.Boolean",
-          "IsInherited": true,
-          "PassedMessage": "The element {this} disappeared from the screen.",
-          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+          "ReturnType": "System.Void"
         }
       ]
     },
     {
       "TypeName": "Progile.TRIO.BaseModel.ContextMenu",
-      "Interactions": [
-        {
-          "Parameters": [],
-          "MethodName": "WaitForAppear",
-          "DisplayName": "Verify element appears",
-          "ReturnType": "System.Boolean",
-          "IsInherited": true,
-          "PassedMessage": "The element {this} was displayed on the screen.",
-          "FailedMessage": "The element {this} was not found on the screen."
-        },
-        {
-          "Parameters": [],
-          "MethodName": "WaitForDisappear",
-          "DisplayName": "Verify element disappears",
-          "ReturnType": "System.Boolean",
-          "IsInherited": true,
-          "PassedMessage": "The element {this} disappeared from the screen.",
-          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
-        }
-      ]
-    },
-    {
-      "TypeName": "Progile.TRIO.BaseModel.Dropdown",
-      "Interactions": [
-        {
-          "Parameters": [
-            {
-              "Name": "value",
-              "DisplayName": "Value",
-              "Type": "System.String"
-            }
-          ],
-          "MethodName": "SelectValue",
-          "DisplayName": "Select value",
-          "ReturnType": "System.Void",
-          "IsInherited": false,
-          "PassedMessage": null,
-          "FailedMessage": null
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "value",
-              "DisplayName": "Expected value",
-              "Type": "System.String"
-            },
-            {
-              "Name": "actualValue",
-              "DisplayName": "actualValue",
-              "Type": "out_string"
-            }
-          ],
-          "MethodName": "VerifySelectedValue",
-          "DisplayName": "Verify the selected value",
-          "ReturnType": "System.Boolean",
-          "IsInherited": false,
-          "PassedMessage": "The expected value {value} was shown correctly as the selected value on {this}.",
-          "FailedMessage": "The selected value on {this} was {actualValue} instead of the expected value {value}."
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "value",
-              "DisplayName": "Expected value",
-              "Type": "System.String"
-            }
-          ],
-          "MethodName": "VerifyValueInList",
-          "DisplayName": "Verify a value in the list",
-          "ReturnType": "System.Boolean",
-          "IsInherited": false,
-          "PassedMessage": "The expected value {value} was shown in the dropdown list {this}.",
-          "FailedMessage": "The expected value {value} was not shown in the dropdown list {this}."
-        },
-        {
-          "Parameters": [],
-          "MethodName": "WaitForAppear",
-          "DisplayName": "Verify element appears",
-          "ReturnType": "System.Boolean",
-          "IsInherited": true,
-          "PassedMessage": "The element {this} was displayed on the screen.",
-          "FailedMessage": "The element {this} was not found on the screen."
-        },
-        {
-          "Parameters": [],
-          "MethodName": "WaitForDisappear",
-          "DisplayName": "Verify element disappears",
-          "ReturnType": "System.Boolean",
-          "IsInherited": true,
-          "PassedMessage": "The element {this} disappeared from the screen.",
-          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
-        }
-      ]
+      "BaseTypeName": "Progile.TRIO.BaseModel.OnScreenElement"
     },
     {
       "TypeName": "Progile.TRIO.BaseModel.DropdownMenu",
+      "BaseTypeName": "Progile.TRIO.BaseModel.Dropdown",
       "Interactions": [
         {
           "Parameters": [
@@ -286,11 +133,14 @@
           ],
           "MethodName": "SelectValueFromSubmenu",
           "DisplayName": "Select a value from a submenu",
-          "ReturnType": "System.Void",
-          "IsInherited": false,
-          "PassedMessage": null,
-          "FailedMessage": null
-        },
+          "ReturnType": "System.Void"
+        }
+      ]
+    },
+    {
+      "TypeName": "Progile.TRIO.BaseModel.Dropdown",
+      "BaseTypeName": "Progile.TRIO.BaseModel.OnScreenElement",
+      "Interactions": [
         {
           "Parameters": [
             {
@@ -301,10 +151,7 @@
           ],
           "MethodName": "SelectValue",
           "DisplayName": "Select value",
-          "ReturnType": "System.Void",
-          "IsInherited": true,
-          "PassedMessage": null,
-          "FailedMessage": null
+          "ReturnType": "System.Void"
         },
         {
           "Parameters": [
@@ -322,7 +169,6 @@
           "MethodName": "VerifySelectedValue",
           "DisplayName": "Verify the selected value",
           "ReturnType": "System.Boolean",
-          "IsInherited": true,
           "PassedMessage": "The expected value {value} was shown correctly as the selected value on {this}.",
           "FailedMessage": "The selected value on {this} was {actualValue} instead of the expected value {value}."
         },
@@ -337,196 +183,34 @@
           "MethodName": "VerifyValueInList",
           "DisplayName": "Verify a value in the list",
           "ReturnType": "System.Boolean",
-          "IsInherited": true,
           "PassedMessage": "The expected value {value} was shown in the dropdown list {this}.",
           "FailedMessage": "The expected value {value} was not shown in the dropdown list {this}."
-        },
-        {
-          "Parameters": [],
-          "MethodName": "WaitForAppear",
-          "DisplayName": "Verify element appears",
-          "ReturnType": "System.Boolean",
-          "IsInherited": true,
-          "PassedMessage": "The element {this} was displayed on the screen.",
-          "FailedMessage": "The element {this} was not found on the screen."
-        },
-        {
-          "Parameters": [],
-          "MethodName": "WaitForDisappear",
-          "DisplayName": "Verify element disappears",
-          "ReturnType": "System.Boolean",
-          "IsInherited": true,
-          "PassedMessage": "The element {this} disappeared from the screen.",
-          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
-        }
-      ]
-    },
-    {
-      "TypeName": "Progile.TRIO.BaseModel.GenericScroller",
-      "Interactions": [
-        {
-          "Parameters": [],
-          "MethodName": "WaitForAppear",
-          "DisplayName": "Verify element appears",
-          "ReturnType": "System.Boolean",
-          "IsInherited": true,
-          "PassedMessage": "The element {this} was displayed on the screen.",
-          "FailedMessage": "The element {this} was not found on the screen."
-        },
-        {
-          "Parameters": [],
-          "MethodName": "WaitForDisappear",
-          "DisplayName": "Verify element disappears",
-          "ReturnType": "System.Boolean",
-          "IsInherited": true,
-          "PassedMessage": "The element {this} disappeared from the screen.",
-          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
         }
       ]
     },
     {
       "TypeName": "Progile.TRIO.BaseModel.HorizontalScroller",
-      "Interactions": [
-        {
-          "Parameters": [],
-          "MethodName": "WaitForAppear",
-          "DisplayName": "Verify element appears",
-          "ReturnType": "System.Boolean",
-          "IsInherited": true,
-          "PassedMessage": "The element {this} was displayed on the screen.",
-          "FailedMessage": "The element {this} was not found on the screen."
-        },
-        {
-          "Parameters": [],
-          "MethodName": "WaitForDisappear",
-          "DisplayName": "Verify element disappears",
-          "ReturnType": "System.Boolean",
-          "IsInherited": true,
-          "PassedMessage": "The element {this} disappeared from the screen.",
-          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
-        }
-      ]
+      "BaseTypeName": "Progile.TRIO.BaseModel.OnScreenElement"
+    },
+    {
+      "TypeName": "Progile.TRIO.BaseModel.IScroller",
+      "BaseTypeName": null
+    },
+    {
+      "TypeName": "Progile.TRIO.BaseModel.GenericScroller",
+      "BaseTypeName": "Progile.TRIO.BaseModel.OnScreenElement"
     },
     {
       "TypeName": "Progile.TRIO.BaseModel.IconButton",
-      "Interactions": [
-        {
-          "Parameters": [
-            {
-              "Name": "verification",
-              "DisplayName": "verification",
-              "Type": "interaction"
-            }
-          ],
-          "MethodName": "Click",
-          "DisplayName": "Click",
-          "ReturnType": "System.Void",
-          "IsInherited": true,
-          "PassedMessage": null,
-          "FailedMessage": null
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "verification",
-              "DisplayName": "verification",
-              "Type": "interaction"
-            }
-          ],
-          "MethodName": "DoubleClick",
-          "DisplayName": "Double-click",
-          "ReturnType": "System.Void",
-          "IsInherited": true,
-          "PassedMessage": null,
-          "FailedMessage": null
-        },
-        {
-          "Parameters": [],
-          "MethodName": "ClickWithUpdateCheck",
-          "DisplayName": "Click with update check",
-          "ReturnType": "System.Void",
-          "IsInherited": true,
-          "PassedMessage": null,
-          "FailedMessage": null
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "verification",
-              "DisplayName": "verification",
-              "Type": "interaction"
-            }
-          ],
-          "MethodName": "Hover",
-          "DisplayName": "Hover over",
-          "ReturnType": "System.Void",
-          "IsInherited": true,
-          "PassedMessage": null,
-          "FailedMessage": null
-        },
-        {
-          "Parameters": [],
-          "MethodName": "WaitForActive",
-          "DisplayName": "Verify button becomes active",
-          "ReturnType": "System.Boolean",
-          "IsInherited": true,
-          "PassedMessage": "The button {this} was active.",
-          "FailedMessage": "The button {this} was not active."
-        },
-        {
-          "Parameters": [],
-          "MethodName": "WaitForInactive",
-          "DisplayName": "Verify button becomes inactive",
-          "ReturnType": "System.Boolean",
-          "IsInherited": true,
-          "PassedMessage": "The button {this} was inactive.",
-          "FailedMessage": "The button {this} was not inactive."
-        },
-        {
-          "Parameters": [],
-          "MethodName": "WaitForAppear",
-          "DisplayName": "Verify element appears",
-          "ReturnType": "System.Boolean",
-          "IsInherited": true,
-          "PassedMessage": "The element {this} was displayed on the screen.",
-          "FailedMessage": "The element {this} was not found on the screen."
-        },
-        {
-          "Parameters": [],
-          "MethodName": "WaitForDisappear",
-          "DisplayName": "Verify element disappears",
-          "ReturnType": "System.Boolean",
-          "IsInherited": true,
-          "PassedMessage": "The element {this} disappeared from the screen.",
-          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
-        }
-      ]
+      "BaseTypeName": "Progile.TRIO.BaseModel.Button"
     },
     {
       "TypeName": "Progile.TRIO.BaseModel.Label",
-      "Interactions": [
-        {
-          "Parameters": [],
-          "MethodName": "WaitForAppear",
-          "DisplayName": "Verify element appears",
-          "ReturnType": "System.Boolean",
-          "IsInherited": true,
-          "PassedMessage": "The element {this} was displayed on the screen.",
-          "FailedMessage": "The element {this} was not found on the screen."
-        },
-        {
-          "Parameters": [],
-          "MethodName": "WaitForDisappear",
-          "DisplayName": "Verify element disappears",
-          "ReturnType": "System.Boolean",
-          "IsInherited": true,
-          "PassedMessage": "The element {this} disappeared from the screen.",
-          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
-        }
-      ]
+      "BaseTypeName": "Progile.TRIO.BaseModel.OnScreenElement"
     },
     {
       "TypeName": "Progile.TRIO.BaseModel.LabelWithButton",
+      "BaseTypeName": "Progile.TRIO.BaseModel.LabelWithElementBase",
       "Interactions": [
         {
           "Parameters": [
@@ -538,10 +222,7 @@
           ],
           "MethodName": "Click",
           "DisplayName": "Click",
-          "ReturnType": "System.Void",
-          "IsInherited": false,
-          "PassedMessage": null,
-          "FailedMessage": null
+          "ReturnType": "System.Void"
         },
         {
           "Parameters": [
@@ -553,10 +234,7 @@
           ],
           "MethodName": "DoubleClick",
           "DisplayName": "Double-click",
-          "ReturnType": "System.Void",
-          "IsInherited": false,
-          "PassedMessage": null,
-          "FailedMessage": null
+          "ReturnType": "System.Void"
         },
         {
           "Parameters": [
@@ -568,110 +246,61 @@
           ],
           "MethodName": "Hover",
           "DisplayName": "Hover over",
-          "ReturnType": "System.Void",
-          "IsInherited": false,
-          "PassedMessage": null,
-          "FailedMessage": null
+          "ReturnType": "System.Void"
         },
         {
-          "Parameters": [],
           "MethodName": "WaitForActive",
           "DisplayName": "Verify button becomes active",
           "ReturnType": "System.Boolean",
-          "IsInherited": false,
           "PassedMessage": "The button {this} was active.",
           "FailedMessage": "The button {this} was not active."
         },
         {
-          "Parameters": [],
           "MethodName": "WaitForInactive",
           "DisplayName": "Verify button becomes inactive",
           "ReturnType": "System.Boolean",
-          "IsInherited": false,
           "PassedMessage": "The button {this} was inactive.",
           "FailedMessage": "The button {this} was not inactive."
-        },
-        {
-          "Parameters": [],
-          "MethodName": "WaitForAppear",
-          "DisplayName": "Verify element appears",
-          "ReturnType": "System.Boolean",
-          "IsInherited": true,
-          "PassedMessage": "The element {this} was displayed on the screen.",
-          "FailedMessage": "The element {this} was not found on the screen."
-        },
-        {
-          "Parameters": [],
-          "MethodName": "WaitForDisappear",
-          "DisplayName": "Verify element disappears",
-          "ReturnType": "System.Boolean",
-          "IsInherited": true,
-          "PassedMessage": "The element {this} disappeared from the screen.",
-          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
         }
       ]
     },
     {
+      "TypeName": "Progile.TRIO.BaseModel.LabelWithElementBase",
+      "BaseTypeName": "Progile.TRIO.BaseModel.OnScreenElement"
+    },
+    {
       "TypeName": "Progile.TRIO.BaseModel.LabelWithCheckbox",
+      "BaseTypeName": "Progile.TRIO.BaseModel.LabelWithElementBase",
       "Interactions": [
         {
-          "Parameters": [],
           "MethodName": "IsChecked",
           "DisplayName": "Verify checkbox is checked",
           "ReturnType": "System.Boolean",
-          "IsInherited": false,
           "PassedMessage": "The checkbox {this} was checked.",
           "FailedMessage": "The checkbox {this} was not checked."
         },
         {
-          "Parameters": [],
           "MethodName": "IsUnchecked",
           "DisplayName": "Verify checkbox is unchecked",
           "ReturnType": "System.Boolean",
-          "IsInherited": false,
           "PassedMessage": "The checkbox {this} was unchecked.",
           "FailedMessage": "The checkbox {this} was unexpectedly checked."
         },
         {
-          "Parameters": [],
           "MethodName": "Check",
           "DisplayName": "Check",
-          "ReturnType": "System.Void",
-          "IsInherited": false,
-          "PassedMessage": null,
-          "FailedMessage": null
+          "ReturnType": "System.Void"
         },
         {
-          "Parameters": [],
           "MethodName": "Uncheck",
           "DisplayName": "Uncheck",
-          "ReturnType": "System.Void",
-          "IsInherited": false,
-          "PassedMessage": null,
-          "FailedMessage": null
-        },
-        {
-          "Parameters": [],
-          "MethodName": "WaitForAppear",
-          "DisplayName": "Verify element appears",
-          "ReturnType": "System.Boolean",
-          "IsInherited": true,
-          "PassedMessage": "The element {this} was displayed on the screen.",
-          "FailedMessage": "The element {this} was not found on the screen."
-        },
-        {
-          "Parameters": [],
-          "MethodName": "WaitForDisappear",
-          "DisplayName": "Verify element disappears",
-          "ReturnType": "System.Boolean",
-          "IsInherited": true,
-          "PassedMessage": "The element {this} disappeared from the screen.",
-          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+          "ReturnType": "System.Void"
         }
       ]
     },
     {
       "TypeName": "Progile.TRIO.BaseModel.LabelWithValue",
+      "BaseTypeName": "Progile.TRIO.BaseModel.LabelWithElementBase",
       "Interactions": [
         {
           "Parameters": [
@@ -689,7 +318,6 @@
           "MethodName": "VerifyValue",
           "DisplayName": "Verify the value",
           "ReturnType": "System.Boolean",
-          "IsInherited": false,
           "PassedMessage": "The expected value {value} was shown correctly for {this}.",
           "FailedMessage": "The value for {this} was {actualValue} instead of the expected value {value}."
         },
@@ -714,32 +342,14 @@
           "MethodName": "WaitForValue",
           "DisplayName": "Wait for the value",
           "ReturnType": "System.Boolean",
-          "IsInherited": false,
           "PassedMessage": "The expected value {value} was shown correctly for {this}.",
           "FailedMessage": "The value for {this} was {actualValue} after the timeout instead of the expected value {value}."
-        },
-        {
-          "Parameters": [],
-          "MethodName": "WaitForAppear",
-          "DisplayName": "Verify element appears",
-          "ReturnType": "System.Boolean",
-          "IsInherited": true,
-          "PassedMessage": "The element {this} was displayed on the screen.",
-          "FailedMessage": "The element {this} was not found on the screen."
-        },
-        {
-          "Parameters": [],
-          "MethodName": "WaitForDisappear",
-          "DisplayName": "Verify element disappears",
-          "ReturnType": "System.Boolean",
-          "IsInherited": true,
-          "PassedMessage": "The element {this} disappeared from the screen.",
-          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
         }
       ]
     },
     {
       "TypeName": "Progile.TRIO.BaseModel.PwTextBox",
+      "BaseTypeName": "Progile.TRIO.BaseModel.TextBox",
       "Interactions": [
         {
           "Parameters": [
@@ -751,10 +361,7 @@
           ],
           "MethodName": "Enter",
           "DisplayName": "Enter",
-          "ReturnType": "System.Void",
-          "IsInherited": false,
-          "PassedMessage": null,
-          "FailedMessage": null
+          "ReturnType": "System.Void"
         },
         {
           "Parameters": [
@@ -767,192 +374,14 @@
           "MethodName": "VerifyText",
           "DisplayName": "Verify the password (only length)",
           "ReturnType": "System.Boolean",
-          "IsInherited": false,
           "PassedMessage": "Verify the password (only length) on {this} passed",
           "FailedMessage": "Verify the password (only length) on {this} failed"
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "textToEnter",
-              "DisplayName": "Text to enter",
-              "Type": "System.String"
-            }
-          ],
-          "MethodName": "EnterWithoutVerification",
-          "DisplayName": "Enter without verification",
-          "ReturnType": "System.Void",
-          "IsInherited": true,
-          "PassedMessage": null,
-          "FailedMessage": null
-        },
-        {
-          "Parameters": [],
-          "MethodName": "PasteText",
-          "DisplayName": "Paste from clipboard",
-          "ReturnType": "System.Void",
-          "IsInherited": true,
-          "PassedMessage": null,
-          "FailedMessage": null
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "expectedText",
-              "DisplayName": "Expected text",
-              "Type": "System.String"
-            },
-            {
-              "Name": "actualText",
-              "DisplayName": "actualText",
-              "Type": "out_string"
-            }
-          ],
-          "MethodName": "VerifyText",
-          "DisplayName": "Verify the text",
-          "ReturnType": "System.Boolean",
-          "IsInherited": true,
-          "PassedMessage": "The expected text {expectedText} was shown correctly in {this}.",
-          "FailedMessage": "The text in {this} was {actualText} instead of the expected text {expectedText}."
-        },
-        {
-          "Parameters": [],
-          "MethodName": "ClickOutOfBox",
-          "DisplayName": "Click out of the text box",
-          "ReturnType": "System.Void",
-          "IsInherited": true,
-          "PassedMessage": null,
-          "FailedMessage": null
-        },
-        {
-          "Parameters": [],
-          "MethodName": "WaitForAppear",
-          "DisplayName": "Verify element appears",
-          "ReturnType": "System.Boolean",
-          "IsInherited": true,
-          "PassedMessage": "The element {this} was displayed on the screen.",
-          "FailedMessage": "The element {this} was not found on the screen."
-        },
-        {
-          "Parameters": [],
-          "MethodName": "WaitForDisappear",
-          "DisplayName": "Verify element disappears",
-          "ReturnType": "System.Boolean",
-          "IsInherited": true,
-          "PassedMessage": "The element {this} disappeared from the screen.",
-          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
-        }
-      ]
-    },
-    {
-      "TypeName": "Progile.TRIO.BaseModel.Row",
-      "Interactions": [
-        {
-          "Parameters": [
-            {
-              "Name": "verification",
-              "DisplayName": "verification",
-              "Type": "interaction"
-            }
-          ],
-          "MethodName": "HoverOver",
-          "DisplayName": "Hover over",
-          "ReturnType": "System.Void",
-          "IsInherited": false,
-          "PassedMessage": null,
-          "FailedMessage": null
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "verification",
-              "DisplayName": "verification",
-              "Type": "interaction"
-            }
-          ],
-          "MethodName": "SelectRow",
-          "DisplayName": "Click",
-          "ReturnType": "System.Void",
-          "IsInherited": false,
-          "PassedMessage": null,
-          "FailedMessage": null
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "verification",
-              "DisplayName": "verification",
-              "Type": "interaction"
-            }
-          ],
-          "MethodName": "SelectRowWithDoubleClick",
-          "DisplayName": "Double-click",
-          "ReturnType": "System.Void",
-          "IsInherited": false,
-          "PassedMessage": null,
-          "FailedMessage": null
-        },
-        {
-          "Parameters": [],
-          "MethodName": "SelectRowWithUpdateCheck",
-          "DisplayName": "Click with update check",
-          "ReturnType": "System.Void",
-          "IsInherited": false,
-          "PassedMessage": null,
-          "FailedMessage": null
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "button",
-              "DisplayName": "button",
-              "Type": "Progile.TRIO.BaseModel.Button"
-            }
-          ],
-          "MethodName": "GetButtonInRow",
-          "DisplayName": "Get Button in row",
-          "ReturnType": "Progile.TRIO.BaseModel.Button",
-          "IsInherited": false,
-          "PassedMessage": null,
-          "FailedMessage": null
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "checkbox",
-              "DisplayName": "checkbox",
-              "Type": "Progile.TRIO.BaseModel.Checkbox"
-            }
-          ],
-          "MethodName": "GetCheckboxInRow",
-          "DisplayName": "Get Checkbox in row",
-          "ReturnType": "Progile.TRIO.BaseModel.Checkbox",
-          "IsInherited": false,
-          "PassedMessage": null,
-          "FailedMessage": null
-        },
-        {
-          "Parameters": [],
-          "MethodName": "WaitForAppear",
-          "DisplayName": "Verify element appears",
-          "ReturnType": "System.Boolean",
-          "IsInherited": true,
-          "PassedMessage": "The element {this} was displayed on the screen.",
-          "FailedMessage": "The element {this} was not found on the screen."
-        },
-        {
-          "Parameters": [],
-          "MethodName": "WaitForDisappear",
-          "DisplayName": "Verify element disappears",
-          "ReturnType": "System.Boolean",
-          "IsInherited": true,
-          "PassedMessage": "The element {this} disappeared from the screen.",
-          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
         }
       ]
     },
     {
       "TypeName": "Progile.TRIO.BaseModel.TextBox",
+      "BaseTypeName": "Progile.TRIO.BaseModel.OnScreenElement",
       "Interactions": [
         {
           "Parameters": [
@@ -964,10 +393,7 @@
           ],
           "MethodName": "Enter",
           "DisplayName": "Enter",
-          "ReturnType": "System.Void",
-          "IsInherited": false,
-          "PassedMessage": null,
-          "FailedMessage": null
+          "ReturnType": "System.Void"
         },
         {
           "Parameters": [
@@ -979,19 +405,12 @@
           ],
           "MethodName": "EnterWithoutVerification",
           "DisplayName": "Enter without verification",
-          "ReturnType": "System.Void",
-          "IsInherited": false,
-          "PassedMessage": null,
-          "FailedMessage": null
+          "ReturnType": "System.Void"
         },
         {
-          "Parameters": [],
           "MethodName": "PasteText",
           "DisplayName": "Paste from clipboard",
-          "ReturnType": "System.Void",
-          "IsInherited": false,
-          "PassedMessage": null,
-          "FailedMessage": null
+          "ReturnType": "System.Void"
         },
         {
           "Parameters": [
@@ -1009,407 +428,94 @@
           "MethodName": "VerifyText",
           "DisplayName": "Verify the text",
           "ReturnType": "System.Boolean",
-          "IsInherited": false,
           "PassedMessage": "The expected text {expectedText} was shown correctly in {this}.",
           "FailedMessage": "The text in {this} was {actualText} instead of the expected text {expectedText}."
         },
         {
-          "Parameters": [],
           "MethodName": "ClickOutOfBox",
           "DisplayName": "Click out of the text box",
-          "ReturnType": "System.Void",
-          "IsInherited": false,
-          "PassedMessage": null,
-          "FailedMessage": null
-        },
-        {
-          "Parameters": [],
-          "MethodName": "WaitForAppear",
-          "DisplayName": "Verify element appears",
-          "ReturnType": "System.Boolean",
-          "IsInherited": true,
-          "PassedMessage": "The element {this} was displayed on the screen.",
-          "FailedMessage": "The element {this} was not found on the screen."
-        },
-        {
-          "Parameters": [],
-          "MethodName": "WaitForDisappear",
-          "DisplayName": "Verify element disappears",
-          "ReturnType": "System.Boolean",
-          "IsInherited": true,
-          "PassedMessage": "The element {this} disappeared from the screen.",
-          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+          "ReturnType": "System.Void"
         }
       ]
     },
     {
-      "TypeName": "Progile.TRIO.EnvironmentModel.SystemHelpers",
+      "TypeName": "Progile.TRIO.BaseModel.Row",
+      "BaseTypeName": "Progile.TRIO.BaseModel.OnScreenElement",
       "Interactions": [
         {
-          "Parameters": [],
-          "MethodName": "EnvironmentReady",
-          "DisplayName": "Wait for environment ready",
-          "ReturnType": "System.Boolean",
-          "IsInherited": false,
-          "PassedMessage": "Wait for environment ready on {this} passed",
-          "FailedMessage": "Wait for environment ready on {this} failed"
+          "Parameters": [
+            {
+              "Name": "verification",
+              "DisplayName": "verification",
+              "Type": "interaction"
+            }
+          ],
+          "MethodName": "HoverOver",
+          "DisplayName": "Hover over",
+          "ReturnType": "System.Void"
         },
         {
           "Parameters": [
             {
-              "Name": "password",
-              "DisplayName": "password",
-              "Type": "System.String"
+              "Name": "verification",
+              "DisplayName": "verification",
+              "Type": "interaction"
             }
           ],
-          "MethodName": "LoginRecentUser",
-          "DisplayName": "Login recent user to Windows",
-          "ReturnType": "System.Void",
-          "IsInherited": false,
-          "PassedMessage": null,
-          "FailedMessage": null
+          "MethodName": "SelectRow",
+          "DisplayName": "Click",
+          "ReturnType": "System.Void"
         },
         {
           "Parameters": [
             {
-              "Name": "processName",
-              "DisplayName": "Process name",
-              "Type": "System.String"
+              "Name": "verification",
+              "DisplayName": "verification",
+              "Type": "interaction"
             }
           ],
-          "MethodName": "RunProcess",
-          "DisplayName": "Run process",
-          "ReturnType": "System.Void",
-          "IsInherited": false,
-          "PassedMessage": null,
-          "FailedMessage": null
+          "MethodName": "SelectRowWithDoubleClick",
+          "DisplayName": "Double-click",
+          "ReturnType": "System.Void"
+        },
+        {
+          "MethodName": "SelectRowWithUpdateCheck",
+          "DisplayName": "Click with update check",
+          "ReturnType": "System.Void"
         },
         {
           "Parameters": [
             {
-              "Name": "processName",
-              "DisplayName": "Process name",
-              "Type": "System.String"
+              "Name": "button",
+              "DisplayName": "button",
+              "Type": "Progile.TRIO.BaseModel.Button"
             }
           ],
-          "MethodName": "KillProcess",
-          "DisplayName": "Kill process",
-          "ReturnType": "System.Void",
-          "IsInherited": false,
-          "PassedMessage": null,
-          "FailedMessage": null
-        },
-        {
-          "Parameters": [],
-          "MethodName": "SetUpRemoteDirectory",
-          "DisplayName": "Setup remote directory",
-          "ReturnType": "System.Void",
-          "IsInherited": false,
-          "PassedMessage": null,
-          "FailedMessage": null
+          "MethodName": "GetButtonInRow",
+          "DisplayName": "Get Button in row",
+          "ReturnType": "Progile.TRIO.BaseModel.Button"
         },
         {
           "Parameters": [
             {
-              "Name": "source",
-              "DisplayName": "source",
-              "Type": "System.String"
-            },
-            {
-              "Name": "destination",
-              "DisplayName": "destination",
-              "Type": "System.String"
+              "Name": "checkbox",
+              "DisplayName": "checkbox",
+              "Type": "Progile.TRIO.BaseModel.Checkbox"
             }
           ],
-          "MethodName": "CopyFiles",
-          "DisplayName": "Copy files",
-          "ReturnType": "System.Void",
-          "IsInherited": false,
-          "PassedMessage": null,
-          "FailedMessage": null
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "source",
-              "DisplayName": "source",
-              "Type": "System.String"
-            },
-            {
-              "Name": "destination",
-              "DisplayName": "destination",
-              "Type": "System.String"
-            }
-          ],
-          "MethodName": "CopyFolder",
-          "DisplayName": "Copy folder",
-          "ReturnType": "System.Void",
-          "IsInherited": false,
-          "PassedMessage": null,
-          "FailedMessage": null
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "itemPath",
-              "DisplayName": "itemPath",
-              "Type": "System.String"
-            },
-            {
-              "Name": "newName",
-              "DisplayName": "newName",
-              "Type": "System.String"
-            }
-          ],
-          "MethodName": "RenameItem",
-          "DisplayName": "Rename file",
-          "ReturnType": "System.Void",
-          "IsInherited": false,
-          "PassedMessage": null,
-          "FailedMessage": null
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "paths",
-              "DisplayName": "paths",
-              "Type": "System.String[]"
-            }
-          ],
-          "MethodName": "CreateFolderPath",
-          "DisplayName": "Create folder paths",
-          "ReturnType": "System.Void",
-          "IsInherited": false,
-          "PassedMessage": null,
-          "FailedMessage": null
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "fileWithPath",
-              "DisplayName": "fileWithPath",
-              "Type": "System.String"
-            }
-          ],
-          "MethodName": "CheckFileExists",
-          "DisplayName": "Verify file exists",
-          "ReturnType": "System.Boolean",
-          "IsInherited": false,
-          "PassedMessage": "Verify file exists on {this} passed",
-          "FailedMessage": "Verify file exists on {this} failed"
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "fileWithPath",
-              "DisplayName": "fileWithPath",
-              "Type": "System.String"
-            }
-          ],
-          "MethodName": "DeleteFile",
-          "DisplayName": "Delete file",
-          "ReturnType": "System.Void",
-          "IsInherited": false,
-          "PassedMessage": null,
-          "FailedMessage": null
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "pathToZipFile",
-              "DisplayName": "pathToZipFile",
-              "Type": "System.String"
-            },
-            {
-              "Name": "destinationPath",
-              "DisplayName": "destinationPath",
-              "Type": "System.String"
-            }
-          ],
-          "MethodName": "UnzipFile",
-          "DisplayName": "Unzip file",
-          "ReturnType": "System.Void",
-          "IsInherited": false,
-          "PassedMessage": null,
-          "FailedMessage": null
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "url",
-              "DisplayName": "url",
-              "Type": "System.String"
-            }
-          ],
-          "MethodName": "OpenWebUrl",
-          "DisplayName": "Open web URL",
-          "ReturnType": "Progile.TRIO.BaseModel.IBrowser",
-          "IsInherited": false,
-          "PassedMessage": null,
-          "FailedMessage": null
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "url",
-              "DisplayName": "url",
-              "Type": "System.String"
-            }
-          ],
-          "MethodName": "OpenWebUrl",
-          "DisplayName": "Open web URL",
-          "ReturnType": "Progile.TRIO.BaseModel.IBrowser",
-          "IsInherited": false,
-          "PassedMessage": null,
-          "FailedMessage": null
+          "MethodName": "GetCheckboxInRow",
+          "DisplayName": "Get Checkbox in row",
+          "ReturnType": "Progile.TRIO.BaseModel.Checkbox"
         }
       ]
     },
     {
-      "TypeName": "Progile.TRIO.EnvironmentModel.WebBrowser.Browser",
-      "Interactions": [
-        {
-          "Parameters": [],
-          "MethodName": "GoBack",
-          "DisplayName": "Navigate back",
-          "ReturnType": "System.Void",
-          "IsInherited": false,
-          "PassedMessage": null,
-          "FailedMessage": null
-        },
-        {
-          "Parameters": [],
-          "MethodName": "GoForward",
-          "DisplayName": "Navigate forward",
-          "ReturnType": "System.Void",
-          "IsInherited": false,
-          "PassedMessage": null,
-          "FailedMessage": null
-        },
-        {
-          "Parameters": [],
-          "MethodName": "Refresh",
-          "DisplayName": "Refresh",
-          "ReturnType": "System.Void",
-          "IsInherited": false,
-          "PassedMessage": null,
-          "FailedMessage": null
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "username",
-              "DisplayName": "username",
-              "Type": "System.String"
-            },
-            {
-              "Name": "password",
-              "DisplayName": "password",
-              "Type": "System.String"
-            }
-          ],
-          "MethodName": "Authenticate",
-          "DisplayName": "Authenticate",
-          "ReturnType": "System.Void",
-          "IsInherited": false,
-          "PassedMessage": null,
-          "FailedMessage": null
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "path",
-              "DisplayName": "path",
-              "Type": "System.String"
-            }
-          ],
-          "MethodName": "DownloadAndSaveFileAs",
-          "DisplayName": "Download and Save File",
-          "ReturnType": "System.Boolean",
-          "IsInherited": false,
-          "PassedMessage": "Download and Save File on {this} passed",
-          "FailedMessage": "Download and Save File on {this} failed"
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "url",
-              "DisplayName": "url",
-              "Type": "System.String"
-            }
-          ],
-          "MethodName": "GoToURL",
-          "DisplayName": "Go to URL",
-          "ReturnType": "System.Void",
-          "IsInherited": false,
-          "PassedMessage": null,
-          "FailedMessage": null
-        },
-        {
-          "Parameters": [],
-          "MethodName": "WaitForAppear",
-          "DisplayName": "Verify element appears",
-          "ReturnType": "System.Boolean",
-          "IsInherited": true,
-          "PassedMessage": "The element {this} was displayed on the screen.",
-          "FailedMessage": "The element {this} was not found on the screen."
-        },
-        {
-          "Parameters": [],
-          "MethodName": "WaitForDisappear",
-          "DisplayName": "Verify element disappears",
-          "ReturnType": "System.Boolean",
-          "IsInherited": true,
-          "PassedMessage": "The element {this} disappeared from the screen.",
-          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
-        }
-      ]
+      "TypeName": "Progile.TRIO.EnvironmentModel.Window",
+      "BaseTypeName": "Progile.TRIO.BaseModel.BaseScreen"
     },
     {
-      "TypeName": "Windows_Model.Screens.FileExplorer",
-      "Interactions": [
-        {
-          "Parameters": [],
-          "MethodName": "WaitForAppear",
-          "DisplayName": "Verify element appears",
-          "ReturnType": "System.Boolean",
-          "IsInherited": true,
-          "PassedMessage": "The element {this} was displayed on the screen.",
-          "FailedMessage": "The element {this} was not found on the screen."
-        },
-        {
-          "Parameters": [],
-          "MethodName": "WaitForDisappear",
-          "DisplayName": "Verify element disappears",
-          "ReturnType": "System.Boolean",
-          "IsInherited": true,
-          "PassedMessage": "The element {this} disappeared from the screen.",
-          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
-        }
-      ]
-    },
-    {
-      "TypeName": "Windows_Model.Screens.FileProperties",
-      "Interactions": [
-        {
-          "Parameters": [],
-          "MethodName": "WaitForAppear",
-          "DisplayName": "Verify element appears",
-          "ReturnType": "System.Boolean",
-          "IsInherited": true,
-          "PassedMessage": "The element {this} was displayed on the screen.",
-          "FailedMessage": "The element {this} was not found on the screen."
-        },
-        {
-          "Parameters": [],
-          "MethodName": "WaitForDisappear",
-          "DisplayName": "Verify element disappears",
-          "ReturnType": "System.Boolean",
-          "IsInherited": true,
-          "PassedMessage": "The element {this} disappeared from the screen.",
-          "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
-        }
-      ]
+      "TypeName": "Progile.TRIO.BaseModel.IWindow",
+      "BaseTypeName": null
     }
   ],
   "ModelOcrParamList": [
