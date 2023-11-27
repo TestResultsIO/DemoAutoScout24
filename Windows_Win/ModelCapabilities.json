@@ -2,7 +2,22 @@
   "ModelTypeList": [
     {
       "TypeName": "Progile.TRIO.BaseModel.BaseScreen",
-      "BaseTypeName": "Progile.TRIO.BaseModel.OnScreenElement"
+      "BaseTypeName": "Progile.TRIO.BaseModel.OnScreenElement",
+      "HiddenOverrideInteractions": [
+        {
+          "Parameters": [
+            {
+              "Name": "elementInArea",
+              "DisplayName": "elementInArea",
+              "Type": "Progile.TRIO.BaseModel.OnScreenElement"
+            }
+          ],
+          "MethodName": "SetSearchArea",
+          "DisplayName": "SetSearchArea",
+          "ReturnType": "Progile.TRIO.BaseModel.OnScreenElement",
+          "IsGenericReturnType": "T"
+        }
+      ]
     },
     {
       "TypeName": "Progile.TRIO.BaseModel.OnScreenElement",
@@ -21,6 +36,19 @@
           "ReturnType": "System.Boolean",
           "PassedMessage": "The element {this} disappeared from the screen.",
           "FailedMessage": "The element {this} was unexpectedly still displayed on the screen."
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "elementInArea",
+              "DisplayName": "Element in area",
+              "Type": "Progile.TRIO.BaseModel.OnScreenElement"
+            }
+          ],
+          "MethodName": "SetSearchArea",
+          "DisplayName": "Set search area",
+          "ReturnType": "Progile.TRIO.BaseModel.OnScreenElement",
+          "IsGenericReturnType": "T"
         }
       ]
     },
@@ -486,6 +514,20 @@
         {
           "Parameters": [
             {
+              "Name": "element",
+              "DisplayName": "element",
+              "IsGenericType": "T",
+              "Type": "Progile.TRIO.BaseModel.OnScreenElement"
+            }
+          ],
+          "MethodName": "GetElementInRow",
+          "DisplayName": "Get Element in row",
+          "ReturnType": "Progile.TRIO.BaseModel.OnScreenElement",
+          "IsGenericReturnType": "T"
+        },
+        {
+          "Parameters": [
+            {
               "Name": "button",
               "DisplayName": "button",
               "Type": "Progile.TRIO.BaseModel.Button"
@@ -493,7 +535,8 @@
           ],
           "MethodName": "GetButtonInRow",
           "DisplayName": "Get Button in row",
-          "ReturnType": "Progile.TRIO.BaseModel.Button"
+          "ReturnType": "Progile.TRIO.BaseModel.Button",
+          "IsObsolete": true
         },
         {
           "Parameters": [
@@ -505,7 +548,8 @@
           ],
           "MethodName": "GetCheckboxInRow",
           "DisplayName": "Get Checkbox in row",
-          "ReturnType": "Progile.TRIO.BaseModel.Checkbox"
+          "ReturnType": "Progile.TRIO.BaseModel.Checkbox",
+          "IsObsolete": true
         }
       ]
     },

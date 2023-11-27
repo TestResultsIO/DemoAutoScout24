@@ -78,6 +78,21 @@
             Minimum version to include support of writing to the debug log
             </summary>
         </member>
+        <member name="F:Progile.ATE.TestFramework.VersionByFeatureSet.SAVE_DEBUG_IMAGES">
+            <summary>
+            Minimum version to include support of saving debug images to folder
+            </summary>
+        </member>
+        <member name="F:Progile.ATE.TestFramework.VersionByFeatureSet.OCR_NATIVE">
+            <summary>
+            Minimum version to include Native and FullScreen OCR engines
+            </summary>
+        </member>
+        <member name="F:Progile.ATE.TestFramework.VersionByFeatureSet.TYPE_WITHOUT_LOGGING">
+            <summary>
+            Minimum version to include IKeyboard.TypeWithoutLogging
+            </summary>
+        </member>
         <member name="M:Progile.ATE.TestFramework.VersionByFeatureSet.MinimumVersion(System.Version[])">
             <summary>
             Returns the minimum version required by a set of given version numbers.
@@ -103,7 +118,25 @@
             Default tolerance 0.004 = roughly 1 px. (255 / tolerance = 1)
             </summary>
         </member>
+        <member name="M:Progile.ATE.TestFramework.IImageHelper.AreaFromPoint(Progile.ATE.Common.Images.IImage,System.Drawing.Point,System.Double)">
+            <summary>
+            Returns a select filter identified via a flood fill starting at origin. <br/>
+            Default tolerance 0.004 = roughly 1 px. (255 / tolerance = 1)
+            </summary>
+        </member>
         <member name="M:Progile.ATE.TestFramework.IImageHelper.DetectChangedRegions(System.Drawing.Bitmap,System.Drawing.Bitmap,System.Int32,System.Double)">
+            <summary>
+            Returns a list of resultRectangles around all the areas where the image before and after differ by more than the tolerance value.
+            If smoothKernelSize is bigger than 0, both images are blurred by a smoothing filter of the indicated size.
+            Default tolerance 0.004 = roughly 1 brightness unit. (255 / tolerance = 1)
+            </summary>
+            <param name="before">The reference image.</param>
+            <param name="after">The image to compare to the reference.</param>
+            <param name="smoothKernelSize">The size of the smoothing filter.</param>
+            <param name="tolerance">Differences less than this tolerance are ignored</param>
+            <returns></returns>
+        </member>
+        <member name="M:Progile.ATE.TestFramework.IImageHelper.DetectChangedRegions(Progile.ATE.Common.Images.IImage,Progile.ATE.Common.Images.IImage,System.Int32,System.Double)">
             <summary>
             Returns a list of resultRectangles around all the areas where the image before and after differ by more than the tolerance value.
             If smoothKernelSize is bigger than 0, both images are blurred by a smoothing filter of the indicated size.
@@ -123,7 +156,24 @@
             <param name="compare">Image that is compared agains the original image</param>
             <returns></returns>
         </member>
+        <member name="M:Progile.ATE.TestFramework.IImageHelper.ImageDifference(Progile.ATE.Common.Images.IImage,Progile.ATE.Common.Images.IImage)">
+            <summary>
+            Returns the euclidian distance between two images
+            </summary>
+            <param name="original">Original image</param>
+            <param name="compare">Image that is compared agains the original image</param>
+            <returns></returns>
+        </member>
         <member name="M:Progile.ATE.TestFramework.IImageHelper.DetectLayout(System.Drawing.Bitmap,System.Int32,System.Double)">
+            <summary>
+            Detect a hierarchical layout from an image
+            </summary>
+            <param name="image">screenshot of the ui</param>
+            <param name="fontSize">approximate pixel size of text in the ui</param>
+            <param name="convexityThreshold"></param>
+            <returns>The detected Layout</returns>
+        </member>
+        <member name="M:Progile.ATE.TestFramework.IImageHelper.DetectLayout(Progile.ATE.Common.Images.IImage,System.Int32,System.Double)">
             <summary>
             Detect a hierarchical layout from an image
             </summary>
@@ -143,6 +193,16 @@
             <returns>Element which belongs to the label, or <see cref="F:Progile.ATE.Common.ResultRectangle.Empty"/> if no Element was found</returns>
         </member>
         <member name="M:Progile.ATE.TestFramework.IImageHelper.DetectElementWithVisualSense(System.Drawing.Bitmap,Progile.ATE.Common.IEngineResult,System.Double,Progile.ATE.TestFramework.VisualSense.ReadingDirection)">
+            <summary>
+            Uses visual sense to detect the element which belongs to the label
+            </summary>
+            <param name="image">screenshot of the ui</param>
+            <param name="foundLabel">detected label of the element</param>
+            <param name="convexityThreshold"></param>
+            <param name="readingDirection"></param>
+            <returns>Element which belongs to the label, or <see cref="F:Progile.ATE.Common.ResultRectangle.Empty"/> if no Element was found</returns>
+        </member>
+        <member name="M:Progile.ATE.TestFramework.IImageHelper.DetectElementWithVisualSense(Progile.ATE.Common.Images.IImage,Progile.ATE.Common.IEngineResult,System.Double,Progile.ATE.TestFramework.VisualSense.ReadingDirection)">
             <summary>
             Uses visual sense to detect the element which belongs to the label
             </summary>
@@ -439,6 +499,26 @@
             Provides access to the last image the engine was looking for
             </summary>
         </member>
+        <member name="P:Progile.ATE.TestFramework.IDebug.LastOcrSource">
+            <summary>
+            Provides access to the last ocr source image , i.e. all filters applied, exactly as the image was used by the engine.
+            </summary>
+        </member>
+        <member name="P:Progile.ATE.TestFramework.IDebug.LastOcrResult">
+            <summary>
+            Provides access to the last OCR debug image
+            </summary>
+        </member>
+        <member name="P:Progile.ATE.TestFramework.IDebug.LastFindImageSource">
+            <summary>
+            Provides access to the last find image source image , i.e. all filters applied, exactly as the image was used by the engine.
+            </summary>
+        </member>
+        <member name="P:Progile.ATE.TestFramework.IDebug.LastFindImageResult">
+            <summary>
+            Provides access to the last find image debug image
+            </summary>
+        </member>
         <member name="P:Progile.ATE.TestFramework.IDebug.Metadata">
             <summary>
             Provides access to additional debug data created by the last engine used
@@ -454,14 +534,56 @@
             Enables or disables the function to automatically add the debug <see cref="P:Progile.ATE.TestFramework.IDebug.Image"/> as a screenshot to the final report
             </summary>
         </member>
-        <member name="M:Progile.ATE.TestFramework.ITesteeExperimental.GetText(System.Drawing.Image,Progile.ATE.Common.OcrEngineParameters,System.String)">
+        <member name="M:Progile.ATE.TestFramework.IDebug.SaveDebugImages(System.String)">
             <summary>
-            Reads the provided image 
+            Saves all debug images to a folder
+            
+            Note: <see cref="P:Progile.ATE.TestFramework.IDebug.Image"/> is named "debug" in the <paramref name="outputFolder"/>
             </summary>
-            <param name="parameters">Additional settings used for this search</param>
-            <param name="image">Image to read</param>
-            <param name="filterSpec">Used internally. DO NOT USE.</param>
-            <returns>Returns all text found on the current screen</returns>
+            <param name="outputFolder"></param>
+        </member>
+        <member name="T:Progile.ATE.TestFramework.ITesteeExperimental">
+            <summary>
+            Experimental ITestee features.
+            
+            WARNING: This interface is not compatible between different engine versions.
+            Referencing this interface can lock you into using a specific testresults.io engine version.
+            </summary>
+        </member>
+        <member name="P:Progile.ATE.TestFramework.ITesteeExperimental.OcrUseFullScreenEngineFallback">
+            <summary>
+            Default true. When the NativeOCR engine did not find the text, we use the FullScreenOCR one final time to see i
+            </summary>
+        </member>
+        <member name="P:Progile.ATE.TestFramework.ITesteeExperimental.NativeOCRShowInternalFallbackDebugImages">
+            <summary>
+            Default false. NativeOCR has an internal fallback logic. If this flag is set, the NativeOCR Engine returns the debug images of the internal fallback if NO MATCH was found
+            </summary>
+        </member>
+        <member name="P:Progile.ATE.TestFramework.ITesteeExperimental.ImageScalingInterpolationMode">
+            <summary>
+            Interpolation mode for FindImage(). When screen image and search image are in a different resolution, we use this interpolation mode to downscale the screen/search image
+            </summary>
+        </member>
+        <member name="M:Progile.ATE.TestFramework.ITesteeExperimental.FindAllImageInstances(Progile.ATE.Common.ImageReference,System.TimeSpan,Progile.ATE.Common.ImageDetectionParameters,Progile.ATE.Common.IImageFilter[])">
+            <summary>
+            Returns all Instances of an imageReference.
+            </summary>
+            <param name="imageReference"></param>
+            <param name="searchDuration"></param>
+            <param name="parameters"></param>
+            <param name="filters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Progile.ATE.TestFramework.ITesteeExperimental.FindAllImageInstances(System.Collections.Generic.IList{Progile.ATE.Common.ImageReference},System.TimeSpan,Progile.ATE.Common.ImageDetectionParameters,Progile.ATE.Common.IImageFilter[])">
+            <summary>
+            Returns all Instances of an imageReference.
+            </summary>
+            <param name="imageReferences"></param>
+            <param name="searchDuration"></param>
+            <param name="parameters"></param>
+            <param name="filters"></param>
+            <returns></returns>
         </member>
         <member name="P:Progile.ATE.TestFramework.ITesterInternal.ImagesRootDirectory">
             <summary>
@@ -567,6 +689,13 @@
         <member name="M:Progile.ATE.TestFramework.IKeyboard.Type(System.String)">
             <summary>
             Simulates text typing by converting a given string to a sequence of KEY_DOWN and KEY_Up events.
+            NOTE: the textToType will also be visible in the Log files, use TypeWithoutLogging for sensitive Data like Passwords
+            </summary>
+            <param name="textToType">The text that should be typed on the subject under test</param>
+        </member>
+        <member name="M:Progile.ATE.TestFramework.IKeyboard.TypeWithoutLogging(System.String)">
+            <summary>
+            Same as Type Method but without logging the textToType
             </summary>
             <param name="textToType">The text that should be typed on the subject under test</param>
         </member>
@@ -888,6 +1017,11 @@
         <member name="P:Progile.ATE.TestFramework.IReportStep.State">
             <summary>
             Provides access to the current result of this step
+            </summary>
+        </member>
+        <member name="T:Progile.ATE.TestFramework.ITestee">
+            <summary>
+            Testee interface. Provides basic interactions with the testee, as well as text/image searches
             </summary>
         </member>
         <member name="M:Progile.ATE.TestFramework.ITestee.GetCurrentScreen(Progile.ATE.Common.IImageFilter[])">

@@ -161,6 +161,144 @@
             </summary>
             <param name="canonicalName"></param>
         </member>
+        <member name="P:Progile.ATE.Common.Images.IImage.Width">
+            <summary>
+            Width of the image in pixels
+            </summary>
+        </member>
+        <member name="P:Progile.ATE.Common.Images.IImage.Height">
+            <summary>
+            Height of the image in pixels
+            </summary>
+        </member>
+        <member name="P:Progile.ATE.Common.Images.IImage.Channels">
+            <summary>
+            Number of channels of the image. Usually 1 for grayscale, 3 for BGR, or 4 for BGRA.
+            </summary>
+        </member>
+        <member name="P:Progile.ATE.Common.Images.IImage.ImageSize">
+            <summary>
+            Size of the image
+            </summary>
+        </member>
+        <member name="P:Progile.ATE.Common.Images.IImage.HorizontalResolution">
+            <summary>
+            Horizontal resolution in DPI
+            </summary>
+        </member>
+        <member name="P:Progile.ATE.Common.Images.IImage.VerticalResolution">
+            <summary>
+            Vertical resolution in DPI
+            </summary>
+        </member>
+        <member name="P:Progile.ATE.Common.Images.IImage.IsContinuous">
+            <summary>
+            True if the image lies sequentally in the buffer. This is false, if a subimage has been selected.
+            </summary>
+        </member>
+        <member name="M:Progile.ATE.Common.Images.IImage.WritePng(System.IO.Stream)">
+            <summary>
+            Encodes the image as a png file and writes it to the stream
+            </summary>
+            <param name="stream">The stream to write to</param>
+        </member>
+        <member name="M:Progile.ATE.Common.Images.IImage.SavePng(System.String)">
+            <summary>
+            Saves the current image as a png to
+            </summary>
+            <param name="pngPath">Full path of the new png image</param>
+        </member>
+        <member name="T:Progile.ATE.Common.Images.ImageBuffer">
+            <summary>
+            Holds an image as byte array, and contains meta-information necessary for processing
+            </summary>
+        </member>
+        <member name="P:Progile.ATE.Common.Images.ImageBuffer.Buffer">
+            <summary>
+            Underlying buffer, encoded as BGRA for color images. The buffer cannot be null.
+            </summary>
+        </member>
+        <member name="P:Progile.ATE.Common.Images.ImageBuffer.ImageSize">
+            <summary>
+            Image size which is written in the buffer. The image can be smaller than the actual buffer
+            </summary>
+        </member>
+        <member name="P:Progile.ATE.Common.Images.ImageBuffer.Channels">
+            <summary>
+            Number of channels of the image. Usually 1 for grayscale, 3 for BGR or 4 for BGRA.
+            </summary>
+        </member>
+        <member name="P:Progile.ATE.Common.Images.ImageBuffer.UsedBufferLength">
+            <summary>
+            Used buffer length. How many bytes the image 
+            </summary>
+        </member>
+        <member name="P:Progile.ATE.Common.Images.ImageBuffer.HorizontalResolution">
+            <summary>
+            Horizontal resolution in DPI
+            </summary>
+        </member>
+        <member name="P:Progile.ATE.Common.Images.ImageBuffer.VerticalResolution">
+            <summary>
+            Vertical resolution in DPI
+            </summary>
+        </member>
+        <member name="P:Progile.ATE.Common.Images.ImageBuffer.PixelRatio">
+            <summary>
+            The pixel ratio of the image
+            </summary>
+        </member>
+        <member name="M:Progile.ATE.Common.Images.ImageBuffer.#ctor">
+            <summary>
+            Creates an empty ImageBuffer
+            </summary>
+        </member>
+        <member name="M:Progile.ATE.Common.Images.ImageBuffer.#ctor(System.Byte[],Progile.ATE.Common.Images.ImageSize,System.Int32,System.Single,System.Single,System.UInt32)">
+            <summary>
+            Create new ImageBuffer
+            </summary>
+            <param name="buffer">unerlying buffer, cannot be null</param>
+            <param name="size">size of the image</param>
+            <param name="channels">number of channels</param>
+            <param name="horizontalResolution">in dpi, defaults to 96.0</param>
+            <param name="verticalResolution">in dpi, defaults to 96.0</param>
+            <param name="pixelRatio"></param>
+            <exception cref="T:System.ArgumentNullException">buffer cannot be null</exception>
+            <exception cref="T:System.ArgumentException">buffer has to be large enough to hold the image</exception>
+        </member>
+        <member name="M:Progile.ATE.Common.Images.ImageBuffer.CopyBuffer(System.Byte[],System.Byte[],System.Int32,System.Boolean@)">
+            <summary>
+            Copies the source buffer to the destination buffer. If the destination cannot hold length, a new destination buffer is allocated
+            </summary>
+            <param name="source">source buffer, cannot be null</param>
+            <param name="destination">destination buffer, can be null</param>
+            <param name="length"></param>
+            <param name="isNewBufferAllocated"></param>
+            <returns>Buffer copied from source. It is either a reference to <paramref name="destination"/>, or a new allocation if <paramref name="destination"/> was too short.</returns>
+            <exception cref="T:System.ArgumentNullException">source cannot be null</exception>
+        </member>
+        <member name="T:Progile.ATE.Common.Images.ImageSize">
+            <summary>
+            Size of an image or image buffer
+            </summary>
+        </member>
+        <member name="P:Progile.ATE.Common.Images.ImageSize.Width">
+            <summary>
+            Width of the image in pixels
+            </summary>
+        </member>
+        <member name="P:Progile.ATE.Common.Images.ImageSize.Height">
+            <summary>
+            Height of the image in pixels
+            </summary>
+        </member>
+        <member name="M:Progile.ATE.Common.Images.ImageSize.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Size of an image or image buffer
+            </summary>
+            <param name="width">in pixels</param>
+            <param name="height">in pixels</param>
+        </member>
         <member name="M:Progile.ATE.Common.IConnectionFactory.GetConnection(System.String)">
             <summary>
             Returns a connection setup according to the connection string
@@ -182,6 +320,19 @@
             <summary>
             Allows to enabled or disable the automatic orientation (if supported by the device)
             </summary>
+        </member>
+        <member name="M:Progile.ATE.Common.ISUTConnection.CopyToBuffer">
+            <summary>
+            Copies the current screen into an <see cref="T:Progile.ATE.Common.Images.ImageBuffer"/>.
+            </summary>
+            <returns>Newly allocated <see cref="T:Progile.ATE.Common.Images.ImageBuffer"/></returns>
+        </member>
+        <member name="M:Progile.ATE.Common.ISUTConnection.CopyToBuffer(System.Byte[]@)">
+            <summary>
+            Copies the current screen into an <see cref="T:Progile.ATE.Common.Images.ImageBuffer"/>. This method allocates a new byte[] buffer if <paramref name="bufferToReuse"/> is not large enough
+            </summary>
+            <param name="bufferToReuse">Optional parameter. Can be null</param>
+            <returns><see cref="T:Progile.ATE.Common.Images.ImageBuffer"/> which contains the current screen.</returns>
         </member>
         <member name="P:Progile.ATE.Common.JustWait.TimerPrecision">
             <summary>
@@ -268,6 +419,16 @@
             Treat the image as a single text line, bypassing hacks that are specific to Tesseract.
             </summary>
         </member>
+        <member name="T:Progile.ATE.Common.IronOcrEngineParameters">
+            <summary>
+            Specific IronOCR engine parameters
+            </summary>
+        </member>
+        <member name="M:Progile.ATE.Common.IronOcrEngineParameters.#ctor">
+            <summary>
+            default parameters for the IronOCR Engine
+            </summary>
+        </member>
         <member name="P:Progile.ATE.Common.IronOcrEngineParameters.ReadBarCodes">
             <summary>
             Optionally turns on Barcode reading alongside OCR. Default: false
@@ -309,6 +470,15 @@
             IronOcr.TesseractConfiguration.TrySaveAllTesseractVariablesToFile(System.String)
             to output all available tesseract variables for your installation of Tesseract.
             </summary>
+        </member>
+        <member name="M:Progile.ATE.Common.IronOcrEngineParameters.GetHashCode">
+            <inheritdoc/>
+        </member>
+        <member name="M:Progile.ATE.Common.IronOcrEngineParameters.Equals(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Progile.ATE.Common.IronOcrEngineParameters.Equals(Progile.ATE.Common.IronOcrEngineParameters)">
+            <inheritdoc/>
         </member>
         <member name="T:Progile.ATE.Common.GlobalEngineParameters">
             <summary>
@@ -512,6 +682,7 @@
             0.4 one related character difference, 
             0.5 one related character difference based on the second or third guess, 
             0.6 one related character group replaced
+            0.8 one character with incorrect capitalization (e.g. Z instead of z)
             1.0 one unrelated character difference
             1.1 start or end anchor missing
             </summary>
@@ -728,26 +899,41 @@
             Default: 10
             </summary>
         </member>
+        <member name="T:Progile.ATE.Common.OcrEngineRelatedCharacters">
+            <summary>
+            Ocr engine related characters
+            </summary>
+        </member>
+        <member name="P:Progile.ATE.Common.OcrEngineRelatedCharacters.RelatedChars">
+            <summary>
+            Related Characters
+            </summary>
+        </member>
         <member name="M:Progile.ATE.Common.OcrEngineRelatedCharacters.ClearRelatedChars">
             <summary>
-            Clear all related chars
+            Clear all related chararcters
             </summary>
         </member>
         <member name="M:Progile.ATE.Common.OcrEngineRelatedCharacters.NewRelation(System.Char[])">
             <summary>
-            Create a new related chars
+            Create a new related chararcters
             </summary>
             <param name="related"></param>
         </member>
         <member name="M:Progile.ATE.Common.OcrEngineRelatedCharacters.AddToRelation(System.Char[])">
             <summary>
-            Add a new char to an already existing related chars
+            Add a new char to an already existing related chararcters
             </summary>
             <param name="newRelatedChars"></param>
         </member>
+        <member name="P:Progile.ATE.Common.OcrEngineRelatedCharacters.RelatedCharGroups">
+            <summary>
+            Related character groups
+            </summary>
+        </member>
         <member name="M:Progile.ATE.Common.OcrEngineRelatedCharacters.ClearRelatedCharGroups">
             <summary>
-            Clear all related chars groups
+            Clear all related character groups
             </summary>
         </member>
         <member name="M:Progile.ATE.Common.OcrEngineRelatedCharacters.NewRelation(System.String[])">
@@ -761,6 +947,21 @@
             Adds a new string group relation
             </summary>
             <param name="newRelatedStrings"></param>
+        </member>
+        <member name="T:Progile.ATE.Common.OcrEngineParameters">
+            <summary>
+            Ocr Engine parameters
+            </summary>
+        </member>
+        <member name="F:Progile.ATE.Common.OcrEngineParameters.AccuracyDefaultParameter">
+            <summary>
+            Default Accuracy parameter value
+            </summary>
+        </member>
+        <member name="M:Progile.ATE.Common.OcrEngineParameters.#ctor">
+            <summary>
+            create default ocr engine parameters
+            </summary>
         </member>
         <member name="P:Progile.ATE.Common.OcrEngineParameters.TestImagePath">
             <summary>
@@ -806,6 +1007,7 @@
             0.4 one related character difference, 
             0.5 one related character difference based on the second or third guess, 
             0.6 one related character group replaced
+            0.8 one character with incorrect capitalization (e.g. Z instead of z)
             1.0 one unrelated character difference
             1.1 start or end anchor missing
             </summary>

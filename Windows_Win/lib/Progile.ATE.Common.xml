@@ -225,7 +225,7 @@
         </member>
         <member name="P:Progile.ATE.Common.Images.ImageBuffer.Channels">
             <summary>
-            Number of channels of the image. Usually 1 for grayscale, or 4 for BGRA.
+            Number of channels of the image. Usually 1 for grayscale, 3 for BGR or 4 for BGRA.
             </summary>
         </member>
         <member name="P:Progile.ATE.Common.Images.ImageBuffer.UsedBufferLength">
@@ -241,6 +241,16 @@
         <member name="P:Progile.ATE.Common.Images.ImageBuffer.VerticalResolution">
             <summary>
             Vertical resolution in DPI
+            </summary>
+        </member>
+        <member name="P:Progile.ATE.Common.Images.ImageBuffer.PixelRatio">
+            <summary>
+            The pixel ratio of the image
+            </summary>
+        </member>
+        <member name="M:Progile.ATE.Common.Images.ImageBuffer.#ctor">
+            <summary>
+            Creates an empty ImageBuffer
             </summary>
         </member>
         <member name="M:Progile.ATE.Common.Images.ImageBuffer.#ctor(System.Byte[],Progile.ATE.Common.Images.ImageSize,System.Int32,System.Single,System.Single,System.UInt32)">
@@ -311,13 +321,18 @@
             Allows to enabled or disable the automatic orientation (if supported by the device)
             </summary>
         </member>
-        <member name="M:Progile.ATE.Common.ISUTConnection.CopyScreenToBuffer(System.Byte[]@,System.Boolean@)">
+        <member name="M:Progile.ATE.Common.ISUTConnection.CopyToBuffer">
             <summary>
-            Copies the current screen into the buffer. If the provided buffer is not large enough, this method will allocate new byte[] buffer.
+            Copies the current screen into an <see cref="T:Progile.ATE.Common.Images.ImageBuffer"/>.
             </summary>
-            <param name="buffer">Buffer reference to write to. Has to be at least as large as <see cref="P:Progile.ATE.Common.ISUTConnection.CurrentScreen"/> length. If not, it will be overwritten with a new byte[] buffer</param>
-            <param name="isNewBufferAllocated">true if</param>
-            <returns></returns>
+            <returns>Newly allocated <see cref="T:Progile.ATE.Common.Images.ImageBuffer"/></returns>
+        </member>
+        <member name="M:Progile.ATE.Common.ISUTConnection.CopyToBuffer(System.Byte[]@)">
+            <summary>
+            Copies the current screen into an <see cref="T:Progile.ATE.Common.Images.ImageBuffer"/>. This method allocates a new byte[] buffer if <paramref name="bufferToReuse"/> is not large enough
+            </summary>
+            <param name="bufferToReuse">Optional parameter. Can be null</param>
+            <returns><see cref="T:Progile.ATE.Common.Images.ImageBuffer"/> which contains the current screen.</returns>
         </member>
         <member name="P:Progile.ATE.Common.JustWait.TimerPrecision">
             <summary>
@@ -667,6 +682,7 @@
             0.4 one related character difference, 
             0.5 one related character difference based on the second or third guess, 
             0.6 one related character group replaced
+            0.8 one character with incorrect capitalization (e.g. Z instead of z)
             1.0 one unrelated character difference
             1.1 start or end anchor missing
             </summary>
@@ -991,6 +1007,7 @@
             0.4 one related character difference, 
             0.5 one related character difference based on the second or third guess, 
             0.6 one related character group replaced
+            0.8 one character with incorrect capitalization (e.g. Z instead of z)
             1.0 one unrelated character difference
             1.1 start or end anchor missing
             </summary>
