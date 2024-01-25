@@ -8,7 +8,6 @@
   "Screens": [
     {
       "Id": "536a85ca-8d2a-4310-9807-a0ffe17c13a0",
-      "LastUpdate": "2023-11-02T06:40:24.5498145Z",
       "Name": "MainPageCars",
       "DisplayName": "Main Page Cars",
       "BaseClass": "Progile.TRIO.BaseModel.BaseScreen",
@@ -293,16 +292,19 @@
             {
               "Name": "make",
               "DisplayName": "Make",
+              "IsOptional": false,
               "Type": "System.String"
             },
             {
               "Name": "model",
               "DisplayName": "Model",
+              "IsOptional": false,
               "Type": "System.String"
             },
             {
               "Name": "firstRegistrationYear",
               "DisplayName": "First Registration [Year]",
+              "IsOptional": false,
               "Type": "System.Int32"
             }
           ],
@@ -314,7 +316,6 @@
     },
     {
       "Id": "0af26405-dff0-4b8d-9a86-6f230de17bcb",
-      "LastUpdate": "2023-11-02T06:40:24.5537789Z",
       "Name": "DetailSearch",
       "DisplayName": "Detail Search",
       "BaseClass": "Progile.TRIO.BaseModel.BaseScreen",
@@ -611,16 +612,19 @@
             {
               "Name": "make",
               "DisplayName": "Make",
+              "IsOptional": false,
               "Type": "System.String"
             },
             {
               "Name": "model",
               "DisplayName": "Model",
+              "IsOptional": false,
               "Type": "System.String"
             },
             {
               "Name": "variant",
               "DisplayName": "Variant",
+              "IsOptional": false,
               "Type": "System.String"
             }
           ],
@@ -632,7 +636,6 @@
     },
     {
       "Id": "5c774cea-525e-4954-b553-63f3f28f75d7",
-      "LastUpdate": "2023-11-02T06:40:14.7289378Z",
       "Name": "SearchResults",
       "DisplayName": "Search Results",
       "BaseClass": "Progile.TRIO.BaseModel.BaseScreen",
@@ -704,7 +707,6 @@
     },
     {
       "Id": "8213917d-93d4-4b6b-a022-517728fc4665",
-      "LastUpdate": "2023-11-02T06:40:24.5578324Z",
       "Name": "MainMenu",
       "DisplayName": "Main Menu",
       "BaseClass": "Progile.TRIO.BaseModel.BaseScreen",
@@ -930,7 +932,6 @@
     },
     {
       "Id": "4065a0cc-5771-474e-a4d3-b5fb4fd27a37",
-      "LastUpdate": "2023-11-02T06:40:15.3038457Z",
       "Name": "TruckscoutMainPage",
       "DisplayName": "Truckscout Main Page",
       "BaseClass": "Progile.TRIO.BaseModel.BaseScreen",
@@ -992,7 +993,6 @@
     },
     {
       "Id": "be19a2d6-641d-4c07-a348-e268f08e50f0",
-      "LastUpdate": "2023-11-02T06:40:15.9107158Z",
       "Name": "VehicleType",
       "DisplayName": "Vehicle Type",
       "BaseClass": "Progile.TRIO.BaseModel.BaseScreen",
@@ -1048,7 +1048,6 @@
     },
     {
       "Id": "808ff5fe-04cf-48c3-b789-4d9704d6188e",
-      "LastUpdate": "2023-11-02T06:40:16.2515302Z",
       "Name": "Description",
       "DisplayName": "Description",
       "BaseClass": "Progile.TRIO.BaseModel.BaseScreen",
@@ -1422,7 +1421,6 @@
     },
     {
       "Id": "4acf1861-bea2-411e-9c11-43ec4cc9abc1",
-      "LastUpdate": "2023-11-02T06:40:16.6251469Z",
       "Name": "CarPreview",
       "DisplayName": "Car Preview",
       "BaseClass": "Progile.TRIO.BaseModel.BaseScreen",
@@ -1646,7 +1644,6 @@
     },
     {
       "Id": "08122081-90c7-4ccf-a7b5-b5ccddb235a0",
-      "LastUpdate": "2023-11-02T06:40:16.9528111Z",
       "Name": "MainPageGerman",
       "DisplayName": "Main Page German",
       "BaseClass": "Progile.TRIO.BaseModel.BaseScreen",
@@ -1706,7 +1703,6 @@
     },
     {
       "Id": "ce39ab7f-17b6-4a7f-9217-b01f32cef9c1",
-      "LastUpdate": "2023-11-02T06:40:17.276119Z",
       "Name": "Autohändler",
       "DisplayName": "Autohändler",
       "BaseClass": "Progile.TRIO.BaseModel.BaseScreen",
@@ -1723,7 +1719,6 @@
     },
     {
       "Id": "2569acca-8247-4901-9931-a0ef0cbaa2d2",
-      "LastUpdate": "2023-11-02T06:40:17.5587033Z",
       "Name": "MembersLoginPage",
       "DisplayName": "Members Login Page",
       "BaseClass": "Progile.TRIO.BaseModel.BaseScreen",
@@ -1820,7 +1815,6 @@
     },
     {
       "Id": "3b2ef2de-9447-4c36-b926-b1f7df4745f7",
-      "LastUpdate": "2023-11-02T06:40:17.8866596Z",
       "Name": "SharePriceScreen",
       "DisplayName": "Share Price Screen",
       "BaseClass": "Progile.TRIO.BaseModel.BaseScreen",
@@ -1894,6 +1888,10 @@
             {
               "Name": "displayName",
               "Value": "Yearly Performance Table"
+            },
+            {
+              "Name": "SearchType",
+              "Value": "Image"
             },
             {
               "Name": "tableLoadedImage",
@@ -1973,7 +1971,6 @@
     },
     {
       "Id": "d0c406eb-703b-4f85-9326-a6eac447c932",
-      "LastUpdate": "2023-11-02T06:40:18.2045883Z",
       "Name": "EditableTableScreen",
       "DisplayName": "Editable Table Screen",
       "BaseClass": "Progile.TRIO.BaseModel.BaseScreen",
@@ -2006,6 +2003,10 @@
             {
               "Name": "displayName",
               "Value": "ExampleTable"
+            },
+            {
+              "Name": "SearchType",
+              "Value": "Image"
             },
             {
               "Name": "tableLoadedImage",
@@ -2200,5 +2201,6 @@
         }
       ]
     }
-  ]
+  ],
+  "AppFunctions": []
 }

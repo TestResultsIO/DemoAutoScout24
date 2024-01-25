@@ -27,7 +27,7 @@ namespace AutoScout24_Model.Screens.DemosTelerik
 		public void DeleteEntry(string productName)
 		{
 			var row = GetRow(ColumnProductName, productName);
-			Button deleteButton = row.GetButtonInRow(App.EditableTableScreen.DeleteRowButton); //Get the button that is in the correct row
+			Button deleteButton = row.GetElementInRow(App.EditableTableScreen.DeleteRowButton); //Get the button that is in the correct row
 			deleteButton.Click(App.EditableTableScreen.DeleteRecordConfirmation.WaitForAppear);
 			App.EditableTableScreen.DeleteRecordConfirmation.Click(App.EditableTableScreen.DeleteRecordConfirmation.WaitForDisappear);
         }
