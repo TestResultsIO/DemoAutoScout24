@@ -1,0 +1,39 @@
+{
+  "CustomerId": "00000000-0000-0000-0000-000000000090",
+  "ProjectId": "4253b5b3-5444-4d17-a44d-326479f7ffba",
+  "ServerUri": "https://demo.testresults.io/",
+  "Environments": [
+    {
+      "$type": "Progile.Trio.Designer.DomainObjects.EnvironmentImage, Progile.Trio.Designer",
+      "ImagePathStaticEnvironment": null,
+      "RaiseImagePathPopupBeforeExecution": false,
+      "Id": "00000000-0000-0000-0000-000000000000",
+      "Name": "Simulation"
+    },
+    {
+      "$type": "Progile.Trio.Designer.DomainObjects.EnvironmentVNC, Progile.Trio.Designer",
+      "Ip": "TrioSandbox",
+      "Username": null,
+      "Password": "V1:IYBsWU2tycStnHaOQSiojQ==",
+      "RemoteDirectory": "\\\\TRIOSANDBOX\\RemoteDirectory",
+      "ScreenDimensions": null,
+      "Protocol": "VNC",
+      "Id": "9e1c6af8-f946-4651-81ec-7eb7b81a001f",
+      "Name": "Hyper V Virtual Machine"
+    },
+    {
+      "$type": "Progile.Trio.Designer.DomainObjects.EnvironmentLocal, Progile.Trio.Designer",
+      "MonitorId": 0,
+      "Id": "7677f4a3-4a35-4ab8-87be-b99635a14ac0",
+      "Name": "Monitor 1"
+    }
+  ],
+  "SolutionVersion": "7.0",
+  "SolutionType": null,
+  "ElementsFilter": [],
+  "GetLabelTextSettings": {
+    "OcrPadding": 5,
+    "MaxDetectedCharacters": 40,
+    "MaxDetectedWords": 5
+  }
+}
