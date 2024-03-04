@@ -34,8 +34,8 @@
           "Type": "Progile.TRIO.BaseModel.Button",
           "Parameters": [
             {
-              "Name": "tester",
-              "Value": "t"
+              "Name": "appBasics",
+              "Value": "AppBasics"
             },
             {
               "Name": "displayName",
@@ -71,8 +71,8 @@
           "Type": "Progile.TRIO.BaseModel.Button",
           "Parameters": [
             {
-              "Name": "tester",
-              "Value": "t"
+              "Name": "appBasics",
+              "Value": "AppBasics"
             },
             {
               "Name": "displayName",
@@ -256,8 +256,8 @@
           "Type": "Progile.TRIO.BaseModel.LabelWithValue",
           "Parameters": [
             {
-              "Name": "tester",
-              "Value": "t"
+              "Name": "appBasics",
+              "Value": "AppBasics"
             },
             {
               "Name": "displayName",
@@ -445,8 +445,8 @@
           "Type": "Progile.TRIO.BaseModel.Button",
           "Parameters": [
             {
-              "Name": "tester",
-              "Value": "t"
+              "Name": "appBasics",
+              "Value": "AppBasics"
             },
             {
               "Name": "displayName",
@@ -482,8 +482,8 @@
           "Type": "Progile.TRIO.BaseModel.LabelWithCheckbox",
           "Parameters": [
             {
-              "Name": "tester",
-              "Value": "t"
+              "Name": "appBasics",
+              "Value": "AppBasics"
             },
             {
               "Name": "displayName",
@@ -531,8 +531,8 @@
           "Type": "Progile.TRIO.BaseModel.LabelWithCheckbox",
           "Parameters": [
             {
-              "Name": "tester",
-              "Value": "t"
+              "Name": "appBasics",
+              "Value": "AppBasics"
             },
             {
               "Name": "displayName",
@@ -580,8 +580,8 @@
           "Type": "Progile.TRIO.BaseModel.Checkbox",
           "Parameters": [
             {
-              "Name": "tester",
-              "Value": "t"
+              "Name": "appBasics",
+              "Value": "AppBasics"
             },
             {
               "Name": "displayName",
@@ -668,8 +668,8 @@
           "Type": "Progile.TRIO.BaseModel.LabelWithValue",
           "Parameters": [
             {
-              "Name": "tester",
-              "Value": "t"
+              "Name": "appBasics",
+              "Value": "AppBasics"
             },
             {
               "Name": "displayName",
@@ -733,8 +733,8 @@
           "Type": "Progile.TRIO.BaseModel.Button",
           "Parameters": [
             {
-              "Name": "tester",
-              "Value": "t"
+              "Name": "appBasics",
+              "Value": "AppBasics"
             },
             {
               "Name": "displayName",
@@ -774,8 +774,8 @@
           "Type": "Progile.TRIO.BaseModel.Button",
           "Parameters": [
             {
-              "Name": "tester",
-              "Value": "t"
+              "Name": "appBasics",
+              "Value": "AppBasics"
             },
             {
               "Name": "displayName",
@@ -811,8 +811,8 @@
           "Type": "Progile.TRIO.BaseModel.Button",
           "Parameters": [
             {
-              "Name": "tester",
-              "Value": "t"
+              "Name": "appBasics",
+              "Value": "AppBasics"
             },
             {
               "Name": "displayName",
@@ -848,8 +848,8 @@
           "Type": "Progile.TRIO.BaseModel.Button",
           "Parameters": [
             {
-              "Name": "tester",
-              "Value": "t"
+              "Name": "appBasics",
+              "Value": "AppBasics"
             },
             {
               "Name": "displayName",
@@ -885,8 +885,8 @@
           "Type": "Progile.TRIO.BaseModel.Button",
           "Parameters": [
             {
-              "Name": "tester",
-              "Value": "t"
+              "Name": "appBasics",
+              "Value": "AppBasics"
             },
             {
               "Name": "displayName",
@@ -964,8 +964,8 @@
           "Type": "Progile.TRIO.BaseModel.Button",
           "Parameters": [
             {
-              "Name": "tester",
-              "Value": "t"
+              "Name": "appBasics",
+              "Value": "AppBasics"
             },
             {
               "Name": "displayName",
@@ -1019,8 +1019,8 @@
           "Type": "Progile.TRIO.BaseModel.Button",
           "Parameters": [
             {
-              "Name": "tester",
-              "Value": "t"
+              "Name": "appBasics",
+              "Value": "AppBasics"
             },
             {
               "Name": "displayName",
@@ -1102,12 +1102,6 @@
             {
               "Name": "filters",
               "Value": "ScreenSelect"
-            }
-          ],
-          "ScreenEditorPropertySavedValues": [
-            {
-              "PropertyName": "DropdownListOcrParas",
-              "Value": "Progile.TRIO.BaseModel.OcrParams.ExactMatch"
             }
           ]
         },
@@ -1277,8 +1271,8 @@
           "Type": "Progile.TRIO.BaseModel.Label",
           "Parameters": [
             {
-              "Name": "tester",
-              "Value": "t"
+              "Name": "appBasics",
+              "Value": "AppBasics"
             },
             {
               "Name": "displayName",
@@ -1310,8 +1304,8 @@
           "Type": "Progile.TRIO.BaseModel.Button",
           "Parameters": [
             {
-              "Name": "tester",
-              "Value": "t"
+              "Name": "appBasics",
+              "Value": "AppBasics"
             },
             {
               "Name": "displayName",
@@ -1347,8 +1341,8 @@
           "Type": "Progile.TRIO.BaseModel.LabelWithButton",
           "Parameters": [
             {
-              "Name": "tester",
-              "Value": "t"
+              "Name": "appBasics",
+              "Value": "AppBasics"
             },
             {
               "Name": "displayName",
@@ -1392,8 +1386,8 @@
           "Type": "Progile.TRIO.BaseModel.Button",
           "Parameters": [
             {
-              "Name": "tester",
-              "Value": "t"
+              "Name": "appBasics",
+              "Value": "AppBasics"
             },
             {
               "Name": "displayName",
@@ -1447,8 +1441,8 @@
           "Type": "Progile.TRIO.BaseModel.LabelWithValue",
           "Parameters": [
             {
-              "Name": "tester",
-              "Value": "t"
+              "Name": "appBasics",
+              "Value": "AppBasics"
             },
             {
               "Name": "displayName",
@@ -1488,8 +1482,8 @@
           "Type": "Progile.TRIO.BaseModel.LabelWithValue",
           "Parameters": [
             {
-              "Name": "tester",
-              "Value": "t"
+              "Name": "appBasics",
+              "Value": "AppBasics"
             },
             {
               "Name": "displayName",
@@ -1529,8 +1523,8 @@
           "Type": "Progile.TRIO.BaseModel.LabelWithValue",
           "Parameters": [
             {
-              "Name": "tester",
-              "Value": "t"
+              "Name": "appBasics",
+              "Value": "AppBasics"
             },
             {
               "Name": "displayName",
@@ -1570,8 +1564,8 @@
           "Type": "Progile.TRIO.BaseModel.LabelWithValue",
           "Parameters": [
             {
-              "Name": "tester",
-              "Value": "t"
+              "Name": "appBasics",
+              "Value": "AppBasics"
             },
             {
               "Name": "displayName",
@@ -1611,8 +1605,8 @@
           "Type": "Progile.TRIO.BaseModel.LabelWithValue",
           "Parameters": [
             {
-              "Name": "tester",
-              "Value": "t"
+              "Name": "appBasics",
+              "Value": "AppBasics"
             },
             {
               "Name": "displayName",
@@ -1841,8 +1835,8 @@
           "Type": "Progile.TRIO.BaseModel.Button",
           "Parameters": [
             {
-              "Name": "tester",
-              "Value": "t"
+              "Name": "appBasics",
+              "Value": "AppBasics"
             },
             {
               "Name": "displayName",
@@ -1946,8 +1940,8 @@
           "Type": "Progile.TRIO.BaseModel.Label",
           "Parameters": [
             {
-              "Name": "tester",
-              "Value": "t"
+              "Name": "appBasics",
+              "Value": "AppBasics"
             },
             {
               "Name": "displayName",
@@ -2053,8 +2047,8 @@
           "Type": "Progile.TRIO.BaseModel.Button",
           "Parameters": [
             {
-              "Name": "tester",
-              "Value": "t"
+              "Name": "appBasics",
+              "Value": "AppBasics"
             },
             {
               "Name": "displayName",
@@ -2090,8 +2084,8 @@
           "Type": "Progile.TRIO.BaseModel.Button",
           "Parameters": [
             {
-              "Name": "tester",
-              "Value": "t"
+              "Name": "appBasics",
+              "Value": "AppBasics"
             },
             {
               "Name": "displayName",
@@ -2170,8 +2164,8 @@
           "Type": "Progile.TRIO.BaseModel.LabelWithButton",
           "Parameters": [
             {
-              "Name": "tester",
-              "Value": "t"
+              "Name": "appBasics",
+              "Value": "AppBasics"
             },
             {
               "Name": "displayName",

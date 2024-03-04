@@ -23,7 +23,7 @@ namespace AutoScout24_Model.Screens.AutoScout24Screens
 
         public void FindSpecificCarInResults(string name)
         {
-            var carLabel = new Label(t, name, name);
+            var carLabel = new Label(App, name, name);
             ScrollToElement(carLabel);
             var select = t.SelectFromColorAtPoint(carLabel.Position);
 
