@@ -1,0 +1,71 @@
+{
+  "Id": "5c774cea-525e-4954-b553-63f3f28f75d7",
+  "Name": "SearchResults",
+  "DisplayName": "Search Results",
+  "BaseClass": "Progile.TRIO.BaseModel.BaseScreen",
+  "IsBaseScreen": false,
+  "RelativeLocation": "Screens\\AutoScout24 Screens",
+  "OpenImagePath": "Images\\AutoScout24 Screens\\SearchResults\\Screen_Loaded",
+  "ScreenImagePath": "Images\\AutoScout24 Screens\\SearchResults\\Screen_Image",
+  "Position": {
+    "X": 0,
+    "Y": 0,
+    "Width": 1024,
+    "Height": 768
+  },
+  "ScreenEditorPropertySavedValues": [
+    {
+      "PropertyName": "CanScrollToFindElement",
+      "Value": true
+    }
+  ],
+  "Elements": [
+    {
+      "Id": "5a564821-d521-4af6-8120-b578312edaf3",
+      "Position": {
+        "X": 299,
+        "Y": 364,
+        "Width": 89,
+        "Height": 28
+      },
+      "Name": "OffersFound",
+      "Type": "Progile.TRIO.BaseModel.LabelWithValue",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "Offers found"
+        },
+        {
+          "Name": "valuePosition",
+          "Value": "Left"
+        },
+        {
+          "Name": "searchType",
+          "Value": "Image"
+        },
+        {
+          "Name": "imageReferenceForLabel",
+          "Value": "Images\\AutoScout24 Screens\\SearchResults\\Offers found"
+        },
+        {
+          "Name": "gridWidth",
+          "Value": "125"
+        },
+        {
+          "Name": "filters",
+          "Value": "ScreenSelect"
+        }
+      ],
+      "ScreenEditorPropertySavedValues": [
+        {
+          "PropertyName": "ValueOcrParas",
+          "Value": "AutoScout24_Model.Helpers.OcrParams.TextAlternative"
+        }
+      ]
+    }
+  ]
+}

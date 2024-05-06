@@ -1,0 +1,96 @@
+{
+  "Id": "2569acca-8247-4901-9931-a0ef0cbaa2d2",
+  "Name": "MembersLoginPage",
+  "DisplayName": "Members Login Page",
+  "BaseClass": "Progile.TRIO.BaseModel.BaseScreen",
+  "IsBaseScreen": false,
+  "RelativeLocation": "Screens\\TruckScout24 Screens",
+  "OpenImagePath": "Images\\TruckScout24 Screens\\MembersLoginPage\\Screen_Loaded",
+  "ScreenImagePath": "Images\\TruckScout24 Screens\\MembersLoginPage\\Screen_Image",
+  "Position": {
+    "X": 0,
+    "Y": 0,
+    "Width": 1600,
+    "Height": 1200
+  },
+  "Elements": [
+    {
+      "Id": "0e27fb0e-ef9d-4e81-a90c-f0d127dc289e",
+      "Position": {
+        "X": 530,
+        "Y": 248,
+        "Width": 86,
+        "Height": 27
+      },
+      "Name": "UsernameTextbox",
+      "Type": "Progile.TRIO.BaseModel.TextBox",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "Username Textbox"
+        },
+        {
+          "Name": "searchType",
+          "Value": "Image"
+        },
+        {
+          "Name": "imageReference",
+          "Value": "Images\\TruckScout24 Screens\\MembersLoginPage\\Username Textbox"
+        },
+        {
+          "Name": "useVisualSense",
+          "Value": "true"
+        },
+        {
+          "Name": "filters",
+          "Value": "ScreenSelect"
+        }
+      ]
+    },
+    {
+      "Id": "059c3f6a-b7aa-45c4-98ac-ed8e3ad12b49",
+      "Position": {
+        "X": 529,
+        "Y": 336,
+        "Width": 80,
+        "Height": 27
+      },
+      "Name": "PasswordTextbox",
+      "Type": "Progile.TRIO.BaseModel.PwTextBox",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "Password Textbox"
+        },
+        {
+          "Name": "searchType",
+          "Value": "Image"
+        },
+        {
+          "Name": "imageReference",
+          "Value": "Images\\TruckScout24 Screens\\MembersLoginPage\\Password Textbox"
+        },
+        {
+          "Name": "useVisualSense",
+          "Value": "false"
+        },
+        {
+          "Name": "pwCharImage",
+          "Value": "Images\\Common\\BlindCharImage"
+        },
+        {
+          "Name": "filters",
+          "Value": "ScreenSelect"
+        }
+      ]
+    }
+  ]
+}

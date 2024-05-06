@@ -15,7 +15,7 @@
       "Ip": "TrioSandbox",
       "Username": null,
       "Password": "V1:IYBsWU2tycStnHaOQSiojQ==",
-      "RemoteDirectory": "\\\\TRIOSANDBOX\\RemoteDirectory",
+      "RemoteDirectory": "encrypt:V2:v4d5jTrJDhpYMG1297/geWnC6UUYVfOAjqBR2QfYs6p8jluPTRZlJwIsK/hHQdt8",
       "ScreenDimensions": null,
       "Protocol": "VNC",
       "Id": "9e1c6af8-f946-4651-81ec-7eb7b81a001f",
@@ -28,7 +28,7 @@
       "Name": "Monitor 1"
     }
   ],
-  "SolutionVersion": "7.0",
+  "SolutionVersion": "8.0",
   "SolutionType": null,
   "ElementsFilter": [],
   "GetLabelTextSettings": {

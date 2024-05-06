@@ -143,7 +143,45 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="ModelCapabilities.json" />
-    <None Include="SoftwareModel.json" />
+    <None Include="Screens\AutoScout24 Screens\CarPreview.g.json">
+      <DependentUpon>CarPreview.cs</DependentUpon>
+    </None>
+    <None Include="Screens\AutoScout24 Screens\DetailSearch.g.json">
+      <DependentUpon>DetailSearch.cs</DependentUpon>
+    </None>
+    <None Include="Screens\AutoScout24 Screens\MainMenu.g.json">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </None>
+    <None Include="Screens\AutoScout24 Screens\MainPageCars.g.json">
+      <DependentUpon>MainPageCars.cs</DependentUpon>
+    </None>
+    <None Include="Screens\AutoScout24 Screens\SearchResults.g.json">
+      <DependentUpon>SearchResults.cs</DependentUpon>
+    </None>
+    <None Include="Screens\AutoScout24.de Screens\Autohändler.g.json">
+      <DependentUpon>Autohändler.cs</DependentUpon>
+    </None>
+    <None Include="Screens\AutoScout24.de Screens\MainPageGerman.g.json">
+      <DependentUpon>MainPageGerman.cs</DependentUpon>
+    </None>
+    <None Include="Screens\Demos Telerik\EditableTableScreen.g.json">
+      <DependentUpon>EditableTableScreen.cs</DependentUpon>
+    </None>
+    <None Include="Screens\Scout24.com Screens\SharePriceScreen.g.json">
+      <DependentUpon>SharePriceScreen.cs</DependentUpon>
+    </None>
+    <None Include="Screens\TruckScout24 Screens\MembersLoginPage.g.json">
+      <DependentUpon>MembersLoginPage.cs</DependentUpon>
+    </None>
+    <None Include="Screens\TruckScout24 Screens\Sell Workflow\Description.g.json">
+      <DependentUpon>Description.cs</DependentUpon>
+    </None>
+    <None Include="Screens\TruckScout24 Screens\Sell Workflow\VehicleType.g.json">
+      <DependentUpon>VehicleType.cs</DependentUpon>
+    </None>
+    <None Include="Screens\TruckScout24 Screens\TruckscoutMainPage.g.json">
+      <DependentUpon>TruckscoutMainPage.cs</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Progile.TRIO.BaseModel">

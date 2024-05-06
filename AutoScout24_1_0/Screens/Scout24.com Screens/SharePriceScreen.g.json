@@ -1,0 +1,156 @@
+{
+  "Id": "3b2ef2de-9447-4c36-b926-b1f7df4745f7",
+  "Name": "SharePriceScreen",
+  "DisplayName": "Share Price Screen",
+  "BaseClass": "Progile.TRIO.BaseModel.BaseScreen",
+  "IsBaseScreen": false,
+  "RelativeLocation": "Screens\\Scout24.com Screens",
+  "OpenImagePath": "Images\\Scout24_com Screens\\SharePriceScreen\\Screen_Loaded",
+  "ScreenImagePath": "Images\\Scout24_com Screens\\SharePriceScreen\\Screen_Image",
+  "Position": {
+    "X": 0,
+    "Y": 0,
+    "Width": 1600,
+    "Height": 1200
+  },
+  "Elements": [
+    {
+      "Id": "0ec49233-3620-4a2c-9081-c1e85fe5e2e7",
+      "Position": {
+        "X": 756,
+        "Y": 642,
+        "Width": 158,
+        "Height": 25
+      },
+      "Name": "YearlyPerformanceTab",
+      "Type": "Progile.TRIO.BaseModel.Button",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "Yearly Performance Tab"
+        },
+        {
+          "Name": "searchType",
+          "Value": "Image"
+        },
+        {
+          "Name": "activeImageReference",
+          "Value": "Images\\Scout24_com Screens\\SharePriceScreen\\Yearly Performance Tab\\active"
+        },
+        {
+          "Name": "inactiveImageReference",
+          "Value": "Images\\Scout24_com Screens\\SharePriceScreen\\Yearly Performance Tab\\inactive"
+        },
+        {
+          "Name": "useVisualSense",
+          "Value": "false"
+        },
+        {
+          "Name": "filters",
+          "Value": "ScreenSelect"
+        }
+      ]
+    },
+    {
+      "Id": "592fd679-e1f1-4738-96b1-e73a954c0b4a",
+      "Position": {
+        "X": 761,
+        "Y": 639,
+        "Width": 150,
+        "Height": 31
+      },
+      "Name": "YearlyPerformanceTable",
+      "Type": "Custom.Table",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "Yearly Performance Table"
+        },
+        {
+          "Name": "SearchType",
+          "Value": "Image"
+        },
+        {
+          "Name": "tableLoadedImage",
+          "Value": "Images\\Scout24_com Screens\\SharePriceScreen\\Yearly Performance Table\\TableLoadedImage"
+        },
+        {
+          "Name": "SeqBasedDetection",
+          "Value": "true"
+        },
+        {
+          "Name": "InitScroller",
+          "Value": "false"
+        },
+        {
+          "Name": "ColumnHeader",
+          "Value": "Images\\Scout24_com Screens\\SharePriceScreen\\Yearly Performance Table\\Scout24"
+        },
+        {
+          "Name": "ColumnHeader",
+          "Value": "Images\\Scout24_com Screens\\SharePriceScreen\\Yearly Performance Table\\Column2019"
+        },
+        {
+          "Name": "ColumnHeader",
+          "Value": "Images\\Scout24_com Screens\\SharePriceScreen\\Yearly Performance Table\\Column2020"
+        },
+        {
+          "Name": "ColumnHeader",
+          "Value": "Images\\Scout24_com Screens\\SharePriceScreen\\Yearly Performance Table\\Column2021"
+        },
+        {
+          "Name": "ColumnHeader",
+          "Value": "Images\\Scout24_com Screens\\SharePriceScreen\\Yearly Performance Table\\Column2022"
+        },
+        {
+          "Name": "ColumnHeader",
+          "Value": "Images\\Scout24_com Screens\\SharePriceScreen\\Yearly Performance Table\\Column2023"
+        }
+      ],
+      "ClassFiles": [
+        "Screens\\Scout24.com Screens\\YearlyPerformanceTable"
+      ]
+    },
+    {
+      "Id": "c56df62d-7d32-47e2-852d-3a244b323fe1",
+      "Position": {
+        "X": 241,
+        "Y": 513,
+        "Width": 90,
+        "Height": 24
+      },
+      "Name": "LabelDataProvided",
+      "Type": "Progile.TRIO.BaseModel.Label",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "LabelDataProvided"
+        },
+        {
+          "Name": "searchType",
+          "Value": "Image"
+        },
+        {
+          "Name": "imageReference",
+          "Value": "Images\\Scout24_com Screens\\SharePriceScreen\\LabelDataProvided"
+        },
+        {
+          "Name": "filters",
+          "Value": "ScreenSelect"
+        }
+      ]
+    }
+  ]
+}

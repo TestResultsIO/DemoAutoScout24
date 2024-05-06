@@ -1,0 +1,61 @@
+{
+  "Id": "4065a0cc-5771-474e-a4d3-b5fb4fd27a37",
+  "Name": "TruckscoutMainPage",
+  "DisplayName": "Truckscout Main Page",
+  "BaseClass": "Progile.TRIO.BaseModel.BaseScreen",
+  "IsBaseScreen": false,
+  "RelativeLocation": "Screens\\TruckScout24 Screens",
+  "OpenImagePath": "Images\\TruckScout24 Screens\\TruckscoutMainPage\\Screen_Loaded",
+  "ScreenImagePath": "Images\\TruckScout24 Screens\\TruckscoutMainPage\\Screen_Image",
+  "Position": {
+    "X": 0,
+    "Y": 0,
+    "Width": 1024,
+    "Height": 768
+  },
+  "ScreenEditorPropertySavedValues": [
+    {
+      "PropertyName": "CanScrollToFindElement",
+      "Value": true
+    }
+  ],
+  "Elements": [
+    {
+      "Id": "c8371173-8336-4efd-be00-94dff0023e4c",
+      "Position": {
+        "X": 218,
+        "Y": 603,
+        "Width": 73,
+        "Height": 27
+      },
+      "Name": "SellNowButton",
+      "Type": "Progile.TRIO.BaseModel.Button",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "Sell Now Button"
+        },
+        {
+          "Name": "searchType",
+          "Value": "Image"
+        },
+        {
+          "Name": "activeImageReference",
+          "Value": "Images\\TruckScout24 Screens\\TruckscoutMainPage\\Sell Now Button\\active"
+        },
+        {
+          "Name": "useVisualSense",
+          "Value": "true"
+        },
+        {
+          "Name": "filters",
+          "Value": "ScreenSelect"
+        }
+      ]
+    }
+  ]
+}

@@ -72,6 +72,12 @@
     <None Include="Images\FileProperties\Screen_Loaded\Screen_Loaded.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="Screens\FileExplorer.g.json">
+      <DependentUpon>FileExplorer.cs</DependentUpon>
+    </None>
+    <None Include="Screens\FileProperties.g.json">
+      <DependentUpon>FileProperties.cs</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

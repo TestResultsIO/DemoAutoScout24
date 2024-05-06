@@ -1,0 +1,320 @@
+{
+  "Id": "0af26405-dff0-4b8d-9a86-6f230de17bcb",
+  "Name": "DetailSearch",
+  "DisplayName": "Detail Search",
+  "BaseClass": "Progile.TRIO.BaseModel.BaseScreen",
+  "IsBaseScreen": false,
+  "RelativeLocation": "Screens\\AutoScout24 Screens",
+  "OpenImagePath": "Images\\AutoScout24 Screens\\DetailSearch\\Screen_Loaded",
+  "ScreenImagePath": "Images\\AutoScout24 Screens\\DetailSearch\\Screen_Image",
+  "Position": {
+    "X": 0,
+    "Y": 0,
+    "Width": 1024,
+    "Height": 768
+  },
+  "ScreenEditorPropertySavedValues": [
+    {
+      "PropertyName": "CanScrollToFindElement",
+      "Value": true
+    },
+    {
+      "PropertyName": "UseScreenMonitoringAfterInteraction",
+      "Value": true
+    }
+  ],
+  "Elements": [
+    {
+      "Id": "ec8c01fa-28fa-4e3a-8d66-01e45bce4e91",
+      "Position": null,
+      "Name": "MakeDropdownWithSearchbox",
+      "Type": "AutoScout24_Model.CustomScreenElements.DropdownWithSearchbox",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "Make DropdownWithSearchbox"
+        },
+        {
+          "Name": "imageReference",
+          "Value": "Images\\AutoScout24 Screens\\DetailSearch\\Make Dropdown\\DropdownTextBox"
+        },
+        {
+          "Name": "useVisualSense",
+          "Value": "true"
+        },
+        {
+          "Name": "filters",
+          "Value": "ScreenSelect"
+        }
+      ]
+    },
+    {
+      "Id": "6207a59c-0b70-45c6-bd35-128f3ab11cbd",
+      "Position": null,
+      "Name": "ModelDropdownWithSearchbox",
+      "Type": "AutoScout24_Model.CustomScreenElements.DropdownWithSearchbox",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "Model DropdownWithSearchbox"
+        },
+        {
+          "Name": "imageReference",
+          "Value": "Images\\AutoScout24 Screens\\DetailSearch\\Model Dropdown\\DropdownTextBox"
+        },
+        {
+          "Name": "useVisualSense",
+          "Value": "true"
+        },
+        {
+          "Name": "filters",
+          "Value": "ScreenSelect"
+        }
+      ]
+    },
+    {
+      "Id": "4d09bd91-c06c-46d2-a96f-a2c074965595",
+      "Position": {
+        "X": 670,
+        "Y": 333,
+        "Width": 61,
+        "Height": 20
+      },
+      "Name": "VariantTextbox",
+      "Type": "Progile.TRIO.BaseModel.TextBox",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "Variant Textbox"
+        },
+        {
+          "Name": "searchType",
+          "Value": "Image"
+        },
+        {
+          "Name": "imageReference",
+          "Value": "Images\\AutoScout24 Screens\\DetailSearch\\Variant Textbox"
+        },
+        {
+          "Name": "useVisualSense",
+          "Value": "true"
+        },
+        {
+          "Name": "filters",
+          "Value": "ScreenSelect"
+        }
+      ]
+    },
+    {
+      "Id": "6ac9a92f-6c84-44d1-abce-ae934fd6f5b2",
+      "Position": {
+        "X": 483,
+        "Y": 649,
+        "Width": 61,
+        "Height": 25
+      },
+      "Name": "ResultsButton",
+      "Type": "Progile.TRIO.BaseModel.Button",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "Results Button"
+        },
+        {
+          "Name": "searchType",
+          "Value": "Image"
+        },
+        {
+          "Name": "activeImageReference",
+          "Value": "Images\\AutoScout24 Screens\\DetailSearch\\Results Button\\active"
+        },
+        {
+          "Name": "useVisualSense",
+          "Value": "true"
+        },
+        {
+          "Name": "filters",
+          "Value": "ScreenSelect"
+        }
+      ]
+    },
+    {
+      "Id": "e13255f6-0d39-448b-8d31-10a1bbc9152d",
+      "Position": {
+        "X": 649,
+        "Y": 906,
+        "Width": 113,
+        "Height": 36
+      },
+      "Name": "UsedCheckbox",
+      "Type": "Progile.TRIO.BaseModel.LabelWithCheckbox",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "Used Checkbox"
+        },
+        {
+          "Name": "checkboxPosition",
+          "Value": "Left"
+        },
+        {
+          "Name": "searchType",
+          "Value": "Image"
+        },
+        {
+          "Name": "imageReferenceForLabel",
+          "Value": "Images\\AutoScout24 Screens\\DetailSearch\\Used Checkbox\\LabelImage"
+        },
+        {
+          "Name": "checkedImageReference",
+          "Value": "Images\\Common\\Checkbox\\Checked"
+        },
+        {
+          "Name": "uncheckedImageReference",
+          "Value": "Images\\Common\\Checkbox\\Unchecked"
+        },
+        {
+          "Name": "gridWidth",
+          "Value": "160"
+        },
+        {
+          "Name": "filters",
+          "Value": "ScreenSelect"
+        }
+      ]
+    },
+    {
+      "Id": "c604639a-a800-48a9-be68-7164645e3c24",
+      "Position": {
+        "X": 51,
+        "Y": 380,
+        "Width": 99,
+        "Height": 28
+      },
+      "Name": "SeatHeatingCheckbox",
+      "Type": "Progile.TRIO.BaseModel.LabelWithCheckbox",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "Seat Heating Checkbox"
+        },
+        {
+          "Name": "checkboxPosition",
+          "Value": "Left"
+        },
+        {
+          "Name": "searchType",
+          "Value": "Image"
+        },
+        {
+          "Name": "imageReferenceForLabel",
+          "Value": "Images\\AutoScout24 Screens\\DetailSearch\\Seat Heating Checkbox\\LabelImage"
+        },
+        {
+          "Name": "checkedImageReference",
+          "Value": "Images\\Common\\Checkbox\\Checked"
+        },
+        {
+          "Name": "uncheckedImageReference",
+          "Value": "Images\\Common\\Checkbox\\Unchecked"
+        },
+        {
+          "Name": "gridWidth",
+          "Value": "150"
+        },
+        {
+          "Name": "filters",
+          "Value": "ScreenSelect"
+        }
+      ]
+    },
+    {
+      "Id": "651ca0e6-85ad-4252-884f-f5cd0d888b56",
+      "Position": {
+        "X": 970,
+        "Y": 423,
+        "Width": 42,
+        "Height": 42
+      },
+      "Name": "BodyColorVioletCheckbox",
+      "Type": "Progile.TRIO.BaseModel.Checkbox",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "Body Color Violet Checkbox"
+        },
+        {
+          "Name": "checkedImageReference",
+          "Value": "Images\\AutoScout24 Screens\\DetailSearch\\Body Color Violet Checkbox\\checked"
+        },
+        {
+          "Name": "uncheckedImageReference",
+          "Value": "Images\\AutoScout24 Screens\\DetailSearch\\Body Color Violet Checkbox\\unchecked"
+        },
+        {
+          "Name": "useVisualSense",
+          "Value": "false"
+        },
+        {
+          "Name": "filters",
+          "Value": "ScreenSelect"
+        }
+      ]
+    }
+  ],
+  "Interactions": [
+    {
+      "Parameters": [
+        {
+          "Name": "make",
+          "DisplayName": "Make",
+          "IsOptional": false,
+          "Type": "System.String"
+        },
+        {
+          "Name": "model",
+          "DisplayName": "Model",
+          "IsOptional": false,
+          "Type": "System.String"
+        },
+        {
+          "Name": "variant",
+          "DisplayName": "Variant",
+          "IsOptional": false,
+          "Type": "System.String"
+        }
+      ],
+      "MethodName": "SearchCar",
+      "DisplayName": "Search a car",
+      "ReturnType": "System.Void"
+    }
+  ]
+}

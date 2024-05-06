@@ -1,0 +1,232 @@
+{
+  "Id": "d0c406eb-703b-4f85-9326-a6eac447c932",
+  "Name": "EditableTableScreen",
+  "DisplayName": "Editable Table Screen",
+  "BaseClass": "Progile.TRIO.BaseModel.BaseScreen",
+  "IsBaseScreen": false,
+  "RelativeLocation": "Screens\\Demos Telerik",
+  "OpenImagePath": "Images\\Demos Telerik\\EditableTableScreen\\Screen_Loaded",
+  "ScreenImagePath": "Images\\Demos Telerik\\EditableTableScreen\\Screen_Image",
+  "Position": {
+    "X": 0,
+    "Y": 0,
+    "Width": 1024,
+    "Height": 768
+  },
+  "Elements": [
+    {
+      "Id": "b898bfaa-0a29-4926-a1be-99de9623b20e",
+      "Position": {
+        "X": 46,
+        "Y": 180,
+        "Width": 79,
+        "Height": 29
+      },
+      "Name": "ExampleTable",
+      "Type": "Custom.Table",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "ExampleTable"
+        },
+        {
+          "Name": "SearchType",
+          "Value": "Image"
+        },
+        {
+          "Name": "tableLoadedImage",
+          "Value": "Images\\Demos Telerik\\EditableTableScreen\\ExampleTable\\TableLoadedImage"
+        },
+        {
+          "Name": "SeqBasedDetection",
+          "Value": "false"
+        },
+        {
+          "Name": "InitScroller",
+          "Value": "false"
+        },
+        {
+          "Name": "ColumnHeader",
+          "Value": "Images\\Demos Telerik\\EditableTableScreen\\ExampleTable\\ColumnProductName"
+        },
+        {
+          "Name": "ColumnHeader",
+          "Value": "Images\\Demos Telerik\\EditableTableScreen\\ExampleTable\\ColumnUnitPrice"
+        },
+        {
+          "Name": "ColumnHeader",
+          "Value": "Images\\Demos Telerik\\EditableTableScreen\\ExampleTable\\ColumnUnitsInStock"
+        },
+        {
+          "Name": "ColumnHeader",
+          "Value": "Images\\Demos Telerik\\EditableTableScreen\\ExampleTable\\ColumnDiscontinued"
+        }
+      ],
+      "ClassFiles": [
+        "Screens\\Demos Telerik\\ExampleTable"
+      ]
+    },
+    {
+      "Id": "e372c6c9-e778-4cef-99fd-b022c65f2998",
+      "Position": {
+        "X": 66,
+        "Y": 252,
+        "Width": 123,
+        "Height": 22
+      },
+      "Name": "AddNewRecordButton",
+      "Type": "Progile.TRIO.BaseModel.Button",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "AddNewRecordButton"
+        },
+        {
+          "Name": "searchType",
+          "Value": "Image"
+        },
+        {
+          "Name": "activeImageReference",
+          "Value": "Images\\Demos Telerik\\EditableTableScreen\\AddNewRecordButton\\active"
+        },
+        {
+          "Name": "useVisualSense",
+          "Value": "false"
+        },
+        {
+          "Name": "filters",
+          "Value": "ScreenSelect"
+        }
+      ]
+    },
+    {
+      "Id": "f20feb4d-3bdb-4621-8fd7-8284153c3247",
+      "Position": {
+        "X": 813,
+        "Y": 332,
+        "Width": 67,
+        "Height": 20
+      },
+      "Name": "DeleteRowButton",
+      "Type": "Progile.TRIO.BaseModel.Button",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "DeleteRowButton"
+        },
+        {
+          "Name": "searchType",
+          "Value": "Image"
+        },
+        {
+          "Name": "activeImageReference",
+          "Value": "Images\\Demos Telerik\\EditableTableScreen\\DeleteRowButton\\active"
+        },
+        {
+          "Name": "useVisualSense",
+          "Value": "false"
+        },
+        {
+          "Name": "filters",
+          "Value": "ScreenSelect"
+        }
+      ]
+    },
+    {
+      "Id": "e221f9ef-0d95-4157-9a7c-0efd947c1b65",
+      "Position": {
+        "X": 60,
+        "Y": 297,
+        "Width": 102,
+        "Height": 16
+      },
+      "Name": "NewProductNameTextbox",
+      "Type": "Progile.TRIO.BaseModel.TextBox",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "NewProductNameTextbox"
+        },
+        {
+          "Name": "searchType",
+          "Value": "Image"
+        },
+        {
+          "Name": "imageReference",
+          "Value": "Images\\Demos Telerik\\EditableTableScreen\\NewProductNameTextbox"
+        },
+        {
+          "Name": "useVisualSense",
+          "Value": "false"
+        },
+        {
+          "Name": "filters",
+          "Value": "ScreenSelect"
+        }
+      ],
+      "ScreenEditorPropertySavedValues": [
+        {
+          "PropertyName": "PressEnterAfterType",
+          "Value": true
+        }
+      ]
+    },
+    {
+      "Id": "b9808046-9433-49c3-a801-4a2e5fe93bc5",
+      "Position": {
+        "X": 298,
+        "Y": 110,
+        "Width": 426,
+        "Height": 21
+      },
+      "Name": "DeleteRecordConfirmation",
+      "Type": "Progile.TRIO.BaseModel.LabelWithButton",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "DeleteRecordConfirmation"
+        },
+        {
+          "Name": "buttonPosition",
+          "Value": "Below"
+        },
+        {
+          "Name": "searchType",
+          "Value": "Image"
+        },
+        {
+          "Name": "imageReferenceForLabel",
+          "Value": "Images\\Demos Telerik\\EditableTableScreen\\DeleteRecordConfirmation\\LabelImage"
+        },
+        {
+          "Name": "buttonActiveimageReference",
+          "Value": "Images\\Demos Telerik\\EditableTableScreen\\DeleteRecordConfirmation\\Button\\active"
+        },
+        {
+          "Name": "filters",
+          "Value": "ScreenSelect"
+        }
+      ]
+    }
+  ]
+}
