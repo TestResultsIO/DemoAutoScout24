@@ -66,12 +66,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\FileProperties\Screen_Image\Screen_Image.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Images\FileProperties\Screen_Loaded\Screen_Loaded.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Include="Screens\FileExplorer.g.json">
       <DependentUpon>FileExplorer.cs</DependentUpon>
     </None>
@@ -92,16 +86,32 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\FileExplorer\Desktop Label\Desktop Label.png">
+    <None Include="Images\Windows_Images\FileExplorer\Desktop Label\Desktop Label.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Images\FileExplorer\File Context Menu\File Context Menu.png">
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Windows_Images\FileExplorer\File Context Menu\File Context Menu.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Images\FileExplorer\Screen_Image\Screen_Image.png">
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Windows_Images\FileExplorer\Screen_Image\Screen_Image.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Images\FileExplorer\Screen_Loaded\Screen_Loaded.png">
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Windows_Images\FileExplorer\Screen_Loaded\Screen_Loaded.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Windows_Images\FileProperties\Screen_Image\Screen_Image.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Windows_Images\FileProperties\Screen_Loaded\Screen_Loaded.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
