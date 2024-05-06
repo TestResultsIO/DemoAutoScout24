@@ -27,6 +27,7 @@ bld/
 EvidenceDirectory/
 *.trio.user.json
 .tfignore
+launchSettings.json
 
 # Visual Studio 2015 cache/options directory
 .vs/
