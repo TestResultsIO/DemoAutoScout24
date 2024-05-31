@@ -91,19 +91,18 @@ public class SellMyTractor : TestCase
     }
 
     [TestStep(5,
-            TestInput = "Upload an Image.",
-            ExpectedResults = "The Image upload completes successfully.")]
+        TestInput = @"Upload an Image.",
+        ExpectedResults = @"The Image upload completes successfully.")]
     public void Step5(ITester t)
     {
         //follow the guide to setup Supporting Files for the Testcase
         //https://docs.testresults.io/designer/interacting-with-the-sut/tabs-overview/environments/how-to-access-files-on-the-system-under-test
         // create a folder called "SupportingFiles" and copy an image in there named tractor.jpg
         //App.SystemHelpers.SetUpRemoteDirectory(); //open cmd and run this once so the directory is mapped
-        var dialog = new FileDialog(t, App.SystemHelpers);
 
-        App.Description.UploadImageButton.Click(dialog.WaitForAppear);
-        dialog.SetFileName(App.SystemHelpers.SupportingFilesDirectory + "tractor.jpg");
-        dialog.Open();
+        App.Description.UploadImageButton.Click(WindowsApp.FileDialog.WaitForAppear);
+        WindowsApp.FileDialog.SetFileName(App.SystemHelpers.SupportingFilesDirectory + "tractor.jpg");
+        WindowsApp.FileDialog.Open();
 
         //Search for the Image located in TC002 / Images folder to verify the Upload was successful
         t.Report.PassFailStep(

@@ -93,6 +93,11 @@
             Minimum version to include IKeyboard.TypeWithoutLogging
             </summary>
         </member>
+        <member name="F:Progile.ATE.TestFramework.VersionByFeatureSet.ELEMENT_ANCHORING">
+            <summary>
+            Minimum version to include Element Anchoring
+            </summary>
+        </member>
         <member name="M:Progile.ATE.TestFramework.VersionByFeatureSet.MinimumVersion(System.Version[])">
             <summary>
             Returns the minimum version required by a set of given version numbers.
@@ -286,7 +291,7 @@
         </member>
         <member name="P:Progile.ATE.TestFramework.VisualSense.ILayoutElement.Id">
             <summary>
-            Id of the layout elment. This is uniquie inside of a given layout. 
+            Id of the layout element. This is unique inside of a given layout.
             </summary>
         </member>
         <member name="P:Progile.ATE.TestFramework.VisualSense.ILayoutElement.BoundingBox">
@@ -302,6 +307,19 @@
         <member name="P:Progile.ATE.TestFramework.VisualSense.ILayoutElement.Contour">
             <summary>
             Represents the contours of the element.
+            </summary>
+        </member>
+        <member name="P:Progile.ATE.TestFramework.VisualSense.ILayoutElement.Convexity">
+            <summary>
+            Measurement of how "convex" the element is.
+            Zero means the element is absolutely not convex, like a star shape.
+            One means the element is completely convex, like a circle, ellipse, or rectangle.
+            </summary>
+        </member>
+        <member name="P:Progile.ATE.TestFramework.VisualSense.ILayoutElement.ConnectedComponentId">
+            <summary>
+            The id of the pixel component detected on the image. All elements with the same id are part of the same component on the image.
+            For example: All cells of a table share the same id, because they are all part of the same component in the image.
             </summary>
         </member>
         <member name="P:Progile.ATE.TestFramework.VisualSense.ILayoutElement.IsRootElement">
@@ -565,26 +583,6 @@
             Interpolation mode for FindImage(). When screen image and search image are in a different resolution, we use this interpolation mode to downscale the screen/search image
             </summary>
         </member>
-        <member name="M:Progile.ATE.TestFramework.ITesteeExperimental.FindAllImageInstances(Progile.ATE.Common.ImageReference,System.TimeSpan,Progile.ATE.Common.ImageDetectionParameters,Progile.ATE.Common.IImageFilter[])">
-            <summary>
-            Returns all Instances of an imageReference.
-            </summary>
-            <param name="imageReference"></param>
-            <param name="searchDuration"></param>
-            <param name="parameters"></param>
-            <param name="filters"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Progile.ATE.TestFramework.ITesteeExperimental.FindAllImageInstances(System.Collections.Generic.IList{Progile.ATE.Common.ImageReference},System.TimeSpan,Progile.ATE.Common.ImageDetectionParameters,Progile.ATE.Common.IImageFilter[])">
-            <summary>
-            Returns all Instances of an imageReference.
-            </summary>
-            <param name="imageReferences"></param>
-            <param name="searchDuration"></param>
-            <param name="parameters"></param>
-            <param name="filters"></param>
-            <returns></returns>
-        </member>
         <member name="P:Progile.ATE.TestFramework.ITesterInternal.ImagesRootDirectory">
             <summary>
             Returns the absolute path to the images root folder. All searchable images are within this root folder.
@@ -844,7 +842,7 @@
         </member>
         <member name="M:Progile.ATE.TestFramework.IMouse.MoveOutOfScreen">
             <summary>
-            Moves the mouse cursor of screen
+            Moves the mouse cursor off screen (or to position configured in MouseMoveOutPosition)
             </summary>
         </member>
         <member name="P:Progile.ATE.TestFramework.IMouse.CurrentPosition">
@@ -1181,6 +1179,39 @@
             <summary>
             Provides access to functionality to interact via the keyboard with the subject under test
             </summary>
+        </member>
+        <member name="M:Progile.ATE.TestFramework.ITestee.FindImageWithAnchor(Progile.ATE.Common.ImageReference,Progile.ATE.Common.ElementAnchor,Progile.ATE.Common.ImageDetectionParameters,System.TimeSpan,Progile.ATE.Common.IImageFilter[])">
+            <summary>
+            Executes an image search on the subject under test with potentially multiple results and returns the result with the most significant connection to the anchor element. 
+            </summary>
+            <param name="imageReference">Name of the image to find</param>
+            <param name="searchDuration">Defines how long the search should be run while no result is found</param>
+            <param name="anchor">Definition and position of the anchor</param>
+            <param name="parameters">Additional settings used for this search</param>
+            <param name="filters">Specifies a collection of possible filters that are used to pre-process the current screen image before the screenshot is taken</param>
+            <returns>Returns the position where image was found</returns>
+        </member>
+        <member name="M:Progile.ATE.TestFramework.ITestee.FindImageWithAnchor(System.Collections.Generic.IList{Progile.ATE.Common.ImageReference},Progile.ATE.Common.ElementAnchor,Progile.ATE.Common.ImageDetectionParameters,System.TimeSpan,Progile.ATE.Common.IImageFilter[])">
+            <summary>
+            Executes an image search on the subject under test with potentially multiple results and returns the result with the most significant connection to the anchor element. 
+            </summary>
+            <param name="imageReferences">Names of the possible images to find</param>
+            <param name="searchDuration">Defines how long the search should be run while no result is found</param>
+            <param name="anchor">Definition and position of the anchor</param>
+            <param name="parameters">Additional settings used for this search</param>
+            <param name="filters">Specifies a collection of possible filters that are used to pre-process the current screen image before the screenshot is taken</param>
+            <returns>Returns the position where image was found</returns>
+        </member>
+        <member name="M:Progile.ATE.TestFramework.ITestee.FindTextWithAnchor(System.String,Progile.ATE.Common.ElementAnchor,System.TimeSpan,Progile.ATE.Common.OcrEngineParameters,Progile.ATE.Common.IImageFilter[])">
+            <summary>
+            Executes a text search on the subject under test with potentially multiple results and returns the result with the most significant connection to the anchor element.
+            </summary>
+            <param name="content">Text to find</param>
+            <param name="anchor">Definition and position of the anchor</param>
+            <param name="searchDuration">Defines how long the search should be run while no result is found</param>
+            <param name="parameters">Additional settings used for this search</param>
+            <param name="filters">Specifies a collection of possible filters that are used to pre-process the current screen image before the screenshot is taken</param>
+            <returns>Returns the position and corresponding accuracy where the specified text was found</returns>
         </member>
         <member name="M:Progile.ATE.Common.ITestRunnerHost.RequestFile(Progile.ATE.TestFramework.RequestableFileTypeEnum,System.String@,System.Boolean)">
             <summary>

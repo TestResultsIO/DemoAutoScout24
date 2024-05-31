@@ -37,12 +37,17 @@ namespace Windows_Model
             Window = new Select(SystemHelpers.UsableScreen);
 
             // Init Screens
+            FileDialog = new FileDialog(t, SystemHelpers);
+            CmdWindow = new CmdWindow(t, SystemHelpers);
+
             InitScreens();
         }
 
         public ITester Tester { get; }
         public ISystemHelpers SystemHelpers { get; }
         public Select Window { get; }
+        public FileDialog FileDialog { get; }
+        public CmdWindow CmdWindow { get; }
         public Dictionary<string, string> AppSettings { get; }
         public ISutLocale SutLocale { get; }
 

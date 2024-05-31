@@ -49,6 +49,41 @@
             Defines if the connection should try to connect to a console/admin session
             </summary>
         </member>
+        <member name="T:Progile.ATE.Common.AnchorMode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Progile.ATE.Common.AnchorMode.NearestManhattan">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Progile.ATE.Common.AnchorMode.NearestEuclid">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Progile.ATE.Common.AnchorMode.VisualSense">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Progile.ATE.Common.DetectionMode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Progile.ATE.Common.DetectionMode.Image">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Progile.ATE.Common.DetectionMode.Text">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="T:Progile.ATE.Common.TesterHintLevels">
             <summary>
             Allows to select a specifc image engine
@@ -161,6 +196,11 @@
             </summary>
             <param name="canonicalName"></param>
         </member>
+        <member name="T:Progile.ATE.Common.Images.IImage">
+            <summary>
+            Image interface which supports sub-image selection
+            </summary>
+        </member>
         <member name="P:Progile.ATE.Common.Images.IImage.Width">
             <summary>
             Width of the image in pixels
@@ -195,6 +235,12 @@
             <summary>
             True if the image lies sequentally in the buffer. This is false, if a subimage has been selected.
             </summary>
+        </member>
+        <member name="M:Progile.ATE.Common.Images.IImage.CopyBuffer">
+            <summary>
+            Copies the current subimage into a newly allocated buffer
+            </summary>
+            <returns></returns>
         </member>
         <member name="M:Progile.ATE.Common.Images.IImage.WritePng(System.IO.Stream)">
             <summary>
@@ -305,6 +351,24 @@
             </summary>
             <param name="connectionString">Connection and protocol parameters</param>
             <returns></returns>
+        </member>
+        <member name="T:Progile.ATE.Common.ElementAnchor">
+            <summary>
+            Definition of an element anchor
+            </summary>
+        </member>
+        <member name="P:Progile.ATE.Common.ElementAnchor.AnchorMode">
+            <summary>
+            Defines the method how the distance between a search result and the anchor position (<see cref="P:Progile.ATE.Common.ElementAnchor.AnchorResult"/>) is measured.
+             - <see cref="F:Progile.ATE.Common.AnchorMode.NearestEuclid"/> measures the Euclidean  distance between the anchor position and the search result candidate. 
+             - <see cref="F:Progile.ATE.Common.AnchorMode.NearestManhattan"/> measures the Manhattan distance between the anchor position and the search result candidate. 
+             - <see cref="F:Progile.ATE.Common.AnchorMode.VisualSense"/> Considers the layout properties of the source image.
+            </summary>
+        </member>
+        <member name="P:Progile.ATE.Common.ElementAnchor.AnchorResult">
+            <summary>
+            The position where the anchor has been detected
+            </summary>
         </member>
         <member name="P:Progile.ATE.Common.ISUTConnectionMobile.ScreenOrientation">
             <summary>
@@ -644,12 +708,17 @@
         </member>
         <member name="P:Progile.ATE.Common.GlobalEngineParameters.MouseMoveOutOfScreen">
             <summary>
-            If enabled moves the mouse cursor out of screen before searching for an image or text
+            If enabled moves the mouse cursor out of screen (or to position defined in MouseMoveOutPosition) before searching for an image or text
+            </summary>
+        </member>
+        <member name="P:Progile.ATE.Common.GlobalEngineParameters.MouseMoveOutPosition">
+            <summary>
+            Position to mouse should be moved to before searching for an image or text when MouseMoveOutOfScreen is enabled. (Default: Middle of right edge of screen)
             </summary>
         </member>
         <member name="P:Progile.ATE.Common.GlobalEngineParameters.MouseMoveOutOffset">
             <summary>
-            Defines the delta by which the mouse should moved if the engine requested the move the mouse out of the screen (Default: Empty)
+            Defines the delta to the current position by which the mouse should moved if the engine requested the move the mouse out of the screen (Default: Empty)
             </summary>
         </member>
         <member name="P:Progile.ATE.Common.GlobalEngineParameters.MouseClickApproachOffset">

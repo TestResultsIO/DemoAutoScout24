@@ -202,49 +202,6 @@
       "BaseTypeName": "Progile.TRIO.BaseModel.OnScreenElement"
     },
     {
-      "TypeName": "Progile.TRIO.BaseModel.DropdownMenu",
-      "BaseTypeName": "Progile.TRIO.BaseModel.Dropdown",
-      "Interactions": [
-        {
-          "Parameters": [
-            {
-              "Name": "selections",
-              "DisplayName": "Submenus and value",
-              "IsOptional": false,
-              "Type": "System.String[]"
-            }
-          ],
-          "MethodName": "SelectValueFromSubmenu",
-          "DisplayName": "Select a value from a submenu",
-          "ReturnType": "System.Void",
-          "HintText": "Opens the dropdown menu, searches the first value from given \"Submenus and value\" in the list \r\nand selects it to open the next submenu. Then the next value is found in the submenu and so on.\r\nIf one of the texts cannot be found, throws a TestStepAbortedException."
-        }
-      ],
-      "HiddenOverrideInteractions": [
-        {
-          "Parameters": [
-            {
-              "Name": "value",
-              "DisplayName": "value",
-              "IsOptional": false,
-              "Type": "System.String"
-            },
-            {
-              "Name": "actualValue",
-              "DisplayName": "actualValue",
-              "IsOptional": false,
-              "Type": "out_string"
-            }
-          ],
-          "MethodName": "VerifySelectedValue",
-          "DisplayName": "VerifySelectedValue",
-          "ReturnType": "System.Boolean",
-          "PassedMessage": "VerifySelectedValue on {this} passed",
-          "FailedMessage": "VerifySelectedValue on {this} failed"
-        }
-      ]
-    },
-    {
       "TypeName": "Progile.TRIO.BaseModel.Dropdown",
       "BaseTypeName": "Progile.TRIO.BaseModel.OnScreenElement",
       "Interactions": [
@@ -323,7 +280,50 @@
       ]
     },
     {
-      "TypeName": "Progile.TRIO.BaseModel.HorizontalScroller",
+      "TypeName": "Progile.TRIO.BaseModel.DropdownMenu",
+      "BaseTypeName": "Progile.TRIO.BaseModel.Dropdown",
+      "Interactions": [
+        {
+          "Parameters": [
+            {
+              "Name": "selections",
+              "DisplayName": "Submenus and value",
+              "IsOptional": false,
+              "Type": "System.String[]"
+            }
+          ],
+          "MethodName": "SelectValueFromSubmenu",
+          "DisplayName": "Select a value from a submenu",
+          "ReturnType": "System.Void",
+          "HintText": "Opens the dropdown menu, searches the first value from given \"Submenus and value\" in the list \r\nand selects it to open the next submenu. Then the next value is found in the submenu and so on.\r\nIf one of the texts cannot be found, throws a TestStepAbortedException."
+        }
+      ],
+      "HiddenOverrideInteractions": [
+        {
+          "Parameters": [
+            {
+              "Name": "value",
+              "DisplayName": "value",
+              "IsOptional": false,
+              "Type": "System.String"
+            },
+            {
+              "Name": "actualValue",
+              "DisplayName": "actualValue",
+              "IsOptional": false,
+              "Type": "out_string"
+            }
+          ],
+          "MethodName": "VerifySelectedValue",
+          "DisplayName": "VerifySelectedValue",
+          "ReturnType": "System.Boolean",
+          "PassedMessage": "VerifySelectedValue on {this} passed",
+          "FailedMessage": "VerifySelectedValue on {this} failed"
+        }
+      ]
+    },
+    {
+      "TypeName": "Progile.TRIO.BaseModel.GenericScroller",
       "BaseTypeName": "Progile.TRIO.BaseModel.OnScreenElement"
     },
     {
@@ -331,7 +331,7 @@
       "BaseTypeName": null
     },
     {
-      "TypeName": "Progile.TRIO.BaseModel.GenericScroller",
+      "TypeName": "Progile.TRIO.BaseModel.HorizontalScroller",
       "BaseTypeName": "Progile.TRIO.BaseModel.OnScreenElement"
     },
     {
