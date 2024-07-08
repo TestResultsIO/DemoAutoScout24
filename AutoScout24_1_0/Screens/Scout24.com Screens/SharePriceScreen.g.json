@@ -83,8 +83,8 @@
           "Value": "Images\\Scout24_com Screens\\SharePriceScreen\\Yearly Performance Table\\TableLoadedImage"
         },
         {
-          "Name": "SeqBasedDetection",
-          "Value": "true"
+          "Name": "TableDetectionType",
+          "Value": "Sequence"
         },
         {
           "Name": "InitScroller",

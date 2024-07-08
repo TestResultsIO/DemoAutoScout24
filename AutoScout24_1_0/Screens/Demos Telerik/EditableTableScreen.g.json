@@ -42,8 +42,8 @@
           "Value": "Images\\Demos Telerik\\EditableTableScreen\\ExampleTable\\TableLoadedImage"
         },
         {
-          "Name": "SeqBasedDetection",
-          "Value": "false"
+          "Name": "TableDetectionType",
+          "Value": "Colorfill"
         },
         {
           "Name": "InitScroller",
