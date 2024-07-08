@@ -53,7 +53,7 @@ namespace AutoScout24_Model
 
         public IScroller GetScroller(Select searchRectangle = null, bool requiresFocus = false)
         {
-            return new GenericScroller(this, TestImages.TargetEnvironment.Images.Windows.Browser.Scroller, searchRectangle ?? Window);
+            return new BrowserScroller(this, searchRectangle ?? Window, Browser.Type);
         }
 
         /// <summary>
