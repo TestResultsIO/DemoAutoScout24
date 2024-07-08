@@ -98,6 +98,16 @@
             Minimum version to include Element Anchoring
             </summary>
         </member>
+        <member name="F:Progile.ATE.TestFramework.VersionByFeatureSet.SAVE_DEBUG_FILES">
+            <summary>
+            Minimum version to include new Save Debug Files
+            </summary>
+        </member>
+        <member name="F:Progile.ATE.TestFramework.VersionByFeatureSet.TABLE_DETECTION">
+            <summary>
+            Minimum version to include Table Structure Detection
+            </summary>
+        </member>
         <member name="M:Progile.ATE.TestFramework.VersionByFeatureSet.MinimumVersion(System.Version[])">
             <summary>
             Returns the minimum version required by a set of given version numbers.
@@ -497,6 +507,7 @@
             </summary>
         </member>
         <member name="P:Progile.ATE.TestFramework.IDebug.CaptureRawImages">
+            NOTE: most are obsolete but still remain to keep new engine compatible with older BaseModels
             <summary>
             Enables or disables the global debug handling. Debug handling requires more resources and should be switched off
             for released test cases.
@@ -568,19 +579,10 @@
             Referencing this interface can lock you into using a specific testresults.io engine version.
             </summary>
         </member>
-        <member name="P:Progile.ATE.TestFramework.ITesteeExperimental.OcrUseFullScreenEngineFallback">
-            <summary>
-            Default true. When the NativeOCR engine did not find the text, we use the FullScreenOCR one final time to see i
-            </summary>
-        </member>
-        <member name="P:Progile.ATE.TestFramework.ITesteeExperimental.NativeOCRShowInternalFallbackDebugImages">
-            <summary>
-            Default false. NativeOCR has an internal fallback logic. If this flag is set, the NativeOCR Engine returns the debug images of the internal fallback if NO MATCH was found
-            </summary>
-        </member>
         <member name="P:Progile.ATE.TestFramework.ITesteeExperimental.ImageScalingInterpolationMode">
             <summary>
-            Interpolation mode for FindImage(). When screen image and search image are in a different resolution, we use this interpolation mode to downscale the screen/search image
+            Interpolation mode for FindImage(). When screen image and search image are in a different resolution, we use this interpolation mode to downscale the screen/search image.
+            Default <see cref="F:Progile.ATE.TestFramework.Resize.InterpolationMode.Bilinear"/>.
             </summary>
         </member>
         <member name="P:Progile.ATE.TestFramework.ITesterInternal.ImagesRootDirectory">
@@ -906,6 +908,15 @@
             <param name="outputName">Name under which the requested file will be available in the remote directory (relative to the RequestedContent subdirectory)</param>
             <returns></returns>
         </member>
+        <member name="M:Progile.ATE.TestFramework.ITester.SaveDebugFiles(Progile.ATE.Common.DetectionMode,System.String,System.String)">
+            <summary>
+            Creates a Folder in the Run Directory inside the Evidence Directory
+            and saved Information and Images of the last Image/Text search into it
+            </summary>
+            <param name="detectionMode">Image or Text</param>
+            <param name="contextMessage">Additional text to be saved</param>
+            <param name="folderName">optional name for the folder, to guarantee uniqueness a timestamp will also always be added</param>
+        </member>
         <member name="P:Progile.ATE.TestFramework.ITester.Testee">
             <summary>
             Provides access to functionality to interact with the subject under test
@@ -1114,6 +1125,23 @@
             <param name="filters">Specifes a collection of possible filters that are used to pre-process the current screen image before the screenshot is taken</param>
             <returns></returns>
         </member>
+        <member name="M:Progile.ATE.TestFramework.ITestee.StartMonitoringAction(System.Action{Progile.ATE.TestFramework.ITester},System.Double,System.Boolean)">
+            <summary>
+            Starts a monitoring action that is periodically executed. Useful to handle popups or errors that might appear during the test execution.
+            Depending on the <paramref name="abortOnException"/> flag, in the case the <paramref name="monitoringAction"/> throws an exception,
+            the test case is set to Aborted (but current steps still runs to the end) or the exception is only logged.
+            </summary>
+            <param name="monitoringAction">The action to execute. E.g. <code>if(App.Popup.IsOnScreen()) App.Popup.Close();</code></param>
+            <param name="monitoringIntervalInSec">The time to wait between each execution of the <paramref name="monitoringAction"/></param>
+            <param name="abortOnException">Whether to set the test case to Aborted if the monitoring action throws an exception.</param>
+            <returns>Returns a Guid that can be used to stop this particular monitoring action</returns>
+        </member>
+        <member name="M:Progile.ATE.TestFramework.ITestee.StopMonitoringAction(System.Nullable{System.Guid})">
+            <summary>
+            Stops the first registered or the specified monitoring action
+            </summary>
+            <param name="monitoringActionId">The action Id to stop (returned by <see cref="M:Progile.ATE.TestFramework.ITestee.StartMonitoringAction(System.Action{Progile.ATE.TestFramework.ITester},System.Double,System.Boolean)"/>)</param>
+        </member>
         <member name="M:Progile.ATE.TestFramework.ITestee.RegisterForUpdateCheck(System.Action{System.Double},System.Double,Progile.ATE.Common.IImageFilter[])">
             <summary>
             Registers a callback for graphical updates
@@ -1212,6 +1240,16 @@
             <param name="parameters">Additional settings used for this search</param>
             <param name="filters">Specifies a collection of possible filters that are used to pre-process the current screen image before the screenshot is taken</param>
             <returns>Returns the position and corresponding accuracy where the specified text was found</returns>
+        </member>
+        <member name="M:Progile.ATE.TestFramework.ITestee.DetectTableStructure(System.Collections.Generic.IList{Progile.ATE.Common.ResultRectangle},Progile.ATE.Common.IImageFilter[])">
+            <summary>
+            Starts the table structure detection based on the already detected column labels.
+            The returned <see cref="T:Progile.ATE.Common.TableDetection.TableStructure"/>is not restricted to the columns that were provided,
+            the <paramref name="foundColumns"/> are important to define the area where the table is expected. 
+            </summary>
+            <param name="foundColumns"><see cref="T:Progile.ATE.Common.ResultRectangle">s of previously detected column labels. </see></param>
+            <param name="filters">Specifies a collection of possible filters that are used to pre-process the current screen image before the screenshot is taken</param>
+            <returns>The table structure that has been detected.</returns>
         </member>
         <member name="M:Progile.ATE.Common.ITestRunnerHost.RequestFile(Progile.ATE.TestFramework.RequestableFileTypeEnum,System.String@,System.Boolean)">
             <summary>

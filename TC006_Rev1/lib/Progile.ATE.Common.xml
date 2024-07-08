@@ -544,6 +544,22 @@
         <member name="M:Progile.ATE.Common.IronOcrEngineParameters.Equals(Progile.ATE.Common.IronOcrEngineParameters)">
             <inheritdoc/>
         </member>
+        <member name="T:Progile.ATE.Common.ResultObjects.FindImageResult">
+            <summary>
+            Used as Result of IImageEngine.FindImages
+            and in IDebugFindImage
+            </summary>
+        </member>
+        <member name="P:Progile.ATE.Common.ResultObjects.FindImageResult.Precision">
+            <summary>
+            found Precision
+            </summary>
+        </member>
+        <member name="P:Progile.ATE.Common.ResultObjects.FindImageResult.RequiredPrecision">
+            <summary>
+            given value by ImageDetectionParameters
+            </summary>
+        </member>
         <member name="T:Progile.ATE.Common.GlobalEngineParameters">
             <summary>
             Allows you to define global defaults used by the test engine
