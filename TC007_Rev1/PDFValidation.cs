@@ -1,21 +1,10 @@
-﻿using System.Collections.Generic;
-using System.IO;
-using TC007_Rev1;
-using Windows_Model;
+﻿using TC007_Rev1;
 using static TC007_Rev1.PdfValidationHelper;
 
 [TestCase(1)]
-public class PDFValidation
+public class PDFValidation : TestCase
 {
     private string _pdfPathOnHost;
-    private WindowsApp App;
-
-    [SetupTest]
-    public virtual bool Setup(ITester t)
-    {
-        App = new WindowsApp(t);
-        return true;
-    }
 
     [TestStep(1, TestInput = "Make pdf file accessible for Execution Host")]
     public void Step1(ITester t)
