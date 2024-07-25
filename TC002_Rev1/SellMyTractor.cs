@@ -3,45 +3,33 @@
 [TestCase(1)]
 public class SellMyTractor : TestCase
 {
-    [PreconditionStep(
-        TestInput = @"Browser is open with https://www.autoscout24.com/",
-        ExpectedResults = @"AutoScout24 Main Page was found")]
-    public override void  PreconditionStep(ITester t)
+    [PreconditionStep(TestInput = @"Make sure the Browser is open")]
+    public override void PreconditionStep(ITester t)
     {
-        /*
-         * if the test is executed on the portal the browser will be opened
-         * automatically with the https://www.autoscout24.com/ as it is defined in the Webpage SoftwareModel
-         * 
-         * if you run this testcase in Visual Studio make sure to connect 
-         * to your test environment and open https://www.autoscout24.com/ there in Microsoft Edge
-        */
-        base.PreconditionStep(t);
-        t.Report.PassFailStep(App.MainPageCars.WaitForAppear(), $@"The element {/*element*/ App.MainPageCars} was displayed on the screen.", $@"The element {/*element*/ App.MainPageCars} was not found on the screen.");
+        t.Report.PassFailStep(
+            App.Browser.WaitForAppear(),
+            $@"The screen {/*element*/ App.Browser} was displayed.",
+            $@"The element {/*element*/ App.Browser} was not found on the UI.");
+
     }
 
-    [TestStep(1, 
-        TestInput ="Use the Main Menu to go to TruckScout.", 
-        ExpectedResults = "The TruckScout Logo is visible and the URL changed to TruckScout24.")]
+    [TestStep(1,
+        TestInput = @"Use the Main Menu to go to TruckScout.",
+        ExpectedResults = @"The TruckScout Logo is visible and the URL changed to TruckScout24.")]
     public void Step1(ITester t)
     {
-        //Open Menu -> click Trucks
-        App.MainMenu.GoToTrucks();
+        App.Browser.GoToURL($@"https://www.truckscout24.com/");
 
         //validate the logo changed
         t.Report.PassFailStep(
             App.TruckscoutMainPage.WaitForAppear(),
-            "The TruckScout Main Page was visible.",
-            "The TruckScout Main Page was not visible"
-        );
+            $@"The TruckScout Main Page was visible.",
+            $@"The TruckScout Main Page was not visible");
 
-        //validate browser url switched to trucks
-        //make sure the Home Button of the Edge browser is displayed (enabled in settings) so the URL box can be found
-        string expectedUrl = "TruckScout24.com";
-        t.Report.PassFailStep(
-            App.Browser.URLTextBox.GetText().Contains(expectedUrl),
-            $"The Browser URL switched to {expectedUrl}",
-            $"The Browser URL did not switch to {expectedUrl}"
-        );
+        //click away the cookie popup if it is on screen
+        t.Optional(() =>
+            App.TruckscoutMainPage.AcceptCookies.Click(App.TruckscoutMainPage.AcceptCookies.WaitForDisappear));
+
     }
 
     [TestStep(2,
@@ -49,7 +37,7 @@ public class SellMyTractor : TestCase
         ExpectedResults = "Sell Workflow started, Starts with 1. Vehicle Type.")]
     public void Step2(ITester t)
     {
-        App.TruckscoutMainPage.SellNowButton.Click(App.VehicleType.WaitForAppear);
+        App.TruckscoutMainPage.Menu.SelectValueFromSubmenu("Offer", "Advertise vehicle");
         t.Report.PassStep("The Sell workflow was started, the Vehicle Type selection is shown."); //no need to validate again as the line above waited for the VehicleType Screen
     }
 

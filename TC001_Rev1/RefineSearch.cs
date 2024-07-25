@@ -12,7 +12,7 @@ public class RefineSearch : TestCase
          * if you run this testcase in Visual Studio make sure to connect 
          * to your test environment and open https://www.autoscout24.com/ there in Microsoft Edge
         */
-        t.Report.PassFailStep(App.MainPageCars.WaitForAppear(), $@"The element {/*element*/ App.MainPageCars} was displayed on the screen.", $@"The element {/*element*/ App.MainPageCars} was not found on the screen.");
+        t.Report.PassFailStep(App.MainPage.WaitForAppear(), $@"The element {/*element*/ App.MainPage} was displayed on the screen.", $@"The element {/*element*/ App.MainPage} was not found on the screen.");
     }
 
     [TestStep(1,
@@ -20,7 +20,7 @@ public class RefineSearch : TestCase
         ExpectedResults = @"The Detail Search Screen opens")]
     public void Step1(ITester t)
     {
-        App.MainPageCars.RefineSearchLink.Click(App.DetailSearch.WaitForAppear);
+        App.MainPage.RefineSearchLink.Click(App.DetailSearch.WaitForAppear);
         t.Report.PassStep($@"The Detail Search Screen is open");
     }
 

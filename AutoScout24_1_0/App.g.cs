@@ -9,9 +9,7 @@
 //------------------------------------------------------------------------------
 
 using Progile.TRIO.BaseModel;
-using AutoScout24_Model.Screens.AutoScout24_deScreens;
 using AutoScout24_Model.Screens.AutoScout24Screens;
-using AutoScout24_Model.Screens.TruckScout24Screens.SellWorkflow;
 using AutoScout24_Model.Screens.DemosTelerik;
 using AutoScout24_Model.Screens.TruckScout24Screens;
 using AutoScout24_Model.Screens.Scout24_comScreens;
@@ -23,47 +21,29 @@ namespace AutoScout24_Model
     {
         partial void InitScreens()
         {
-            Autohändler = new Autohändler(this);
             CarPreview = new CarPreview(this);
-            Description = new Description(this);
             DetailSearch = new DetailSearch(this);
             EditableTableScreen = new EditableTableScreen(this);
-            MainMenu = new MainMenu(this);
-            MainPageCars = new MainPageCars(this);
-            MainPageGerman = new MainPageGerman(this);
-            MembersLoginPage = new MembersLoginPage(this);
+            MainPage = new MainPage(this);
+            LoginPage = new LoginPage(this);
             SearchResults = new SearchResults(this);
             SharePriceScreen = new SharePriceScreen(this);
-            TruckscoutMainPage = new TruckscoutMainPage(this);
-            VehicleType = new VehicleType(this);
         }
 
 
-        public Autohändler Autohändler { get; set; }
-        
         public CarPreview CarPreview { get; set; }
-        
-        public Description Description { get; set; }
         
         public DetailSearch DetailSearch { get; set; }
         
         public EditableTableScreen EditableTableScreen { get; set; }
         
-        public MainMenu MainMenu { get; set; }
+        public MainPage MainPage { get; set; }
         
-        public MainPageCars MainPageCars { get; set; }
-        
-        public MainPageGerman MainPageGerman { get; set; }
-        
-        public MembersLoginPage MembersLoginPage { get; set; }
+        public LoginPage LoginPage { get; set; }
         
         public SearchResults SearchResults { get; set; }
         
         public SharePriceScreen SharePriceScreen { get; set; }
-        
-        public TruckscoutMainPage TruckscoutMainPage { get; set; }
-        
-        public VehicleType VehicleType { get; set; }
         
     }
 }

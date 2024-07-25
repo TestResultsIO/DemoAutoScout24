@@ -19,16 +19,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Screens\" />
+    <Folder Include="Images\AutoScout24_Images\AutoScout24_de Screens\" />
+    <Folder Include="Images\AutoScout24_Images\TruckScout24 Screens\Sell Workflow\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Progile.TRIO.BaseModel" Version="*" />
     <PackageReference Include="Progile.TRIO.EnvironmentModel.Windows" Version="*" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Windows_Win\Windows_Win.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -38,6 +35,12 @@
     <Reference Include="Progile.ATE.TestFramework">
       <HintPath>lib\Progile.ATE.TestFramework.dll</HintPath>
     </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Screens\TruckScout24 Screens\LoginPage.g.json">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </None>
   </ItemGroup>
 
 </Project>

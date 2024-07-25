@@ -9,7 +9,8 @@ public class ScreenElementExampleInteractions : TestCase
     /// </summary>
 
     // Button &LabelWithButton Interactions Examples
-    [TestStep(1, TestInput ="Button Interactions")]
+    [TestStep(1,
+        TestInput = @"Button Interactions")]
     public void Step1(ITester t)
     {
         //Each click on a Button requires a Verification
@@ -18,34 +19,36 @@ public class ScreenElementExampleInteractions : TestCase
         //these examples are from the Main Page of https://www.autoscout24.com/
 
         //in most cases this verification is that a new Screen (or element) appears
-        App.MainPageCars.ResultsButton.Click(App.SearchResults.WaitForAppear);
+        App.MainPage.ResultsButton.Click(App.SearchResults.WaitForAppear);
 
         //or you can also check if an element disappears
-        App.MainPageCars.ResultsButton.Click(App.MainPageCars.WaitForDisappear);
+        App.MainPage.ResultsButton.Click(App.MainPage.WaitForDisappear);
 
         //if there is really nothing that appears or disappears you can check that at least the screen updates
         //or write your own customized verification
-        App.MainPageCars.ResultsButton.ClickWithUpdateCheck(ImgDiffTolerance.Medium);
+        //if there is really nothing that appears or disappears you can check that at least the screen updates
+        //or write your own customized verification
+        App.MainPage.ResultsButton.ClickWithUpdateCheck(ImgDiffTolerance.Medium);
 
         //if you have a Button with different Active and Inactive states and recorded their Images
         //you can check the current state and depending on it continue on a different path
-        if (App.MainPageCars.ResultsButton.IsActive())
+        if (App.MainPage.ResultsButton.IsActive())
         {
-            App.MainPageCars.ResultsButton.Click(App.SearchResults.WaitForAppear);
+            App.MainPage.ResultsButton.Click(App.SearchResults.WaitForAppear);
         }
         else
         {
-            App.MainPageCars.RefineSearchLink.Click(App.DetailSearch.WaitForAppear);
+            App.MainPage.RefineSearchLink.Click(App.DetailSearch.WaitForAppear);
         }
 
         //IsActive is the current state, in case you want to verify that it changes the state use WaitForActive / WaitForInactive
         //for example after we selected something in a dropdown, we expect the Button to become active
-        App.MainPageCars.PriceUpToDropdown.SelectValue("5,000");
+        App.MainPage.PriceUpToDropdown.SelectValue($@"5,000");
         t.Report.PassFailStep(
-            App.MainPageCars.ResultsButton.WaitForActive(),
-            "The Results Button became active after selecting a price range.",
-            "The Results Button was not active after selecting a price range."
-        );
+            App.MainPage.ResultsButton.WaitForActive(),
+            $@"The Results Button became active after selecting a price range.",
+            $@"The Results Button was not active after selecting a price range.");
+
 
         //LabelWithButton:
         //use a LabelWithButton if the Button Icon/Image/Text is not unique on the screen, and there is a Label next to it to make it unique
@@ -99,12 +102,11 @@ public class ScreenElementExampleInteractions : TestCase
     [TestStep(3, TestInput = "ContextMenu Interactions")]
     public void Step3(ITester t)
     {
-        //we use the file explorer as an example with a context menu (the menu that opens on a rightclick)
-        App.SystemHelpers.RunProcess("explorer.exe");
-        WindowsApp.FileExplorer.WaitFor();
-        var position = WindowsApp.FileExplorer.DesktopLabel.WaitFor(); //the position is where we want to right click to open the menu
-        WindowsApp.FileExplorer.FileContextMenu.SelectValue(position, "Properties"); //opens the context menu with a rightclick on position and inside the menu selects the "Properties"
-        WindowsApp.FileProperties.WaitFor(); //After selecting "Properties" in the context menu, the File Properties open
+        //a context menu is the menu that opens on a right click, in a browser window this is possible everywhere
+        //in this example we right click on the Results Button and select "Copy link" in the Menu
+        App.MainPage.ResultsButtonContextMenu.WaitFor(); //so the Position is set
+        //the position is where we want to right click to open the menu
+        App.MainPage.ResultsButtonContextMenu.SelectValue(App.MainPage.ResultsButtonContextMenu.Position, "Copy link");
     }
 
     //Dropdown & DropdownMenu
@@ -113,30 +115,29 @@ public class ScreenElementExampleInteractions : TestCase
     {
         //what is the difference between the two elements?
         //a Dropdown usually consists of a Label and a textbox. With a click into the Textbox the dropdown opens where the possible values can be selected
-        //a DropdownMenu does not have this textbox. in practise mostly used for Menus and not for value selections
+        //a DropdownMenu does not have this textbox. in practice mostly used for Menus and Navigation and not for value selections
 
         //these examples are from the Main Page of https://www.autoscout24.com/
         //Dropdown:
-        App.MainPageCars.PriceUpToDropdown.SelectValue("2,500");
+        App.MainPage.PriceUpToDropdown.SelectValue("2,500");
 
         //the dropdown has no label, but only displayes the current value
         //so in the MainPage class file we set "PriceUpToDropdown.UseCachedPosition = true;"
         //so the dropdown can still be used even if "Price up to" is no longer visible
-        App.MainPageCars.PriceUpToDropdown.SelectValue("15,000");
+        App.MainPage.PriceUpToDropdown.SelectValue("15,000");
 
-        //the german version of the page has Dropdown Menus at the top https://www.autoscout24.de/
+        //the language selection at the top of the page is a Dropdown Menus
         //DropdownMenu:
-        App.MainPageGerman.KaufenDropdownMenu.SelectValue("finden");
-        App.Autohändler.WaitFor();
+        App.MainPage.Language.SelectValue("Deutschland");
     }
 
     //Scroller
     [TestStep(5, TestInput = "Scroller Interactions")]
     public void Step5(ITester t)
     {
-        //the easierst way to enable the scroller is to set "CanScrollToFindElement = true;" on a screen
+        //the easiest way to enable the scroller is to set "CanScrollToFindElement = true;" on a screen
         //see the DetailsSearch.cs class for an example
-        //so if an element is not found immediatly on a screen the scroller is used to find it
+        //so if an element is not found immediately on a screen the scroller is used to find it
         //https://www.autoscout24.com/refinesearch
         App.DetailSearch.BodyColorVioletCheckbox.Check();
 
@@ -151,7 +152,7 @@ public class ScreenElementExampleInteractions : TestCase
         //Scroll up or down
         App.DetailSearch.Scroller.Scroll(
             direction: IScroller.Direction.Forward,       //forward is down, Backward is up
-            incrementKind: IScroller.IncrementKind.Large, //small by clicking the arrows,  
+            incrementKind: IScroller.IncrementKind.Large, 
             numberOfIncrements: 3
         );
     }
@@ -162,19 +163,19 @@ public class ScreenElementExampleInteractions : TestCase
     {
         //a Label is a simple text or image on the screen without interactions
 
-        //https://www.truckscout24.com/members/publish/vehicledata?vt=9
+        //https://www.autoscout24.com/
         //You can use it for verifications, if it is on the screen right now
         t.Report.PassFailStep(
-            criteria: App.Description.PriceLabel.IsOnScreen(), //checks if the Label is currently on the Screen
-            passed: "The Price Label was visible",
-            failed: "The Price Label was not visible"
+            criteria: App.MainPage.CurrentlyInDemand.IsOnScreen(), //checks if the Label is currently on the Screen
+            passed: "The Currently in demand Label was visible",
+            failed: "The Currently in demand was not visible"
         );
 
         //Or WaitForIt to appear after some other interaction
         t.Report.PassFailStep(
-            criteria: App.Description.PriceLabel.WaitForAppear(), //by default we wait 20sec, change it with PriceLabel.WaitTimeInSeconds
-            passed: "The Price Label was visible",
-            failed: "The Price Label was not visible"
+            criteria: App.MainPage.CurrentlyInDemand.WaitForAppear(), //by default we wait 20sec, change it in the Advanced Properties of the Label
+            passed: "The Currently in demand was visible",
+            failed: "The Currently in demand was not visible"
         );
     }
 
@@ -186,9 +187,9 @@ public class ScreenElementExampleInteractions : TestCase
         //the value is hereby identified by some Label on the Screen, the relative position of the value from the label, and a grid width and height
         //in this example we read the value on the left of the "results" button, on how many results are available
         //https://www.autoscout24.com/
-        string numberOfResults = App.MainPageCars.NumberOfResultsLabelWithValue.ReadValue();
-        bool fourResultsFound = App.MainPageCars.NumberOfResultsLabelWithValue.VerifyValue("4");
-        App.MainPageCars.NumberOfResultsLabelWithValue.WaitForValue("4",TimeSpan.FromSeconds(30),out string actualValue);
+        string numberOfResults = App.MainPage.NumberOfResultsLabelWithValue.ReadValue();
+        bool fourResultsFound = App.MainPage.NumberOfResultsLabelWithValue.VerifyValue("4");
+        App.MainPage.NumberOfResultsLabelWithValue.WaitForValue("4",TimeSpan.FromSeconds(30),out string actualValue);
     }
 
     //Textbox & PwTextbox
@@ -199,22 +200,22 @@ public class ScreenElementExampleInteractions : TestCase
 
         //any text already in the Textbox will be deleted
         //the text will be entered and verified with the clipboard (CTRL+C)
-        App.MembersLoginPage.UsernameTextbox.Enter("demo");
+        App.LoginPage.CustomerNumber.Enter("demo");
 
         //use GetText & VerifyText to get or check the entered Value
-        string usernameText = App.MembersLoginPage.UsernameTextbox.GetText();
-        bool usernameIsDemo = App.MembersLoginPage.UsernameTextbox.VerifyText("demo");
+        string usernameText = App.LoginPage.CustomerNumber.GetText();
+        bool usernameIsDemo = App.LoginPage.CustomerNumber.VerifyText("demo");
 
         //in case the clipboard does not work (for example the textbox is read only) use Optical character recognition (OCR)
-        App.MembersLoginPage.UsernameTextbox.TextBoxType = TextBoxType.OCR; //usually set this in Advanced Settings when creating/editing the Textbox
-        string usernameTextByOcr = App.MembersLoginPage.UsernameTextbox.GetText();
+        App.LoginPage.CustomerNumber.TextBoxType = TextBoxType.OCR; //usually set this in Advanced Settings when creating/editing the Textbox
+        string usernameTextByOcr = App.LoginPage.CustomerNumber.GetText();
 
         //if there is no way to verify what has been entered use EnterWithoutVerification
-        App.MembersLoginPage.UsernameTextbox.EnterWithoutVerification("demoNotVerified");
+        App.LoginPage.CustomerNumber.EnterWithoutVerification("demoNotVerified");
 
         //the same works for a Password Textbox (capture it as type "PwTextBox")
         //the entered value will be verified by counting the number of Blind Characters found
-        App.MembersLoginPage.PasswordTextbox.Enter("demo123");
+        App.LoginPage.Password.Enter("demo123");
     }
 
     //Table
@@ -258,7 +259,11 @@ public class ScreenElementExampleInteractions : TestCase
         //To count the table rows also make sure the TableRect is correctly
         int rowCount = App.SharePriceScreen.YearlyPerformanceTable.CountVisibleRows();
         t.Report.PassFailStep(rowCount == 4, "Found 4 Rows as expected", $"Expected 4 Rows but found {rowCount} rows.");
+    }
 
+    [TestStep(10,TestInput = "Editable Table Interactions")]
+    public void Step10(ITester t)
+    {
         //Add and Delete rows of a Table:
         //Example: https://demos.telerik.com/kendo-ui/grid/editing
         App.EditableTableScreen.ExampleTable.AddNewEntry("my new Product");

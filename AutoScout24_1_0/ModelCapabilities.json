@@ -739,10 +739,6 @@
           "PropertyType": "Progile.TRIO.BaseModel.Column"
         },
         {
-          "PropertyName": "Column2019",
-          "PropertyType": "Progile.TRIO.BaseModel.Column"
-        },
-        {
           "PropertyName": "Column2020",
           "PropertyType": "Progile.TRIO.BaseModel.Column"
         },
@@ -756,6 +752,10 @@
         },
         {
           "PropertyName": "Column2023",
+          "PropertyType": "Progile.TRIO.BaseModel.Column"
+        },
+        {
+          "PropertyName": "Column2024",
           "PropertyType": "Progile.TRIO.BaseModel.Column"
         }
       ]

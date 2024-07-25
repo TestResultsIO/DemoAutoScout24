@@ -13,6 +13,8 @@ public class _2FA : TestCase
         //make sure to add the NuGet Package "TestResults.AddOn.OTP" to this testcase project
         //in your application navigate to the screen where you enable 2FA
         //make sure the QR code is visible on the screen
+        //for testing you can also use an online qr code - for example https://stefansundin.github.io/2fa-qr/
+
         var code = OtpReader.GetOtpCode(t.Connections.Active.CurrentScreenAsImage, out string otpAuthUri); //reads the QR code from the screen and returns the code
         t.Report.PassStep($"Received code for 2FA: \"{code}\" and URI: \"{otpAuthUri}\"");
 

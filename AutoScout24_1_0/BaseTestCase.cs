@@ -1,5 +1,5 @@
 ﻿using Progile.ATE.TestFramework;
-using Windows_Model;
+using Progile.TRIO.BaseModel;
 
 namespace AutoScout24_Model
 {
@@ -7,12 +7,10 @@ namespace AutoScout24_Model
     {
         protected AutoScout24App App { get; set; }
 
-        protected WindowsApp WindowsApp { get; set; }
 
 	    [SetupTest]
         public virtual bool Setup(ITester t)
         {
-            WindowsApp = new WindowsApp(t);
             App = new AutoScout24App(t);
             return true;
         }
@@ -22,8 +20,8 @@ namespace AutoScout24_Model
             ExpectedResults = "AutoScout24 main page is displayed")]
         public virtual void PreconditionStep(ITester t)
         {
-            if (App.MainMenu.AcceptAllCookies.WaitForAppear())
-                App.MainMenu.AcceptAllCookies.Click(App.MainMenu.AcceptAllCookies.WaitForDisappear);
+            t.Optional(() =>
+                App.MainPage.AcceptAllCookies.Click(App.MainPage.AcceptAllCookies.WaitForDisappear));
         }
 
         //[CleanupStep(

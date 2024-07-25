@@ -1,0 +1,440 @@
+{
+  "Id": "536a85ca-8d2a-4310-9807-a0ffe17c13a0",
+  "Name": "MainPage",
+  "DisplayName": "Main Page",
+  "BaseClass": "Progile.TRIO.BaseModel.BaseScreen",
+  "IsBaseScreen": false,
+  "RelativeLocation": "Screens\\AutoScout24 Screens",
+  "OpenImagePath": "Images\\AutoScout24 Screens\\MainPage\\Screen_Loaded",
+  "ScreenImagePath": "Images\\AutoScout24 Screens\\MainPage\\Screen_Image",
+  "Position": {
+    "X": 0,
+    "Y": 0,
+    "Width": 1024,
+    "Height": 768
+  },
+  "Elements": [
+    {
+      "Id": "10b2f61f-3fc7-4b5c-9845-99f9eb0579a3",
+      "Position": {
+        "X": 450,
+        "Y": 315,
+        "Width": 109,
+        "Height": 26
+      },
+      "Name": "RefineSearchLink",
+      "Type": "Progile.TRIO.BaseModel.Button",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "Refine search Link"
+        },
+        {
+          "Name": "searchType",
+          "Value": "Image"
+        },
+        {
+          "Name": "activeImageReference",
+          "Value": "Images\\AutoScout24 Screens\\MainPage\\Refine search Link\\active"
+        },
+        {
+          "Name": "useVisualSense",
+          "Value": "false"
+        },
+        {
+          "Name": "filters",
+          "Value": "ScreenSelect"
+        }
+      ]
+    },
+    {
+      "Id": "3633f8bc-1582-4083-a670-1c262d11ac0b",
+      "Position": {
+        "X": 1124,
+        "Y": 286,
+        "Width": 64,
+        "Height": 26
+      },
+      "Name": "ResultsButton",
+      "Type": "Progile.TRIO.BaseModel.Button",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "ResultsButton"
+        },
+        {
+          "Name": "searchType",
+          "Value": "Image"
+        },
+        {
+          "Name": "activeImageReference",
+          "Value": "Images\\AutoScout24 Screens\\MainPage\\ResultsButton\\active"
+        },
+        {
+          "Name": "useVisualSense",
+          "Value": "false"
+        },
+        {
+          "Name": "filters",
+          "Value": "ScreenSelect"
+        }
+      ]
+    },
+    {
+      "Id": "a036a00e-893d-44d8-a2a7-33f1af151215",
+      "Position": {
+        "X": 1145,
+        "Y": 237,
+        "Width": 103,
+        "Height": 20
+      },
+      "Name": "PriceUpToDropdown",
+      "Type": "Progile.TRIO.BaseModel.Dropdown",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "PriceUpToDropdown"
+        },
+        {
+          "Name": "searchType",
+          "Value": "Image"
+        },
+        {
+          "Name": "imageReference",
+          "Value": "Images\\AutoScout24 Screens\\MainPage\\PriceUpToDropdown\\DropdownTextBox"
+        },
+        {
+          "Name": "useVisualSense",
+          "Value": "true"
+        },
+        {
+          "Name": "filters",
+          "Value": "ScreenSelect"
+        }
+      ]
+    },
+    {
+      "Id": "6f1f9bae-4274-453d-97a9-e762a1711061",
+      "Position": {
+        "X": 43,
+        "Y": 223,
+        "Width": 41,
+        "Height": 16
+      },
+      "Name": "Make",
+      "Type": "Progile.TRIO.BaseModel.Dropdown",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "Make"
+        },
+        {
+          "Name": "searchType",
+          "Value": "Image"
+        },
+        {
+          "Name": "imageReference",
+          "Value": "Images\\AutoScout24 Screens\\MainPage\\Make\\DropdownTextBox"
+        },
+        {
+          "Name": "useVisualSense",
+          "Value": "true"
+        },
+        {
+          "Name": "filters",
+          "Value": "ScreenSelect"
+        }
+      ]
+    },
+    {
+      "Id": "0ddd4244-e3d5-446c-807a-8959206e0f2b",
+      "Position": {
+        "X": 362,
+        "Y": 223,
+        "Width": 48,
+        "Height": 16
+      },
+      "Name": "Model",
+      "Type": "Progile.TRIO.BaseModel.Dropdown",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "Model"
+        },
+        {
+          "Name": "searchType",
+          "Value": "Image"
+        },
+        {
+          "Name": "imageReference",
+          "Value": "Images\\AutoScout24 Screens\\MainPage\\Model\\DropdownTextBox"
+        },
+        {
+          "Name": "useVisualSense",
+          "Value": "true"
+        },
+        {
+          "Name": "filters",
+          "Value": "ScreenSelect"
+        }
+      ]
+    },
+    {
+      "Id": "1a53c8de-6e87-497d-9174-67ded6bf4973",
+      "Position": {
+        "X": 43,
+        "Y": 275,
+        "Width": 118,
+        "Height": 19
+      },
+      "Name": "FirstRegistration",
+      "Type": "Progile.TRIO.BaseModel.Dropdown",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "First registration"
+        },
+        {
+          "Name": "searchType",
+          "Value": "Image"
+        },
+        {
+          "Name": "imageReference",
+          "Value": "Images\\AutoScout24 Screens\\MainPage\\First registration\\DropdownTextBox"
+        },
+        {
+          "Name": "useVisualSense",
+          "Value": "true"
+        },
+        {
+          "Name": "filters",
+          "Value": "ScreenSelect"
+        }
+      ]
+    },
+    {
+      "Id": "6eb9c437-6e77-4101-8883-d91dbe5547bf",
+      "Position": {
+        "X": 1618,
+        "Y": 745,
+        "Width": 108,
+        "Height": 71
+      },
+      "Name": "AcceptAllCookies",
+      "Type": "Progile.TRIO.BaseModel.Button",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "Accept All Cookies"
+        },
+        {
+          "Name": "searchType",
+          "Value": "Image"
+        },
+        {
+          "Name": "activeImageReference",
+          "Value": "Images\\AutoScout24 Screens\\MainPage\\Accept All Cookies\\active"
+        },
+        {
+          "Name": "useVisualSense",
+          "Value": "false"
+        },
+        {
+          "Name": "filters",
+          "Value": "ScreenSelect"
+        }
+      ]
+    },
+    {
+      "Id": "0ca4a301-8aca-4325-880e-31e6b4f60b5c",
+      "Position": {
+        "X": 1124,
+        "Y": 286,
+        "Width": 64,
+        "Height": 26
+      },
+      "Name": "NumberOfResultsLabelWithValue",
+      "Type": "Progile.TRIO.BaseModel.LabelWithValue",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "NumberOfResultsLabelWithValue"
+        },
+        {
+          "Name": "valuePosition",
+          "Value": "Left"
+        },
+        {
+          "Name": "searchType",
+          "Value": "Image"
+        },
+        {
+          "Name": "imageReferenceForLabel",
+          "Value": "Images\\AutoScout24 Screens\\MainPage\\ResultsButton\\active"
+        },
+        {
+          "Name": "filters",
+          "Value": "ScreenSelect"
+        }
+      ]
+    },
+    {
+      "Id": "443e4f4f-3151-4f5f-bbfc-1b20543455c2",
+      "Position": {
+        "X": 1411,
+        "Y": 97,
+        "Width": 74,
+        "Height": 23
+      },
+      "Name": "Language",
+      "Type": "Progile.TRIO.BaseModel.DropdownMenu",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "Language"
+        },
+        {
+          "Name": "searchType",
+          "Value": "Image"
+        },
+        {
+          "Name": "imageReference",
+          "Value": "Images\\AutoScout24 Screens\\MainPage\\Language\\MenuLabel"
+        },
+        {
+          "Name": "hoverToExpand",
+          "Value": "false"
+        },
+        {
+          "Name": "opensOnSide",
+          "Value": "false"
+        },
+        {
+          "Name": "filters",
+          "Value": "ScreenSelect"
+        }
+      ]
+    },
+    {
+      "Id": "484eb5a8-c893-4120-9551-b261299bf537",
+      "Position": {
+        "X": 989,
+        "Y": 410,
+        "Width": 157,
+        "Height": 24
+      },
+      "Name": "CurrentlyInDemand",
+      "Type": "Progile.TRIO.BaseModel.Label",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "Currently in demand"
+        },
+        {
+          "Name": "searchType",
+          "Value": "Image"
+        },
+        {
+          "Name": "imageReference",
+          "Value": "Images\\AutoScout24 Screens\\MainPage\\Currently in demand"
+        },
+        {
+          "Name": "filters",
+          "Value": "ScreenSelect"
+        }
+      ]
+    },
+    {
+      "Id": "73e190ef-854d-45f3-832c-8db4669f4e0e",
+      "Position": {
+        "X": 1124,
+        "Y": 286,
+        "Width": 64,
+        "Height": 26
+      },
+      "Name": "ResultsButtonContextMenu",
+      "Type": "Progile.TRIO.BaseModel.ContextMenu",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "Results Button Context Menu"
+        },
+        {
+          "Name": "imageReference",
+          "Value": "Images\\AutoScout24 Screens\\MainPage\\ResultsButton\\active"
+        }
+      ]
+    }
+  ],
+  "Interactions": [
+    {
+      "Parameters": [
+        {
+          "Name": "make",
+          "DisplayName": "Make",
+          "IsOptional": false,
+          "Type": "System.String"
+        },
+        {
+          "Name": "model",
+          "DisplayName": "Model",
+          "IsOptional": false,
+          "Type": "System.String"
+        },
+        {
+          "Name": "firstRegistrationYear",
+          "DisplayName": "First Registration [Year]",
+          "IsOptional": false,
+          "Type": "System.Int32"
+        }
+      ],
+      "MethodName": "SearchCar",
+      "DisplayName": "Search a car",
+      "ReturnType": "System.Void"
+    }
+  ]
+}

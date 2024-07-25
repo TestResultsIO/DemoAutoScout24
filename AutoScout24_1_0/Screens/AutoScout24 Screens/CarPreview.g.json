@@ -56,93 +56,11 @@
       ]
     },
     {
-      "Id": "f2fffa38-b256-434c-8e97-49e07103fe60",
-      "Position": {
-        "X": 951,
-        "Y": 529,
-        "Width": 19,
-        "Height": 20
-      },
-      "Name": "Gearbox",
-      "Type": "Progile.TRIO.BaseModel.LabelWithValue",
-      "Parameters": [
-        {
-          "Name": "appBasics",
-          "Value": "AppBasics"
-        },
-        {
-          "Name": "displayName",
-          "Value": "Gearbox"
-        },
-        {
-          "Name": "valuePosition",
-          "Value": "Right"
-        },
-        {
-          "Name": "searchType",
-          "Value": "Image"
-        },
-        {
-          "Name": "imageReferenceForLabel",
-          "Value": "Images\\AutoScout24 Screens\\CarPreview\\Gearbox"
-        },
-        {
-          "Name": "gridWidth",
-          "Value": "120"
-        },
-        {
-          "Name": "filters",
-          "Value": "ScreenSelect"
-        }
-      ]
-    },
-    {
-      "Id": "b69651fc-97a3-45ab-8e3f-688756c1a0d8",
-      "Position": {
-        "X": 1049,
-        "Y": 530,
-        "Width": 19,
-        "Height": 20
-      },
-      "Name": "FirstRegistration",
-      "Type": "Progile.TRIO.BaseModel.LabelWithValue",
-      "Parameters": [
-        {
-          "Name": "appBasics",
-          "Value": "AppBasics"
-        },
-        {
-          "Name": "displayName",
-          "Value": "First Registration"
-        },
-        {
-          "Name": "valuePosition",
-          "Value": "Right"
-        },
-        {
-          "Name": "searchType",
-          "Value": "Image"
-        },
-        {
-          "Name": "imageReferenceForLabel",
-          "Value": "Images\\AutoScout24 Screens\\CarPreview\\First Registration"
-        },
-        {
-          "Name": "gridWidth",
-          "Value": "120"
-        },
-        {
-          "Name": "filters",
-          "Value": "ScreenSelect"
-        }
-      ]
-    },
-    {
       "Id": "7de6df35-f485-4fb0-b1fb-89c11937e9a4",
       "Position": {
-        "X": 1151,
-        "Y": 530,
-        "Width": 21,
+        "X": 1340,
+        "Y": 607,
+        "Width": 22,
         "Height": 21
       },
       "Name": "FuelType",
@@ -167,47 +85,6 @@
         {
           "Name": "imageReferenceForLabel",
           "Value": "Images\\AutoScout24 Screens\\CarPreview\\Fuel Type"
-        },
-        {
-          "Name": "gridWidth",
-          "Value": "120"
-        },
-        {
-          "Name": "filters",
-          "Value": "ScreenSelect"
-        }
-      ]
-    },
-    {
-      "Id": "3d308bf9-3e4c-4c2f-8f0b-904b6e9f84e0",
-      "Position": {
-        "X": 819,
-        "Y": 558,
-        "Width": 23,
-        "Height": 20
-      },
-      "Name": "Power",
-      "Type": "Progile.TRIO.BaseModel.LabelWithValue",
-      "Parameters": [
-        {
-          "Name": "appBasics",
-          "Value": "AppBasics"
-        },
-        {
-          "Name": "displayName",
-          "Value": "Power"
-        },
-        {
-          "Name": "valuePosition",
-          "Value": "Right"
-        },
-        {
-          "Name": "searchType",
-          "Value": "Image"
-        },
-        {
-          "Name": "imageReferenceForLabel",
-          "Value": "Images\\AutoScout24 Screens\\CarPreview\\Power"
         },
         {
           "Name": "gridWidth",

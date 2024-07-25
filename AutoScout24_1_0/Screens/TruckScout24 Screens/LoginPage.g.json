@@ -1,0 +1,92 @@
+{
+  "Id": "2569acca-8247-4901-9931-a0ef0cbaa2d2",
+  "Name": "LoginPage",
+  "DisplayName": "Login Page",
+  "BaseClass": "Progile.TRIO.BaseModel.BaseScreen",
+  "IsBaseScreen": false,
+  "RelativeLocation": "Screens\\TruckScout24 Screens",
+  "OpenImagePath": "Images\\TruckScout24 Screens\\LoginPage\\Screen_Loaded",
+  "ScreenImagePath": "Images\\TruckScout24 Screens\\LoginPage\\Screen_Image",
+  "Position": {
+    "X": 0,
+    "Y": 0,
+    "Width": 1600,
+    "Height": 1200
+  },
+  "Elements": [
+    {
+      "Id": "1d8678b3-88bb-49f7-9d3e-1a7fd7ece5c1",
+      "Position": {
+        "X": 417,
+        "Y": 297,
+        "Width": 255,
+        "Height": 16
+      },
+      "Name": "CustomerNumber",
+      "Type": "Progile.TRIO.BaseModel.TextBox",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "Customer number"
+        },
+        {
+          "Name": "searchType",
+          "Value": "Image"
+        },
+        {
+          "Name": "imageReference",
+          "Value": "Images\\TruckScout24 Screens\\LoginPage\\Customer number"
+        },
+        {
+          "Name": "useVisualSense",
+          "Value": "true"
+        },
+        {
+          "Name": "filters",
+          "Value": "ScreenSelect"
+        }
+      ]
+    },
+    {
+      "Id": "1f9400c5-9027-429a-b521-32882d7d99a9",
+      "Position": {
+        "X": 417,
+        "Y": 383,
+        "Width": 71,
+        "Height": 16
+      },
+      "Name": "Password",
+      "Type": "Progile.TRIO.BaseModel.PwTextBox",
+      "Parameters": [
+        {
+          "Name": "appBasics",
+          "Value": "AppBasics"
+        },
+        {
+          "Name": "displayName",
+          "Value": "Password"
+        },
+        {
+          "Name": "searchType",
+          "Value": "Image"
+        },
+        {
+          "Name": "imageReference",
+          "Value": "Images\\TruckScout24 Screens\\LoginPage\\Password\\TextBoxImage"
+        },
+        {
+          "Name": "useVisualSense",
+          "Value": "true"
+        },
+        {
+          "Name": "filters",
+          "Value": "ScreenSelect"
+        }
+      ]
+    }
+  ]
+}

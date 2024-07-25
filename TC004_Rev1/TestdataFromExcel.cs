@@ -23,7 +23,7 @@ public class TestdataFromExcel : TestCase
 
         // get car in row 3 and search for it in the UI
         var testCar5 = testData.GetRow<Car>(3);
-        App.MainPageCars.SearchCar(testCar5.Make, testCar5.Model, testCar5.FirstRegistration.Year);
+        App.MainPage.SearchCar(testCar5.Make, testCar5.Model, testCar5.FirstRegistration.Year);
 
         // Run some test for all cars in the excel
         testData.ForAll<Car>((car, _) => PerformTest(car, t));

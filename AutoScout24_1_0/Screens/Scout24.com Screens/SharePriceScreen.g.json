@@ -13,6 +13,12 @@
     "Width": 1600,
     "Height": 1200
   },
+  "ScreenEditorPropertySavedValues": [
+    {
+      "PropertyName": "CanScrollToFindElement",
+      "Value": true
+    }
+  ],
   "Elements": [
     {
       "Id": "0ec49233-3620-4a2c-9081-c1e85fe5e2e7",
@@ -96,10 +102,6 @@
         },
         {
           "Name": "ColumnHeader",
-          "Value": "Images\\Scout24_com Screens\\SharePriceScreen\\Yearly Performance Table\\Column2019"
-        },
-        {
-          "Name": "ColumnHeader",
           "Value": "Images\\Scout24_com Screens\\SharePriceScreen\\Yearly Performance Table\\Column2020"
         },
         {
@@ -113,6 +115,10 @@
         {
           "Name": "ColumnHeader",
           "Value": "Images\\Scout24_com Screens\\SharePriceScreen\\Yearly Performance Table\\Column2023"
+        },
+        {
+          "Name": "ColumnHeader",
+          "Value": "Images\\Scout24_com Screens\\SharePriceScreen\\Yearly Performance Table\\Column2024"
         }
       ],
       "ClassFiles": [
