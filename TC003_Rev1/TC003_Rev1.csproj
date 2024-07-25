@@ -24,7 +24,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AutoScout24_1_0\AutoScout24_1_0.csproj" />
-    <ProjectReference Include="..\Windows_Win\Windows_Win.csproj" />
   </ItemGroup>
 
   <ItemGroup>
