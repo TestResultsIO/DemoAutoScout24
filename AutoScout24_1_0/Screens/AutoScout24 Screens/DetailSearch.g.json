@@ -49,7 +49,7 @@
         },
         {
           "Name": "useVisualSense",
-          "Value": "false"
+          "Value": "true"
         },
         {
           "Name": "filters",
@@ -82,7 +82,7 @@
         },
         {
           "Name": "useVisualSense",
-          "Value": "false"
+          "Value": "true"
         },
         {
           "Name": "filters",

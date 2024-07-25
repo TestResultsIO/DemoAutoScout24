@@ -24,8 +24,8 @@ namespace AutoScout24_Model
             CarPreview = new CarPreview(this);
             DetailSearch = new DetailSearch(this);
             EditableTableScreen = new EditableTableScreen(this);
-            MainPage = new MainPage(this);
             LoginPage = new LoginPage(this);
+            MainPage = new MainPage(this);
             SearchResults = new SearchResults(this);
             SharePriceScreen = new SharePriceScreen(this);
         }
@@ -37,9 +37,9 @@ namespace AutoScout24_Model
         
         public EditableTableScreen EditableTableScreen { get; set; }
         
-        public MainPage MainPage { get; set; }
-        
         public LoginPage LoginPage { get; set; }
+        
+        public MainPage MainPage { get; set; }
         
         public SearchResults SearchResults { get; set; }
         

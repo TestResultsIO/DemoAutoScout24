@@ -1,10 +1,6 @@
 ﻿using Progile.ATE.Common;
 using Progile.TRIO.BaseModel;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 
 namespace AutoScout24_Model.CustomScreenElements
 {
@@ -32,6 +28,7 @@ namespace AutoScout24_Model.CustomScreenElements
         public DropdownWithSearchbox(IAppBasics appBasics, string displayName, ImageReference imageReference, bool useVisualSense, params IImageFilter[] filters) :
             base(appBasics, displayName, imageReference, useVisualSense, filters)
         {
+            TextBox.UseCachedPositionToVerify = true;
             TextBox.TextBoxType = TextBoxType.OCR;
             TextBox.ClickOutAfterType = false; //because value would be lost
             TextBox.ClickOutBeforeOCR = false; //because value would be lost
@@ -47,8 +44,9 @@ namespace AutoScout24_Model.CustomScreenElements
             [DisplayName("Select Value in Dropdown")] string dropdownValue
         )
         {
+            TextBox.WaitFor();
             OpenDropdownList();
-            TextBox.Enter(textboxValue);
+            EnterTextImpl(textboxValue); //do not use Textbox.Enter because that would click again into the textbox
             Row row = DropdownList.GetRow(dropdownValue);
             row.SetSelectFilter(row.RowSelect);
             row.SelectRow(row.WaitForDisappear);
@@ -62,6 +60,33 @@ namespace AutoScout24_Model.CustomScreenElements
         public void SelectValueWithSearch([DisplayName("Value")] string value)
         {
             SelectValueWithSearch(value, value);
+        }
+
+        private void EnterTextImpl(string textToEnter)
+        {
+            var action = () =>
+            {
+                if (TextBox.SelectAllAfterFocusClick)
+                {
+                    AppBasics.SystemHelpers.SystemInteractions.SelectAll();
+                }
+
+                if (string.IsNullOrEmpty(textToEnter))
+                {
+                    t.Testee.Keyboard.Press(Keys.Delete);
+                    return;
+                }
+
+                string[] source = Regex.Split(Lookup(textToEnter), "\r\n|\r|\n");
+                t.Testee.Keyboard.Type(source.First());
+                foreach (string item in source.Skip(1))
+                {
+                    t.Testee.Keyboard.Press(Keys.Enter);
+                    t.Testee.Keyboard.Type(item);
+                }
+            };
+
+            Do(action, () => TextBox.VerifyText(textToEnter));
         }
     }
 }
