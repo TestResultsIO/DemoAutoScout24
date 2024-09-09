@@ -19,7 +19,7 @@ namespace AutoScout24_Model
         public AutoScout24App(ITester t)
         {
             Tester = t;
-            SystemHelpers = new SystemHelpers(t);
+            SystemHelpers = new SystemHelpers(this);
 
             t.Debug.HintLevel = TesterHintLevels.All;
 
@@ -34,7 +34,7 @@ namespace AutoScout24_Model
             // Set this to the culture of the environment that will be used
             SutLocale = new SutLocale(t, SystemHelpers, "en-CH");
 
-            Browser = new Browser(t, SystemHelpers);
+            Browser = new Browser(this);
             Browser.Activate();
 
             InitScreens();
