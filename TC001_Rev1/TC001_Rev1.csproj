@@ -19,20 +19,12 @@
 
   <ItemGroup>
     <PackageReference Include="Progile.TRIO.BaseModel" Version="*" />
+    <PackageReference Include="Progile.TRIO.Engine.TestFramework" Version="*" />
     <PackageReference Include="Progile.TRIO.EnvironmentModel.Windows" Version="*" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\AutoScout24_1_0\AutoScout24_1_0.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="Progile.ATE.Common">
-      <HintPath>lib\Progile.ATE.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Progile.ATE.TestFramework">
-      <HintPath>lib\Progile.ATE.TestFramework.dll</HintPath>
-    </Reference>
   </ItemGroup>
 
   <ItemGroup>
