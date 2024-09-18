@@ -43,7 +43,7 @@ namespace AutoScout24_Model
         public ITester Tester { get; }
         public ISystemHelpers SystemHelpers { get; }
         public Browser Browser { get; }
-        public Select Window => Browser.BrowserWindow;
+        public Select Window => Browser?.BrowserWindow ?? new Select(SystemHelpers.UsableScreen);
         public Dictionary<string, string> AppSettings { get; }
         public ISutLocale SutLocale { get; }
 
@@ -53,6 +53,9 @@ namespace AutoScout24_Model
 
         public IScroller GetScroller(Select searchRectangle = null, bool requiresFocus = false)
         {
+            if (Browser == null)
+                return null;
+
             return new BrowserScroller(this, searchRectangle ?? Window, Browser.Type);
         }
 
