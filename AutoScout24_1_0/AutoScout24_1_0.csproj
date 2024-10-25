@@ -19,11 +19,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Images\AutoScout24_Images\AutoScout24_de Screens\" />
-    <Folder Include="Images\AutoScout24_Images\TruckScout24 Screens\Sell Workflow\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Progile.TRIO.BaseModel" Version="*" />
     <PackageReference Include="Progile.TRIO.Engine.TestFramework" Version="*" />
     <PackageReference Include="Progile.TRIO.EnvironmentModel.Windows" Version="*" />

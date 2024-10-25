@@ -2,7 +2,33 @@
   "ModelTypeList": [
     {
       "TypeName": "Progile.TRIO.EnvironmentModel.Window",
-      "BaseTypeName": "Progile.TRIO.BaseModel.BaseScreen"
+      "BaseTypeName": "Progile.TRIO.BaseModel.BaseScreen",
+      "Interactions": [
+        {
+          "MethodName": "MaximizeWindow",
+          "DisplayName": "Maximize Window",
+          "ReturnType": "System.Void",
+          "HintText": "Maximizes the window by clicking the maximize icon."
+        },
+        {
+          "MethodName": "RestoreWindow",
+          "DisplayName": "Restore Window",
+          "ReturnType": "System.Void",
+          "HintText": "Restores the window by clicking the restore icon."
+        },
+        {
+          "MethodName": "MinimizeWindow",
+          "DisplayName": "Minimize Window",
+          "ReturnType": "System.Void",
+          "HintText": "Minimizes the window by clicking the minimize icon."
+        },
+        {
+          "MethodName": "CloseWindow",
+          "DisplayName": "Close Window",
+          "ReturnType": "System.Void",
+          "HintText": "Closes the window by clicking the close icon."
+        }
+      ]
     },
     {
       "TypeName": "Progile.TRIO.BaseModel.BaseScreen",
@@ -13,7 +39,7 @@
           "DisplayName": "Verify screen appears",
           "ReturnType": "System.Boolean",
           "PassedMessage": "The screen {this} was displayed.",
-          "FailedMessage": "The element {this} was not found on the UI.",
+          "FailedMessage": "The screen {this} was not found on the UI.",
           "HintText": "Waits for the screen to appear on the UI. \r\nReturns false if screen is not found."
         },
         {
@@ -73,12 +99,14 @@
             {
               "Name": "elementInArea",
               "DisplayName": "Element in area",
+              "Hint": "The element to use to identify the search area.",
               "IsOptional": false,
               "Type": "Progile.TRIO.BaseModel.OnScreenElement"
             },
             {
               "Name": "tolerance",
-              "DisplayName": "tolerance",
+              "DisplayName": "Tolerance",
+              "Hint": "The tolerance for the flood fill, max allowed differences in each RGB color channels. Between 0 and 1.\r\nDefault = 0.004",
               "IsOptional": true,
               "Type": "System.Double"
             }
@@ -123,7 +151,8 @@
             },
             {
               "Name": "doubleClickDelay",
-              "DisplayName": "doubleClickDelay",
+              "DisplayName": "Double-click delay",
+              "Hint": "Wait time between the individual clicks in milliseconds\r\nDefault = 50",
               "IsOptional": true,
               "Type": "System.Int32"
             }
@@ -302,6 +331,7 @@
             {
               "Name": "selections",
               "DisplayName": "Submenus and value",
+              "Hint": "The text values of the submenus and the entry that shall be selected from the dropdown menu.\r\nE.g. \"File\", \"New\", \"Project\"",
               "IsOptional": false,
               "Type": "System.String[]"
             }
@@ -372,7 +402,8 @@
             },
             {
               "Name": "doubleClickDelay",
-              "DisplayName": "doubleClickDelay",
+              "DisplayName": "Double-click delay",
+              "Hint": "Wait time between the individual clicks in milliseconds\r\nDefault = 50",
               "IsOptional": true,
               "Type": "System.Int32"
             }
@@ -489,6 +520,7 @@
             {
               "Name": "waitTime",
               "DisplayName": "Wait time",
+              "Hint": "The time to wait for the value\r\nE.g. 0:00:30",
               "IsOptional": false,
               "Type": "System.TimeSpan"
             },
@@ -686,7 +718,8 @@
             },
             {
               "Name": "doubleClickDelay",
-              "DisplayName": "doubleClickDelay",
+              "DisplayName": "Double-click delay",
+              "Hint": "Wait time between the individual clicks in milliseconds\r\nDefault = 50",
               "IsOptional": true,
               "Type": "System.Int32"
             }
@@ -706,7 +739,8 @@
           "Parameters": [
             {
               "Name": "element",
-              "DisplayName": "element",
+              "DisplayName": "Element",
+              "Hint": "The element in the row",
               "IsOptional": false,
               "IsGenericType": "T",
               "Type": "Progile.TRIO.BaseModel.OnScreenElement"
@@ -786,19 +820,22 @@
           "Parameters": [
             {
               "Name": "searchColumn",
-              "DisplayName": "searchColumn",
+              "DisplayName": "Search column",
+              "Hint": "The column containing the cell that we are looking for",
               "IsOptional": false,
               "Type": "Progile.TRIO.BaseModel.Column"
             },
             {
               "Name": "searchText",
-              "DisplayName": "searchText",
+              "DisplayName": "Search text",
+              "Hint": "The search text that will be used to find the row in the table",
               "IsOptional": false,
               "Type": "System.String"
             },
             {
               "Name": "returnNullInsteadOfFail",
-              "DisplayName": "returnNullInsteadOfFail",
+              "DisplayName": "Return null instead of fail",
+              "Hint": "Leave on default, only useful from code",
               "IsOptional": true,
               "Type": "System.Boolean"
             },
@@ -812,7 +849,7 @@
           "MethodName": "GetRow",
           "DisplayName": "Get row",
           "ReturnType": "Progile.TRIO.BaseModel.Row",
-          "HintText": "Searches a specific row based on a text search \r\nin the provided \"searchColumn\" (includes scrolling)."
+          "HintText": "Searches a specific row based on a text search \r\nin the provided \"Search column\" (includes scrolling)."
         },
         {
           "Parameters": [
@@ -894,7 +931,8 @@
           "Parameters": [
             {
               "Name": "searchColumn",
-              "DisplayName": "searchColumn",
+              "DisplayName": "Search column",
+              "Hint": "The column in which the first row shall be searched. (optional)",
               "IsOptional": true,
               "Type": "Progile.TRIO.BaseModel.Column"
             }
@@ -902,13 +940,14 @@
           "MethodName": "GetFirstRow",
           "DisplayName": "Get first row",
           "ReturnType": "Progile.TRIO.BaseModel.Row",
-          "HintText": "Will scroll to and return the first row (with content) of the table. \r\nIf \"searchColumn\" is not set, the first column is used (in order they were defined).\r\n\"searchColumn\" should especially be defined if there are columns with empty cells."
+          "HintText": "Will scroll to and return the first row (with content) of the table. \r\nIf \"Search column\" is not set, the first column is used (in order they were defined).\r\n\"Search column\" should especially be defined if there are columns with empty cells."
         },
         {
           "Parameters": [
             {
               "Name": "searchColumn",
-              "DisplayName": "searchColumn",
+              "DisplayName": "Search column",
+              "Hint": "The column in which the first row shall be searched. (optional)",
               "IsOptional": true,
               "Type": "Progile.TRIO.BaseModel.Column"
             }
@@ -916,31 +955,35 @@
           "MethodName": "GetLastRow",
           "DisplayName": "Get last row",
           "ReturnType": "Progile.TRIO.BaseModel.Row",
-          "HintText": "Will scroll to and return the last row (with content) of the table. \r\nIf \"searchColumn\" is not set, the first column is used (in order they were defined).\r\n\"searchColumn\" should especially be defined if there are columns with empty cells."
+          "HintText": "Will scroll to and return the last row (with content) of the table. \r\nIf \"Search column\" is not set, the first column is used (in order they were defined).\r\n\"Search column\" should especially be defined if there are columns with empty cells."
         },
         {
           "Parameters": [
             {
               "Name": "selection",
-              "DisplayName": "selection",
+              "DisplayName": "Search column",
+              "Hint": "The column that is used to find the row with the search text",
               "IsOptional": false,
               "Type": "Progile.TRIO.BaseModel.Column"
             },
             {
               "Name": "selectionValue",
-              "DisplayName": "selectionValue",
+              "DisplayName": "Search text",
+              "Hint": "The text that is used to identify the row",
               "IsOptional": false,
               "Type": "System.String"
             },
             {
               "Name": "verification",
-              "DisplayName": "verification",
+              "DisplayName": "Verification column",
+              "Hint": "The column that contains the value to be verified",
               "IsOptional": false,
               "Type": "Progile.TRIO.BaseModel.Column"
             },
             {
               "Name": "expectedValue",
-              "DisplayName": "expectedValue",
+              "DisplayName": "Expected value",
+              "Hint": "The expected value in the cell",
               "IsOptional": false,
               "Type": "System.String"
             },
@@ -962,25 +1005,28 @@
           "ReturnType": "System.Boolean",
           "PassedMessage": "The expected value {expectedValue} was shown correctly in the row {selectionValue}.",
           "FailedMessage": "The value was {actualValue} instead of the expected value {expectedValue}.",
-          "HintText": "Finds a row using the provided \"selection\" and \"selectionValue\"\r\nand verifies in that row that the column \"verification\" has the expected value"
+          "HintText": "Finds a row using the provided \"Search column\" and \"Search text\"\r\nand verifies in that row that the column \"Verification column\" has the \"Expected value\""
         },
         {
           "Parameters": [
             {
               "Name": "selection",
-              "DisplayName": "selection",
+              "DisplayName": "Search column",
+              "Hint": "The column that is used to find the row with the search text",
               "IsOptional": false,
               "Type": "Progile.TRIO.BaseModel.Column"
             },
             {
               "Name": "selectionValue",
-              "DisplayName": "selectionValue",
+              "DisplayName": "Search text",
+              "Hint": "The text that is used to identify the row",
               "IsOptional": false,
               "Type": "System.String"
             },
             {
               "Name": "columnToRead",
-              "DisplayName": "columnToRead",
+              "DisplayName": "Column to read",
+              "Hint": "The column in which the cell content will be read",
               "IsOptional": false,
               "Type": "Progile.TRIO.BaseModel.Column"
             }
@@ -988,25 +1034,28 @@
           "MethodName": "GetCellContent",
           "DisplayName": "Get cell content (OCR)",
           "ReturnType": "System.String",
-          "HintText": "Finds a row using the provided \"selection\" and \"selectionValue\"\r\nand gets the value from the column \"columnToRead\" in this row"
+          "HintText": "Finds a row using the provided \"Search column\" and \"Search text\"\r\nand gets the value from the column \"Column to read\" in this row"
         },
         {
           "Parameters": [
             {
               "Name": "selection",
-              "DisplayName": "selection",
+              "DisplayName": "Search column",
+              "Hint": "The column that is used to find the row with the search text",
               "IsOptional": false,
               "Type": "Progile.TRIO.BaseModel.Column"
             },
             {
               "Name": "selectionValue",
-              "DisplayName": "selectionValue",
+              "DisplayName": "Search text",
+              "Hint": "The text that is used to identify the row",
               "IsOptional": false,
               "Type": "System.String"
             },
             {
               "Name": "columnToRead",
-              "DisplayName": "columnToRead",
+              "DisplayName": "Column to read",
+              "Hint": "The column from which the cell content will be copied",
               "IsOptional": false,
               "Type": "Progile.TRIO.BaseModel.Column"
             }
@@ -1014,7 +1063,7 @@
           "MethodName": "GetCellContentWithClipboard",
           "DisplayName": "Get cell content (Clipboard)",
           "ReturnType": "System.String",
-          "HintText": "Finds a row using the provided \"selection\" and \"selectionValue\"\r\nand copies the value from the column \"columnToRead\" in this row after double-clicking the cell"
+          "HintText": "Finds a row using the provided \"Search column\" and \"Search text\"\r\nand copies the value from the column \"Column to read\" in this row after double-clicking the cell"
         }
       ]
     },

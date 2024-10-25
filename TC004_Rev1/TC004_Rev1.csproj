@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Progile.ATE.Extensions.Excel" Version="1.2.1" />
+    <PackageReference Include="Progile.ATE.Extensions.Excel" Version="1.2.2" />
     <PackageReference Include="Progile.TRIO.BaseModel" Version="*" />
     <PackageReference Include="Progile.TRIO.Engine.TestFramework" Version="*" />
     <PackageReference Include="Progile.TRIO.EnvironmentModel.Windows" Version="*" />
