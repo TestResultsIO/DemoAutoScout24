@@ -271,6 +271,12 @@
           "Name": "filters",
           "Value": "ScreenSelect"
         }
+      ],
+      "ScreenEditorPropertySavedValues": [
+        {
+          "PropertyName": "WaitTimeInSeconds",
+          "Value": 2
+        }
       ]
     },
     {
@@ -429,11 +435,42 @@
           "Name": "firstRegistrationYear",
           "DisplayName": "First Registration [Year]",
           "IsOptional": false,
-          "Type": "System.Int32"
+          "Type": "System.String"
         }
       ],
       "MethodName": "SearchCar",
       "DisplayName": "Search a car",
+      "ReturnType": "System.Void"
+    },
+    {
+      "Parameters": [
+        {
+          "Name": "make",
+          "DisplayName": "make",
+          "IsOptional": false,
+          "Type": "System.String"
+        },
+        {
+          "Name": "model",
+          "DisplayName": "model",
+          "IsOptional": false,
+          "Type": "System.String"
+        },
+        {
+          "Name": "mileage",
+          "DisplayName": "mileage",
+          "IsOptional": false,
+          "Type": "System.String"
+        },
+        {
+          "Name": "fuelType",
+          "DisplayName": "fuelType",
+          "IsOptional": false,
+          "Type": "System.String"
+        }
+      ],
+      "MethodName": "VerifyCarInSearchResults",
+      "DisplayName": "Verify Car in Search Results",
       "ReturnType": "System.Void"
     }
   ]

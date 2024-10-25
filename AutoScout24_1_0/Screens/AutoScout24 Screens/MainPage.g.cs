@@ -30,6 +30,7 @@ namespace AutoScout24_Model.Screens.AutoScout24Screens
             Language = new Progile.TRIO.BaseModel.DropdownMenu(appBasics: AppBasics, displayName: "Language", imageReference: Images.AutoScout24Screens.MainPage.Language.MenuLabel, hoverToExpand: false, opensOnSide: false, filters: ScreenSelect) { ParentElement = this };
             CurrentlyInDemand = new Progile.TRIO.BaseModel.Label(appBasics: AppBasics, displayName: "Currently in demand", imageReference: Images.AutoScout24Screens.MainPage.CurrentlyInDemand, filters: ScreenSelect) { ParentElement = this };
             ResultsButtonContextMenu = new Progile.TRIO.BaseModel.ContextMenu(appBasics: AppBasics, displayName: "Results Button Context Menu", imageReference: Images.AutoScout24Screens.MainPage.ResultsButton.active) { ParentElement = this };
+            AcceptAllCookies.WaitTimeInSeconds = 2;
 
             ConfigureElementProperties();
         }

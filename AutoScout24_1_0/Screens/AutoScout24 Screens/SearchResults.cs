@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.ConstrainedExecution;
 using System.Text;
 using AutoScout24_Model.Helpers;
 using Progile.ATE.Common;
@@ -21,8 +22,10 @@ namespace AutoScout24_Model.Screens.AutoScout24Screens
         {
         }
 
-        public void FindSpecificCarInResults(string name)
+        [ModelCapability]
+        public void FindSpecificCarInResults(string make, string model)
         {
+            var name = $"{make} {model}";
             var carLabel = new Label(App, name, name);
             ScrollToElement(carLabel);
             var select = t.SelectFromColorAtPoint(carLabel.Position);

@@ -67,5 +67,26 @@
         }
       ]
     }
+  ],
+  "Interactions": [
+    {
+      "Parameters": [
+        {
+          "Name": "make",
+          "DisplayName": "make",
+          "IsOptional": false,
+          "Type": "System.String"
+        },
+        {
+          "Name": "model",
+          "DisplayName": "model",
+          "IsOptional": false,
+          "Type": "System.String"
+        }
+      ],
+      "MethodName": "FindSpecificCarInResults",
+      "DisplayName": "FindSpecificCarInResults",
+      "ReturnType": "System.Void"
+    }
   ]
 }
