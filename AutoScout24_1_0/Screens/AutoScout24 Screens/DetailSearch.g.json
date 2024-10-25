@@ -93,12 +93,12 @@
     {
       "Id": "4d09bd91-c06c-46d2-a96f-a2c074965595",
       "Position": {
-        "X": 977,
-        "Y": 348,
-        "Width": 58,
-        "Height": 22
+        "X": 980,
+        "Y": 350,
+        "Width": 152,
+        "Height": 19
       },
-      "Name": "VariantTextbox",
+      "Name": "AdditionalProperties",
       "Type": "Progile.TRIO.BaseModel.TextBox",
       "Parameters": [
         {
@@ -107,7 +107,7 @@
         },
         {
           "Name": "displayName",
-          "Value": "Variant Textbox"
+          "Value": "Additional Properties"
         },
         {
           "Name": "searchType",

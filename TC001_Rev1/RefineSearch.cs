@@ -32,11 +32,11 @@ public class RefineSearch : TestCase
     {
         App.DetailSearch.MakeDropdownWithSearchbox.SelectValueWithSearch($@"Ro", $@"Rolls-Royce");
         App.DetailSearch.ModelDropdownWithSearchbox.SelectValue($@"Ghost");
-        App.DetailSearch.VariantTextbox.Enter($@"V12");
-        App.DetailSearch.UsedCheckbox.Check(); //auto scrolls down to find it because CanScrollToFindElement is set on the DetailsSearch Screen Class
+        App.DetailSearch.AdditionalProperties.Enter($@"V12");
+        App.DetailSearch.UsedCheckbox.Check();
         App.DetailSearch.SeatHeatingCheckbox.Check();
         App.DetailSearch.ResultsButton.Click(App.SearchResults.WaitForAppear);
-        var numberOfOffers = App.SearchResults.OffersFound.ReadValue();
-        t.Report.PassStep($@"Found {numberOfOffers} Offers");
+        t.SetVariable("numberOfOffers", App.SearchResults.OffersFound.ReadValue());
+        t.ReportVariableValue("{{numberOfOffers}}", "numberOfOffers");
     }
 }

@@ -26,7 +26,7 @@ namespace AutoScout24_Model.Screens.AutoScout24Screens
         {
             MakeDropdownWithSearchbox.SelectValueWithSearch(make);
             ModelDropdownWithSearchbox.SelectValueWithSearch(model);
-            VariantTextbox.Enter(variant);
+            AdditionalProperties.Enter(variant);
             ResultsButton.Click(App.SearchResults.WaitForAppear);
         }
     }
