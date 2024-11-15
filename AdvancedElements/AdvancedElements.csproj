@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <Title>AdvancedElements</Title>
+    <Product>TestResults.io</Product>
+    <Description>Custom elements for automation with TestResults.io</Description>
+    <Deterministic>false</Deterministic>
+    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <FileVersion>1.0</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Progile.TRIO.BaseModel" Version="5.9.0.0" />
+    <PackageReference Include="Progile.TRIO.Engine.TestFramework" Version="*" />
+  </ItemGroup>
+
+</Project>
