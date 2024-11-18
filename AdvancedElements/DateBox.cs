@@ -4,6 +4,7 @@ using Progile.TRIO.BaseModel;
 
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -44,15 +45,12 @@ namespace AdvancedElements
             "Default: ddMMyyy")]
         public string DateFormat { get; set; } = "ddMMyyyy";
 
-        [ModelCapability("Enter date", Hint = @"Clicks in the textbox, and types the specified date in the format according to the DateFormat property. 
-The entered date is verified by text detection (OCR).
-If the verification fails, retries are performed.")]
+        [ModelCapability("Enter date", Hint = @"Clicks in the textbox, and types the specified date in the format according to the DateFormat property.")]
         public virtual void EnterDate([DisplayName("date to enter")] DateTime dateToEnter)
         {
             string text = dateToEnter.ToString(DateFormat);
             EnterWithoutVerification(text);
         }
-
 
         public override void Enter([DisplayName("Text to enter")] string textToEnter)
         {
@@ -81,6 +79,14 @@ If the verification fails, retries are performed.")]
                 t.Testee.Keyboard.Press(Keys.Tab);
                 t.Testee.Keyboard.Type(section);
             }
+        }
+
+        protected override void ClickInTextbox()
+        {
+            // We don't want to click in the middle of the box, but at the start, to make sure we select the days entry field.
+            var target = new Point(LogicalPosition.Boundary.Left + LogicalPosition.Boundary.Width / 5, LogicalPosition.Boundary.Middle.Y);
+            t.Testee.Mouse.Click(target);
+            t.WaitForInteractionTimeout();
         }
     }
 }
