@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>Progile.TRIO.AdvancedElements</AssemblyName>
+    <RootNamespace>Progile.TRIO.AdvancedElements</RootNamespace>
+    <Title>AdvancedElements for TestResults.io</Title>
+    <Product>TestResults.io</Product>
+    <Description>Advanced elements for automation with TestResults.io</Description>
+    <Deterministic>false</Deterministic>
+    <VersionPrefix>1.0.0.2</VersionPrefix>
+    <VersionSuffix></VersionSuffix>
+    <AssemblyVersion>$(Version)</AssemblyVersion>
+    <PackageVersion>$(Version)</PackageVersion>
+    <Authors>progile AG</Authors>
+    <Company>TestResults.io</Company>
+    <Copyright>Copyright 2024 progile AG</Copyright>
+    <PackageProjectUrl>https://www.testresults.io</PackageProjectUrl>
+    <PackageTags>TestResults;Automation;Advanced;Elements;Controls;Date</PackageTags>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <NoWarn>1591</NoWarn>
+    <PackageOutputPath>PackageBuilder</PackageOutputPath>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>progile-Logo-2versions.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Progile.TRIO.BaseModel" Version="5.9.0.0" />
+    <PackageReference Include="Progile.TRIO.Engine.TestFramework" Version="*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="." />
+    <None Include="progile-Logo-2versions.png" Pack="true" PackagePath="." />
+  </ItemGroup>
+
+</Project>
