@@ -29,7 +29,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TC007_PDFValidation", "TC00
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TC007_Rev1", "TC007_Rev1\TC007_Rev1.csproj", "{24440DB8-05E4-4980-B4A1-1DF966D9EA7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvancedElements", "AdvancedElements\AdvancedElements.csproj", "{261F750E-3D56-43CA-8543-669AC9135A7B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvancedElements", "AdvancedElements\Progile.TRIO.AdvancedElements.csproj", "{261F750E-3D56-43CA-8543-669AC9135A7B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
