@@ -120,8 +120,7 @@
       ]
     },
     {
-      "TypeName": "Progile.TRIO.BaseModel.IWindow",
-      "BaseTypeName": null
+      "TypeName": "Progile.TRIO.BaseModel.IWindow"
     },
     {
       "TypeName": "Progile.TRIO.BaseModel.Button",
@@ -273,6 +272,54 @@
         {
           "Parameters": [
             {
+              "Name": "typeValue",
+              "DisplayName": "Type value",
+              "IsOptional": false,
+              "Type": "System.String"
+            },
+            {
+              "Name": "selectValue",
+              "DisplayName": "Select value",
+              "IsOptional": false,
+              "Type": "System.String"
+            }
+          ],
+          "MethodName": "TypeAndSelect",
+          "DisplayName": "Type and select value",
+          "ReturnType": "System.Void",
+          "HintText": "Clicks in the dropdown box and types the given type value. \r\nIf the dropdown list opens, the given select value is selected.\r\nVerifies if the selected value matches the given select value.\r\nIf the verification fails retries are performed."
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "value",
+              "DisplayName": "Expected value",
+              "IsOptional": false,
+              "Type": "System.String"
+            },
+            {
+              "Name": "actualValue",
+              "DisplayName": "actualValue",
+              "IsOptional": false,
+              "Type": "out_string"
+            },
+            {
+              "Name": "verifiedValue",
+              "DisplayName": "verifiedValue",
+              "IsOptional": false,
+              "Type": "out_string"
+            }
+          ],
+          "MethodName": "VerifySelectedValue",
+          "DisplayName": "Verify the selected value",
+          "ReturnType": "System.Boolean",
+          "PassedMessage": "The expected value {verifiedValue} was shown correctly as the selected value on {this}.",
+          "FailedMessage": "The selected value on {this} was {actualValue} instead of the expected value {verifiedValue}.",
+          "HintText": "Verifies if the value that is currently set in the textbox \r\nmatches the expected value."
+        },
+        {
+          "Parameters": [
+            {
               "Name": "value",
               "DisplayName": "Expected value",
               "IsOptional": false,
@@ -286,11 +333,41 @@
             }
           ],
           "MethodName": "VerifySelectedValue",
-          "DisplayName": "Verify the selected value",
+          "DisplayName": "Verify the selected value (obsolete)",
           "ReturnType": "System.Boolean",
-          "PassedMessage": "The expected value {value} was shown correctly as the selected value on {this}.",
-          "FailedMessage": "The selected value on {this} was {actualValue} instead of the expected value {value}.",
-          "HintText": "Verifies if the value that is currently set in the textbox \r\nmatches the expected value."
+          "IsObsolete": true,
+          "PassedMessage": "Verify the selected value (obsolete) on {this} passed",
+          "FailedMessage": "Verify the selected value (obsolete) on {this} failed",
+          "HintText": "Use the new operation \"Verify the selected value\" instead"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "value",
+              "DisplayName": "Expected value",
+              "IsOptional": false,
+              "Type": "System.String"
+            },
+            {
+              "Name": "verifiedValue",
+              "DisplayName": "verifiedValue",
+              "IsOptional": false,
+              "Type": "out_string"
+            },
+            {
+              "Name": "takeScreenshot",
+              "DisplayName": "Take screenshot",
+              "Hint": "When true, a screenshot of the expanded dropdown is taken, showing the value to verify.\r\nDefault = true",
+              "IsOptional": true,
+              "Type": "System.Boolean"
+            }
+          ],
+          "MethodName": "VerifyValueInList",
+          "DisplayName": "Verify a value in the list",
+          "ReturnType": "System.Boolean",
+          "PassedMessage": "The expected value {verifiedValue} was shown in the dropdown list {this}.",
+          "FailedMessage": "The expected value {verifiedValue} was not shown in the dropdown list {this}.",
+          "HintText": "Opens the dropdown list and verifies that the provided value\r\nis present in the dropdown list (includes scrolling). \r\nCloses the dropdown list again."
         },
         {
           "Parameters": [
@@ -302,17 +379,19 @@
             },
             {
               "Name": "takeScreenshot",
-              "DisplayName": "takeScreenshot",
+              "DisplayName": "Take screenshot",
+              "Hint": "When true, a screenshot of the expanded dropdown is taken, showing the value to verify.\r\nDefault = true",
               "IsOptional": true,
               "Type": "System.Boolean"
             }
           ],
           "MethodName": "VerifyValueInList",
-          "DisplayName": "Verify a value in the list",
+          "DisplayName": "Verify a value in the list (obsolete)",
           "ReturnType": "System.Boolean",
-          "PassedMessage": "The expected value {value} was shown in the dropdown list {this}.",
-          "FailedMessage": "The expected value {value} was not shown in the dropdown list {this}.",
-          "HintText": "Opens the dropdown list and verifies that the provided value\r\nis present in the dropdown list (includes scrolling). \r\nCloses the dropdown list again."
+          "IsObsolete": true,
+          "PassedMessage": "Verify a value in the list (obsolete) on {this} passed",
+          "FailedMessage": "Verify a value in the list (obsolete) on {this} failed",
+          "HintText": "Use the new operation \"Verify a value in the list\" instead"
         },
         {
           "MethodName": "GetSelectedValue",
@@ -500,14 +579,78 @@
               "DisplayName": "actualValue",
               "IsOptional": false,
               "Type": "out_string"
+            },
+            {
+              "Name": "verifiedValue",
+              "DisplayName": "verifiedValue",
+              "IsOptional": false,
+              "Type": "out_string"
             }
           ],
           "MethodName": "VerifyValue",
           "DisplayName": "Verify the value",
           "ReturnType": "System.Boolean",
-          "PassedMessage": "The expected value {value} was shown correctly for {this}.",
-          "FailedMessage": "The value for {this} was {actualValue} instead of the expected value {value}.",
+          "PassedMessage": "The expected value {verifiedValue} was shown correctly for {this}.",
+          "FailedMessage": "The value for {this} was {actualValue} instead of the expected value {verifiedValue}.",
           "HintText": "Verifies the dynamic \"Expected value\" with OCR, \r\nusing a rectangle that is determined by the relative position to the static label."
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "value",
+              "DisplayName": "Expected value",
+              "IsOptional": false,
+              "Type": "System.String"
+            },
+            {
+              "Name": "actualValue",
+              "DisplayName": "actualValue",
+              "IsOptional": false,
+              "Type": "out_string"
+            }
+          ],
+          "MethodName": "VerifyValue",
+          "DisplayName": "Verify the value (obsolete)",
+          "ReturnType": "System.Boolean",
+          "IsObsolete": true,
+          "PassedMessage": "Verify the value (obsolete) on {this} passed",
+          "FailedMessage": "Verify the value (obsolete) on {this} failed",
+          "HintText": "Use the new operation \"Verify the value\" instead"
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "value",
+              "DisplayName": "Expected value",
+              "IsOptional": false,
+              "Type": "System.String"
+            },
+            {
+              "Name": "waitTime",
+              "DisplayName": "Wait time",
+              "Hint": "The time to wait for the value\r\nE.g. 0:00:30",
+              "IsOptional": false,
+              "Type": "System.TimeSpan"
+            },
+            {
+              "Name": "actualValue",
+              "DisplayName": "actualValue",
+              "IsOptional": false,
+              "Type": "out_string"
+            },
+            {
+              "Name": "verifiedValue",
+              "DisplayName": "verifiedValue",
+              "IsOptional": false,
+              "Type": "out_string"
+            }
+          ],
+          "MethodName": "WaitForValue",
+          "DisplayName": "Wait for the value",
+          "ReturnType": "System.Boolean",
+          "PassedMessage": "The expected value {verifiedValue} was shown correctly for {this}.",
+          "FailedMessage": "The value for {this} was {actualValue} after the timeout instead of the expected value {verifiedValue}.",
+          "HintText": "Waits for the specified \"Expected value\" for the given \"Wait time\"."
         },
         {
           "Parameters": [
@@ -532,11 +675,12 @@
             }
           ],
           "MethodName": "WaitForValue",
-          "DisplayName": "Wait for the value",
+          "DisplayName": "Wait for the value (obsolete)",
           "ReturnType": "System.Boolean",
-          "PassedMessage": "The expected value {value} was shown correctly for {this}.",
-          "FailedMessage": "The value for {this} was {actualValue} after the timeout instead of the expected value {value}.",
-          "HintText": "Waits for the specified \"Expected value\" for the given \"Wait time\"."
+          "IsObsolete": true,
+          "PassedMessage": "Wait for the value (obsolete) on {this} passed",
+          "FailedMessage": "Wait for the value (obsolete) on {this} failed",
+          "HintText": "Use the new operation \"Wait for the value\" instead"
         },
         {
           "MethodName": "ReadValue",
@@ -639,14 +783,43 @@
               "DisplayName": "actualText",
               "IsOptional": false,
               "Type": "out_string"
+            },
+            {
+              "Name": "verifiedValue",
+              "DisplayName": "verifiedValue",
+              "IsOptional": false,
+              "Type": "out_string"
             }
           ],
           "MethodName": "VerifyText",
           "DisplayName": "Verify the text",
           "ReturnType": "System.Boolean",
-          "PassedMessage": "The expected text {expectedText} was shown correctly in {this}.",
-          "FailedMessage": "The text in {this} was {actualText} instead of the expected text {expectedText}.",
+          "PassedMessage": "The expected text {verifiedValue} was shown correctly in {this}.",
+          "FailedMessage": "The text in {this} was {actualText} instead of the expected text {verifiedValue}.",
           "HintText": "Verifies if the text in the textbox is the same as the provided \"Expected text\"."
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "expectedText",
+              "DisplayName": "Expected text",
+              "IsOptional": false,
+              "Type": "System.String"
+            },
+            {
+              "Name": "actualText",
+              "DisplayName": "actualText",
+              "IsOptional": false,
+              "Type": "out_string"
+            }
+          ],
+          "MethodName": "VerifyText",
+          "DisplayName": "Verify the text (obsolete)",
+          "ReturnType": "System.Boolean",
+          "IsObsolete": true,
+          "PassedMessage": "Verify the text (obsolete) on {this} passed",
+          "FailedMessage": "Verify the text (obsolete) on {this} failed",
+          "HintText": "Use the new operation \"Verify the text\" instead"
         },
         {
           "MethodName": "VerifyReadonly",
@@ -669,8 +842,7 @@
       "BaseTypeName": "Progile.TRIO.BaseModel.OnScreenElement"
     },
     {
-      "TypeName": "Progile.TRIO.BaseModel.IScroller",
-      "BaseTypeName": null
+      "TypeName": "Progile.TRIO.BaseModel.IScroller"
     },
     {
       "TypeName": "Progile.TRIO.BaseModel.HorizontalScroller",
@@ -994,6 +1166,18 @@
               "Type": "out_string"
             },
             {
+              "Name": "resolvedSelectionValue",
+              "DisplayName": "resolvedSelectionValue",
+              "IsOptional": false,
+              "Type": "out_string"
+            },
+            {
+              "Name": "verifiedValue",
+              "DisplayName": "verifiedValue",
+              "IsOptional": false,
+              "Type": "out_string"
+            },
+            {
               "Name": "ocrEngineParameters",
               "DisplayName": "ocrEngineParameters",
               "IsOptional": true,
@@ -1003,9 +1187,60 @@
           "MethodName": "Verify",
           "DisplayName": "Verify Cell Content",
           "ReturnType": "System.Boolean",
-          "PassedMessage": "The expected value {expectedValue} was shown correctly in the row {selectionValue}.",
-          "FailedMessage": "The value was {actualValue} instead of the expected value {expectedValue}.",
+          "PassedMessage": "The expected value {verifiedValue} was shown correctly in the row {resolvedSelectionValue}.",
+          "FailedMessage": "The value was {actualValue} instead of the expected value {verifiedValue} in the row {resolvedSelectionValue}.",
           "HintText": "Finds a row using the provided \"Search column\" and \"Search text\"\r\nand verifies in that row that the column \"Verification column\" has the \"Expected value\""
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "selection",
+              "DisplayName": "Search column",
+              "Hint": "The column that is used to find the row with the search text",
+              "IsOptional": false,
+              "Type": "Progile.TRIO.BaseModel.Column"
+            },
+            {
+              "Name": "selectionValue",
+              "DisplayName": "Search text",
+              "Hint": "The text that is used to identify the row",
+              "IsOptional": false,
+              "Type": "System.String"
+            },
+            {
+              "Name": "verification",
+              "DisplayName": "Verification column",
+              "Hint": "The column that contains the value to be verified",
+              "IsOptional": false,
+              "Type": "Progile.TRIO.BaseModel.Column"
+            },
+            {
+              "Name": "expectedValue",
+              "DisplayName": "Expected value",
+              "Hint": "The expected value in the cell",
+              "IsOptional": false,
+              "Type": "System.String"
+            },
+            {
+              "Name": "actualValue",
+              "DisplayName": "actualValue",
+              "IsOptional": false,
+              "Type": "out_string"
+            },
+            {
+              "Name": "ocrEngineParameters",
+              "DisplayName": "ocrEngineParameters",
+              "IsOptional": true,
+              "Type": "Progile.ATE.Common.OcrEngineParameters"
+            }
+          ],
+          "MethodName": "Verify",
+          "DisplayName": "Verify Cell Content (obsolete)",
+          "ReturnType": "System.Boolean",
+          "IsObsolete": true,
+          "PassedMessage": "Verify Cell Content (obsolete) on {this} passed",
+          "FailedMessage": "Verify Cell Content (obsolete) on {this} failed",
+          "HintText": "Use the new operation \"Verify Cell Content\" instead"
         },
         {
           "Parameters": [
@@ -1068,8 +1303,7 @@
       ]
     },
     {
-      "TypeName": "Progile.TRIO.BaseModel.ITableBase",
-      "BaseTypeName": null
+      "TypeName": "Progile.TRIO.BaseModel.ITableBase"
     },
     {
       "TypeName": "AutoScout24_Model.Screens.DemosTelerik.ExampleTable",

@@ -5,7 +5,6 @@
   "Environments": [
     {
       "$type": "Progile.Trio.Designer.DomainObjects.EnvironmentImage, Progile.Trio.Designer",
-      "ImagePathStaticEnvironment": null,
       "RaiseImagePathPopupBeforeExecution": false,
       "Id": "00000000-0000-0000-0000-000000000000",
       "Name": "Simulation"
@@ -17,8 +16,7 @@
       "Name": "Monitor 1"
     }
   ],
-  "SolutionVersion": "9.2",
-  "SolutionType": null,
+  "SolutionVersion": "9.3",
   "ElementsFilter": [],
   "GetLabelTextSettings": {
     "OcrPadding": 5,

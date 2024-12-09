@@ -53,10 +53,10 @@ namespace AutoScout24_Model
 
         public IScroller GetScroller(Select searchRectangle = null, bool requiresFocus = false)
         {
-            if (Browser == null)
-                return null;
-
-            return new BrowserScroller(this, searchRectangle ?? Window, Browser.Type);
+            return new DetectedVerticalScroller(this, searchRectangle ?? Window)
+            {
+                MoveMouseToActivateScroller = Browser?.Type == BrowserType.Firefox,
+            };
         }
 
         /// <summary>

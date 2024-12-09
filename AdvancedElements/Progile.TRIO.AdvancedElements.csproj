@@ -27,7 +27,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Progile.TRIO.BaseModel" Version="5.9.0.0" />
+    <PackageReference Include="Progile.TRIO.BaseModel" Version="*" />
     <PackageReference Include="Progile.TRIO.Engine.TestFramework" Version="*" />
   </ItemGroup>
 

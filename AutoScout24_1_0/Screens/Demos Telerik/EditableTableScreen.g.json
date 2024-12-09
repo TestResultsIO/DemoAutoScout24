@@ -51,19 +51,23 @@
         },
         {
           "Name": "ColumnHeader",
-          "Value": "Images\\Demos Telerik\\EditableTableScreen\\ExampleTable\\ColumnProductName"
+          "Value": "Images\\Demos Telerik\\EditableTableScreen\\ExampleTable\\ColumnProductName",
+          "DisplayValue": "ColumnProductName"
         },
         {
           "Name": "ColumnHeader",
-          "Value": "Images\\Demos Telerik\\EditableTableScreen\\ExampleTable\\ColumnUnitPrice"
+          "Value": "Images\\Demos Telerik\\EditableTableScreen\\ExampleTable\\ColumnUnitPrice",
+          "DisplayValue": "ColumnUnitPrice"
         },
         {
           "Name": "ColumnHeader",
-          "Value": "Images\\Demos Telerik\\EditableTableScreen\\ExampleTable\\ColumnUnitsInStock"
+          "Value": "Images\\Demos Telerik\\EditableTableScreen\\ExampleTable\\ColumnUnitsInStock",
+          "DisplayValue": "ColumnUnitsInStock"
         },
         {
           "Name": "ColumnHeader",
-          "Value": "Images\\Demos Telerik\\EditableTableScreen\\ExampleTable\\ColumnDiscontinued"
+          "Value": "Images\\Demos Telerik\\EditableTableScreen\\ExampleTable\\ColumnDiscontinued",
+          "DisplayValue": "ColumnDiscontinued"
         }
       ],
       "ClassFiles": [

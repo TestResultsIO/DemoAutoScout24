@@ -98,27 +98,33 @@
         },
         {
           "Name": "ColumnHeader",
-          "Value": "Images\\Scout24_com Screens\\SharePriceScreen\\Yearly Performance Table\\Scout24"
+          "Value": "Images\\Scout24_com Screens\\SharePriceScreen\\Yearly Performance Table\\Scout24",
+          "DisplayValue": "Scout24"
         },
         {
           "Name": "ColumnHeader",
-          "Value": "Images\\Scout24_com Screens\\SharePriceScreen\\Yearly Performance Table\\Column2020"
+          "Value": "Images\\Scout24_com Screens\\SharePriceScreen\\Yearly Performance Table\\Column2020",
+          "DisplayValue": "Column2020"
         },
         {
           "Name": "ColumnHeader",
-          "Value": "Images\\Scout24_com Screens\\SharePriceScreen\\Yearly Performance Table\\Column2021"
+          "Value": "Images\\Scout24_com Screens\\SharePriceScreen\\Yearly Performance Table\\Column2021",
+          "DisplayValue": "Column2021"
         },
         {
           "Name": "ColumnHeader",
-          "Value": "Images\\Scout24_com Screens\\SharePriceScreen\\Yearly Performance Table\\Column2022"
+          "Value": "Images\\Scout24_com Screens\\SharePriceScreen\\Yearly Performance Table\\Column2022",
+          "DisplayValue": "Column2022"
         },
         {
           "Name": "ColumnHeader",
-          "Value": "Images\\Scout24_com Screens\\SharePriceScreen\\Yearly Performance Table\\Column2023"
+          "Value": "Images\\Scout24_com Screens\\SharePriceScreen\\Yearly Performance Table\\Column2023",
+          "DisplayValue": "Column2023"
         },
         {
           "Name": "ColumnHeader",
-          "Value": "Images\\Scout24_com Screens\\SharePriceScreen\\Yearly Performance Table\\Column2024"
+          "Value": "Images\\Scout24_com Screens\\SharePriceScreen\\Yearly Performance Table\\Column2024",
+          "DisplayValue": "Column2024"
         }
       ],
       "ClassFiles": [
